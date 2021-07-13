@@ -604,6 +604,21 @@
             </objects>
             <point key="canvasLocation" x="-127.69230769230769" y="94.549763033175353"/>
         </scene>
+        <!--Mood popup View Controller-->
+        <scene sceneID="Uvg-cx-HTz">
+            <objects>
+                <viewController id="tdl-Cr-P9Y" userLabel="Mood popup View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sb6-5o-13n">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QUR-GN-bLu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqf-I9-zja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="759"/>
+        </scene>
         <!--Old Home Page View Controller-->
         <scene sceneID="5FF-tL-eNL">
             <objects>
