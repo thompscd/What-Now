@@ -14,8 +14,10 @@ var whatnextDB = FMDatabase ()
 let insertPupilSQL1 = "INSERT INTO PUPIL (loginname, firstname, lastname, lastlogin, password) VALUES ('bobthebuilder','Bob','Robertson','4 July 2021 8:24','hello');"
 let insertPupilSQL2 = "INSERT INTO PUPIL (loginname, firstname, lastname, lastlogin, password) VALUES ('mikey','Mike','Smith','20 June 2021 16:20','cheerio');"
 let insertPupilSQL3 = "INSERT INTO PUPIL (loginname, firstname, lastname, lastlogin, password) VALUES ('sasha','Sasha','Tomlinson','10 June 2021 16:20','brodie');"
-let insertTeacherSQL1 = "INSERT INTO TEACHER (loginname, firstname, lastname, password, email) VALUES ('mrburn','James','Burn','bestteacher','jburn@fraseracademy.edu');"
-let insertTeacherSQL2 = "INSERT INTO TEACHER (loginname, firstname, lastname, password, email) VALUES ('msdocherty','Elaine','Docherty','sashathedog','edocherty@fraseracademy.edu');"
+let insertTeacherSQL1 = "INSERT INTO TEACHER (loginname, suffix, firstname, lastname, password, email) VALUES ('mrburn','Mr','James','Burn','bestteacher','jburn@fraseracademy.edu');"
+let insertTeacherSQL2 = "INSERT INTO TEACHER (loginname, suffix, firstname, lastname, password, email) VALUES ('msdocherty','Ms','Elaine','Docherty','sashathedog','edocherty@fraseracademy.edu');"
+let insertCommentSQL1 = "INSERT INTO COMMENTS (loginname, comment, date, liked) VALUES ('mrburn','Well done. Keep up the great work!','10 July 2021 16:20', 0);"
+let insertCommentSQL2 = "INSERT INTO COMMENTS (loginname, comment, date, liked) VALUES ('mikey','I really enjoyed today!','14 July 2021 16:20', 0);"
 
 
 class ViewController: UIViewController {
@@ -38,9 +40,13 @@ class ViewController: UIViewController {
             }
             
             if (whatnextDB.open()) {
-                // create pupil
+                // create pupil table
                 let sql_stmt = "CREATE TABLE IF NOT EXISTS PUPIL (LOGINNAME TEXT PRIMARY KEY, FIRSTNAME TEXT, LASTNAME TEXT, LASTLOGIN TEXT, PASSWORD TEXT);"
-                let sql_stmt2 = "CREATE TABLE IF NOT EXISTS TEACHER (LOGINNAME TEXT PRIMARY KEY, FIRSTNAME TEXT, LASTNAME TEXT, PASSWORD TEXT, EMAIL TEXT);"
+                // create teacher table
+                let sql_stmt2 = "CREATE TABLE IF NOT EXISTS TEACHER (LOGINNAME TEXT PRIMARY KEY, SUFFIX TEXT, FIRSTNAME TEXT, LASTNAME TEXT, PASSWORD TEXT, EMAIL TEXT);"
+                // create comments table
+                let sql_stmt3 = "CREATE TABLE IF NOT EXISTS COMMENTS (LOGINNAME TEXT PRIMARY KEY, COMMENT TEXT, DATE TEXT, LIKED INTEGER);"
+
 
                 if !(whatnextDB.executeStatements(sql_stmt)) {
                     print("Error: \(whatnextDB.lastErrorMessage())")
@@ -48,9 +54,13 @@ class ViewController: UIViewController {
                 if !(whatnextDB.executeStatements(sql_stmt2)) {
                      print("Error: \(whatnextDB.lastErrorMessage())")
                 }
+                if !(whatnextDB.executeStatements(sql_stmt3)) {
+                     print("Error: \(whatnextDB.lastErrorMessage())")
+                }
                 populatePupilTable();      //DEBUG - add pupils to table
                 populateTeacherTable();    //DEBUG - add teachers to table
-                
+                populateCommentsTable();    //DEBUG - add comments to table
+
                 whatnextDB.close();
             } else {
                 print("Error: \(whatnextDB.lastErrorMessage())")
@@ -78,6 +88,14 @@ class ViewController: UIViewController {
         }
     } // populatePupilTable
     
+    // function to populate COMMENTS table until feature added to app
+    func populateCommentsTable () {
+        if (whatnextDB.open()) {
+            print("ViewController - populating COMMENTS table with entries")
+            let result1 = whatnextDB.executeUpdate(insertCommentSQL1,withArgumentsIn: [] );
+            let result2 = whatnextDB.executeUpdate(insertCommentSQL2,withArgumentsIn: [] )
+        }
+    } // populatePupilTable
 }
 
 
