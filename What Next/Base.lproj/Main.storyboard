@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5C-2L-zFY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1218.4615384615383" y="88.151658767772503"/>
+            <point key="canvasLocation" x="1168" y="95"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -263,29 +263,129 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="Ino-ew-7Ec">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAY-5n-fyJ">
-                                <rect key="frame" x="0.0" y="41" width="91" height="58"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAY-5n-fyJ">
+                                <rect key="frame" x="0.0" y="47" width="156" height="76"/>
                                 <state key="normal" title="Button" image="Back Arrow"/>
                                 <connections>
                                     <action selector="close" destination="feH-vf-0yV" eventType="touchUpInside" id="UWJ-PH-HiS"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="What Now logo small" translatesAutoresizingMaskIntoConstraints="NO" id="2JS-Ay-m1c">
+                                <rect key="frame" x="96" y="50" width="198" height="198"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your lessons this week: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0Y-KD-JUo">
+                                <rect key="frame" x="90.333333333333329" y="273" width="209.33333333333337" height="24"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="328-X6-KGO">
+                                <rect key="frame" x="16" y="332" width="358" height="415"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EyO-2P-WGk">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="79"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Monday: Words with /aw/ spelt with 'augh' and 'au'">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="tvK-B5-Haf">
+                                        <rect key="frame" x="0.0" y="84" width="358" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Tuesday: Plural Possessive Apostrophes with plural words.">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zxA-th-M0X" userLabel="Wednesday: Nouns ending in the suffix -ation.">
+                                        <rect key="frame" x="0.0" y="168" width="358" height="79"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Wednesday: Nouns ending in the suffix -ation. ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dZn-U0-sZ2">
+                                        <rect key="frame" x="0.0" y="252" width="358" height="79"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Thursday: Adding the prefix ex-. ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2J-uQ-KCa" userLabel="Wednesday: Nouns ending in the suffix -ation.">
+                                        <rect key="frame" x="0.0" y="336" width="358" height="79"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Friday: Revision.">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eNz-AS-gaq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ino-ew-7Ec" firstAttribute="leading" secondItem="Jig-2k-1pY" secondAttribute="leading" id="52C-zu-yKH"/>
+                            <constraint firstItem="328-X6-KGO" firstAttribute="centerX" secondItem="Jig-2k-1pY" secondAttribute="centerX" id="8A5-SK-QV4"/>
+                            <constraint firstItem="A0Y-KD-JUo" firstAttribute="top" secondItem="2JS-Ay-m1c" secondAttribute="bottom" constant="25" id="9fz-2f-DVr"/>
+                            <constraint firstItem="328-X6-KGO" firstAttribute="leading" secondItem="Jig-2k-1pY" secondAttribute="leadingMargin" id="CjL-ES-mJ6"/>
+                            <constraint firstItem="2JS-Ay-m1c" firstAttribute="top" secondItem="eNz-AS-gaq" secondAttribute="top" constant="50" id="FOA-e5-jsq"/>
                             <constraint firstItem="yAY-5n-fyJ" firstAttribute="leading" secondItem="eNz-AS-gaq" secondAttribute="leading" id="GFz-Hp-kjh"/>
+                            <constraint firstItem="328-X6-KGO" firstAttribute="top" secondItem="A0Y-KD-JUo" secondAttribute="bottom" constant="35" id="T7S-aL-bOV"/>
+                            <constraint firstItem="2JS-Ay-m1c" firstAttribute="centerX" secondItem="Jig-2k-1pY" secondAttribute="centerX" id="UK2-Y1-3Ud"/>
                             <constraint firstAttribute="trailing" secondItem="Ino-ew-7Ec" secondAttribute="trailing" id="Z1U-G4-tKG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="328-X6-KGO" secondAttribute="trailing" id="a5Q-wX-oCH"/>
+                            <constraint firstItem="eNz-AS-gaq" firstAttribute="trailing" secondItem="A0Y-KD-JUo" secondAttribute="trailing" constant="90.329999999999998" id="adb-aD-lzp"/>
                             <constraint firstItem="Ino-ew-7Ec" firstAttribute="top" secondItem="Jig-2k-1pY" secondAttribute="top" id="fzp-cb-62k"/>
                             <constraint firstAttribute="bottom" secondItem="Ino-ew-7Ec" secondAttribute="bottom" id="hS9-wZ-uEB"/>
+                            <constraint firstItem="A0Y-KD-JUo" firstAttribute="centerX" secondItem="Jig-2k-1pY" secondAttribute="centerX" id="k20-mN-0on"/>
                             <constraint firstItem="yAY-5n-fyJ" firstAttribute="top" secondItem="eNz-AS-gaq" secondAttribute="top" constant="47" id="uqZ-9W-1Rk"/>
+                            <constraint firstItem="A0Y-KD-JUo" firstAttribute="leading" secondItem="eNz-AS-gaq" secondAttribute="leading" constant="90.329999999999998" id="ygi-u5-bHW"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osY-bn-KAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2552.3076923076924" y="94.549763033175353"/>
+            <point key="canvasLocation" x="2689.2307692307691" y="94.549763033175353"/>
         </scene>
         <!--Teacher Login View Controller-->
         <scene sceneID="oaQ-V6-8EU">
@@ -546,7 +646,7 @@
                                 <state key="normal" image="User profile logo smaller"/>
                             </button>
                             <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Q5P-e0-gnp">
-                                <rect key="frame" x="120" y="70" width="186" height="56"/>
+                                <rect key="frame" x="120" y="70" width="186" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -635,7 +735,7 @@
                                 <state key="normal" image="User profile logo smaller"/>
                             </button>
                             <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="abk-xP-Nej">
-                                <rect key="frame" x="80" y="54" width="218" height="56"/>
+                                <rect key="frame" x="80" y="54" width="218" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
