@@ -24,6 +24,7 @@
 		87A977402690C4AF00FDA013 /* What_NextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A9773F2690C4AF00FDA013 /* What_NextTests.swift */; };
 		87A9774B2690C4AF00FDA013 /* What_NextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A9774A2690C4AF00FDA013 /* What_NextUITests.swift */; };
 		87A9775D2691C35D00FDA013 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A9775C2691C35D00FDA013 /* libsqlite3.tbd */; };
+		87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B42B2926A055530021C852 /* MoodPopupViewController.swift */; };
 		87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE14AA26971557006FC0C2 /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		87A9774C2690C4AF00FDA013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87A9775C2691C35D00FDA013 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		87A977612691C81100FDA013 /* What Next-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "What Next-Bridging-Header.h"; sourceTree = "<group>"; };
+		87B42B2926A055530021C852 /* MoodPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPopupViewController.swift; sourceTree = "<group>"; };
 		87BE14AA26971557006FC0C2 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
 				87A9772C2690C4A300FDA013 /* ViewController.swift */,
 				87A9772E2690C4A300FDA013 /* Main.storyboard */,
+				87B42B2926A055530021C852 /* MoodPopupViewController.swift */,
 				878D30712695B29A00DADD4B /* TeacherLoginViewController.swift */,
 				874D2C13269597180087E87C /* LiteracyViewController.swift */,
 				879330AD269247220029992F /* PupilLoginViewController.swift */,
@@ -321,6 +324,7 @@
 				8719BC312694CCFF00F9829C /* FMDatabaseQueue.m in Sources */,
 				87A9772D2690C4A300FDA013 /* ViewController.swift in Sources */,
 				87A977292690C4A300FDA013 /* AppDelegate.swift in Sources */,
+				87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */,
 				87A9772B2690C4A300FDA013 /* SceneDelegate.swift in Sources */,
 				8719BC2F2694CCFF00F9829C /* FMResultSet.m in Sources */,
 				8719BC2E2694CCFF00F9829C /* FMDatabaseAdditions.m in Sources */,

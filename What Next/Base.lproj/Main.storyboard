@@ -448,7 +448,7 @@
         <!--Mood popup View Controller-->
         <scene sceneID="kNw-7K-jl5">
             <objects>
-                <viewController id="79z-bX-iM7" userLabel="Mood popup View Controller" sceneMemberID="viewController">
+                <viewController id="79z-bX-iM7" userLabel="Mood popup View Controller" customClass="MoodPopupViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EN0-Ay-6w2">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,25 +472,45 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mood faces smaller" translatesAutoresizingMaskIntoConstraints="NO" id="oGY-9V-2KU">
-                                        <rect key="frame" x="40" y="51.666666666666671" width="250" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="dOT-Id-p6S"/>
-                                        </constraints>
-                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="V0o-49-TF4" userLabel="Faces Stack View">
+                                        <rect key="frame" x="30" y="51.666666666666671" width="270" height="59"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkk-Xg-wly" userLabel="Happy Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="59"/>
+                                                <state key="normal" image="happy face smaller"/>
+                                                <connections>
+                                                    <action selector="happyButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="3aE-Cc-ha6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4X-Yz-fS7" userLabel="Ok Button">
+                                                <rect key="frame" x="116" y="0.0" width="57" height="59"/>
+                                                <state key="normal" image="ok face smaller"/>
+                                                <connections>
+                                                    <action selector="okButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="p7z-uX-Eqc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-AB-tzz" userLabel="Sad Button">
+                                                <rect key="frame" x="213" y="0.0" width="57" height="59"/>
+                                                <state key="normal" image="sad face smaller"/>
+                                                <connections>
+                                                    <action selector="sadButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="bTt-CF-SeB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to talk about anything?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-LH-qBX" userLabel="Would you like to talk about anything?">
-                                        <rect key="frame" x="10" y="131.66666666666666" width="310" height="20.333333333333343"/>
+                                        <rect key="frame" x="10" y="156.66666666666666" width="310" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tzn-DN-M1T" userLabel="Text field">
-                                        <rect key="frame" x="20" y="172" width="290" height="34"/>
+                                        <rect key="frame" x="20" y="192" width="290" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOU-mn-iXq" userLabel="Submit button">
-                                        <rect key="frame" x="100" y="216" width="130" height="30"/>
+                                        <rect key="frame" x="100" y="246" width="130" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.90147639968892801" blue="0.91012360950025972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="cwU-oE-wIO"/>
@@ -504,25 +524,25 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="LOU-mn-iXq" firstAttribute="leading" secondItem="qAQ-3d-GDX" secondAttribute="leading" constant="100" id="1ES-k1-dKE"/>
+                                    <constraint firstItem="V0o-49-TF4" firstAttribute="top" secondItem="I2r-ag-rbq" secondAttribute="bottom" constant="20" id="58N-NS-pRq"/>
                                     <constraint firstItem="I2r-ag-rbq" firstAttribute="leading" secondItem="PQU-O3-xxj" secondAttribute="trailing" id="CAX-K0-IVA"/>
-                                    <constraint firstItem="LOU-mn-iXq" firstAttribute="top" secondItem="tzn-DN-M1T" secondAttribute="bottom" constant="10" id="CIn-g7-a5A"/>
-                                    <constraint firstItem="tzn-DN-M1T" firstAttribute="top" secondItem="ixR-LH-qBX" secondAttribute="bottom" constant="20" id="E1c-3b-X8k"/>
+                                    <constraint firstAttribute="trailing" secondItem="V0o-49-TF4" secondAttribute="trailing" constant="30" id="HMT-Nb-xg9"/>
                                     <constraint firstItem="ixR-LH-qBX" firstAttribute="leading" secondItem="qAQ-3d-GDX" secondAttribute="leading" constant="10" id="IkB-By-dqE"/>
                                     <constraint firstAttribute="trailing" secondItem="I2r-ag-rbq" secondAttribute="trailing" constant="40" id="M7U-Hf-kcp"/>
-                                    <constraint firstItem="oGY-9V-2KU" firstAttribute="top" secondItem="I2r-ag-rbq" secondAttribute="bottom" constant="20" id="Nef-di-peb"/>
-                                    <constraint firstAttribute="trailing" secondItem="oGY-9V-2KU" secondAttribute="trailing" constant="40" id="PcH-DI-Bud"/>
                                     <constraint firstItem="8IY-Sc-Blc" firstAttribute="leading" secondItem="qAQ-3d-GDX" secondAttribute="leading" id="U7Z-u4-gZw"/>
                                     <constraint firstItem="I2r-ag-rbq" firstAttribute="top" secondItem="qAQ-3d-GDX" secondAttribute="top" constant="10" id="WF0-SP-wGK"/>
                                     <constraint firstItem="tzn-DN-M1T" firstAttribute="leading" secondItem="qAQ-3d-GDX" secondAttribute="leading" constant="20" id="Yio-ok-gty"/>
+                                    <constraint firstAttribute="bottom" secondItem="LOU-mn-iXq" secondAttribute="bottom" constant="30" id="ZP7-Ul-b2P"/>
                                     <constraint firstAttribute="bottom" secondItem="8IY-Sc-Blc" secondAttribute="bottom" id="c1u-dD-Rxg"/>
+                                    <constraint firstItem="tzn-DN-M1T" firstAttribute="top" secondItem="ixR-LH-qBX" secondAttribute="bottom" constant="15" id="dV2-QB-jzU"/>
+                                    <constraint firstItem="V0o-49-TF4" firstAttribute="leading" secondItem="qAQ-3d-GDX" secondAttribute="leading" constant="30" id="dlb-1i-xDN"/>
                                     <constraint firstAttribute="trailing" secondItem="LOU-mn-iXq" secondAttribute="trailing" constant="100" id="kGR-S1-K4u"/>
                                     <constraint firstItem="PQU-O3-xxj" firstAttribute="leading" secondItem="qAQ-3d-GDX" secondAttribute="leading" constant="5" id="nAq-tG-no4"/>
                                     <constraint firstItem="8IY-Sc-Blc" firstAttribute="top" secondItem="qAQ-3d-GDX" secondAttribute="top" id="nYQ-9n-tDz"/>
-                                    <constraint firstItem="ixR-LH-qBX" firstAttribute="top" secondItem="oGY-9V-2KU" secondAttribute="bottom" constant="20" id="nec-zn-f1c"/>
                                     <constraint firstAttribute="trailing" secondItem="tzn-DN-M1T" secondAttribute="trailing" constant="20" id="tA2-do-ISs"/>
                                     <constraint firstItem="PQU-O3-xxj" firstAttribute="top" secondItem="qAQ-3d-GDX" secondAttribute="top" constant="5" id="uka-7b-Exx"/>
+                                    <constraint firstItem="LOU-mn-iXq" firstAttribute="top" secondItem="tzn-DN-M1T" secondAttribute="bottom" constant="20" id="wCI-xU-N4I"/>
                                     <constraint firstAttribute="trailing" secondItem="8IY-Sc-Blc" secondAttribute="trailing" id="wiI-QJ-dWD"/>
-                                    <constraint firstItem="oGY-9V-2KU" firstAttribute="leading" secondItem="qAQ-3d-GDX" secondAttribute="leading" constant="40" id="yfR-vz-L8v"/>
                                     <constraint firstAttribute="trailing" secondItem="ixR-LH-qBX" secondAttribute="trailing" constant="10" id="z8e-hg-D7A"/>
                                 </constraints>
                             </view>
@@ -537,6 +557,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6pj-xL-tQo"/>
+                    <connections>
+                        <outlet property="happyButton" destination="wkk-Xg-wly" id="hJX-R4-ioY"/>
+                        <outlet property="okButton" destination="U4X-Yz-fS7" id="QBN-BW-cIu"/>
+                        <outlet property="sadButton" destination="Aza-AB-tzz" id="Uw5-hB-RyR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1c-UC-Cfs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -801,12 +826,14 @@
         <image name="Main Background" width="2214" height="2957"/>
         <image name="Main Background 2" width="2214" height="2957"/>
         <image name="Main Background blank" width="1928" height="2663"/>
-        <image name="Mood faces smaller" width="283" height="79"/>
         <image name="Pull down menu icon smaller" width="94" height="82"/>
         <image name="Sign In arrow smaller" width="200" height="44"/>
         <image name="User profile logo smaller" width="74" height="73"/>
         <image name="What Now logo" width="400" height="400"/>
         <image name="What Now logo small" width="198" height="198"/>
+        <image name="happy face smaller" width="62" height="59"/>
+        <image name="ok face smaller" width="57" height="57"/>
+        <image name="sad face smaller" width="57" height="53"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

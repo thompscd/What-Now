@@ -17,7 +17,7 @@ let insertPupilSQL3 = "INSERT INTO PUPIL (loginname, firstname, lastname, lastlo
 let insertTeacherSQL1 = "INSERT INTO TEACHER (loginname, suffix, firstname, lastname, password, email) VALUES ('mrburn','Mr','James','Burn','bestteacher','jburn@fraseracademy.edu');"
 let insertTeacherSQL2 = "INSERT INTO TEACHER (loginname, suffix, firstname, lastname, password, email) VALUES ('msdocherty','Ms','Elaine','Docherty','sashathedog','edocherty@fraseracademy.edu');"
 let insertCommentSQL1 = "INSERT INTO COMMENTS (loginname, comment, date, liked) VALUES ('mrburn','Well done. Keep up the great work!','10 July 2021 16:20', 0);"
-let insertCommentSQL2 = "INSERT INTO COMMENTS (loginname, comment, date, liked) VALUES ('mikey','I really enjoyed today!','14 July 2021 16:20', 0);"
+let insertCommentSQL2 = "INSERT INTO COMMENTS (loginname, comment, date, liked) VALUES ('mikey','I really enjoyed today!','14 July 2021 16:20', 1);"
 
 
 class ViewController: UIViewController {
