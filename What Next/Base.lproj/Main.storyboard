@@ -521,6 +521,7 @@
                                         </state>
                                         <connections>
                                             <action selector="submitButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="c1x-B8-VZB"/>
+                                            <segue destination="DXz-8l-y7F" kind="presentation" id="8rx-hl-6D7"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -824,6 +825,9 @@
             <point key="canvasLocation" x="-831" y="95"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8rx-hl-6D7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Back Arrow" width="102" height="76"/>
         <image name="Dismiss button small mood screen" width="40" height="33"/>
