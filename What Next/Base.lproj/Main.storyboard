@@ -519,6 +519,9 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" systemColor="systemOrangeColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="submitButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="c1x-B8-VZB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -558,6 +561,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6pj-xL-tQo"/>
                     <connections>
+                        <outlet property="commentTextField" destination="tzn-DN-M1T" id="xZk-Ro-46X"/>
                         <outlet property="happyButton" destination="wkk-Xg-wly" id="hJX-R4-ioY"/>
                         <outlet property="okButton" destination="U4X-Yz-fS7" id="QBN-BW-cIu"/>
                         <outlet property="sadButton" destination="Aza-AB-tzz" id="Uw5-hB-RyR"/>
