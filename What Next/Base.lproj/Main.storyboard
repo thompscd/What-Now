@@ -51,7 +51,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OX8-5t-IzJ" userLabel="Username Text Field">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mikey" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OX8-5t-IzJ" userLabel="Username Text Field">
                                 <rect key="frame" x="30" y="476.66666666666669" width="330" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -86,7 +86,7 @@
                                     <segue destination="20u-yX-2s6" kind="presentation" id="iia-Zu-TIW"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8B3-Yn-c6o" userLabel="Password Text Field">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="cheerio" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8B3-Yn-c6o" userLabel="Password Text Field">
                                 <rect key="frame" x="30" y="574.66666666666663" width="330" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -572,10 +572,10 @@
             </objects>
             <point key="canvasLocation" x="67.692307692307693" y="758.53080568720372"/>
         </scene>
-        <!--Mood View Controller-->
+        <!--MoodViewController-->
         <scene sceneID="dnt-Ej-ssm">
             <objects>
-                <viewController id="20u-yX-2s6" userLabel="Mood View Controller" sceneMemberID="viewController">
+                <viewController restorationIdentifier="MoodViewController" storyboardIdentifier="MoodViewController" id="20u-yX-2s6" userLabel="MoodViewController" customClass="MoodViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kwV-FW-oAQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
