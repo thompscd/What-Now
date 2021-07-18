@@ -2,7 +2,7 @@
 //  TeacherLoginViewController.swift
 //  What Next
 //
-//  Created by Lorraine Thompson on 07/07/2021.
+//  Created by Chris Thompson on 07/07/2021.
 //
 
 import UIKit

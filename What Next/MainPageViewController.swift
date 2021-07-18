@@ -2,7 +2,7 @@
 //  MainPageViewController.swift
 //  What Next
 //
-//  Created by Lorraine Thompson on 08/07/2021.
+//  Created by Chris Thompson on 08/07/2021.
 //
 
 import UIKit
@@ -12,6 +12,8 @@ class MainPageViewController: UIViewController {
 
     @IBOutlet weak var leading: NSLayoutConstraint!
     @IBOutlet weak var trailing: NSLayoutConstraint!
+    //@IBOutlet weak var leading: NSLayoutConstraint!
+    //@IBOutlet weak var trailing: NSLayoutConstraint!
     
     @IBOutlet weak var CommentsTextView: UITextView!
     

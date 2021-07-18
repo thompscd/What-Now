@@ -2,7 +2,7 @@
 //  PupilLoginViewController.swift
 //  What Next
 //
-//  Created by Lorraine Thompson on 04/07/2021.
+//  Created by Chris Thompson on 04/07/2021.
 //
 
 import UIKit
