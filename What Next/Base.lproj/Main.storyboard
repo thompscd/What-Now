@@ -584,10 +584,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DN-tb-jMe" userLabel="Mood popup">
-                                <rect key="frame" x="129" y="374.66666666666669" width="132" height="41"/>
-                                <color key="backgroundColor" red="1" green="0.28286585530000002" blue="0.25842793559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="91.666666666666686" y="374.66666666666669" width="207" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Mood Popup"/>
+                                <state key="normal" title="Mood Popup (temp)"/>
                                 <connections>
                                     <segue destination="79z-bX-iM7" kind="show" id="UaL-qS-vmF"/>
                                 </connections>
@@ -710,9 +710,16 @@
                                 <state key="normal" image="User profile logo smaller"/>
                             </button>
                             <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Q5P-e0-gnp">
-                                <rect key="frame" x="120" y="70" width="186" height="56"/>
+                                <rect key="frame" x="60" y="70" width="246" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XkQ-WW-gci">
+                                <rect key="frame" x="50" y="175" width="290" height="432"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LSK-s8-F4L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -722,13 +729,15 @@
                             <constraint firstItem="LSK-s8-F4L" firstAttribute="bottom" secondItem="ifb-Vx-nLK" secondAttribute="bottom" constant="30" id="3pF-mZ-zfA"/>
                             <constraint firstItem="LSK-s8-F4L" firstAttribute="trailing" secondItem="2hz-MU-6fZ" secondAttribute="trailing" id="6br-PF-pkk"/>
                             <constraint firstItem="wwU-GG-pNZ" firstAttribute="leading" secondItem="LSK-s8-F4L" secondAttribute="leading" constant="20" id="7yd-Gc-AWM"/>
-                            <constraint firstItem="Q5P-e0-gnp" firstAttribute="leading" secondItem="Do2-bE-yRY" secondAttribute="leading" constant="120" id="AGg-4w-T1s"/>
+                            <constraint firstItem="Q5P-e0-gnp" firstAttribute="leading" secondItem="Do2-bE-yRY" secondAttribute="leading" constant="60" id="AGg-4w-T1s"/>
+                            <constraint firstItem="XkQ-WW-gci" firstAttribute="leading" secondItem="LSK-s8-F4L" secondAttribute="leading" constant="50" id="Bvw-cl-VDk"/>
                             <constraint firstAttribute="trailing" secondItem="yTv-DB-QF8" secondAttribute="trailing" id="D6h-5X-2Hk"/>
                             <constraint firstItem="2hz-MU-6fZ" firstAttribute="leading" secondItem="Q5P-e0-gnp" secondAttribute="trailing" constant="10" id="DyX-0K-OVS"/>
                             <constraint firstItem="0CC-mn-9GQ" firstAttribute="top" secondItem="umA-eK-zoO" secondAttribute="bottom" constant="20" id="EAN-qQ-jJx"/>
                             <constraint firstItem="Qcs-sn-ZNs" firstAttribute="top" secondItem="KCo-Ok-4Hc" secondAttribute="bottom" constant="20" id="Et8-JX-2FE"/>
                             <constraint firstItem="KCo-Ok-4Hc" firstAttribute="leading" secondItem="LSK-s8-F4L" secondAttribute="leading" constant="20" id="FUr-hw-iY9"/>
                             <constraint firstItem="ifb-Vx-nLK" firstAttribute="leading" secondItem="LSK-s8-F4L" secondAttribute="leading" constant="20" id="Jjy-rS-dIs"/>
+                            <constraint firstItem="LSK-s8-F4L" firstAttribute="bottom" secondItem="XkQ-WW-gci" secondAttribute="bottom" constant="100" id="OIq-oe-bQX"/>
                             <constraint firstItem="yTv-DB-QF8" firstAttribute="top" secondItem="Do2-bE-yRY" secondAttribute="top" id="RH7-cV-hOt"/>
                             <constraint firstItem="Dqg-Vt-YOb" firstAttribute="leading" secondItem="LSK-s8-F4L" secondAttribute="leading" constant="50" id="SYc-BZ-7mb"/>
                             <constraint firstAttribute="trailing" secondItem="sRN-UF-bpt" secondAttribute="trailing" id="VI5-y4-qEa"/>
@@ -737,6 +746,7 @@
                             <constraint firstItem="sRN-UF-bpt" firstAttribute="leading" secondItem="Do2-bE-yRY" secondAttribute="leading" id="Vrx-jV-8cE"/>
                             <constraint firstItem="ifb-Vx-nLK" firstAttribute="top" secondItem="Qcs-sn-ZNs" secondAttribute="bottom" constant="40" id="VzE-Zf-F1P"/>
                             <constraint firstItem="8If-HP-PL9" firstAttribute="top" secondItem="Dqg-Vt-YOb" secondAttribute="bottom" constant="30" id="dDU-Gh-k8b"/>
+                            <constraint firstItem="LSK-s8-F4L" firstAttribute="trailing" secondItem="XkQ-WW-gci" secondAttribute="trailing" constant="50" id="hqa-Cc-jww"/>
                             <constraint firstItem="umA-eK-zoO" firstAttribute="leading" secondItem="LSK-s8-F4L" secondAttribute="leading" constant="20" id="i0o-nz-Ps1"/>
                             <constraint firstItem="0CC-mn-9GQ" firstAttribute="leading" secondItem="LSK-s8-F4L" secondAttribute="leading" constant="20" id="iws-S6-WJN"/>
                             <constraint firstAttribute="bottom" secondItem="yTv-DB-QF8" secondAttribute="bottom" id="nVX-Fb-rCU"/>
@@ -744,6 +754,7 @@
                             <constraint firstItem="yTv-DB-QF8" firstAttribute="leading" secondItem="Do2-bE-yRY" secondAttribute="leading" id="p2r-2Q-sEA"/>
                             <constraint firstItem="umA-eK-zoO" firstAttribute="top" secondItem="wwU-GG-pNZ" secondAttribute="bottom" constant="20" id="t3F-iJ-XA3"/>
                             <constraint firstAttribute="bottom" secondItem="sRN-UF-bpt" secondAttribute="bottom" id="tIt-34-qpP"/>
+                            <constraint firstItem="XkQ-WW-gci" firstAttribute="top" secondItem="Q5P-e0-gnp" secondAttribute="bottom" constant="49" id="wIa-rt-Z7V"/>
                             <constraint firstItem="wwU-GG-pNZ" firstAttribute="top" secondItem="8If-HP-PL9" secondAttribute="bottom" constant="20" id="wLn-3m-IQ6"/>
                             <constraint firstItem="Qcs-sn-ZNs" firstAttribute="leading" secondItem="LSK-s8-F4L" secondAttribute="leading" constant="20" id="ybe-Yo-pcE"/>
                         </constraints>
@@ -760,6 +771,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="CommentsTextView" destination="XkQ-WW-gci" id="EsR-Wp-uxJ"/>
                         <outlet property="leading" destination="p2r-2Q-sEA" id="xfQ-Ly-T9Q"/>
                         <outlet property="trailing" destination="D6h-5X-2Hk" id="U4n-Yc-w80"/>
                     </connections>
@@ -842,6 +854,9 @@
         <image name="happy face smaller" width="62" height="59"/>
         <image name="ok face smaller" width="57" height="57"/>
         <image name="sad face smaller" width="57" height="53"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
