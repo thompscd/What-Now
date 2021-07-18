@@ -72,8 +72,15 @@ class MoodPopupViewController: UIViewController {
         
         // add the comment to the database
         print ("MoodPopupViewControl: adding new comment to db")
+        
+        // format the date & time
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        let dateTime = df.string(from: Date())
+        print ("date time is ", dateTime)
+        
         let comment : String = commentTextField.text ?? "";
-        let querySQL = "INSERT INTO COMMENTS (id, loginname, comment, date, liked, moodlevel) VALUES (null,'mikey','\(comment)','14 July 2021 16:20', 1, \(moodLevel));"
+        let querySQL = "INSERT INTO COMMENTS (id, loginname, comment, date, liked, moodlevel) VALUES (null,'mikey','\(comment)','\(dateTime)', 1, \(moodLevel));"
 
         let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
     }

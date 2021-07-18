@@ -95,6 +95,7 @@ class MainPageViewController: UIViewController {
                 CommentsTextView.insertText (suffix+" "+lastname);
                 CommentsTextView.insertText ("\nClassroom Teacher");
                 CommentsTextView.insertText ("\n\n"+"\""+comment+"\"");
+                CommentsTextView.insertText ("\n"+"Date: "+date);
                 CommentsTextView.insertText ("\n\n===========================");
             }
             else {
@@ -125,6 +126,7 @@ class MainPageViewController: UIViewController {
                         // sad
                         CommentsTextView.insertText ("\n\nMood level : sad");
                     }
+                    CommentsTextView.insertText ("\n"+"Date: "+date);
                     CommentsTextView.insertText ("\n\n===========================");
                 } else {
                     // username is not in TEACHER or PUPIL table - report an error
