@@ -114,6 +114,7 @@ class MainPageViewController: UIViewController {
                     CommentsTextView.insertText (firstname+" "+lastname);
                     CommentsTextView.insertText ("\nPupil");
                     CommentsTextView.insertText ("\n\n"+"\""+comment+"\"");
+
                     if (moodlevel == 0) {
                         // ignore - no mood level selected by the pupil
                     } else if (moodlevel == 1) {

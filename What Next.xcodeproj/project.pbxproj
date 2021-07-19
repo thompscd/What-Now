@@ -13,6 +13,7 @@
 		8719BC312694CCFF00F9829C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC282694CCFF00F9829C /* FMDatabaseQueue.m */; };
 		8719BC322694CCFF00F9829C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC2B2694CCFF00F9829C /* FMDatabase.m */; };
 		874D2C14269597180087E87C /* LiteracyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874D2C13269597180087E87C /* LiteracyViewController.swift */; };
+		87663D8126A57CE300DF111B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87663D8026A57CE300DF111B /* UserProfileViewController.swift */; };
 		878D0F8726A1F3E200EC4EA3 /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878D0F8626A1F3E200EC4EA3 /* MoodViewController.swift */; };
 		878D30722695B29A00DADD4B /* TeacherLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878D30712695B29A00DADD4B /* TeacherLoginViewController.swift */; };
 		879330AE269247220029992F /* PupilLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879330AD269247220029992F /* PupilLoginViewController.swift */; };
@@ -59,6 +60,7 @@
 		8719BC2C2694CCFF00F9829C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabasePool.h"; sourceTree = "<group>"; };
 		8719BC2D2694CCFF00F9829C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
 		874D2C13269597180087E87C /* LiteracyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteracyViewController.swift; sourceTree = "<group>"; };
+		87663D8026A57CE300DF111B /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		878D0F8626A1F3E200EC4EA3 /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
 		878D30712695B29A00DADD4B /* TeacherLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherLoginViewController.swift; sourceTree = "<group>"; };
 		879330AD269247220029992F /* PupilLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilLoginViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
 				87A9772C2690C4A300FDA013 /* ViewController.swift */,
 				87A9772E2690C4A300FDA013 /* Main.storyboard */,
+				87663D8026A57CE300DF111B /* UserProfileViewController.swift */,
 				878D0F8626A1F3E200EC4EA3 /* MoodViewController.swift */,
 				87B42B2926A055530021C852 /* MoodPopupViewController.swift */,
 				878D30712695B29A00DADD4B /* TeacherLoginViewController.swift */,
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8719BC302694CCFF00F9829C /* FMDatabasePool.m in Sources */,
+				87663D8126A57CE300DF111B /* UserProfileViewController.swift in Sources */,
 				878D30722695B29A00DADD4B /* TeacherLoginViewController.swift in Sources */,
 				8719BC322694CCFF00F9829C /* FMDatabase.m in Sources */,
 				878D0F8726A1F3E200EC4EA3 /* MoodViewController.swift in Sources */,
