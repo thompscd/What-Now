@@ -624,10 +624,10 @@
             </objects>
             <point key="canvasLocation" x="746" y="759"/>
         </scene>
-        <!--User Profile View Controller-->
+        <!--Pupil User Profile View Controller-->
         <scene sceneID="PvB-Nc-bCj">
             <objects>
-                <viewController id="I9h-L5-6Sn" userLabel="User Profile View Controller" customClass="UserProfileViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="I9h-L5-6Sn" userLabel="Pupil User Profile View Controller" customClass="UserProfileViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xOd-UC-xgJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -644,9 +644,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ig-Of-oDS" userLabel="User Profile Label">
-                                <rect key="frame" x="141.33333333333334" y="60.000000000000007" width="107.33333333333334" height="26.333333333333336"/>
+                                <rect key="frame" x="116.00000000000001" y="119.99999999999999" width="158.33333333333337" height="26.333333333333329"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="User Profile">
+                                    <fragment content="Pupil User Profile">
                                         <attributes>
                                             <font key="NSFont" size="24" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -656,7 +656,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V4b-if-EdU" userLabel="All profiles Stack View">
-                                <rect key="frame" x="40" y="126.00000000000001" width="310" height="236.33333333333337"/>
+                                <rect key="frame" x="40" y="196" width="310" height="236.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ugc-I8-6kS" userLabel="username Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="20.333333333333332"/>
@@ -684,7 +684,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDw-RZ-eCf">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDw-RZ-eCf" userLabel="firstname Text Field">
                                                 <rect key="frame" x="155" y="0.0" width="155" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -692,7 +692,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="40G-9r-mNc" userLabel="lastname  Stack View">
-                                        <rect key="frame" x="0.0" y="94.333333333333343" width="310" height="34"/>
+                                        <rect key="frame" x="0.0" y="94.333333333333314" width="310" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Last name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tj-O0-dCg" userLabel="lastname Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="155" height="34"/>
@@ -700,7 +700,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afm-ch-rrz">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afm-ch-rrz" userLabel="lastname Text Field">
                                                 <rect key="frame" x="155" y="0.0" width="155" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -719,7 +719,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdH-UJ-aiU" userLabel="password Text Field">
                                                 <rect key="frame" x="155" y="0.0" width="155" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -735,14 +735,14 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZm-Bo-Ckt" userLabel="confirm password Text Field">
                                                 <rect key="frame" x="155" y="0.0" width="155" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAE-VR-6nB" userLabel="Update button">
-                                <rect key="frame" x="160" y="392.33333333333331" width="70" height="33"/>
+                                <rect key="frame" x="160" y="462.33333333333331" width="70" height="33"/>
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="5gl-Xd-To8"/>
@@ -756,27 +756,49 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="updateButtonPressed:" destination="I9h-L5-6Sn" eventType="touchUpInside" id="Nla-v6-6oQ"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTR-r3-XAC" userLabel="Error Label">
+                                <rect key="frame" x="45" y="535.33333333333337" width="300" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="d1M-PB-S9e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.1189635387" blue="0.16882578379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t56-zu-OVt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="e1K-Wd-oMp" secondAttribute="trailing" id="5yJ-2c-71D"/>
                             <constraint firstAttribute="bottom" secondItem="e1K-Wd-oMp" secondAttribute="bottom" id="Fsv-9i-y8t"/>
+                            <constraint firstItem="RTR-r3-XAC" firstAttribute="centerX" secondItem="xOd-UC-xgJ" secondAttribute="centerX" id="GWv-He-Tgc"/>
                             <constraint firstItem="e1K-Wd-oMp" firstAttribute="top" secondItem="xOd-UC-xgJ" secondAttribute="top" id="N10-WK-dNY"/>
                             <constraint firstItem="V4b-if-EdU" firstAttribute="centerX" secondItem="xOd-UC-xgJ" secondAttribute="centerX" id="PWH-jL-YRd"/>
                             <constraint firstItem="V4b-if-EdU" firstAttribute="leading" secondItem="t56-zu-OVt" secondAttribute="leading" constant="40" id="RrO-uu-7Q0"/>
                             <constraint firstItem="t56-zu-OVt" firstAttribute="trailing" secondItem="V4b-if-EdU" secondAttribute="trailing" constant="40" id="TZQ-AP-cio"/>
                             <constraint firstItem="J2Q-Yb-VBs" firstAttribute="top" secondItem="t56-zu-OVt" secondAttribute="top" constant="20" id="VEi-lJ-OAN"/>
                             <constraint firstItem="6ig-Of-oDS" firstAttribute="centerX" secondItem="xOd-UC-xgJ" secondAttribute="centerX" id="bGt-Hb-LPt"/>
-                            <constraint firstItem="V4b-if-EdU" firstAttribute="top" secondItem="J2Q-Yb-VBs" secondAttribute="bottom" constant="30" id="bMV-hZ-uBo"/>
+                            <constraint firstItem="V4b-if-EdU" firstAttribute="top" secondItem="J2Q-Yb-VBs" secondAttribute="bottom" constant="100" id="bMV-hZ-uBo"/>
                             <constraint firstItem="FAE-VR-6nB" firstAttribute="centerX" secondItem="xOd-UC-xgJ" secondAttribute="centerX" id="rUL-9C-SQ1"/>
                             <constraint firstItem="e1K-Wd-oMp" firstAttribute="leading" secondItem="xOd-UC-xgJ" secondAttribute="leading" id="t4o-VD-y99"/>
                             <constraint firstItem="FAE-VR-6nB" firstAttribute="top" secondItem="V4b-if-EdU" secondAttribute="bottom" constant="30" id="vxU-VJ-0ll"/>
-                            <constraint firstItem="6ig-Of-oDS" firstAttribute="top" secondItem="t56-zu-OVt" secondAttribute="top" constant="60" id="y9X-9X-pEY"/>
+                            <constraint firstItem="RTR-r3-XAC" firstAttribute="top" secondItem="FAE-VR-6nB" secondAttribute="bottom" constant="40" id="wfy-NS-AB8"/>
+                            <constraint firstItem="6ig-Of-oDS" firstAttribute="top" secondItem="t56-zu-OVt" secondAttribute="top" constant="120" id="y9X-9X-pEY"/>
                             <constraint firstItem="J2Q-Yb-VBs" firstAttribute="leading" secondItem="t56-zu-OVt" secondAttribute="leading" constant="20" id="yIl-iZ-JAQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="OZm-Bo-Ckt" id="vbY-Oo-dbK"/>
+                        <outlet property="errorLabel" destination="6ig-Of-oDS" id="rsI-FG-sun"/>
+                        <outlet property="errorLabel2" destination="RTR-r3-XAC" id="7rY-fg-B1b"/>
+                        <outlet property="firstnameTextField" destination="WDw-RZ-eCf" id="DZc-RD-9HT"/>
+                        <outlet property="lastnameTextField" destination="afm-ch-rrz" id="C6F-T7-xOf"/>
+                        <outlet property="passwordTextField" destination="sdH-UJ-aiU" id="khA-ZJ-voW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16Y-bW-Mg7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
