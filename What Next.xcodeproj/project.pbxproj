@@ -28,6 +28,7 @@
 		87A9775D2691C35D00FDA013 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A9775C2691C35D00FDA013 /* libsqlite3.tbd */; };
 		87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B42B2926A055530021C852 /* MoodPopupViewController.swift */; };
 		87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE14AA26971557006FC0C2 /* MainPageViewController.swift */; };
+		8E14511B26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		87A977612691C81100FDA013 /* What Next-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "What Next-Bridging-Header.h"; sourceTree = "<group>"; };
 		87B42B2926A055530021C852 /* MoodPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPopupViewController.swift; sourceTree = "<group>"; };
 		87BE14AA26971557006FC0C2 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhatNextLaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				8719BC232694CCFF00F9829C /* FMDatabaseAdditions.m */,
 				8719BC242694CCFF00F9829C /* FMResultSet.m */,
 				87A977282690C4A300FDA013 /* AppDelegate.swift */,
+				8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */,
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
 				87A9772C2690C4A300FDA013 /* ViewController.swift */,
 				87A9772E2690C4A300FDA013 /* Main.storyboard */,
@@ -294,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E14511B26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard in Resources */,
 				87A977352690C4AF00FDA013 /* LaunchScreen.storyboard in Resources */,
 				87A977322690C4AF00FDA013 /* Assets.xcassets in Resources */,
 				87A977302690C4A300FDA013 /* Main.storyboard in Resources */,
