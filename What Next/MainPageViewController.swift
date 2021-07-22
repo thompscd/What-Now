@@ -8,7 +8,7 @@
 import UIKit
 
 
-class MainPageViewController: UIViewController {
+class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var leading: NSLayoutConstraint!
     @IBOutlet weak var trailing: NSLayoutConstraint!
@@ -17,6 +17,8 @@ class MainPageViewController: UIViewController {
     
     @IBOutlet weak var CommentsTextView: UITextView!
     
+    @IBOutlet weak var searchTextView: UISearchBar!
+    
     var menuOut = false;
     
     override func viewDidLoad() {
@@ -24,15 +26,24 @@ class MainPageViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        // needed so that keyboard on ipad/iphone disappears on return
+        self.searchTextView.delegate = self;
+        
         displayComments()
+    }
+    
+    // needed so that keyboard on ipad/iphone disappears on return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func menuButtonClick(_ sender: Any) {
         
         print ("In menuButtonClick")
         if menuOut == false {
-            leading.constant = 250;
-            trailing.constant = -250;
+            leading.constant = 280;
+            trailing.constant = -280;
             menuOut = true;
         } else {
             leading.constant = 0;
