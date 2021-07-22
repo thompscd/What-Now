@@ -105,7 +105,7 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
         // if login ok then open MoodViewController
         if validLoginDetails {
             print ("about to jump to Mood View Controller ");
-            performSegue(withIdentifier:"toMoodViewController",sender:AnyObject.self);
+            performSegue(withIdentifier:"moodPopupSeque",sender:AnyObject.self);
         }
     }
     

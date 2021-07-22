@@ -11,6 +11,10 @@ class MoodViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print ("In MoodViewController")
+        print ("About to performSegue to MoodViewPopupSeque")
+        performSegue(withIdentifier:"moodViewPopupSegue",sender:AnyObject.self);
 
         // Do any additional setup after loading the view.
         
