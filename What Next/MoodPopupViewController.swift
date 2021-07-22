@@ -83,6 +83,9 @@ class MoodPopupViewController: UIViewController {
         let querySQL = "INSERT INTO COMMENTS (id, loginname, comment, date, liked, moodlevel) VALUES (null,'mikey','\(comment)','\(dateTime)', 1, \(moodLevel));"
 
         let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
+        
+        // dismiss the pop-up screen
+        // dismiss(animated:true,completion:nil)  // update successful so close the screen
     }
     
     /*

@@ -30,6 +30,7 @@ class PupilLoginViewController: UIViewController {
         let login_error_message = "Unknown User - please try again!";
         let password_error_message = "Invalid password - please try again!";
 
+        var validLoginDetails : Bool = true;
         
         LoginErrorLabel.text = ""; // clear any old error messages
 
@@ -76,6 +77,7 @@ class PupilLoginViewController: UIViewController {
                 // move cursor back to username
                 UserNameTextField.becomeFirstResponder();
                 let desiredPosition = UserNameTextField.beginningOfDocument;
+                validLoginDetails = false;
             }
             
         } else {
@@ -86,6 +88,13 @@ class PupilLoginViewController: UIViewController {
             // move cursor back to username
             UserNameTextField.becomeFirstResponder();
             let desiredPosition = UserNameTextField.beginningOfDocument;
+            validLoginDetails = false;
+        }
+        
+        // if login ok then open MoodViewController
+        if validLoginDetails {
+            print ("about to jump to Mood View Controller ");
+            performSegue(withIdentifier:"toMoodViewController",sender:AnyObject.self);
         }
     }
     
