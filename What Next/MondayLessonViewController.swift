@@ -29,6 +29,20 @@ class MondayLessonViewController: UIViewController {
         playVideo()
     }
     
+    
+    @IBOutlet weak var coverBlock: UIImageView!
+    @IBOutlet weak var imageBlock: UIImageView!
+    
+    @IBAction func wordCover(_ sender: UIButton) {
+        if imageBlock.isHidden == true {
+            imageBlock.isHidden = false
+            coverBlock.isHidden = true
+        } else {
+            imageBlock.isHidden = true
+            coverBlock.isHidden = false
+        }
+    }
+    
     private func playVideo() {
         guard let path = Bundle.main.path(forResource: "testVideo", ofType:"mp4") else {
             debugPrint("testVideo.mp4 not found")
