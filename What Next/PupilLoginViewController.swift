@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PupilLoginViewController: UIViewController {
+class PupilLoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var LoginErrorLabel: UILabel!
     @IBOutlet weak var UserNameTextField: UITextField!
@@ -17,6 +17,17 @@ class PupilLoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
+        // needed so that keyboard on ipad/iphone disappears on return
+        self.UserNameTextField.delegate = self;
+        self.UserNameTextField.delegate = self;
+
+    }
+
+    // needed so that keyboard on ipad/iphone disappears on return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     // action when the back arrow is pressed
