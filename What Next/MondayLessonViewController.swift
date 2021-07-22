@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import AVKit
 
 class MondayLessonViewController: UIViewController {
     
@@ -21,6 +22,24 @@ class MondayLessonViewController: UIViewController {
         print("Caught got pressed")
         playSound()
         
+    }
+    
+    
+    @IBAction func testVideoPressed(_ sender: UIButton) {
+        playVideo()
+    }
+    
+    private func playVideo() {
+        guard let path = Bundle.main.path(forResource: "testVideo", ofType:"mp4") else {
+            debugPrint("testVideo.mp4 not found")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true) {
+            player.play()
+        }
     }
     
     func playSound() {
@@ -40,5 +59,4 @@ class MondayLessonViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-        
 }

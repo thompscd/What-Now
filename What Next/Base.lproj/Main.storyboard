@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="6eC-fT-n4H" customClass="PupilLoginViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tyc-be-Y4y">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="PRk-I2-6gu">
@@ -172,7 +172,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background" translatesAutoresizingMaskIntoConstraints="NO" id="bSv-54-3nf">
@@ -258,7 +258,7 @@
             <objects>
                 <viewController id="feH-vf-0yV" customClass="LiteracyViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jig-2k-1pY">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="Ino-ew-7Ec">
@@ -574,7 +574,7 @@
                                 <rect key="frame" x="32" y="120" width="640" height="563"/>
                                 <state key="normal" title="Play Video"/>
                                 <connections>
-                                    <action selector="playVideo:" destination="krO-hd-Tmn" eventType="touchUpInside" id="s6j-zf-0Eo"/>
+                                    <action selector="testVideoPressed:" destination="krO-hd-Tmn" eventType="touchUpInside" id="BZ0-9n-BJ2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-be-Iy8">
@@ -616,7 +616,7 @@
             <objects>
                 <viewController id="rzz-6U-qpz" customClass="TeacherLoginViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeL-0f-y1p">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="FTq-BW-Lo0">
@@ -774,7 +774,7 @@
             <objects>
                 <viewController id="3MC-yj-I4h" userLabel="Home Page View Controller" customClass="MainPageViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Do2-bE-yRY">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background blank" translatesAutoresizingMaskIntoConstraints="NO" id="sRN-UF-bpt">
