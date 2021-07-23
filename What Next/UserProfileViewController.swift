@@ -8,10 +8,7 @@
 import UIKit
 
 class UserProfileViewController: UIViewController {
-    @IBOutlet weak var firstnameTextField: UITextField!
-    @IBOutlet weak var lastnameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var confirmPasswordTextField: UITextField!
+
     
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var errorLabel2: UILabel!
@@ -24,81 +21,6 @@ class UserProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         openDatabase();
         
-        // extract username details from database and add to the fields
-        
-        // check the user is in the database
-        let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(loginname)';"
-        let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
-        if results?.next()==true {
-            print("UserProfileViewController - user is in database !!!!")
-            let firstname = results?.string(forColumn:"firstname") ;
-            let lastname = results?.string(forColumn:"lastname");
-            let password = results?.string(forColumn:"password");
-            print ("firstname = ", firstname ?? "");
-            print ("lastname = ", lastname ?? "");
-            print ("password = ", password ?? "");
-
-            // Display current values
-            firstnameTextField.text = firstname ?? "";
-            lastnameTextField.text = lastname;
-
-            
-        } else {
-            // pupil not in database - display error
-            print("UserProfileViewController - user not in database !!!!")
-        }
-        
-    }
-    
-    @IBAction func updateButtonPressed(_ sender: Any) {
-        
-        // clear any error messages
-        errorLabel2.text = ""
-
-        var error_found = false ;
-        
-        // check that First Name is not empty
-        let firstname = firstnameTextField.text;
-        if firstname == "" {
-            errorLabel2.text = "Error: first name cannot be empty"
-            error_found = true;
-        }
-        
-        // check that Last Name is not empty
-        let lastname : String = lastnameTextField.text ?? "";
-        if !error_found {
-            if lastname == "" {
-                errorLabel2.text = "Error: last name cannot be empty"
-                error_found = true;
-            }
-        }
-        
-        // check the password is not empty
-        let password : String = passwordTextField.text ?? "";
-        if !error_found {
-            if password == "" {
-                errorLabel2.text = "Error: password cannot be empty"
-                error_found = true;
-            }
-        }
-
-        // check the password matches confirm
-        // password
-        let confirmPassword : String = confirmPasswordTextField.text ?? "";
-        if !error_found {
-            if password != confirmPassword {
-                errorLabel2.text = "Error: confirm password incorrect"
-                error_found = true;
-            }
-        }
-        
-        if !error_found {
-            // update database with new values
-            let querySQL = "UPDATE PUPIL SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)' WHERE loginname = '\(loginname)';"
-            let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
-            dismiss(animated:true,completion:nil)  // update successful so close the screen
-
-        }
     }
     
     
@@ -129,6 +51,7 @@ class UserProfileViewController: UIViewController {
         // END OF HACK CODE !!!!!!!
         /////////////////////////////////////////////////
     }
+    
     /*
     // MARK: - Navigation
 

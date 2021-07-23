@@ -30,6 +30,7 @@
 		87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE14AA26971557006FC0C2 /* MainPageViewController.swift */; };
 		8E14511B26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */; };
 		8ED4124826AAFF72007EF869 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4124726AAFF72007EF869 /* KeyboardLayoutConstraint.swift */; };
+		8ED4126C26AB60E6007EF869 /* PupilSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		87BE14AA26971557006FC0C2 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhatNextLaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ED4124726AAFF72007EF869 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = ../../../../../../../Desktop/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
 				87A9772C2690C4A300FDA013 /* ViewController.swift */,
 				87A9772E2690C4A300FDA013 /* Main.storyboard */,
+				8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */,
 				87663D8026A57CE300DF111B /* UserProfileViewController.swift */,
 				878D0F8626A1F3E200EC4EA3 /* MoodViewController.swift */,
 				87B42B2926A055530021C852 /* MoodPopupViewController.swift */,
@@ -339,6 +342,7 @@
 				8719BC312694CCFF00F9829C /* FMDatabaseQueue.m in Sources */,
 				87A9772D2690C4A300FDA013 /* ViewController.swift in Sources */,
 				87A977292690C4A300FDA013 /* AppDelegate.swift in Sources */,
+				8ED4126C26AB60E6007EF869 /* PupilSettingsViewController.swift in Sources */,
 				87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */,
 				87A9772B2690C4A300FDA013 /* SceneDelegate.swift in Sources */,
 				8ED4124826AAFF72007EF869 /* KeyboardLayoutConstraint.swift in Sources */,
