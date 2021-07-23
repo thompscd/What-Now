@@ -22,6 +22,12 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
         self.UserNameTextField.delegate = self;
         self.UserNameTextField.delegate = self;
 
+        //DEBUG
+        if (GlobalVar.whatnextDB.open()) {
+            print ("!!!!!!!!! Database is open")
+        } else {
+            print ("!!!!!!! Database is NOT open")
+        }
     }
 
     // needed so that keyboard on ipad/iphone disappears on return key
@@ -72,7 +78,6 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
         // return password for that pupil (if it exists)
         let querySQL = "SELECT loginname, firstname, lastname, lastlogin, password FROM PUPIL WHERE loginname = '\(username.lowercased())';"
 
-        print (querySQL) //DEBUG
         let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
             print ("going through results!!!!!!!!")
