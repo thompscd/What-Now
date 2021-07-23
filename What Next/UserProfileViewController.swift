@@ -14,10 +14,9 @@ class UserProfileViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     
     @IBOutlet weak var errorLabel: UILabel!
-    
     @IBOutlet weak var errorLabel2: UILabel!
     
-    let loginname = "mikey";   //DEBUG - needs to be passed from other View Controller
+    let loginname = GlobalVar.loginname;  
     
     override func viewDidLoad() {
         super.viewDidLoad()

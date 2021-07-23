@@ -18,11 +18,6 @@ class MoodViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        // automatically run the Mood Popup view
-        //print ("About to call the mood popup view controller");
-        //let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MoodViewController") as UIViewController
-        //self.present(viewController, animated: false, completion: nil)
-        //self.present(viewController, animated: false, completion: nil)
     }
     
     /*

@@ -14,9 +14,7 @@ class MoodPopupViewController: UIViewController {
     @IBOutlet weak var sadButton: UIButton!
     @IBOutlet weak var commentTextField: UITextField!
     
-    var moodLevel : Int = 0;   //0=unknown, 1=happy, 2=ok, 3=sad
-    
-
+    var moodLevel : Int = GlobalVar.moodlevel_none;   //0=unknown, 1=happy, 2=ok, 3=sad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,26 +24,29 @@ class MoodPopupViewController: UIViewController {
     
     // happy button pressed so gray out others
     @IBAction func happyButtonPressed(_ sender: Any) {
-        moodLevel = 1;
+        moodLevel = GlobalVar.moodlevel_happy;
         happyButton.setImage(UIImage(named: "happy face smaller.png"), for: .normal)
         okButton.setImage(UIImage(named: "ok face gray.png"), for: .normal)
         sadButton.setImage(UIImage(named: "sad face gray.png"), for: .normal)
+
     }
     
     // ok button pressed so gray out others
     @IBAction func okButtonPressed(_ sender: Any) {
-        moodLevel = 2;
+        moodLevel = GlobalVar.moodlevel_ok;
         okButton.setImage(UIImage(named: "ok face smaller.png"), for: .normal)
         happyButton.setImage(UIImage(named: "happy face gray.png"), for: .normal)
         sadButton.setImage(UIImage(named: "sad face gray.png"), for: .normal)
+
     }
     
     // sad button pressed so gray out others
     @IBAction func sadButtonPressed(_ sender: Any) {
-        moodLevel = 3;
+        moodLevel = GlobalVar.moodlevel_sad;
         sadButton.setImage(UIImage(named: "sad face smaller.png"), for: .normal)
         happyButton.setImage(UIImage(named: "happy face gray.png"), for: .normal)
         okButton.setImage(UIImage(named: "ok face gray.png"), for: .normal)
+
     }
     
     @IBAction func submitButtonPressed(_ sender: Any) {
@@ -84,8 +85,6 @@ class MoodPopupViewController: UIViewController {
 
         let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
         
-        // dismiss the pop-up screen
-        // dismiss(animated:true,completion:nil)  // update successful so close the screen
     }
     
     /*

@@ -7,13 +7,10 @@
 
 import UIKit
 
-
 class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var leading: NSLayoutConstraint!
     @IBOutlet weak var trailing: NSLayoutConstraint!
-    //@IBOutlet weak var leading: NSLayoutConstraint!
-    //@IBOutlet weak var trailing: NSLayoutConstraint!
     
     @IBOutlet weak var CommentsTextView: UITextView!
     
@@ -26,18 +23,19 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
 
         // Do any additional setup after loading the view.
         
-        // needed so that keyboard on ipad/iphone disappears on return
+        // needed so that keyboard on ipad/iphone disappears on return key
         self.searchTextView.delegate = self;
         
         displayComments()
     }
     
-    // needed so that keyboard on ipad/iphone disappears on return
+    // needed so that keyboard on ipad/iphone disappears on return key
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
     }
-    
+  
+    // displays the hamburger menu
     @IBAction func menuButtonClick(_ sender: Any) {
         
         print ("In menuButtonClick")
@@ -126,15 +124,15 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
                     CommentsTextView.insertText ("\nPupil");
                     CommentsTextView.insertText ("\n\n"+"\""+comment+"\"");
 
-                    if (moodlevel == 0) {
+                    if (moodlevel == GlobalVar.moodlevel_none) {
                         // ignore - no mood level selected by the pupil
-                    } else if (moodlevel == 1) {
+                    } else if (moodlevel == GlobalVar.moodlevel_happy) {
                         // Happy
                         CommentsTextView.insertText ("\n\nMood level : Happy");
-                    } else if (moodlevel == 2) {
+                    } else if (moodlevel == GlobalVar.moodlevel_ok) {
                         // ok
                         CommentsTextView.insertText ("\n\nMood level : ok");
-                    } else if (moodlevel == 3) {
+                    } else if (moodlevel == GlobalVar.moodlevel_sad) {
                         // sad
                         CommentsTextView.insertText ("\n\nMood level : sad");
                     }
@@ -145,17 +143,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
                 }
             }
 
-
-            //print ("Password for ",username," is ",dbpassword!);
-            // check password is correct
-            //if dbpassword != PasswordTextField.text {
-              //  LoginErrorLabel.text = password_error_message;
-              //  PasswordTextField.text = "";  // clear the password
-              //  UserNameTextField.text = "";  // clear the user name
-                // move cursor back to username
-              //  UserNameTextField.becomeFirstResponder();
-              //  let desiredPosition = UserNameTextField.beginningOfDocument;
-            }
+        }
     }
     
     /*

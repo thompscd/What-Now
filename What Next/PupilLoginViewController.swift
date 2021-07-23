@@ -17,14 +17,14 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    
-        // needed so that keyboard on ipad/iphone disappears on return
+            
+        // needed so that keyboard on ipad/iphone disappears on return key
         self.UserNameTextField.delegate = self;
         self.UserNameTextField.delegate = self;
 
     }
 
-    // needed so that keyboard on ipad/iphone disappears on return
+    // needed so that keyboard on ipad/iphone disappears on return key
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
@@ -70,11 +70,9 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
         // END OF HACK CODE !!!!!!!
         /////////////////////////////////////////////////
         // return password for that pupil (if it exists)
-        // let querySQL = "SELECT password FROM PUPIL WHERE loginname=\""+user+"\";";
-        //let querySQL = "SELECT password FROM PUPIL;";
         let querySQL = "SELECT loginname, firstname, lastname, lastlogin, password FROM PUPIL WHERE loginname = '\(username.lowercased())';"
 
-        print (querySQL)
+        print (querySQL) //DEBUG
         let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
             print ("going through results!!!!!!!!")
@@ -104,6 +102,7 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
         
         // if login ok then open MoodViewController
         if validLoginDetails {
+            GlobalVar.loginname = username;  //save the loginname for other View Controllers to use
             print ("about to jump to Mood View Controller ");
             performSegue(withIdentifier:"moodPopupSeque",sender:AnyObject.self);
         }

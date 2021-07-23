@@ -19,6 +19,16 @@ let insertTeacherSQL2 = "INSERT INTO TEACHER (loginname, suffix, firstname, last
 let insertCommentSQL1 = "INSERT INTO COMMENTS (id,loginname, comment, date, liked, moodlevel) VALUES (null,'mrburn','Well done. Keep up the great work!','10 July 2021 16:20', 0, 1);"
 let insertCommentSQL2 = "INSERT INTO COMMENTS (id,loginname, comment, date, liked, moodlevel) VALUES (null,'mikey','I really enjoyed today!','14 July 2021 16:20', 1, 2);"
 
+// Global data to be passed between controllers
+struct GlobalVar {
+    static var loginname : String  = "";  //loginname shared between View Controllers
+    // moodlevels
+    static let moodlevel_none : Int = 0 ; //mood level not selected
+    static let moodlevel_happy : Int = 1 ;
+    static let moodlevel_ok : Int = 2 ;
+    static let moodlevel_sad : Int = 3 ;ed 
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
