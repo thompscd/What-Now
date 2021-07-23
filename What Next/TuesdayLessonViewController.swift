@@ -1,51 +1,87 @@
 //
-//  MondayLessonViewController.swift
+//  TuesdayLessonViewController.swift
 //  What Next
 //
-//  Created by Christopher Thompson on 20/07/2021.
+//  Created by Christopher Thompson on 22/07/2021.
 //
 
 import UIKit
-import AVFoundation
 import AVKit
+import AVFoundation
 
-class MondayLessonViewController: UIViewController {
+class TuesdayLessonViewController: UIViewController {
     
-    var player: AVAudioPlayer?
+    var player:AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func caughtPressed(_ sender: UIButton) {
-        
-        print("Caught got pressed")
-        playCaught()
-        
-    }
-    
-    @IBAction func naughtyPressed(_ sender: UIButton) {
-        playNaughty()
-    }
-    
-    @IBAction func mondayVideoPressed(_ sender: UIButton) {
-        playVideo()
-    }
-    
-    @IBOutlet weak var coverBlock: UIImageView!
-    @IBOutlet weak var imageBlock: UIImageView!
+    @IBOutlet weak var wordCover: UIImageView!
+    @IBOutlet weak var coverCover: UIImageView!
     
     @IBAction func wordCover(_ sender: UIButton) {
-        if imageBlock.isHidden == true {
-            imageBlock.isHidden = false
-            coverBlock.isHidden = true
+        if wordCover.isHidden == true {
+            wordCover.isHidden = false
+            coverCover.isHidden = true
         } else {
-            imageBlock.isHidden = true
-            coverBlock.isHidden = false
+            wordCover.isHidden = true
+            coverCover.isHidden = false
         }
     }
     
-    private func playVideo() {
+    @IBAction func girlsPressed(_ sender: UIButton) {
+        playGirls()
+    }
+    
+    @IBAction func mensPressed(_ sender: UIButton) {
+        playMens()
+    }
+    
+    //Add and Update audio file in function.
+    func playGirls() {
+        guard let url = Bundle.main.url(forResource: "TestAudioFile", withExtension: "wav") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    //Add and Update audio file in function.
+    func playMens() {
+        guard let url = Bundle.main.url(forResource: "TestAudioFile", withExtension: "wav") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func tuesdayVideoPressed(_ sender: UIButton) {
+        playTuesdayVideo()
+    }
+    
+    //Upload and Update video for function
+    private func playTuesdayVideo() {
         guard let path = Bundle.main.path(forResource: "testVideo", ofType:"mp4") else {
             debugPrint("testVideo.mp4 not found")
             return
@@ -58,41 +94,4 @@ class MondayLessonViewController: UIViewController {
         }
     }
     
-    //Add and Update audio file in function.
-    func playCaught() {
-        guard let url = Bundle.main.url(forResource: "TestAudioFile", withExtension: "wav") else { return }
-
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-            guard let player = player else { return }
-
-            player.play()
-
-        } catch let error {
-            print(error.localizedDescription)
-        }
-    }
-    
-    //Add and Update audio file in function.
-    func playNaughty() {
-        guard let url = Bundle.main.url(forResource: "TestAudioFile", withExtension: "wav") else { return }
-
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-            guard let player = player else { return }
-
-            player.play()
-
-        } catch let error {
-            print(error.localizedDescription)
-        }
-    }
 }
