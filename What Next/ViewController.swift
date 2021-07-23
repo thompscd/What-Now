@@ -26,7 +26,7 @@ struct GlobalVar {
     static let moodlevel_none : Int = 0 ; //mood level not selected
     static let moodlevel_happy : Int = 1 ;
     static let moodlevel_ok : Int = 2 ;
-    static let moodlevel_sad : Int = 3 ;ed 
+    static let moodlevel_sad : Int = 3 ;
 }
 
 class ViewController: UIViewController {
