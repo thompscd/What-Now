@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TeacherLoginViewController: UIViewController {
+class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var LoginErrorLabel: UILabel!
     @IBOutlet weak var UserNameTextField: UITextField!
@@ -17,6 +17,17 @@ class TeacherLoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // needed so that keyboard on ipad/iphone disappears on return key
+        self.UserNameTextField.delegate = self;
+        self.UserNameTextField.delegate = self;
+        
+    }
+    
+    // needed so that keyboard on ipad/iphone disappears on return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func close () {
@@ -28,6 +39,8 @@ class TeacherLoginViewController: UIViewController {
         let password: String = PasswordTextField.text ?? "";
         let login_error_message = "Unknown User - please try again!";
         let password_error_message = "Invalid password - please try again!";
+        
+        var validLoginDetails : Bool = true;
 
         LoginErrorLabel.text = ""; // clear any old error messages
 
@@ -56,9 +69,8 @@ class TeacherLoginViewController: UIViewController {
         // END OF HACK CODE !!!!!!!
         /////////////////////////////////////////////////
         // return password for that teacher (if it exists)
-        let querySQL = "SELECT loginname, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(username)';"
+        let querySQL = "SELECT loginname, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(username.lowercased())';"
 
-        print (querySQL)
         let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
             print ("going through results!!!!!!!!")
@@ -72,6 +84,7 @@ class TeacherLoginViewController: UIViewController {
                 // move cursor back to username
                 UserNameTextField.becomeFirstResponder();
                 let desiredPosition = UserNameTextField.beginningOfDocument;
+                validLoginDetails = false;
             }
             
         } else {
@@ -82,6 +95,14 @@ class TeacherLoginViewController: UIViewController {
             // move cursor back to username
             UserNameTextField.becomeFirstResponder();
             let desiredPosition = UserNameTextField.beginningOfDocument;
+            validLoginDetails = false;
+        }
+        
+        // if login ok then open TeacherViewController
+        if validLoginDetails {
+            GlobalVar.loginname = username;  //save the loginname for other View Controllers to use
+            print ("about to jump to Teacher View Controller ");
+            //performSegue(withIdentifier:"moodPopupSeque",sender:AnyObject.self);
         }
         
     }

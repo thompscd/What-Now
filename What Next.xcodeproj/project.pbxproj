@@ -29,7 +29,6 @@
 		87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B42B2926A055530021C852 /* MoodPopupViewController.swift */; };
 		87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE14AA26971557006FC0C2 /* MainPageViewController.swift */; };
 		8E14511B26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */; };
-		8ED4124826AAFF72007EF869 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4124726AAFF72007EF869 /* KeyboardLayoutConstraint.swift */; };
 		8ED4126C26AB60E6007EF869 /* PupilSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +85,6 @@
 		87B42B2926A055530021C852 /* MoodPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPopupViewController.swift; sourceTree = "<group>"; };
 		87BE14AA26971557006FC0C2 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhatNextLaunchScreen.storyboard; sourceTree = "<group>"; };
-		8ED4124726AAFF72007EF869 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = ../../../../../../../Desktop/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +138,6 @@
 		87A977272690C4A300FDA013 /* What Next */ = {
 			isa = PBXGroup;
 			children = (
-				8ED4124726AAFF72007EF869 /* KeyboardLayoutConstraint.swift */,
 				8719BC2A2694CCFF00F9829C /* FMDatabase.h */,
 				8719BC2B2694CCFF00F9829C /* FMDatabase.m */,
 				8719BC2D2694CCFF00F9829C /* FMDatabaseAdditions.h */,
@@ -345,7 +342,6 @@
 				8ED4126C26AB60E6007EF869 /* PupilSettingsViewController.swift in Sources */,
 				87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */,
 				87A9772B2690C4A300FDA013 /* SceneDelegate.swift in Sources */,
-				8ED4124826AAFF72007EF869 /* KeyboardLayoutConstraint.swift in Sources */,
 				8719BC2F2694CCFF00F9829C /* FMResultSet.m in Sources */,
 				8719BC2E2694CCFF00F9829C /* FMDatabaseAdditions.m in Sources */,
 			);
