@@ -8,11 +8,15 @@
 import UIKit
 
 class ActivitySelectionViewController: UIViewController {
+    
+    var activityPageTitle:String = ""
 
+    @IBOutlet weak var dayPickActivityTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        dayPickActivityTitle?.text = activityPageTitle
     }
     
 

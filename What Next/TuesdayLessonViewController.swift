@@ -94,4 +94,12 @@ class TuesdayLessonViewController: UIViewController {
         }
     }
     
+    //transfering appropriate title to next view controller
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.destination is ActivitySelectionViewController {
+            let vc = segue.destination as? ActivitySelectionViewController
+            vc?.activityPageTitle = "Plural Possessive Apostrophes Activities!"
+        }
+    }
+    
 }

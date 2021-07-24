@@ -635,7 +635,7 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="CGF-jU-db7"/>
+                                                    <segue destination="fIG-cp-2Nk" kind="show" identifier="wednesdayToActivitySegue" id="CGF-jU-db7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -999,7 +999,7 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="r2c-mv-Jlv"/>
+                                                    <segue destination="fIG-cp-2Nk" kind="show" identifier="thursdayToActivitySegue" id="r2c-mv-Jlv"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1281,7 +1281,7 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="Ite-Ym-jJW"/>
+                                                    <segue destination="fIG-cp-2Nk" kind="show" identifier="fridayToActivitySegue" id="Ite-Ym-jJW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1644,7 +1644,7 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="jHI-ss-ztC"/>
+                                                    <segue destination="fIG-cp-2Nk" kind="show" identifier="tuesdayToActivitySegue" id="jHI-ss-ztC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1745,7 +1745,7 @@
                                     <constraint firstItem="h5Y-Nn-pwo" firstAttribute="centerX" secondItem="WKE-YY-eax" secondAttribute="centerX" id="S89-Gq-5Mr"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your activities!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyL-Hg-nTt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your activities!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyL-Hg-nTt" userLabel="dayPickActivityTitle">
                                 <rect key="frame" x="343.5" y="52" width="337" height="37"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
                                 <nil key="textColor"/>
@@ -1868,6 +1868,10 @@
                             <constraint firstItem="jym-5i-JBP" firstAttribute="bottom" secondItem="7mB-BR-V8c" secondAttribute="bottom" constant="52" id="xKK-B2-RCC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PWC-kg-ewF"/>
+                    <connections>
+                        <outlet property="dayPickActivityTitle" destination="LyL-Hg-nTt" id="Qc0-NN-cwm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOG-eR-JZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2057,7 +2061,7 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="AvM-vr-uaJ"/>
+                                                    <segue destination="fIG-cp-2Nk" kind="show" identifier="mondayToActivitySegue" id="AvM-vr-uaJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2602,8 +2606,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jHI-ss-ztC"/>
-        <segue reference="uRb-Cm-KkV"/>
+        <segue reference="AvM-vr-uaJ"/>
+        <segue reference="T8r-NW-6IA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Back Arrow" width="102" height="76"/>
