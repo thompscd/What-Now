@@ -26,6 +26,7 @@
 		E44B055A26A5D42A0055C3F2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B055326A5D42A0055C3F2 /* FMDatabase.m */; };
 		E44B055B26A5D42A0055C3F2 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B055426A5D42A0055C3F2 /* FMDatabaseAdditions.m */; };
 		E44B055D26A6E2330055C3F2 /* MondayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44B055C26A6E2320055C3F2 /* MondayLessonViewController.swift */; };
+		E44DD58626AC4F6900EBDF89 /* ActivitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DD58526AC4F6900EBDF89 /* ActivitySelectionViewController.swift */; };
 		E4AD3C3A26A9D9B2000A5C0F /* TuesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3926A9D9B2000A5C0F /* TuesdayLessonViewController.swift */; };
 		E4AD3C3C26AACC06000A5C0F /* WednesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */; };
 		E4AD3C3E26AB15DD000A5C0F /* ThursdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */; };
@@ -84,6 +85,7 @@
 		E44B055526A5D42A0055C3F2 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = ../../FMDatabase.h; sourceTree = "<group>"; };
 		E44B055626A5D42A0055C3F2 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = ../../FMResultSet.h; sourceTree = "<group>"; };
 		E44B055C26A6E2320055C3F2 /* MondayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayLessonViewController.swift; sourceTree = "<group>"; };
+		E44DD58526AC4F6900EBDF89 /* ActivitySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySelectionViewController.swift; sourceTree = "<group>"; };
 		E4AD3C3926A9D9B2000A5C0F /* TuesdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesdayLessonViewController.swift; sourceTree = "<group>"; };
 		E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayLessonViewController.swift; sourceTree = "<group>"; };
 		E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursdayLessonViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
 				87A9772C2690C4A300FDA013 /* ViewController.swift */,
 				87A9772E2690C4A300FDA013 /* Main.storyboard */,
+				E44DD58526AC4F6900EBDF89 /* ActivitySelectionViewController.swift */,
 				E4AD3C3F26AB4A27000A5C0F /* FridayLessonViewController.swift */,
 				E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */,
 				E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */,
@@ -363,6 +366,7 @@
 				87A977292690C4A300FDA013 /* AppDelegate.swift in Sources */,
 				E44B055726A5D42A0055C3F2 /* FMResultSet.m in Sources */,
 				E44B055926A5D42A0055C3F2 /* FMDatabasePool.m in Sources */,
+				E44DD58626AC4F6900EBDF89 /* ActivitySelectionViewController.swift in Sources */,
 				87A9772B2690C4A300FDA013 /* SceneDelegate.swift in Sources */,
 				E44B055A26A5D42A0055C3F2 /* FMDatabase.m in Sources */,
 				E44B055826A5D42A0055C3F2 /* FMDatabaseQueue.m in Sources */,

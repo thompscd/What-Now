@@ -634,6 +634,9 @@
                                                 <state key="normal" title="Lets move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="CGF-jU-db7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -995,6 +998,9 @@
                                                 <state key="normal" title="Lets move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="r2c-mv-Jlv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1274,6 +1280,9 @@
                                                 <state key="normal" title="Lets move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="Ite-Ym-jJW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1634,6 +1643,9 @@
                                                 <state key="normal" title="Lets move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="jHI-ss-ztC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1699,6 +1711,167 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WVU-nA-bXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3456" y="-649"/>
+        </scene>
+        <!--Activity Selection View Controller-->
+        <scene sceneID="qKi-32-Hme">
+            <objects>
+                <viewController title="Activity Selection View Controller" modalPresentationStyle="fullScreen" id="fIG-cp-2Nk" customClass="ActivitySelectionViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qM9-t0-krs">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="mnp-Wh-y73">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="WKE-YY-eax">
+                                <rect key="frame" x="52" y="139" width="920" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you've learnt about your sound, time to practice. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmw-OM-zdA">
+                                        <rect key="frame" x="0.0" y="0.0" width="920" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5Y-Nn-pwo">
+                                        <rect key="frame" x="0.0" y="60" width="920" height="60"/>
+                                        <string key="text">Firstly engage with a few activities until you feel comfortable with the sound. When you are ready, return to this page and select 'Let's Test!'. </string>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h5Y-Nn-pwo" firstAttribute="centerX" secondItem="WKE-YY-eax" secondAttribute="centerX" id="S89-Gq-5Mr"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your activities!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyL-Hg-nTt">
+                                <rect key="frame" x="343.5" y="52" width="337" height="37"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zB-eN-eKa">
+                                <rect key="frame" x="48" y="52" width="88" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="Hxe-of-zWg"/>
+                                </constraints>
+                                <state key="normal" image="Back Arrow"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i3d-HI-Xlj">
+                                <rect key="frame" x="52" y="309" width="920" height="884"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erg-Re-xNi">
+                                        <rect key="frame" x="0.0" y="0.0" width="920" height="117.5"/>
+                                        <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Speed Writing ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="36" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0N-Br-mXF">
+                                        <rect key="frame" x="0.0" y="127.5" width="920" height="118"/>
+                                        <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="Rainbow Writing">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jle-Nu-8Qt">
+                                        <rect key="frame" x="0.0" y="255.5" width="920" height="117.5"/>
+                                        <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="Join the Dots">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5E-bx-4BN">
+                                        <rect key="frame" x="0.0" y="383" width="920" height="118"/>
+                                        <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="ABC Order">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlU-Bq-HtL">
+                                        <rect key="frame" x="0.0" y="511" width="920" height="117.5"/>
+                                        <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="Backwards Words">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33r-5P-v6C">
+                                        <rect key="frame" x="0.0" y="638.5" width="920" height="118"/>
+                                        <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="Coloured Vowels">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJN-BS-ovk">
+                                        <rect key="frame" x="0.0" y="766.5" width="920" height="117.5"/>
+                                        <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <state key="normal" title="Sentence Creator">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7mB-BR-V8c">
+                                <rect key="frame" x="52" y="1243" width="920" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confortable with your sound?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2b-88-E7W">
+                                        <rect key="frame" x="0.0" y="0.0" width="686" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYg-a2-LzH">
+                                        <rect key="frame" x="691" y="0.0" width="229" height="51"/>
+                                        <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
+                                        <state key="normal" title="Lets Test!">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jym-5i-JBP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WKE-YY-eax" firstAttribute="leading" secondItem="jym-5i-JBP" secondAttribute="leading" constant="52" id="2C9-GT-JIW"/>
+                            <constraint firstItem="jym-5i-JBP" firstAttribute="trailing" secondItem="7mB-BR-V8c" secondAttribute="trailing" constant="52" id="4h1-bT-Ocn"/>
+                            <constraint firstItem="0zB-eN-eKa" firstAttribute="top" secondItem="jym-5i-JBP" secondAttribute="top" constant="52" id="5iX-mB-hSA"/>
+                            <constraint firstItem="WKE-YY-eax" firstAttribute="centerX" secondItem="qM9-t0-krs" secondAttribute="centerX" id="9ol-qy-kWI"/>
+                            <constraint firstItem="i3d-HI-Xlj" firstAttribute="leading" secondItem="jym-5i-JBP" secondAttribute="leading" constant="52" id="BqF-Yd-rdY"/>
+                            <constraint firstItem="7mB-BR-V8c" firstAttribute="centerX" secondItem="qM9-t0-krs" secondAttribute="centerX" id="CD6-et-46P"/>
+                            <constraint firstItem="LyL-Hg-nTt" firstAttribute="top" secondItem="jym-5i-JBP" secondAttribute="top" constant="52" id="Gnu-g8-mBy"/>
+                            <constraint firstItem="0zB-eN-eKa" firstAttribute="leading" secondItem="jym-5i-JBP" secondAttribute="leading" constant="48" id="Pdq-iu-Wfy"/>
+                            <constraint firstItem="i3d-HI-Xlj" firstAttribute="centerX" secondItem="qM9-t0-krs" secondAttribute="centerX" id="SYy-Gq-oVR"/>
+                            <constraint firstItem="jym-5i-JBP" firstAttribute="trailing" secondItem="i3d-HI-Xlj" secondAttribute="trailing" constant="52" id="XUY-CW-WAA"/>
+                            <constraint firstAttribute="trailing" secondItem="WKE-YY-eax" secondAttribute="trailing" constant="52" id="bpP-lL-e4t"/>
+                            <constraint firstItem="7mB-BR-V8c" firstAttribute="top" secondItem="i3d-HI-Xlj" secondAttribute="bottom" constant="50" id="dfA-0m-X9A"/>
+                            <constraint firstItem="i3d-HI-Xlj" firstAttribute="top" secondItem="WKE-YY-eax" secondAttribute="bottom" constant="50" id="eZh-AO-O3O"/>
+                            <constraint firstItem="7mB-BR-V8c" firstAttribute="leading" secondItem="jym-5i-JBP" secondAttribute="leading" constant="52" id="gGc-Bk-Lol"/>
+                            <constraint firstItem="LyL-Hg-nTt" firstAttribute="centerX" secondItem="qM9-t0-krs" secondAttribute="centerX" id="i0U-Kn-6wK"/>
+                            <constraint firstItem="WKE-YY-eax" firstAttribute="top" secondItem="LyL-Hg-nTt" secondAttribute="bottom" constant="50" id="ruw-jV-QXH"/>
+                            <constraint firstItem="jym-5i-JBP" firstAttribute="bottom" secondItem="7mB-BR-V8c" secondAttribute="bottom" constant="52" id="xKK-B2-RCC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOG-eR-JZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4212" y="-1506"/>
         </scene>
         <!--Monday Lesson View Controller-->
         <scene sceneID="97q-p0-bjc">
@@ -1883,6 +2056,9 @@
                                                 <state key="normal" title="Lets move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="fIG-cp-2Nk" kind="showDetail" id="AvM-vr-uaJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -2426,7 +2602,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cBX-l0-Gvs"/>
+        <segue reference="jHI-ss-ztC"/>
+        <segue reference="uRb-Cm-KkV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Back Arrow" width="102" height="76"/>
