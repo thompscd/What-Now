@@ -69,7 +69,7 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
         // END OF HACK CODE !!!!!!!
         /////////////////////////////////////////////////
         // return password for that teacher (if it exists)
-        let querySQL = "SELECT loginname, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(username.lowercased())';"
+        let querySQL = "SELECT loginname, suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(username.lowercased())';"
 
         let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
@@ -100,9 +100,15 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
         
         // if login ok then open TeacherViewController
         if validLoginDetails {
-            GlobalVar.loginname = username;  //save the loginname for other View Controllers to use
-            print ("about to jump to Teacher View Controller ");
-            //performSegue(withIdentifier:"moodPopupSeque",sender:AnyObject.self);
+            //save the teacher details for other View Controllers to use
+            GlobalVar.loginname = username;
+            let suffix = results?.string(forColumn:"suffix");
+            GlobalVar.suffix = suffix ?? "";
+            let lastname = results?.string(forColumn:"lastname");
+            GlobalVar.lastname = lastname ?? "";
+            
+            print ("about to segue to Teacher View Controller ");
+            performSegue(withIdentifier:"teacherViewSegue",sender:AnyObject.self);
         }
         
     }

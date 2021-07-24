@@ -29,6 +29,9 @@ struct GlobalVar {
     static let moodlevel_sad : Int = 3 ;
     // database variables
     static var whatnextDB = FMDatabase ()
+    // teacher suffix and surname
+    static var suffix : String = "";
+    static var lastname : String = "";
 }
 
 class ViewController: UIViewController {

@@ -2,19 +2,24 @@
 //  TeacherViewController.swift
 //  What Next
 //
-//  Created by Andy Thompson on 24/07/2021.
+//  Created by Chris Thompson on 24/07/2021.
 //
 
 import UIKit
 
 class TeacherViewController: UIViewController {
-
+    @IBOutlet weak var teacherNameLabel: UILabel!
+    
     var menuOut = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // add teacher name to the screen
+        let teacherName = GlobalVar.suffix+" "+GlobalVar.lastname;
+        teacherNameLabel.text = teacherName;
     }
     
     @IBOutlet weak var trailing: NSLayoutConstraint!
