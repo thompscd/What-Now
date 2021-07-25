@@ -77,11 +77,7 @@ class TeacherNotificationViewController: UIViewController {
 
         }
         
-        
-        /*
-         let insertNotificationSQL1 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'mikey','mrburn','Please attend the support meeting on Friday, 1PM in my office. Thanks.','10 July 2021 16:20', '',1);"
-
-         */
+    
     } // submitButtonPressed
     
     
