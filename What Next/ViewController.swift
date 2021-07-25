@@ -15,6 +15,7 @@ let insertTeacherSQL1 = "INSERT INTO TEACHER (loginname, suffix, firstname, last
 let insertTeacherSQL2 = "INSERT INTO TEACHER (loginname, suffix, firstname, lastname, password, email) VALUES ('msdocherty','Ms','Elaine','Docherty','sashathedog','edocherty@fraseracademy.edu');"
 let insertCommentSQL1 = "INSERT INTO COMMENTS (id,loginname, comment, date, liked, moodlevel) VALUES (null,'mrburn','Well done. Keep up the great work!','10 July 2021 16:20', 0, 1);"
 let insertCommentSQL2 = "INSERT INTO COMMENTS (id,loginname, comment, date, liked, moodlevel) VALUES (null,'mikey','I really enjoyed today!','14 July 2021 16:20', 1, 2);"
+let insertNotificationSQL1 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'mikey','mrburn','Please attend the support meeting on Friday, 1PM in my office. Thanks.','10 July 2021 16:20', '',1);"
 
 var databasePath = String()
 
@@ -60,8 +61,10 @@ class ViewController: UIViewController {
                 let sql_stmt2 = "CREATE TABLE IF NOT EXISTS TEACHER (LOGINNAME TEXT PRIMARY KEY, SUFFIX TEXT, FIRSTNAME TEXT, LASTNAME TEXT, PASSWORD TEXT, EMAIL TEXT);"
                 // create comments table
                 let sql_stmt3 = "CREATE TABLE IF NOT EXISTS COMMENTS (ID INTEGER PRIMARY KEY AUTOINCREMENT,LOGINNAME TEXT, COMMENT TEXT, DATE TEXT, LIKED INTEGER, MOODLEVEL INTEGER);"
+                // create notifications table
+                let sql_stmt4 = "CREATE TABLE IF NOT EXISTS NOTIFICATIONS (ID INTEGER PRIMARY KEY AUTOINCREMENT,PUPILLOGINNAME TEXT, TEACHERLOGINNAME TEXT, NOTIFICATION TEXT, DATESUBMITTED TEXT, DATEREAD TEXT, PRIORITY INTEGER);"
 
-
+                
                 if !(GlobalVar.whatnextDB.executeStatements(sql_stmt)) {
                     print("Error: \(GlobalVar.whatnextDB.lastErrorMessage())")
                 }
@@ -71,9 +74,14 @@ class ViewController: UIViewController {
                 if !(GlobalVar.whatnextDB.executeStatements(sql_stmt3)) {
                     print("Error: \(GlobalVar.whatnextDB.lastErrorMessage())")
                 }
-                populatePupilTable();      //DEBUG - add pupils to table
-                populateTeacherTable();    //DEBUG - add teachers to table
-                populateCommentsTable();    //DEBUG - add comments to table
+                if !(GlobalVar.whatnextDB.executeStatements(sql_stmt4)) {
+                    print("Error: \(GlobalVar.whatnextDB.lastErrorMessage())")
+                }
+                populatePupilTable();           //DEBUG - add pupils to table
+                populateTeacherTable();         //DEBUG - add teachers to table
+                populateCommentsTable();        //DEBUG - add comments to table
+                populateNotificationsTable();   //DEBUG - add comments to table
+
 
                 // DEBuG GlobalVar.whatnextDB.close();
             } else {
@@ -110,7 +118,15 @@ class ViewController: UIViewController {
             let result2 = GlobalVar.whatnextDB.executeUpdate(insertCommentSQL2,withArgumentsIn: [] )
 
         }
-    } // populatePupilTable
+    } // populateCommentsTable
+    
+    // function to populate NOTIFICATIONS table until feature added to app
+    func populateNotificationsTable () {
+        if (GlobalVar.whatnextDB.open()) {
+            print("ViewController - populating NOTIFICATIONS table with entries")
+            let result1 = GlobalVar.whatnextDB.executeUpdate(insertNotificationSQL1,withArgumentsIn: [] );
+        }
+    } // populateNotificationsTable
 }
 
 
