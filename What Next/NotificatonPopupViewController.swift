@@ -26,6 +26,29 @@ class NotificatonPopupViewController: UIViewController {
         
         print ("In NotificatonPopupViewController")
         
+        // display each unread notification
+        let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)';"
+        var results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+
+        while results?.next()==true {
+            let id = results?.int(forColumn:"id");
+            let pupilloginname : String = results?.string(forColumn:"pupilloginname") ?? "";
+            let teacherloginname : String = results?.string(forColumn:"teacherloginname") ?? "";
+            let notification : String = results?.string(forColumn:"notification") ?? "";
+            let datesubmitted : String = results?.string(forColumn:"datesubmitted") ?? "";
+            let priority : String = results?.string(forColumn:"priority") ?? "";
+            let dateread : String = results?.string(forColumn:"dateread") ?? "";
+            print ("============================================")
+            print ("id = ",id ?? 0)
+            print ("pupilloginname = ", pupilloginname)
+            print ("teacherloginname = ", teacherloginname)
+            print ("notification = ", notification)
+            print ("datesubmitted = ", datesubmitted)
+            print ("dateread = ", dateread)
+            print ("priority = ", priority)
+
+        }
+        
         // grey out the Next key and wait for Cancel button
         
     }
