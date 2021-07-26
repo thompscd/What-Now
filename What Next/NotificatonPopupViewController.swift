@@ -28,6 +28,12 @@ class NotificatonPopupViewController: UIViewController {
         
     }
     
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        print ("Next button pressed!!")
+        displayNextUnreadNotifications();
+    }
+    
+    
     // extract notifications from database for this pupil
     func extractNotifications () {
         
@@ -44,8 +50,8 @@ class NotificatonPopupViewController: UIViewController {
         print ("In displayNextUnreadNotifications")
         
         // display each unread notification
-        let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)';"
-        results = whatnextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
+        //let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)';"
+        //results = whatnextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
 
         if results.next()==true {
             let dateread : String = results.string(forColumn:"dateread") ?? "";
