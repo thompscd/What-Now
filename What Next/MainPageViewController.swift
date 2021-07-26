@@ -27,7 +27,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         // needed so that keyboard on ipad/iphone disappears on return key
         self.searchTextView.delegate = self;
         
-        openDatabase()
+        openDatabase() // open the database 
         displayComments()
     }
     
