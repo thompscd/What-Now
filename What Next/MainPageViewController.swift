@@ -29,6 +29,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         
         openDatabase() // open the database 
         displayComments()
+        displayUnreadNotificationsPopup()
         
     }
     
@@ -157,7 +158,8 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
     func displayUnreadNotificationsPopup () {
         if !GlobalVar.unreadNotificationsPopupDisplayed {
             GlobalVar.unreadNotificationsPopupDisplayed = true;
-            
+            performSegue(withIdentifier:"unreadNotificationPopup",sender:AnyObject.self);
+
         }
         
     } // displayUnreadNotificationsPopup

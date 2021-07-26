@@ -1253,11 +1253,11 @@
             <objects>
                 <viewController id="tXX-dq-X1g" userLabel="unread Notification Popup View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uud-kL-mxA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6d-x0-FjI" userLabel="popup View">
-                                <rect key="frame" x="82" y="373" width="250" height="150"/>
+                                <rect key="frame" x="82" y="346" width="250" height="150"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background blank" translatesAutoresizingMaskIntoConstraints="NO" id="unU-pk-EqU">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
@@ -1932,6 +1932,7 @@
                         <outlet property="leading" destination="qf9-hi-2qA" id="6yf-QC-idB"/>
                         <outlet property="searchTextView" destination="Q5P-e0-gnp" id="Ykw-F9-qSG"/>
                         <outlet property="trailing" destination="ZfZ-LQ-0lg" id="9Hk-db-VYE"/>
+                        <segue destination="tXX-dq-X1g" kind="presentation" identifier="unreadNotificationPopup" id="SB6-V2-R3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5n-Jb-VP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2017,7 +2018,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="eNL-6C-WtO"/>
         <segue reference="7vb-Rl-Rau"/>
-        <segue reference="51w-uF-QVN"/>
+        <segue reference="tU5-oA-RNn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Back Arrow" width="102" height="76"/>
