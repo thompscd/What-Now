@@ -54,7 +54,19 @@ class NotificatonPopupViewController: UIViewController {
                 print ("dateread = ", dateread)
                 print ("priority = ", priority)
                 //DEBUG
-                fromLabel.text=teacherloginname;
+                
+                // format the teacher name
+                let querySQL = "SELECT loginname, suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(teacherloginname.lowercased())';"
+                let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+                var fullTeacherName : String = "";
+                if results?.next()==true {
+                    let suffix : String = results?.string(forColumn:"suffix") ?? "";
+                    let lastname : String = results?.string(forColumn:"lastname") ?? "";
+                    fullTeacherName =  suffix + " " + lastname;
+                }
+                
+                // updates the details on the popup
+                fromLabel.text=fullTeacherName;
                 dateSubmitted.text=submitted;
                 notificationTextField.text = notification;
             }
