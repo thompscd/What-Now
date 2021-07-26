@@ -1437,31 +1437,106 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="X4E-Pr-OVa" userLabel="From Stack View">
+                                        <rect key="frame" x="30" y="73" width="240" height="26.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bn-62-GYw">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mr Burn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6du-xo-aYw">
+                                                <rect key="frame" x="164" y="0.0" width="76" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TP2-Tw-0fQ" userLabel="Date Stack View">
+                                        <rect key="frame" x="30" y="99.5" width="240" height="26.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbv-0O-mL5" userLabel="Date label">
+                                                <rect key="frame" x="0.0" y="0.0" width="72" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="21st March 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDh-Gx-abW" userLabel="Date">
+                                                <rect key="frame" x="82" y="0.0" width="158" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-AQ-NZ6" userLabel="Notification Text Field">
+                                        <rect key="frame" x="30" y="156" width="240" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="19Y-8Y-mTe">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="P7F-r7-yP2" secondAttribute="bottom" constant="20" id="1tn-1f-bj9"/>
                                     <constraint firstItem="TdB-zy-ny3" firstAttribute="leading" secondItem="Hpy-Tm-tef" secondAttribute="leading" id="97G-JD-qim"/>
                                     <constraint firstAttribute="trailing" secondItem="TdB-zy-ny3" secondAttribute="trailing" id="9e3-e3-4LN"/>
+                                    <constraint firstItem="X4E-Pr-OVa" firstAttribute="leading" secondItem="Hpy-Tm-tef" secondAttribute="leading" constant="30" id="GAB-Cc-yiK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="H4E-Wh-laW">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
+                                    </constraint>
+                                    <constraint firstItem="X4E-Pr-OVa" firstAttribute="top" secondItem="K8H-3M-dLH" secondAttribute="bottom" constant="10" id="HeQ-Ue-V4m"/>
                                     <constraint firstItem="K8H-3M-dLH" firstAttribute="centerX" secondItem="Hpy-Tm-tef" secondAttribute="centerX" id="ITj-nM-JW8"/>
                                     <constraint firstItem="TdB-zy-ny3" firstAttribute="top" secondItem="Hpy-Tm-tef" secondAttribute="top" id="JsL-sY-mkf"/>
+                                    <constraint firstItem="TP2-Tw-0fQ" firstAttribute="leading" secondItem="Hpy-Tm-tef" secondAttribute="leading" constant="30" id="OTs-hL-F9P"/>
+                                    <constraint firstAttribute="trailing" secondItem="NIg-AQ-NZ6" secondAttribute="trailing" constant="30" id="Om3-Is-ezx"/>
+                                    <constraint firstItem="TP2-Tw-0fQ" firstAttribute="centerX" secondItem="Hpy-Tm-tef" secondAttribute="centerX" id="RiK-Lx-k7h"/>
+                                    <constraint firstAttribute="width" constant="300" id="YBH-Iq-fdI">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="TP2-Tw-0fQ" secondAttribute="trailing" constant="30" id="cTF-37-JmI"/>
+                                    <constraint firstItem="NIg-AQ-NZ6" firstAttribute="leading" secondItem="Hpy-Tm-tef" secondAttribute="leading" constant="30" id="dop-tb-Xxn"/>
                                     <constraint firstItem="K8H-3M-dLH" firstAttribute="top" secondItem="Hpy-Tm-tef" secondAttribute="top" constant="30" id="gFQ-mC-gGd"/>
+                                    <constraint firstItem="NIg-AQ-NZ6" firstAttribute="top" secondItem="TP2-Tw-0fQ" secondAttribute="bottom" constant="30" id="gMK-Id-3mn"/>
+                                    <constraint firstAttribute="trailing" secondItem="X4E-Pr-OVa" secondAttribute="trailing" constant="30" id="igm-H0-gaY"/>
                                     <constraint firstAttribute="height" constant="400" id="pIC-Ts-KKn">
                                         <variation key="heightClass=regular-widthClass=regular" constant="700"/>
                                     </constraint>
                                     <constraint firstItem="P7F-r7-yP2" firstAttribute="centerX" secondItem="Hpy-Tm-tef" secondAttribute="centerX" id="tXo-nC-4uP"/>
-                                    <constraint firstAttribute="width" constant="300" id="w3u-ly-wcB">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
-                                    </constraint>
+                                    <constraint firstItem="X4E-Pr-OVa" firstAttribute="centerX" secondItem="Hpy-Tm-tef" secondAttribute="centerX" id="vlu-jj-gPl"/>
+                                    <constraint firstItem="TP2-Tw-0fQ" firstAttribute="top" secondItem="X4E-Pr-OVa" secondAttribute="bottom" id="woD-Oi-4bh"/>
                                     <constraint firstAttribute="bottom" secondItem="TdB-zy-ny3" secondAttribute="bottom" id="zPL-yI-9FF"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="H4E-Wh-laW"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yG4-X0-Fy9"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Hpy-Tm-tef" firstAttribute="centerY" secondItem="ExB-rI-GVF" secondAttribute="centerY" id="OUs-ev-oBA"/>
                             <constraint firstItem="Hpy-Tm-tef" firstAttribute="centerX" secondItem="ExB-rI-GVF" secondAttribute="centerX" id="T3Y-vN-24S"/>
-                            <constraint firstItem="Hpy-Tm-tef" firstAttribute="centerY" secondItem="ExB-rI-GVF" secondAttribute="centerY" id="p0X-yR-f6o"/>
                         </constraints>
                     </view>
                 </viewController>
