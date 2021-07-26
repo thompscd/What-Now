@@ -17,7 +17,8 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
     @IBOutlet weak var searchTextView: UISearchBar!
     
     var menuOut = false;
-    
+    var whatnextDB = FMDatabase()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +27,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         // needed so that keyboard on ipad/iphone disappears on return key
         self.searchTextView.delegate = self;
         
+        openDatabase()
         displayComments()
     }
     
@@ -57,8 +59,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         
     }
     
-    // extract comments from the database and display in the textField
-    func displayComments () {
+    func openDatabase () {
 
         //////////////////////////////////////////
         // THIS IS A HACK. THIS IS CODE COPIED FROM ViewController.swift. NEED TO CHANGE SO THAT THE whatnextDB variable is passed between controllers !!!!!
@@ -67,7 +68,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         let dirPaths = filemgr.urls(for: .documentDirectory,
                        in: .userDomainMask)
         databasePath = dirPaths[0].appendingPathComponent("whatnext.db").path
-        let whatnextDB = FMDatabase(path: databasePath as String)
+        whatnextDB = FMDatabase(path: databasePath as String)
         if whatnextDB == nil {
             print("Error PupilLoginViewController: whatnextDB is nil, \(whatnextDB.lastErrorMessage())")
         } else {
@@ -80,6 +81,11 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         }
         // END OF HACK CODE !!!!!!!
         /////////////////////////////////////////////////
+        
+    } // openDatabase
+    
+    // extract comments from the database and display in the textField
+    func displayComments () {
         
         // sql query to extract all the comments
         let querySQL = "SELECT loginname, comment, date, moodlevel FROM COMMENTS;"
