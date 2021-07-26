@@ -16,6 +16,7 @@ class NotificatonPopupViewController: UIViewController {
     @IBOutlet weak var notificationTextField: UITextField!
     
     var results = FMResultSet();  //holds notifications extracted from database
+    var debug_noMoreNotifications : Bool = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,9 @@ class NotificatonPopupViewController: UIViewController {
     
     @IBAction func nextButtonPressed(_ sender: Any) {
         print ("Next button pressed!!")
-        displayNextUnreadNotifications();
+        if !debug_noMoreNotifications {
+            displayNextUnreadNotifications();
+        }
     }
     
     
@@ -80,11 +83,12 @@ class NotificatonPopupViewController: UIViewController {
                 notificationTextField.text = notification;
             }
 
+        } else {
+            debug_noMoreNotifications = true;
+            // grey out the Next key and wait for Cancel button
         }
         
-        // grey out the Next key and wait for Cancel button
-        
-    }
+    } // displayNextUnreadNotifications
     
     func openDatabase () {
         //////////////////////////////////////////
