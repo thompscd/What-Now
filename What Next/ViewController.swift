@@ -33,6 +33,8 @@ struct GlobalVar {
     // teacher suffix and surname
     static var suffix : String = "";
     static var lastname : String = "";
+    // flag indicating if unreadNotifictionsPopup has been displayed
+    static var unreadNotificationsPopupDisplayed : Bool = false;
 }
 
 class ViewController: UIViewController {

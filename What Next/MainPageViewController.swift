@@ -29,6 +29,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         
         openDatabase() // open the database 
         displayComments()
+        
     }
     
     // needed so that keyboard on ipad/iphone disappears on return key
@@ -150,7 +151,16 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
             }
 
         }
-    }
+    }  // displayComments
+    
+    // extract comments from the database and display in the textField
+    func displayUnreadNotificationsPopup () {
+        if !GlobalVar.unreadNotificationsPopupDisplayed {
+            GlobalVar.unreadNotificationsPopupDisplayed = true;
+            
+        }
+        
+    } // displayUnreadNotificationsPopup
     
     /*
     // MARK: - Navigation
