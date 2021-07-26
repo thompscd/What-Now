@@ -1539,6 +1539,11 @@
                             <constraint firstItem="Hpy-Tm-tef" firstAttribute="centerX" secondItem="ExB-rI-GVF" secondAttribute="centerX" id="T3Y-vN-24S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateSubmitted" destination="XDh-Gx-abW" id="ugE-UR-Hlx"/>
+                        <outlet property="fromLabel" destination="6du-xo-aYw" id="SzC-2V-XHA"/>
+                        <outlet property="notificationTextField" destination="NIg-AQ-NZ6" id="nXk-mc-SBE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8v-FH-3LH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

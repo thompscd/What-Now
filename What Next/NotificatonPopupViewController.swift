@@ -11,6 +11,10 @@ class NotificatonPopupViewController: UIViewController {
 
     var whatnextDB = FMDatabase()
     
+    @IBOutlet weak var fromLabel: UILabel!
+    @IBOutlet weak var dateSubmitted: UILabel!
+    @IBOutlet weak var notificationTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,21 +35,29 @@ class NotificatonPopupViewController: UIViewController {
         var results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
 
         while results?.next()==true {
-            let id = results?.int(forColumn:"id");
-            let pupilloginname : String = results?.string(forColumn:"pupilloginname") ?? "";
-            let teacherloginname : String = results?.string(forColumn:"teacherloginname") ?? "";
-            let notification : String = results?.string(forColumn:"notification") ?? "";
-            let datesubmitted : String = results?.string(forColumn:"datesubmitted") ?? "";
-            let priority : String = results?.string(forColumn:"priority") ?? "";
             let dateread : String = results?.string(forColumn:"dateread") ?? "";
-            print ("============================================")
-            print ("id = ",id ?? 0)
-            print ("pupilloginname = ", pupilloginname)
-            print ("teacherloginname = ", teacherloginname)
-            print ("notification = ", notification)
-            print ("datesubmitted = ", datesubmitted)
-            print ("dateread = ", dateread)
-            print ("priority = ", priority)
+            if dateread == "" {
+                // notification is unread therefore display details
+                let id = results?.int(forColumn:"id");
+                let pupilloginname : String = results?.string(forColumn:"pupilloginname") ?? "";
+                let teacherloginname : String = results?.string(forColumn:"teacherloginname") ?? "";
+                let notification : String = results?.string(forColumn:"notification") ?? "";
+                let submitted : String = results?.string(forColumn:"datesubmitted") ?? "";
+                let priority : String = results?.string(forColumn:"priority") ?? "";
+                //DEBUG
+                print ("============================================")
+                print ("id = ",id ?? 0)
+                print ("pupilloginname = ", pupilloginname)
+                print ("teacherloginname = ", teacherloginname)
+                print ("notification = ", notification)
+                print ("submitted = ", submitted)
+                print ("dateread = ", dateread)
+                print ("priority = ", priority)
+                //DEBUG
+                fromLabel.text=teacherloginname;
+                dateSubmitted.text=submitted;
+                notificationTextField.text = notification;
+            }
 
         }
         
