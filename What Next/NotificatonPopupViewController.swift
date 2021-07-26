@@ -15,45 +15,48 @@ class NotificatonPopupViewController: UIViewController {
     @IBOutlet weak var dateSubmitted: UILabel!
     @IBOutlet weak var notificationTextField: UITextField!
     
+    var results = FMResultSet();  //holds notifications extracted from database
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
 
         openDatabase()
-        displayUnreadNotifications()
+        extractNotifications()
+        displayNextUnreadNotifications()
         
     }
     
-    // scroll through each unread nofitication and display the details
-    func displayUnreadNotifications () {
+    // extract notifications from database for this pupil
+    func extractNotifications () {
         
-        print ("In NotificatonPopupViewController")
+        print ("In extractNotifications")
+        
+        let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)';"
+        results = whatnextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
+        
+    } // extractNotifications
+    
+    // scroll through each unread nofitication and display the details
+    func displayNextUnreadNotifications () {
+        
+        print ("In displayNextUnreadNotifications")
         
         // display each unread notification
         let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)';"
-        var results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        results = whatnextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
 
-        while results?.next()==true {
-            let dateread : String = results?.string(forColumn:"dateread") ?? "";
+        if results.next()==true {
+            let dateread : String = results.string(forColumn:"dateread") ?? "";
             if dateread == "" {
                 // notification is unread therefore display details
-                let id = results?.int(forColumn:"id");
-                let pupilloginname : String = results?.string(forColumn:"pupilloginname") ?? "";
-                let teacherloginname : String = results?.string(forColumn:"teacherloginname") ?? "";
-                let notification : String = results?.string(forColumn:"notification") ?? "";
-                let submitted : String = results?.string(forColumn:"datesubmitted") ?? "";
-                let priority : String = results?.string(forColumn:"priority") ?? "";
-                //DEBUG
-                print ("============================================")
-                print ("id = ",id ?? 0)
-                print ("pupilloginname = ", pupilloginname)
-                print ("teacherloginname = ", teacherloginname)
-                print ("notification = ", notification)
-                print ("submitted = ", submitted)
-                print ("dateread = ", dateread)
-                print ("priority = ", priority)
-                //DEBUG
+                let id = results.int(forColumn:"id");
+                let pupilloginname : String = results.string(forColumn:"pupilloginname") ?? "";
+                let teacherloginname : String = results.string(forColumn:"teacherloginname") ?? "";
+                let notification : String = results.string(forColumn:"notification") ?? "";
+                let submitted : String = results.string(forColumn:"datesubmitted") ?? "";
+                let priority : String = results.string(forColumn:"priority") ?? "";
                 
                 // format the teacher name
                 let querySQL = "SELECT loginname, suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(teacherloginname.lowercased())';"
