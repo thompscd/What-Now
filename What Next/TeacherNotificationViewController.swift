@@ -67,8 +67,7 @@ class TeacherNotificationViewController: UIViewController {
             let df = DateFormatter()
             df.dateFormat = "yyyy-MM-dd hh:mm:ss"
             let dateTime = df.string(from: Date())
-            let insertNotificationSQL = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'\(pupilUserName )','\(GlobalVar.loginname)','\(notification)','\(dateTime)', '',1);"
-
+            let insertNotificationSQL = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'\(pupilUserName.lowercased() )','\(GlobalVar.loginname)','\(notification)','\(dateTime)', '',1);"
             let results = whatnextDB.executeUpdate(insertNotificationSQL, withArgumentsIn:[]);
             
             // return to teacher home screen

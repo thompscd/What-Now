@@ -154,12 +154,22 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         }
     }  // displayComments
     
-    // extract comments from the database and display in the textField
+    // display popup if there are any unread notifications
     func displayUnreadNotificationsPopup () {
+        var unreadNotificationCount : Int = 0;
         if !GlobalVar.unreadNotificationsPopupDisplayed {
             GlobalVar.unreadNotificationsPopupDisplayed = true;
-            performSegue(withIdentifier:"unreadNotificationPopup",sender:AnyObject.self);
+            // check if any unread notifications
+            let querySQL = "SELECT dateread FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)';"
+            var results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
 
+            while results?.next()==true {
+                unreadNotificationCount += 1;
+            }
+            print ("unreadNotificationCount = ",unreadNotificationCount)
+            if unreadNotificationCount > 0 {
+                performSegue(withIdentifier:"unreadNotificationPopup",sender:AnyObject.self);
+            }
         }
         
     } // displayUnreadNotificationsPopup
