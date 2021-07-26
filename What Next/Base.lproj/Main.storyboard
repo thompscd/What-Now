@@ -1248,6 +1248,44 @@
             </objects>
             <point key="canvasLocation" x="744.92753623188412" y="1410.9375"/>
         </scene>
+        <!--unread Notification Popup View Controller-->
+        <scene sceneID="3sp-LM-rd9">
+            <objects>
+                <viewController id="tXX-dq-X1g" userLabel="unread Notification Popup View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uud-kL-mxA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6d-x0-FjI" userLabel="popup View">
+                                <rect key="frame" x="82" y="373" width="250" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background blank" translatesAutoresizingMaskIntoConstraints="NO" id="unU-pk-EqU">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="unU-pk-EqU" secondAttribute="trailing" id="HTf-v9-lg0"/>
+                                    <constraint firstItem="unU-pk-EqU" firstAttribute="leading" secondItem="g6d-x0-FjI" secondAttribute="leading" id="HTj-v2-vPk"/>
+                                    <constraint firstAttribute="height" constant="150" id="KWA-ZI-qSv"/>
+                                    <constraint firstAttribute="width" constant="250" id="Oxc-Uz-ueZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="unU-pk-EqU" secondAttribute="bottom" id="XOJ-Gu-uVz"/>
+                                    <constraint firstItem="unU-pk-EqU" firstAttribute="top" secondItem="g6d-x0-FjI" secondAttribute="top" id="ceu-yy-hYf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QB6-NR-81N"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g6d-x0-FjI" firstAttribute="centerY" secondItem="uud-kL-mxA" secondAttribute="centerY" id="Ow2-cF-F6G"/>
+                            <constraint firstItem="g6d-x0-FjI" firstAttribute="centerX" secondItem="uud-kL-mxA" secondAttribute="centerX" id="gdL-In-NFA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4f-GB-jlN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="1432"/>
+        </scene>
         <!--MoodViewController-->
         <scene sceneID="dnt-Ej-ssm">
             <objects>
