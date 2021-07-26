@@ -42,6 +42,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        GlobalVar.unreadNotificationsPopupDisplayed = false; // ensure popup displayed since new login
+
         // Create new or open existing SQLite database
         let filemgr = FileManager.default
         let dirPaths = filemgr.urls(for: .documentDirectory,
