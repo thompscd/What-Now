@@ -15,6 +15,8 @@ class NotificatonPopupViewController: UIViewController {
     @IBOutlet weak var dateSubmitted: UILabel!
     @IBOutlet weak var notificationTextField: UITextField!
     
+    @IBOutlet weak var notificationTextView: UITextView!
+    
     var results = FMResultSet();  //holds notifications extracted from database
     var debug_noMoreNotifications : Bool = false;
     
@@ -81,6 +83,8 @@ class NotificatonPopupViewController: UIViewController {
                 fromLabel.text=fullTeacherName;
                 dateSubmitted.text=submitted;
                 notificationTextField.text = notification;
+                notificationTextView.text = notification;
+
             }
 
         } else {
