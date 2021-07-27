@@ -17,9 +17,12 @@ class NotificatonPopupViewController: UIViewController {
     
     @IBOutlet weak var notificationTextView: UITextView!
     
+    @IBOutlet weak var nextButton: UIButton!
+    
+    
+    
     
     var results = FMResultSet();  //holds notifications extracted from database
-    var debug_noMoreNotifications : Bool = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +36,7 @@ class NotificatonPopupViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
-        print ("Next button pressed!!")
-        print ("debug_noMoreNotifications = ",debug_noMoreNotifications)
-        if !debug_noMoreNotifications {
-            displayNextUnreadNotifications();
-        }
+        displayNextUnreadNotifications();
     }
     
     
@@ -100,8 +99,10 @@ class NotificatonPopupViewController: UIViewController {
             }
 
         } else {
-            debug_noMoreNotifications = true;
-            // grey out the Next key and wait for Cancel button
+            // grey out and disable the Next key
+            nextButton.isEnabled = false
+            nextButton.setTitleColor(UIColor.gray, for: .disabled)
+
         }
         
     } // displayNextUnreadNotifications
