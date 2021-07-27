@@ -1484,23 +1484,21 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-AQ-NZ6" userLabel="Notification Text Field">
-                                        <rect key="frame" x="30" y="197" width="440" height="300"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K63-ce-rBF">
+                                        <rect key="frame" x="50" y="219" width="400" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="19Y-8Y-mTe">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="300"/>
-                                            </constraint>
+                                            <constraint firstAttribute="height" constant="300" id="cT4-MA-Fdr"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        </variation>
-                                    </textField>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="P7F-r7-yP2" secondAttribute="bottom" constant="20" id="1tn-1f-bj9"/>
+                                    <constraint firstItem="K63-ce-rBF" firstAttribute="top" secondItem="TP2-Tw-0fQ" secondAttribute="bottom" constant="52" id="95A-eZ-KlF"/>
                                     <constraint firstItem="TdB-zy-ny3" firstAttribute="leading" secondItem="Hpy-Tm-tef" secondAttribute="leading" id="97G-JD-qim"/>
                                     <constraint firstAttribute="trailing" secondItem="TdB-zy-ny3" secondAttribute="trailing" id="9e3-e3-4LN"/>
                                     <constraint firstItem="X4E-Pr-OVa" firstAttribute="leading" secondItem="Hpy-Tm-tef" secondAttribute="leading" constant="30" id="GAB-Cc-yiK"/>
@@ -1511,19 +1509,19 @@
                                     <constraint firstItem="K8H-3M-dLH" firstAttribute="centerX" secondItem="Hpy-Tm-tef" secondAttribute="centerX" id="ITj-nM-JW8"/>
                                     <constraint firstItem="TdB-zy-ny3" firstAttribute="top" secondItem="Hpy-Tm-tef" secondAttribute="top" id="JsL-sY-mkf"/>
                                     <constraint firstItem="TP2-Tw-0fQ" firstAttribute="leading" secondItem="Hpy-Tm-tef" secondAttribute="leading" constant="30" id="OTs-hL-F9P"/>
-                                    <constraint firstAttribute="trailing" secondItem="NIg-AQ-NZ6" secondAttribute="trailing" constant="30" id="Om3-Is-ezx"/>
                                     <constraint firstItem="TP2-Tw-0fQ" firstAttribute="centerX" secondItem="Hpy-Tm-tef" secondAttribute="centerX" id="RiK-Lx-k7h"/>
+                                    <constraint firstAttribute="trailing" secondItem="K63-ce-rBF" secondAttribute="trailing" constant="50" id="VPK-Tg-CDa"/>
                                     <constraint firstAttribute="width" constant="300" id="YBH-Iq-fdI">
                                         <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                                     </constraint>
                                     <constraint firstAttribute="trailing" secondItem="TP2-Tw-0fQ" secondAttribute="trailing" constant="30" id="cTF-37-JmI"/>
-                                    <constraint firstItem="NIg-AQ-NZ6" firstAttribute="leading" secondItem="Hpy-Tm-tef" secondAttribute="leading" constant="30" id="dop-tb-Xxn"/>
                                     <constraint firstItem="K8H-3M-dLH" firstAttribute="top" secondItem="Hpy-Tm-tef" secondAttribute="top" constant="30" id="gFQ-mC-gGd"/>
-                                    <constraint firstItem="NIg-AQ-NZ6" firstAttribute="top" secondItem="TP2-Tw-0fQ" secondAttribute="bottom" constant="30" id="gMK-Id-3mn"/>
                                     <constraint firstAttribute="trailing" secondItem="X4E-Pr-OVa" secondAttribute="trailing" constant="30" id="igm-H0-gaY"/>
+                                    <constraint firstItem="K63-ce-rBF" firstAttribute="leading" secondItem="Hpy-Tm-tef" secondAttribute="leading" constant="50" id="kyr-8R-fcq"/>
                                     <constraint firstAttribute="height" constant="400" id="pIC-Ts-KKn">
                                         <variation key="heightClass=regular-widthClass=regular" constant="700"/>
                                     </constraint>
+                                    <constraint firstItem="K63-ce-rBF" firstAttribute="centerX" secondItem="Hpy-Tm-tef" secondAttribute="centerX" id="pfE-0T-5Hx"/>
                                     <constraint firstItem="P7F-r7-yP2" firstAttribute="centerX" secondItem="Hpy-Tm-tef" secondAttribute="centerX" id="tXo-nC-4uP"/>
                                     <constraint firstItem="X4E-Pr-OVa" firstAttribute="centerX" secondItem="Hpy-Tm-tef" secondAttribute="centerX" id="vlu-jj-gPl"/>
                                     <constraint firstItem="TP2-Tw-0fQ" firstAttribute="top" secondItem="X4E-Pr-OVa" secondAttribute="bottom" id="woD-Oi-4bh"/>
@@ -1546,7 +1544,7 @@
                     <connections>
                         <outlet property="dateSubmitted" destination="XDh-Gx-abW" id="ugE-UR-Hlx"/>
                         <outlet property="fromLabel" destination="6du-xo-aYw" id="SzC-2V-XHA"/>
-                        <outlet property="notificationTextField" destination="NIg-AQ-NZ6" id="nXk-mc-SBE"/>
+                        <outlet property="notificationTextView" destination="K63-ce-rBF" id="sf9-eY-ZtP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8v-FH-3LH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

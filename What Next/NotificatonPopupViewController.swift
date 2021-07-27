@@ -13,7 +13,10 @@ class NotificatonPopupViewController: UIViewController {
     
     @IBOutlet weak var fromLabel: UILabel!
     @IBOutlet weak var dateSubmitted: UILabel!
-    @IBOutlet weak var notificationTextField: UITextField!
+    @IBOutlet weak var notificationTextField: UITextField! //old. Ignore
+    
+    @IBOutlet weak var notificationTextView: UITextView!
+    
     
     var results = FMResultSet();  //holds notifications extracted from database
     var debug_noMoreNotifications : Bool = false;
@@ -31,6 +34,7 @@ class NotificatonPopupViewController: UIViewController {
     
     @IBAction func nextButtonPressed(_ sender: Any) {
         print ("Next button pressed!!")
+        print ("debug_noMoreNotifications = ",debug_noMoreNotifications)
         if !debug_noMoreNotifications {
             displayNextUnreadNotifications();
         }
@@ -67,6 +71,18 @@ class NotificatonPopupViewController: UIViewController {
                 let submitted : String = results.string(forColumn:"datesubmitted") ?? "";
                 let priority : String = results.string(forColumn:"priority") ?? "";
                 
+                
+                // DEBUG //
+                print ("====================")
+                print ("id = ",id);
+                print ("pupilloginname = ",pupilloginname);
+                print ("teacherloginname = ",teacherloginname);
+                print ("notification = ",notification);
+                print ("submitted = ",submitted);
+                print ("priority = ",priority);
+                // DEBUG //
+                
+                
                 // format the teacher name
                 let querySQL = "SELECT loginname, suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(teacherloginname.lowercased())';"
                 let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
@@ -80,7 +96,7 @@ class NotificatonPopupViewController: UIViewController {
                 // updates the details on the popup
                 fromLabel.text=fullTeacherName;
                 dateSubmitted.text=submitted;
-                notificationTextField.text = notification;
+                notificationTextView.text = notification;
             }
 
         } else {
