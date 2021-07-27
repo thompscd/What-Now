@@ -14,13 +14,8 @@ class NotificatonPopupViewController: UIViewController {
     @IBOutlet weak var fromLabel: UILabel!
     @IBOutlet weak var dateSubmitted: UILabel!
     @IBOutlet weak var notificationTextField: UITextField! //old. Ignore
-    
     @IBOutlet weak var notificationTextView: UITextView!
-    
     @IBOutlet weak var nextButton: UIButton!
-    
-    
-    
     
     var results = FMResultSet();  //holds notifications extracted from database
     
@@ -50,15 +45,9 @@ class NotificatonPopupViewController: UIViewController {
         
     } // extractNotifications
     
-    // scroll through each unread nofitication and display the details
+    // display next unread nofitication
     func displayNextUnreadNotifications () {
         
-        print ("In displayNextUnreadNotifications")
-        
-        // display each unread notification
-        //let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)';"
-        //results = whatnextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
-
         if results.next()==true {
             let dateread : String = results.string(forColumn:"dateread") ?? "";
             if dateread == "" {
@@ -69,17 +58,6 @@ class NotificatonPopupViewController: UIViewController {
                 let notification : String = results.string(forColumn:"notification") ?? "";
                 let submitted : String = results.string(forColumn:"datesubmitted") ?? "";
                 let priority : String = results.string(forColumn:"priority") ?? "";
-                
-                
-                // DEBUG //
-                print ("====================")
-                print ("id = ",id);
-                print ("pupilloginname = ",pupilloginname);
-                print ("teacherloginname = ",teacherloginname);
-                print ("notification = ",notification);
-                print ("submitted = ",submitted);
-                print ("priority = ",priority);
-                // DEBUG //
                 
                 
                 // format the teacher name
