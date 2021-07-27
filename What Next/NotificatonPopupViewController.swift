@@ -74,6 +74,15 @@ class NotificatonPopupViewController: UIViewController {
                 fromLabel.text=fullTeacherName;
                 dateSubmitted.text=submitted;
                 notificationTextView.text = notification;
+                
+                // mark notification as read by setting the dateRead field
+                print ("about to clear notification")
+                let df = DateFormatter()
+                df.dateFormat = "dd-MM-yyyy hh:mm"
+                let dateTime = df.string(from: Date())
+                let updateNotificationSQL = "UPDATE NOTIFICATIONS SET dateread = '\(dateTime)' WHERE id = \(id);"
+                print (updateNotificationSQL)
+                let results2:FMResultSet? = whatnextDB.executeQuery(updateNotificationSQL, withArgumentsIn:[]);
             }
 
         } else {
