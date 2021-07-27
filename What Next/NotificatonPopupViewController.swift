@@ -16,6 +16,8 @@ class NotificatonPopupViewController: UIViewController {
     @IBOutlet weak var notificationTextField: UITextField! //old. Ignore
     @IBOutlet weak var notificationTextView: UITextView!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var notificationLabel: UILabel!
+    
     
     var results = FMResultSet();  //holds notifications extracted from database
     
@@ -57,7 +59,7 @@ class NotificatonPopupViewController: UIViewController {
                 let teacherloginname : String = results.string(forColumn:"teacherloginname") ?? "";
                 let notification : String = results.string(forColumn:"notification") ?? "";
                 let submitted : String = results.string(forColumn:"datesubmitted") ?? "";
-                let priority : String = results.string(forColumn:"priority") ?? "";
+                let priority : Int = Int(results.int(forColumn:"priority")) ;
                 
                 
                 // format the teacher name
@@ -69,6 +71,27 @@ class NotificatonPopupViewController: UIViewController {
                     let lastname : String = results?.string(forColumn:"lastname") ?? "";
                     fullTeacherName =  suffix + " " + lastname;
                 }
+                
+                // format priority
+                print ("about to update priority to ",priority)
+                switch priority {
+                    case GlobalVar.notificationPriorityLow : do {
+                        notificationLabel.text = "Low"
+                        notificationLabel.textColor = UIColor.black;
+                    }
+                    case GlobalVar.notificationPriorityNormal : do {
+                        notificationLabel.text = "Normal"
+                        notificationLabel.textColor = UIColor.black;
+                    }
+                    case GlobalVar.notificationPriorityUrgent : do {
+                        notificationLabel.text = "Urgent"
+                        notificationLabel.textColor = UIColor.red;
+                    }
+                    default : do {
+                        notificationLabel.text = "Unknown"
+                        notificationLabel.textColor = UIColor.black;
+                    }
+                } // end switch
                 
                 // updates the details on the popup
                 fromLabel.text=fullTeacherName;

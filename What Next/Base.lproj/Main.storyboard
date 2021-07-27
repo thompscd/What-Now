@@ -1566,6 +1566,7 @@
                         <outlet property="dateSubmitted" destination="XDh-Gx-abW" id="ugE-UR-Hlx"/>
                         <outlet property="fromLabel" destination="6du-xo-aYw" id="SzC-2V-XHA"/>
                         <outlet property="nextButton" destination="BpO-Vc-Rau" id="cbT-rM-UiK"/>
+                        <outlet property="notificationLabel" destination="hHG-1z-JSs" id="E9e-pY-4ks"/>
                         <outlet property="notificationTextView" destination="K63-ce-rBF" id="sf9-eY-ZtP"/>
                     </connections>
                 </viewController>

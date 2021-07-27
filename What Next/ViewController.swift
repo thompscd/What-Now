@@ -16,8 +16,8 @@ let insertTeacherSQL2 = "INSERT INTO TEACHER (loginname, suffix, firstname, last
 let insertCommentSQL1 = "INSERT INTO COMMENTS (id,loginname, comment, date, liked, moodlevel) VALUES (null,'mrburn','Well done. Keep up the great work!','10 July 2021 16:20', 0, 1);"
 let insertCommentSQL2 = "INSERT INTO COMMENTS (id,loginname, comment, date, liked, moodlevel) VALUES (null,'mikey','I really enjoyed today!','14 July 2021 16:20', 1, 2);"
 let insertNotificationSQL1 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'mikey','mrburn','Please attend the support meeting on Friday, 1PM in my office. Thanks.','10 July 2021 16:20', '',1);"
-let insertNotificationSQL2 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'mikey','mrburn','Lets get together to discuss homework objectives for this week. Any time Friday is good for me. Thanks.','21 July 2021 16:20', '',1);"
-let insertNotificationSQL3 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'sasha','mrburn','Lets get together to discuss homework objectives for this week. Any time Friday is good for me. Thanks.','22 July 2021 16:20', '',1);"
+let insertNotificationSQL2 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'mikey','mrburn','Lets get together to discuss homework objectives for this week. Any time Friday is good for me. Thanks.','21 July 2021 16:20', '',0);"
+let insertNotificationSQL3 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'sasha','mrburn','Lets get together to discuss homework objectives for this week. Any time Friday is good for me. Thanks.','22 July 2021 16:20', '',2);"
 
 var databasePath = String()
 
@@ -32,7 +32,7 @@ struct GlobalVar {
     static let moodlevel_sad : Int = 3 ;
     
     // notification priority
-    static let notificationPriorityHigh : Int = 0 ;
+    static let notificationPriorityUrgent : Int = 0 ;
     static let notificationPriorityNormal : Int = 1 ;
     static let notificationPriorityLow : Int = 2 ;
 
