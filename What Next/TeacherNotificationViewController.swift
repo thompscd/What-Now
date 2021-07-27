@@ -32,12 +32,31 @@ class TeacherNotificationViewController: UIViewController {
         priortyLevelBtns.forEach { (levelBtn) in
             levelBtn.isHidden = true;
         }
-    }
+    } // hidePriorityPulldown
+    
     @IBAction func priorityBtnPressed(_ sender: UIButton) {
-    }
+        priortyLevelBtns.forEach { (levelBtn) in
+            UIView.animate(withDuration: 0.2, animations: {
+                levelBtn.isHidden = !levelBtn.isHidden;
+                self.view.layoutIfNeeded()
+            })
+        }
+    } // priorityBtnPressed
     
     @IBAction func prorityBtnLevelPressed(_ sender: UIButton) {
-    }
+        if let priortyLabel = sender.titleLabel?.text {
+            print (priortyLabel)
+            // bring dropdown back up
+            priortyLevelBtns.forEach { (levelBtn) in
+                UIView.animate(withDuration: 0.2, animations: {
+                    levelBtn.isHidden = !levelBtn.isHidden;
+                    self.view.layoutIfNeeded()
+                })
+            }
+            // assign priority chosen to label
+            priortySelectBtn.setTitle(priortyLabel, for: .normal);
+        }
+    } // prorityBtnLevelPressed
     
     @IBAction func submitButtonPressed(_ sender: Any) {
         
