@@ -1085,10 +1085,10 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pFJ-sa-els" userLabel="username Stack View">
-                                <rect key="frame" x="252" y="250" width="520" height="51"/>
+                                <rect key="frame" x="252" y="250" width="520" height="43"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pupil username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMa-B5-mF5" userLabel="username label">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="51"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1097,7 +1097,7 @@
                                         </variation>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIZ-Nx-7Of" userLabel="username Text Field">
-                                        <rect key="frame" x="270" y="0.0" width="250" height="51"/>
+                                        <rect key="frame" x="270" y="0.0" width="250" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -1112,7 +1112,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Usy-yA-nIU" userLabel="notification Stack View">
-                                <rect key="frame" x="252" y="341" width="520" height="633.5"/>
+                                <rect key="frame" x="252" y="333" width="520" height="633.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVe-nJ-rsa" userLabel="Notification label">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="43"/>
@@ -1142,10 +1142,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-Wp-lXy" userLabel="priority Stack View">
-                                <rect key="frame" x="252" y="1024.5" width="520" height="52.5"/>
+                                <rect key="frame" x="252" y="1016.5" width="520" height="60.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-Vo-5k3" userLabel="priority label">
-                                        <rect key="frame" x="0.0" y="0.0" width="245" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="245" height="60.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1153,14 +1153,54 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Normal" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4F-6M-XZb" userLabel="priority Text Field">
-                                        <rect key="frame" x="275" y="0.0" width="245" height="52.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        </variation>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sDl-uC-hVR" userLabel="Priority Pulldown Stack View">
+                                        <rect key="frame" x="275" y="0.0" width="245" height="60.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pE-jl-tUx">
+                                                <rect key="frame" x="0.0" y="0.0" width="245" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="PZh-gZ-h25"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                                <state key="normal" title="&lt;select priority&gt;">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="priorityBtnPressed:" destination="fq9-gA-Jer" eventType="touchUpInside" id="Dyi-bv-ba7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laK-Dc-rSB">
+                                                <rect key="frame" x="0.0" y="1" width="245" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="Low">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="prorityBtnLevelPressed:" destination="fq9-gA-Jer" eventType="touchUpInside" id="NuK-wZ-Nwf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xty-dE-uTB">
+                                                <rect key="frame" x="0.0" y="2" width="245" height="2.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="Normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="prorityBtnLevelPressed:" destination="fq9-gA-Jer" eventType="touchUpInside" id="LKn-GV-BIW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-Em-n7N">
+                                                <rect key="frame" x="0.0" y="5.5" width="245" height="55"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <state key="normal" title="Urgent">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="prorityBtnLevelPressed:" destination="fq9-gA-Jer" eventType="touchUpInside" id="Qau-Qt-6oB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="lFo-Y9-J0N">
@@ -1240,7 +1280,11 @@
                     <connections>
                         <outlet property="errorLabel" destination="Fwk-el-2AD" id="zvC-QC-hgY"/>
                         <outlet property="notificationTextView" destination="Xjh-Kq-kCK" id="5qb-7V-tFe"/>
+                        <outlet property="priortySelectBtn" destination="4pE-jl-tUx" id="LPb-Ln-1AF"/>
                         <outlet property="pupilTextField" destination="fIZ-Nx-7Of" id="Vfi-ab-kyx"/>
+                        <outletCollection property="priortyLevelBtns" destination="laK-Dc-rSB" collectionClass="NSMutableArray" id="0zB-sL-NIn"/>
+                        <outletCollection property="priortyLevelBtns" destination="xty-dE-uTB" collectionClass="NSMutableArray" id="4OG-2z-BHN"/>
+                        <outletCollection property="priortyLevelBtns" destination="7CP-Em-n7N" collectionClass="NSMutableArray" id="E5H-41-xYc"/>
                         <segue destination="lWM-dc-IaG" kind="show" identifier="teacherSegue" id="eNL-6C-WtO"/>
                     </connections>
                 </viewController>
@@ -2308,7 +2352,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="eNL-6C-WtO"/>
-        <segue reference="7vb-Rl-Rau"/>
+        <segue reference="aOI-KN-T2x"/>
         <segue reference="tU5-oA-RNn"/>
     </inferredMetricsTieBreakers>
     <resources>

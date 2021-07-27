@@ -14,13 +14,29 @@ class TeacherNotificationViewController: UIViewController {
     
     @IBOutlet weak var notificationTextView: UITextView!
     
+    @IBOutlet weak var priortySelectBtn: UIButton!
+    
+    @IBOutlet var priortyLevelBtns: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         openDatabase();
+        hidePriorityPulldown();
 
+    }
+    
+    func hidePriorityPulldown () {
+        priortyLevelBtns.forEach { (levelBtn) in
+            levelBtn.isHidden = true;
+        }
+    }
+    @IBAction func priorityBtnPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func prorityBtnLevelPressed(_ sender: UIButton) {
     }
     
     @IBAction func submitButtonPressed(_ sender: Any) {
