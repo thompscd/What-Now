@@ -30,6 +30,12 @@ struct GlobalVar {
     static let moodlevel_happy : Int = 1 ;
     static let moodlevel_ok : Int = 2 ;
     static let moodlevel_sad : Int = 3 ;
+    
+    // notification priority
+    static let notificationPriorityHigh : Int = 0 ;
+    static let notificationPriorityNormal : Int = 1 ;
+    static let notificationPriorityLow : Int = 2 ;
+
     // database variables
     static var whatnextDB = FMDatabase ()
     // teacher suffix and surname
