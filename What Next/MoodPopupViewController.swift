@@ -25,27 +25,36 @@ class MoodPopupViewController: UIViewController {
     // happy button pressed so gray out others
     @IBAction func happyButtonPressed(_ sender: Any) {
         moodLevel = GlobalVar.moodlevel_happy;
-        happyButton.setImage(UIImage(named: "happy face smaller.png"), for: .normal)
-        okButton.setImage(UIImage(named: "ok face gray.png"), for: .normal)
-        sadButton.setImage(UIImage(named: "sad face gray.png"), for: .normal)
-
+        //happyButton.setImage(UIImage(named: "happy face smaller.png"), for: .normal)
+        //okButton.setImage(UIImage(named: "ok face gray.png"), for: .normal)
+        //sadButton.setImage(UIImage(named: "sad face gray.png"), for: .normal)
+        happyButton.setImage(UIImage(named: "happy face.png"), for: .normal)
+        okButton.setImage(UIImage(named: "ok face large gray.png"), for: .normal)
+        sadButton.setImage(UIImage(named: "sad face large gray.png"), for: .normal)
     }
     
     // ok button pressed so gray out others
     @IBAction func okButtonPressed(_ sender: Any) {
         moodLevel = GlobalVar.moodlevel_ok;
-        okButton.setImage(UIImage(named: "ok face smaller.png"), for: .normal)
-        happyButton.setImage(UIImage(named: "happy face gray.png"), for: .normal)
-        sadButton.setImage(UIImage(named: "sad face gray.png"), for: .normal)
+        //okButton.setImage(UIImage(named: "ok face smaller.png"), for: .normal)
+        //happyButton.setImage(UIImage(named: "happy face gray.png"), for: .normal)
+        //sadButton.setImage(UIImage(named: "sad face gray.png"), for: .normal)
+
+        okButton.setImage(UIImage(named: "ok face.png"), for: .normal)
+        happyButton.setImage(UIImage(named: "happy face large gray.png"), for: .normal)
+        sadButton.setImage(UIImage(named: "sad face large gray.png"), for: .normal)
 
     }
     
     // sad button pressed so gray out others
     @IBAction func sadButtonPressed(_ sender: Any) {
         moodLevel = GlobalVar.moodlevel_sad;
-        sadButton.setImage(UIImage(named: "sad face smaller.png"), for: .normal)
-        happyButton.setImage(UIImage(named: "happy face gray.png"), for: .normal)
-        okButton.setImage(UIImage(named: "ok face gray.png"), for: .normal)
+        //sadButton.setImage(UIImage(named: "sad face smaller.png"), for: .normal)
+        //happyButton.setImage(UIImage(named: "happy face gray.png"), for: .normal)
+        //okButton.setImage(UIImage(named: "ok face gray.png"), for: .normal)
+        sadButton.setImage(UIImage(named: "sad face.png"), for: .normal)
+        happyButton.setImage(UIImage(named: "happy face large gray.png"), for: .normal)
+        okButton.setImage(UIImage(named: "ok face large gray.png"), for: .normal)
 
     }
     

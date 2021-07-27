@@ -53,7 +53,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmo-kr-9pW" userLabel="Login Error Label">
-                                <rect key="frame" x="30" y="1192" width="964" height="0.0"/>
+                                <rect key="frame" x="30" y="1188.5" width="964" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <color key="textColor" red="1" green="0.28286585530000002" blue="0.25842793559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -145,7 +145,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIw-Qj-soc" userLabel="Sign In button">
-                                <rect key="frame" x="412" y="1202" width="200" height="44"/>
+                                <rect key="frame" x="412" y="1198.5" width="200" height="47.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="30" minY="5" maxX="60" maxY="5"/>
@@ -154,7 +154,7 @@
                                         <fragment content="Sign In">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="26" name="ComicSansMS"/>
+                                                <font key="NSFont" size="32" name="ComicSansMS"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -703,21 +703,21 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkk-Xg-wly" userLabel="Happy Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="153.5" height="200"/>
                                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                                <state key="normal" image="happy face smaller"/>
+                                                <state key="normal" image="happy face"/>
                                                 <connections>
                                                     <action selector="happyButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="3aE-Cc-ha6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4X-Yz-fS7" userLabel="Ok Button">
                                                 <rect key="frame" x="173.5" y="0.0" width="153" height="200"/>
-                                                <state key="normal" image="ok face smaller"/>
+                                                <state key="normal" image="ok face"/>
                                                 <connections>
                                                     <action selector="okButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="p7z-uX-Eqc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aza-AB-tzz" userLabel="Sad Button">
                                                 <rect key="frame" x="346.5" y="0.0" width="153.5" height="200"/>
-                                                <state key="normal" image="sad face smaller"/>
+                                                <state key="normal" image="sad face"/>
                                                 <connections>
                                                     <action selector="sadButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="bTt-CF-SeB"/>
                                                 </connections>
@@ -733,7 +733,7 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to talk about anything?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-LH-qBX" userLabel="Would you like to talk about anything?">
-                                        <rect key="frame" x="33" y="285" width="578" height="43"/>
+                                        <rect key="frame" x="33" y="315" width="578" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -742,7 +742,7 @@
                                         </variation>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tzn-DN-M1T" userLabel="Text field">
-                                        <rect key="frame" x="20" y="368" width="604" height="52.5"/>
+                                        <rect key="frame" x="20" y="388" width="604" height="52.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -788,7 +788,7 @@
                                     <constraint firstItem="ixR-LH-qBX" firstAttribute="centerX" secondItem="qAQ-3d-GDX" secondAttribute="centerX" id="aTu-DH-Qk2"/>
                                     <constraint firstAttribute="bottom" secondItem="8IY-Sc-Blc" secondAttribute="bottom" id="c1u-dD-Rxg"/>
                                     <constraint firstItem="tzn-DN-M1T" firstAttribute="top" secondItem="ixR-LH-qBX" secondAttribute="bottom" constant="15" id="dV2-QB-jzU">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="30"/>
                                     </constraint>
                                     <constraint firstItem="PQU-O3-xxj" firstAttribute="leading" secondItem="qAQ-3d-GDX" secondAttribute="leading" constant="5" id="nAq-tG-no4"/>
                                     <constraint firstItem="8IY-Sc-Blc" firstAttribute="top" secondItem="qAQ-3d-GDX" secondAttribute="top" id="nYQ-9n-tDz"/>
@@ -796,7 +796,7 @@
                                     <constraint firstItem="PQU-O3-xxj" firstAttribute="top" secondItem="qAQ-3d-GDX" secondAttribute="top" constant="5" id="uka-7b-Exx"/>
                                     <constraint firstItem="V0o-49-TF4" firstAttribute="centerX" secondItem="qAQ-3d-GDX" secondAttribute="centerX" id="vQf-uD-hGa"/>
                                     <constraint firstItem="LOU-mn-iXq" firstAttribute="top" secondItem="tzn-DN-M1T" secondAttribute="bottom" constant="20" id="wCI-xU-N4I">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                                     </constraint>
                                     <constraint firstAttribute="trailing" secondItem="8IY-Sc-Blc" secondAttribute="trailing" id="wiI-QJ-dWD"/>
                                 </constraints>
@@ -2308,7 +2308,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="eNL-6C-WtO"/>
-        <segue reference="aOI-KN-T2x"/>
+        <segue reference="7vb-Rl-Rau"/>
         <segue reference="tU5-oA-RNn"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2322,9 +2322,9 @@
         <image name="User profile logo smaller" width="74" height="73"/>
         <image name="What Now logo" width="400" height="400"/>
         <image name="What Now logo small" width="198" height="198"/>
-        <image name="happy face smaller" width="62" height="59"/>
-        <image name="ok face smaller" width="57" height="57"/>
-        <image name="sad face smaller" width="57" height="53"/>
+        <image name="happy face" width="150" height="142"/>
+        <image name="ok face" width="138" height="138"/>
+        <image name="sad face" width="144" height="134"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
