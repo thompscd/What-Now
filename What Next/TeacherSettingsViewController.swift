@@ -34,7 +34,7 @@ class TeacherSettingsViewController: UIViewController {
         
         // extract username details from database and add to the fields
         
-        // check the user is in the database
+        // check the teacher is in the database
         let querySQL = "SELECT suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(loginname)';"
         let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
@@ -45,19 +45,12 @@ class TeacherSettingsViewController: UIViewController {
             let password = results?.string(forColumn:"password");
             let email = results?.string(forColumn:"email");
 
-            print ("firstname = ", firstname ?? "");
-            print ("lastname = ", lastname ?? "");
-            print ("password = ", password ?? "");
-            print ("suffix = ", suffix ?? "");
-            print ("email = ", email ?? "");
-
             // Display current values
             suffixTextField.text = suffix ?? "";
             firstnameTextField.text = firstname ?? "";
             lastnameTextField.text = lastname;
             emailTextField.text = email;
 
-            
         } else {
             // teacher not in database - display error
             print("TeacherSettingsViewController - teacher not in database !!!!")
@@ -88,6 +81,18 @@ class TeacherSettingsViewController: UIViewController {
         if !error_found {
             if lastname == "" {
                 errorLabel.text = "Error: last name cannot be empty"
+                error_found = true;
+            }
+        }
+        
+        // check the email address is not empty
+        let email : String = emailTextField.text ?? "";
+        if !error_found {
+            if email == "" {
+                errorLabel.text = "Error: email cannot be empty"
+                error_found = true;
+            } else if !email.isValidEmail {
+                errorLabel.text = "Error: invalid email address format"
                 error_found = true;
             }
         }
