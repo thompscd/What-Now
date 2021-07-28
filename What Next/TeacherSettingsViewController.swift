@@ -25,6 +25,7 @@ class TeacherSettingsViewController: UIViewController {
     //@IBOutlet weak var errorLabel: UILabel!
     
     let loginname = GlobalVar.loginname;
+    var currentPasswordInDatabase : String = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,7 @@ class TeacherSettingsViewController: UIViewController {
             let firstname = results?.string(forColumn:"firstname") ;
             let lastname = results?.string(forColumn:"lastname");
             let password = results?.string(forColumn:"password");
+            currentPasswordInDatabase = password ?? "";
             let email = results?.string(forColumn:"email");
 
             // Display current values
@@ -96,18 +98,9 @@ class TeacherSettingsViewController: UIViewController {
                 error_found = true;
             }
         }
-        
-        // check the password is not empty
-        let password : String = passwordTextField.text ?? "";
-        if !error_found {
-            if password == "" {
-                errorLabel.text = "Error: password cannot be empty"
-                error_found = true;
-            }
-        }
 
-        // check the password matches confirm
-        // password
+        // check the password matches confirm password
+        var password : String = passwordTextField.text ?? "";
         let confirmPassword : String = confirmPasswordTextField.text ?? "";
         if !error_found {
             if password != confirmPassword {
@@ -116,9 +109,13 @@ class TeacherSettingsViewController: UIViewController {
             }
         }
         
+        // update database with new values
         if !error_found {
-            // update database with new values
-            let querySQL = "UPDATE TEACHER SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)' WHERE loginname = '\(loginname)';"
+            if password == "" {
+                //user did not enter password so set to current value
+                password = currentPasswordInDatabase;
+            }
+            let querySQL = "UPDATE TEACHER SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)', email='\(email)' WHERE loginname = '\(loginname)';"
             let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
             dismiss(animated:true,completion:nil)  // update successful so close the screen
 
