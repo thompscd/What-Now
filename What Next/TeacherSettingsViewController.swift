@@ -48,7 +48,9 @@ class TeacherSettingsViewController: UIViewController {
         let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
             print("TeacherSettingsViewController - user is in database !!!!")
-            let suffix = results?.string(forColumn:"suffix") ;
+            let suffix :String = results?.string(forColumn:"suffix") ?? "" ;
+            print ("suffix currently in database is ....", suffix)
+            suffixSelected = suffix;
             let firstname = results?.string(forColumn:"firstname") ;
             let lastname = results?.string(forColumn:"lastname");
             let password = results?.string(forColumn:"password");
@@ -60,6 +62,8 @@ class TeacherSettingsViewController: UIViewController {
             firstnameTextField.text = firstname ?? "";
             lastnameTextField.text = lastname;
             emailTextField.text = email;
+            suffixSelectBtn.setTitle(suffix, for: .normal);
+
 
         } else {
             // teacher not in database - display error
@@ -71,13 +75,12 @@ class TeacherSettingsViewController: UIViewController {
     
     @IBAction func updateButtonPressed(_ sender: Any) {
     
-    
-    //@IBAction func updateButtonPressed(_ sender: Any) {
-        
         // clear any error messages
         errorLabel.text = ""
 
         var error_found = false ;
+        
+        print ("In updateButtonPressed, suffixSelected = ", suffixSelected)
         
         // check that First Name is not empty
         let firstname = firstnameTextField.text;
@@ -107,7 +110,6 @@ class TeacherSettingsViewController: UIViewController {
             }
         }
 
-        
         // check the password matches confirm password
         var password : String = passwordTextField.text ?? "";
         let confirmPassword : String = confirmPasswordTextField.text ?? "";
