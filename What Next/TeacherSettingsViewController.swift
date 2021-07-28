@@ -125,8 +125,8 @@ class TeacherSettingsViewController: UIViewController {
             }
             let querySQL = "UPDATE TEACHER SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)', email='\(email)', suffix='\(suffixSelected)' WHERE loginname = '\(loginname)';"
             let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
+            GlobalVar.suffix = suffixSelected;
             dismiss(animated:true,completion:nil)  // update successful so close the screen
-
         }
     }
     
