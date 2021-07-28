@@ -20,18 +20,26 @@ class TeacherSettingsViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var suffixTextField: UITextField!
     
+    // suffix pulldown outlets
+    @IBOutlet weak var suffixSelectBtn: UIButton!
+    @IBOutlet var suffixPulldownOptions: [UIButton]!
+    
+    
     @IBOutlet weak var errorLabel: UILabel!
     
     //@IBOutlet weak var errorLabel: UILabel!
     
     let loginname = GlobalVar.loginname;
     var currentPasswordInDatabase : String = "";
+    var suffixSelected : String = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         openDatabase();
+        
+        hideSuffixPulldown();
         
         // extract username details from database and add to the fields
         
@@ -115,7 +123,7 @@ class TeacherSettingsViewController: UIViewController {
                 //user did not enter password so set to current value
                 password = currentPasswordInDatabase;
             }
-            let querySQL = "UPDATE TEACHER SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)', email='\(email)' WHERE loginname = '\(loginname)';"
+            let querySQL = "UPDATE TEACHER SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)', email='\(email)', suffix='\(suffixSelected)' WHERE loginname = '\(loginname)';"
             let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
             dismiss(animated:true,completion:nil)  // update successful so close the screen
 
@@ -150,6 +158,50 @@ class TeacherSettingsViewController: UIViewController {
         // END OF HACK CODE !!!!!!!
         /////////////////////////////////////////////////
     }
+    
+    // suffix pulldown functions
+
+    @IBAction func suffixSelectButtonPressed(_ sender: UIButton) {
+        suffixPulldownOptions.forEach { (suffixBtn) in
+            UIView.animate(withDuration: 0.2, animations: {
+                suffixBtn.isHidden = !suffixBtn.isHidden;
+                self.view.layoutIfNeeded()
+            })
+        }
+    } //suffixSelectButtonPressed
+    
+    // REMOVE OUTLET AND DELETE  !!!!!!!!
+    @IBAction func suffixPressed(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func suffixButtonPressed(_ sender: UIButton) {
+        if let suffixLabel = sender.titleLabel?.text {
+            print (suffixLabel)
+            // bring dropdown back up
+            suffixPulldownOptions.forEach { (suffixBtn) in
+                UIView.animate(withDuration: 0.2, animations: {
+                    suffixBtn.isHidden = !suffixBtn.isHidden;
+                    self.view.layoutIfNeeded()
+                })
+            }
+            // assign priority chosen to label
+            suffixSelectBtn.setTitle(suffixLabel, for: .normal);
+            suffixSelected = suffixLabel; // save so that can be saved in database
+        }
+    } //suffixButtonPressed
+    
+    
+    // REMOVE OUTLET AND DELETE  !!!!!!!!
+    @IBAction func suffixSelectionPressed(_ sender: Any) {
+    }
+    
+    func hideSuffixPulldown () {
+        suffixPulldownOptions.forEach { (suffixBtn) in
+            suffixBtn.isHidden = true;
+        }
+    } // hideSuffixPulldown
+    
     
     /*
     // MARK: - Navigation

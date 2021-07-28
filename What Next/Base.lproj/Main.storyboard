@@ -2419,7 +2419,7 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Cd8-ax-7yS" userLabel="All settings Stack View">
-                                <rect key="frame" x="100" y="216" width="824" height="595"/>
+                                <rect key="frame" x="100" y="216" width="824" height="821.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qhc-sb-gLz" userLabel="username Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="824" height="43"/>
@@ -2445,10 +2445,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y9W-Ns-JG4" userLabel="suffix Stack View">
-                                        <rect key="frame" x="0.0" y="83" width="824" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="83" width="824" height="279"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Suffix" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p11-Nh-CES" userLabel="suffix Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="402" height="52.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="261.5" height="279"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2456,18 +2456,78 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                 </variation>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJD-wR-b1s" userLabel="suffix Text Field">
-                                                <rect key="frame" x="422" y="0.0" width="402" height="52.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mr" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJD-wR-b1s" userLabel="suffix Text Field">
+                                                <rect key="frame" x="281.5" y="0.0" width="261" height="279"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                 </variation>
                                             </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="owk-Wm-Fzi" userLabel="Suffix pulldown Stack View">
+                                                <rect key="frame" x="562.5" y="0.0" width="261.5" height="279"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ur-BH-hKF" userLabel="suffix Button">
+                                                        <rect key="frame" x="0.0" y="0.0" width="261.5" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                        <state key="normal" title="&lt;select&gt;">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="suffixSelectButtonPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="q5P-wf-H7E"/>
+                                                            <action selector="suffixSelectionPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="gqA-tV-ifq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-9P-WxG" userLabel="suffix Mr">
+                                                        <rect key="frame" x="0.0" y="56" width="261.5" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                        <state key="normal" title="Mr">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="suffixButtonPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="Ycb-Np-L2k"/>
+                                                            <action selector="suffixPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="MFt-Kj-xOA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bf-RG-iHn" userLabel="suffix Mrs">
+                                                        <rect key="frame" x="0.0" y="112" width="261.5" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                        <state key="normal" title="Mrs">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="suffixButtonPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="Wvu-OJ-awe"/>
+                                                            <action selector="suffixPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="eSa-dr-yNa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWq-38-aaD" userLabel="suffix Ms">
+                                                        <rect key="frame" x="0.0" y="168" width="261.5" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                        <state key="normal" title="Ms">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="suffixButtonPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="j1Y-Nc-HrZ"/>
+                                                            <action selector="suffixPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="htx-jp-HSy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c19-4e-Xmb" userLabel="suffix Dr ">
+                                                        <rect key="frame" x="0.0" y="224" width="261.5" height="55"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                        <state key="normal" title="Dr">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="suffixButtonPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="vgG-L8-cT2"/>
+                                                            <action selector="suffixPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="Hcy-uG-iU8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="B04-3J-vEJ" userLabel="firstname Stack View">
-                                        <rect key="frame" x="0.0" y="175.5" width="824" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="402" width="824" height="52.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="First name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gw3-jD-p7h" userLabel="firstname Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="402" height="52.5"/>
@@ -2489,7 +2549,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N6L-lM-afk" userLabel="lastname  Stack View">
-                                        <rect key="frame" x="0.0" y="268" width="824" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="494.5" width="824" height="52.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Last name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4R-4v-xKw" userLabel="lastname Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="402" height="52.5"/>
@@ -2511,7 +2571,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ko2-V5-0H6" userLabel="email  Stack View">
-                                        <rect key="frame" x="0.0" y="360.5" width="824" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="587" width="824" height="52.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kq2-tV-acq" userLabel="email Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="402" height="52.5"/>
@@ -2533,7 +2593,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pfQ-4l-Zuu" userLabel="password Stack View">
-                                        <rect key="frame" x="0.0" y="453" width="824" height="51"/>
+                                        <rect key="frame" x="0.0" y="679.5" width="824" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otr-eu-hp3" userLabel="password Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="402" height="51"/>
@@ -2555,7 +2615,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MD0-O4-mrf" userLabel="confirm password Stack View">
-                                        <rect key="frame" x="0.0" y="544" width="824" height="51"/>
+                                        <rect key="frame" x="0.0" y="770.5" width="824" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Confirm Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAG-OK-cFb" userLabel="confirm password Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="402" height="51"/>
@@ -2580,7 +2640,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" spacing="40"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZb-Fn-Vma" userLabel="Update button">
-                                <rect key="frame" x="435" y="891" width="154" height="53"/>
+                                <rect key="frame" x="435" y="1117.5" width="154" height="53"/>
                                 <color key="backgroundColor" red="1" green="0.79927986740000001" blue="0.72069126819999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="ob4-sV-nXc"/>
@@ -2604,7 +2664,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uB-l5-64w" userLabel="Error Label">
-                                <rect key="frame" x="362" y="984" width="300" height="30"/>
+                                <rect key="frame" x="362" y="1210.5" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0ZC-aQ-kA5"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="7t4-Ze-3uZ"/>
@@ -2657,7 +2717,12 @@
                         <outlet property="firstnameTextField" destination="PtM-nJ-Ao7" id="7CW-yO-0Qq"/>
                         <outlet property="lastnameTextField" destination="SP1-O1-shd" id="4bw-Pa-qDl"/>
                         <outlet property="passwordTextField" destination="phq-8C-Mvn" id="V7i-Wp-yQt"/>
+                        <outlet property="suffixSelectBtn" destination="9Ur-BH-hKF" id="PdL-aA-lxr"/>
                         <outlet property="suffixTextField" destination="VJD-wR-b1s" id="bl8-mi-4ZX"/>
+                        <outletCollection property="suffixPulldownOptions" destination="bpH-9P-WxG" collectionClass="NSMutableArray" id="Z5S-G4-Pgh"/>
+                        <outletCollection property="suffixPulldownOptions" destination="5Bf-RG-iHn" collectionClass="NSMutableArray" id="SQB-pP-LSr"/>
+                        <outletCollection property="suffixPulldownOptions" destination="gWq-38-aaD" collectionClass="NSMutableArray" id="1gA-3y-rNb"/>
+                        <outletCollection property="suffixPulldownOptions" destination="c19-4e-Xmb" collectionClass="NSMutableArray" id="yrd-0X-Ij7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJx-dg-yh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
