@@ -1,21 +1,26 @@
 //
-//  PupilSettingsViewController.swift
+//  TeacherSettingsViewController.swift
 //  What Next
 //
-//  Created by Chris Thompson on 23/07/2021.
+//  Created by Chris Thompson on 28/07/2021.
 //
 
 import UIKit
 
 class TeacherSettingsViewController: UIViewController {
     
+    //@IBOutlet weak var firstnameTextField: UITextField!
+    //@IBOutlet weak var lastnameTextField: UITextField!
+    //@IBOutlet weak var passwordTextField: UITextField!
+    //@IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var firstnameTextField: UITextField!
     @IBOutlet weak var lastnameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     
-    
     @IBOutlet weak var errorLabel: UILabel!
+    
+    //@IBOutlet weak var errorLabel: UILabel!
     
     let loginname = GlobalVar.loginname;
     
@@ -28,10 +33,10 @@ class TeacherSettingsViewController: UIViewController {
         // extract username details from database and add to the fields
         
         // check the user is in the database
-        let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(loginname)';"
+        let querySQL = "SELECT firstname, lastname, password FROM TEACHER WHERE loginname = '\(loginname)';"
         let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
-            print("UserProfileViewController - user is in database !!!!")
+            print("TeacherSettingsViewController - user is in database !!!!")
             let firstname = results?.string(forColumn:"firstname") ;
             let lastname = results?.string(forColumn:"lastname");
             let password = results?.string(forColumn:"password");
@@ -45,14 +50,17 @@ class TeacherSettingsViewController: UIViewController {
 
             
         } else {
-            // pupil not in database - display error
-            print("UserProfileViewController - user not in database !!!!")
+            // teacher not in database - display error
+            print("TeacherSettingsViewController - user not in database !!!!")
         }
         
     }
     
     
     @IBAction func updateButtonPressed(_ sender: Any) {
+    
+    
+    //@IBAction func updateButtonPressed(_ sender: Any) {
         
         // clear any error messages
         errorLabel.text = ""
@@ -96,7 +104,7 @@ class TeacherSettingsViewController: UIViewController {
         
         if !error_found {
             // update database with new values
-            let querySQL = "UPDATE PUPIL SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)' WHERE loginname = '\(loginname)';"
+            let querySQL = "UPDATE TEACHER SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)' WHERE loginname = '\(loginname)';"
             let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
             dismiss(animated:true,completion:nil)  // update successful so close the screen
 
@@ -119,13 +127,13 @@ class TeacherSettingsViewController: UIViewController {
         databasePath = dirPaths[0].appendingPathComponent("whatnext.db").path
         whatnextDB = FMDatabase(path: databasePath as String)
         if whatnextDB == nil {
-            print("Error UserProfileViewController: whatnextDB is nil, \(whatnextDB.lastErrorMessage())")
+            print("Error TeacherSettingsViewController: whatnextDB is nil, \(whatnextDB.lastErrorMessage())")
         } else {
-            print ("UserProfileViewControl: database not nil")
+            print ("TeacherSettingsViewController: database not nil")
             if (whatnextDB.open()) {
-                print ("UserProfileViewControl: database is open")
+                print ("TeacherSettingsViewController: database is open")
             } else {
-                print("Error UserProfileViewController: whatnextDB not open, \(whatnextDB.lastErrorMessage())")
+                print("Error TeacherSettingsViewController: whatnextDB not open, \(whatnextDB.lastErrorMessage())")
             }
         }
         // END OF HACK CODE !!!!!!!

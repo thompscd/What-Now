@@ -2556,7 +2556,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="updateButtonPressed:" destination="I9h-L5-6Sn" eventType="touchUpInside" id="Bhq-Jw-RUV"/>
-                                    <action selector="updateButtonPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="q6L-kk-zZH"/>
+                                    <action selector="updateButtonPressed:" destination="7od-Ry-HTZ" eventType="touchUpInside" id="ghn-oU-ci0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uB-l5-64w" userLabel="Error Label">
@@ -2569,7 +2569,7 @@
                                 <color key="textColor" red="1" green="0.1189635387" blue="0.16882578379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -2606,6 +2606,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="epF-n9-uuH" id="vf3-Ts-amd"/>
+                        <outlet property="errorLabel" destination="5uB-l5-64w" id="7z9-vL-YpM"/>
+                        <outlet property="firstnameTextField" destination="VJD-wR-b1s" id="Dpm-Qw-OKp"/>
+                        <outlet property="lastnameTextField" destination="SP1-O1-shd" id="4bw-Pa-qDl"/>
+                        <outlet property="passwordTextField" destination="phq-8C-Mvn" id="V7i-Wp-yQt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJx-dg-yh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
