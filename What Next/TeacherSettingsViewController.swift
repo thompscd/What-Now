@@ -17,6 +17,8 @@ class TeacherSettingsViewController: UIViewController {
     @IBOutlet weak var lastnameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var suffixTextField: UITextField!
     
     @IBOutlet weak var errorLabel: UILabel!
     
@@ -33,25 +35,32 @@ class TeacherSettingsViewController: UIViewController {
         // extract username details from database and add to the fields
         
         // check the user is in the database
-        let querySQL = "SELECT firstname, lastname, password FROM TEACHER WHERE loginname = '\(loginname)';"
+        let querySQL = "SELECT suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(loginname)';"
         let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
             print("TeacherSettingsViewController - user is in database !!!!")
+            let suffix = results?.string(forColumn:"suffix") ;
             let firstname = results?.string(forColumn:"firstname") ;
             let lastname = results?.string(forColumn:"lastname");
             let password = results?.string(forColumn:"password");
+            let email = results?.string(forColumn:"email");
+
             print ("firstname = ", firstname ?? "");
             print ("lastname = ", lastname ?? "");
             print ("password = ", password ?? "");
+            print ("suffix = ", suffix ?? "");
+            print ("email = ", email ?? "");
 
             // Display current values
+            suffixTextField.text = suffix ?? "";
             firstnameTextField.text = firstname ?? "";
             lastnameTextField.text = lastname;
+            emailTextField.text = email;
 
             
         } else {
             // teacher not in database - display error
-            print("TeacherSettingsViewController - user not in database !!!!")
+            print("TeacherSettingsViewController - teacher not in database !!!!")
         }
         
     }
@@ -149,4 +158,11 @@ class TeacherSettingsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
+
+// checks if string is a valid format for a email
+extension String {
+    var isValidEmail: Bool {
+        NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: self)
+    }
 }
