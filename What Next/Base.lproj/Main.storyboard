@@ -2448,7 +2448,7 @@
                                         <rect key="frame" x="0.0" y="83" width="824" height="279"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Suffix" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p11-Nh-CES" userLabel="suffix Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="261.5" height="279"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="402" height="279"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2456,19 +2456,11 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                 </variation>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mr" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJD-wR-b1s" userLabel="suffix Text Field">
-                                                <rect key="frame" x="281.5" y="0.0" width="261" height="279"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                                </variation>
-                                            </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="owk-Wm-Fzi" userLabel="Suffix pulldown Stack View">
-                                                <rect key="frame" x="562.5" y="0.0" width="261.5" height="279"/>
+                                                <rect key="frame" x="422" y="0.0" width="402" height="279"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ur-BH-hKF" userLabel="suffix Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="261.5" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="402" height="55"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                         <state key="normal" title="&lt;select&gt;">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2479,7 +2471,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-9P-WxG" userLabel="suffix Mr">
-                                                        <rect key="frame" x="0.0" y="56" width="261.5" height="55"/>
+                                                        <rect key="frame" x="0.0" y="56" width="402" height="55"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                         <state key="normal" title="Mr">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2490,7 +2482,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bf-RG-iHn" userLabel="suffix Mrs">
-                                                        <rect key="frame" x="0.0" y="112" width="261.5" height="55"/>
+                                                        <rect key="frame" x="0.0" y="112" width="402" height="55"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                         <state key="normal" title="Mrs">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2501,7 +2493,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWq-38-aaD" userLabel="suffix Ms">
-                                                        <rect key="frame" x="0.0" y="168" width="261.5" height="55"/>
+                                                        <rect key="frame" x="0.0" y="168" width="402" height="55"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                         <state key="normal" title="Ms">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2512,7 +2504,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c19-4e-Xmb" userLabel="suffix Dr ">
-                                                        <rect key="frame" x="0.0" y="224" width="261.5" height="55"/>
+                                                        <rect key="frame" x="0.0" y="224" width="402" height="55"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                         <state key="normal" title="Dr">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2718,7 +2710,6 @@
                         <outlet property="lastnameTextField" destination="SP1-O1-shd" id="4bw-Pa-qDl"/>
                         <outlet property="passwordTextField" destination="phq-8C-Mvn" id="V7i-Wp-yQt"/>
                         <outlet property="suffixSelectBtn" destination="9Ur-BH-hKF" id="PdL-aA-lxr"/>
-                        <outlet property="suffixTextField" destination="VJD-wR-b1s" id="bl8-mi-4ZX"/>
                         <outletCollection property="suffixPulldownOptions" destination="bpH-9P-WxG" collectionClass="NSMutableArray" id="Z5S-G4-Pgh"/>
                         <outletCollection property="suffixPulldownOptions" destination="5Bf-RG-iHn" collectionClass="NSMutableArray" id="SQB-pP-LSr"/>
                         <outletCollection property="suffixPulldownOptions" destination="gWq-38-aaD" collectionClass="NSMutableArray" id="1gA-3y-rNb"/>

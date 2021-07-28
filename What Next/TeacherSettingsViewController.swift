@@ -18,7 +18,7 @@ class TeacherSettingsViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var suffixTextField: UITextField!
+    //@IBOutlet weak var suffixTextField: UITextField!
     
     // suffix pulldown outlets
     @IBOutlet weak var suffixSelectBtn: UIButton!
@@ -56,7 +56,7 @@ class TeacherSettingsViewController: UIViewController {
             let email = results?.string(forColumn:"email");
 
             // Display current values
-            suffixTextField.text = suffix ?? "";
+            //suffixTextField.text = suffix ?? "";
             firstnameTextField.text = firstname ?? "";
             lastnameTextField.text = lastname;
             emailTextField.text = email;
