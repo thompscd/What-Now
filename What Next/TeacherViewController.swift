@@ -18,6 +18,7 @@ class TeacherViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // add teacher name to the screen
+        print ("In TeacherViewController !!") //DEBUG
         let teacherName = GlobalVar.suffix+" "+GlobalVar.lastname;
         teacherNameLabel.text = teacherName;
     }

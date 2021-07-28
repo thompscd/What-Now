@@ -2718,6 +2718,7 @@
                         <outletCollection property="suffixPulldownOptions" destination="5Bf-RG-iHn" collectionClass="NSMutableArray" id="SQB-pP-LSr"/>
                         <outletCollection property="suffixPulldownOptions" destination="gWq-38-aaD" collectionClass="NSMutableArray" id="1gA-3y-rNb"/>
                         <outletCollection property="suffixPulldownOptions" destination="c19-4e-Xmb" collectionClass="NSMutableArray" id="yrd-0X-Ij7"/>
+                        <segue destination="lWM-dc-IaG" kind="presentation" identifier="teacherSegue" id="zlm-LJ-bHk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJx-dg-yh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2726,7 +2727,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MN9-1f-mtc"/>
+        <segue reference="zlm-LJ-bHk"/>
         <segue reference="eqg-Z6-bdn"/>
         <segue reference="51w-uF-QVN"/>
     </inferredMetricsTieBreakers>

@@ -107,6 +107,7 @@ class TeacherSettingsViewController: UIViewController {
             }
         }
 
+        
         // check the password matches confirm password
         var password : String = passwordTextField.text ?? "";
         let confirmPassword : String = confirmPasswordTextField.text ?? "";
@@ -126,13 +127,18 @@ class TeacherSettingsViewController: UIViewController {
             let querySQL = "UPDATE TEACHER SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)', email='\(email)', suffix='\(suffixSelected)' WHERE loginname = '\(loginname)';"
             let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
             GlobalVar.suffix = suffixSelected;
-            dismiss(animated:true,completion:nil)  // update successful so close the screen
+            //dismiss(animated:true,completion:nil)  // update successful so close the screen
+            performSegue(withIdentifier:"teacherSegue",sender:AnyObject.self);
+
         }
     }
     
 
     @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated:true,completion:nil)
+        
+        //dismiss(animated:true,completion:nil)
+        performSegue(withIdentifier:"teacherSegue",sender:AnyObject.self);
+
     }
     
     var whatnextDB = FMDatabase(path: databasePath as String)
