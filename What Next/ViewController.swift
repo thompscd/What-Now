@@ -32,6 +32,7 @@ struct GlobalVar {
     static let moodlevel_sad : Int = 3 ;
     
     // notification priority
+    static let notificationPriorityUnselected : Int = -1 ;
     static let notificationPriorityUrgent : Int = 0 ;
     static let notificationPriorityNormal : Int = 1 ;
     static let notificationPriorityLow : Int = 2 ;

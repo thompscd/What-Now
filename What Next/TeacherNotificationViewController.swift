@@ -11,12 +11,11 @@ class TeacherNotificationViewController: UIViewController {
 
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var pupilTextField: UITextField!
-    
     @IBOutlet weak var notificationTextView: UITextView!
-    
     @IBOutlet weak var priortySelectBtn: UIButton!
-    
     @IBOutlet var priortyLevelBtns: [UIButton]!
+    
+    var prioritySelected : Int = GlobalVar.notificationPriorityUnselected;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +54,21 @@ class TeacherNotificationViewController: UIViewController {
             }
             // assign priority chosen to label
             priortySelectBtn.setTitle(priortyLabel, for: .normal);
+            // save the priority so can be saved in database
+            switch priortyLabel {
+                case "Low" : do {
+                    prioritySelected = GlobalVar.notificationPriorityLow;
+                }
+                case "Normal" : do {
+                    prioritySelected = GlobalVar.notificationPriorityNormal;
+                }
+                case "Urgent" : do {
+                    prioritySelected = GlobalVar.notificationPriorityUrgent;
+                }
+                default : do {
+                    prioritySelected = GlobalVar.notificationPriorityUnselected;
+                }
+            }
         }
     } // prorityBtnLevelPressed
     
@@ -95,6 +109,14 @@ class TeacherNotificationViewController: UIViewController {
             }
         }
         
+        // check that priority has been selected
+        if !error_found {
+            if prioritySelected == GlobalVar.notificationPriorityUnselected {
+                errorLabel.text = "Error: please select a priority"
+                error_found = true;
+            }
+        }
+        
         // add notification to database
         if !error_found {
             // update database with new values
@@ -103,7 +125,7 @@ class TeacherNotificationViewController: UIViewController {
             //df.dateFormat = "yyyy-MM-dd hh:mm:ss"
             df.dateFormat = "dd-MM-yyyy hh:mm"
             let dateTime = df.string(from: Date())
-            let insertNotificationSQL = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'\(pupilUserName.lowercased() )','\(GlobalVar.loginname)','\(notification)','\(dateTime)', '',1);"
+            let insertNotificationSQL = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'\(pupilUserName.lowercased() )','\(GlobalVar.loginname)','\(notification)','\(dateTime)', '',\(prioritySelected));"
             let results = whatnextDB.executeUpdate(insertNotificationSQL, withArgumentsIn:[]);
             
             // return to teacher home screen
