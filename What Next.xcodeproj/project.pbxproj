@@ -29,6 +29,7 @@
 		87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B42B2926A055530021C852 /* MoodPopupViewController.swift */; };
 		87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE14AA26971557006FC0C2 /* MainPageViewController.swift */; };
 		8E14511B26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */; };
+		8E17E6BE26B1785F00A9CBEE /* TeacherSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */; };
 		8E8EF8F026AC774000B46EB3 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */; };
 		8E8EF8F426ACB3F600B46EB3 /* TeacherNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */; };
 		8ECA651526AF165600D10F89 /* NotificatonPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA651426AF165600D10F89 /* NotificatonPopupViewController.swift */; };
@@ -88,6 +89,7 @@
 		87B42B2926A055530021C852 /* MoodPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPopupViewController.swift; sourceTree = "<group>"; };
 		87BE14AA26971557006FC0C2 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhatNextLaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSettingsViewController.swift; sourceTree = "<group>"; };
 		8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
 		8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNotificationViewController.swift; sourceTree = "<group>"; };
 		8ECA651426AF165600D10F89 /* NotificatonPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificatonPopupViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */,
 				878D30712695B29A00DADD4B /* TeacherLoginViewController.swift */,
 				8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */,
+				8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */,
 				87663D8026A57CE300DF111B /* UserProfileViewController.swift */,
 				878D0F8626A1F3E200EC4EA3 /* MoodViewController.swift */,
 				87B42B2926A055530021C852 /* MoodPopupViewController.swift */,
@@ -343,6 +346,7 @@
 				8719BC322694CCFF00F9829C /* FMDatabase.m in Sources */,
 				878D0F8726A1F3E200EC4EA3 /* MoodViewController.swift in Sources */,
 				8E8EF8F026AC774000B46EB3 /* TeacherViewController.swift in Sources */,
+				8E17E6BE26B1785F00A9CBEE /* TeacherSettingsViewController.swift in Sources */,
 				879330AE269247220029992F /* PupilLoginViewController.swift in Sources */,
 				87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */,
 				874D2C14269597180087E87C /* LiteracyViewController.swift in Sources */,
