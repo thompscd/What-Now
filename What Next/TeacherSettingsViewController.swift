@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TeacherSettingsViewController: UIViewController {
+class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
     
     //@IBOutlet weak var firstnameTextField: UITextField!
     //@IBOutlet weak var lastnameTextField: UITextField!
@@ -36,6 +36,12 @@ class TeacherSettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.firstnameTextField.delegate = self;
+        self.lastnameTextField.delegate = self;
+        self.emailTextField.delegate = self;
+        self.passwordTextField.delegate = self;
+        self.confirmPasswordTextField.delegate = self;
+        
         // Do any additional setup after loading the view.
         openDatabase();
         
@@ -72,6 +78,11 @@ class TeacherSettingsViewController: UIViewController {
         
     }
     
+    // needed so that keyboard on ipad/iphone disappears on return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     @IBAction func updateButtonPressed(_ sender: Any) {
     

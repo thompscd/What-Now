@@ -20,7 +20,7 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
         
         // needed so that keyboard on ipad/iphone disappears on return key
         self.UserNameTextField.delegate = self;
-        self.UserNameTextField.delegate = self;
+        self.PasswordTextField.delegate = self;
         
     }
     

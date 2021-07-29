@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TeacherNotificationViewController: UIViewController {
+class TeacherNotificationViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var pupilTextField: UITextField!
@@ -21,10 +21,17 @@ class TeacherNotificationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        self.pupilTextField.delegate = self;
+
         openDatabase();
         hidePriorityPulldown();
 
+    }
+    
+    // needed so that keyboard on ipad/iphone disappears on return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     func hidePriorityPulldown () {
