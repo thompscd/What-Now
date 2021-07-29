@@ -42,7 +42,7 @@ class NotificatonPopupViewController: UIViewController {
         
         print ("In extractNotifications")
         
-        let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)';"
+        let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)' AND dateread = '';"
         results = whatnextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
         
     } // extractNotifications

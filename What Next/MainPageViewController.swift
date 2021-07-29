@@ -9,6 +9,7 @@ import UIKit
 
 class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBarDelegate {
 
+    @IBOutlet weak var notificationButton: UIButton!
     @IBOutlet weak var leading: NSLayoutConstraint!
     @IBOutlet weak var trailing: NSLayoutConstraint!
     
@@ -171,6 +172,11 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
             print ("unreadNotificationCount = ",unreadNotificationCount)
             if unreadNotificationCount > 0 {
                 performSegue(withIdentifier:"unreadNotificationPopup",sender:AnyObject.self);
+            }
+            else {
+                // gray out the notification button
+                notificationButton.isEnabled = false
+                notificationButton.setTitleColor(UIColor.gray, for: .disabled)
             }
         }
         

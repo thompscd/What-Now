@@ -2271,6 +2271,7 @@
                     <connections>
                         <outlet property="CommentsTextView" destination="XkQ-WW-gci" id="EsR-Wp-uxJ"/>
                         <outlet property="leading" destination="qf9-hi-2qA" id="6yf-QC-idB"/>
+                        <outlet property="notificationButton" destination="KCo-Ok-4Hc" id="I6Y-7O-lZ6"/>
                         <outlet property="searchTextView" destination="Q5P-e0-gnp" id="Ykw-F9-qSG"/>
                         <outlet property="trailing" destination="ZfZ-LQ-0lg" id="9Hk-db-VYE"/>
                         <segue destination="tXX-dq-X1g" kind="presentation" identifier="unreadNotificationPopup" id="SB6-V2-R3u"/>
