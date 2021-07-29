@@ -164,7 +164,9 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
             var results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
 
             while results?.next()==true {
-                unreadNotificationCount += 1;
+                if results?.string(forColumn:"dateread") ?? "" == "" {
+                    unreadNotificationCount += 1;
+                }
             }
             print ("unreadNotificationCount = ",unreadNotificationCount)
             if unreadNotificationCount > 0 {

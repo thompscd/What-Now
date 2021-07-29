@@ -105,7 +105,7 @@ class NotificatonPopupViewController: UIViewController {
                 let dateTime = df.string(from: Date())
                 let updateNotificationSQL = "UPDATE NOTIFICATIONS SET dateread = '\(dateTime)' WHERE id = \(id);"
                 print (updateNotificationSQL)
-                let results2:FMResultSet? = whatnextDB.executeQuery(updateNotificationSQL, withArgumentsIn:[]);
+                let results2 = whatnextDB.executeUpdate(updateNotificationSQL, withArgumentsIn:[]);
             }
 
         } else {
