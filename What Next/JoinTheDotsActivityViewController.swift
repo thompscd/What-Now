@@ -1,5 +1,5 @@
 //
-//  RainbowWritingActivityViewController.swift
+//  JoinTheDotsActivityViewController.swift
 //  What Next
 //
 //  Created by Christopher Thompson on 29/07/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RainbowWritingActivityViewController: UIViewController {
+class JoinTheDotsActivityViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
     
@@ -82,15 +82,14 @@ class RainbowWritingActivityViewController: UIViewController {
         let minutes: Int = (totalSeconds / 60) % 60
         return String(format: "%02d:%02d", minutes, seconds)
     }
-
     
-    @IBAction func startPressed(_ sender: UIButton) {
+    @IBAction func onClickStartCountdown(_ sender: UIButton) {
         startTimer()
     }
-
+    
 }
 
-extension RainbowWritingActivityViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension JoinTheDotsActivityViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
@@ -110,22 +109,3 @@ extension RainbowWritingActivityViewController: UICollectionViewDelegate, UIColl
     }
         
 }
-
-/*
-extension UIView {
-    
-    func takeScreenShot() -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, UIScreen.main.scale)
-        
-        drawHierarchy(in: self.bounds, afterScreenUpdates: true)
-        
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        if image != nil{
-            return image!
-        }
-        return UIImage()
-    }
-}
- */
