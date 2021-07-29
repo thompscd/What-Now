@@ -30,6 +30,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         
         openDatabase() // open the database 
         displayComments()
+        grayOutNotificationButton ()
         displayUnreadNotificationsPopup()
         
     }
@@ -61,6 +62,18 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         }
         
     }
+    
+    // if there are no unread notifications then gray out the button 
+    func grayOutNotificationButton () {
+        let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)' AND dateread = '';"
+        let results = whatnextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
+        if results.next() != true  {
+            //no unread notification so gray out the notification button
+            notificationButton.isEnabled = false
+            notificationButton.setTitleColor(UIColor.gray, for: .disabled)
+        }
+    }
+    
     
     func openDatabase () {
 
