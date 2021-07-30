@@ -18,7 +18,6 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
     @IBOutlet weak var searchTextView: UISearchBar!
     
     var menuOut = false;
-    var whatnextDB = FMDatabase()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +27,6 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         // needed so that keyboard on ipad/iphone disappears on return key
         self.searchTextView.delegate = self;
         
-        openDatabase() // open the database 
         displayComments()
         grayOutNotificationButton ()
         displayUnreadNotificationsPopup()
@@ -66,7 +64,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
     // if there are no unread notifications then gray out the button 
     func grayOutNotificationButton () {
         let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)' AND dateread = '';"
-        let results = whatnextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
+        let results = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
         if results.next() != true  {
             //no unread notification so gray out the notification button
             notificationButton.isEnabled = false
@@ -74,38 +72,14 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         }
     }
     
-    
-    func openDatabase () {
 
-        //////////////////////////////////////////
-        // THIS IS A HACK. THIS IS CODE COPIED FROM ViewController.swift. NEED TO CHANGE SO THAT THE whatnextDB variable is passed between controllers !!!!!
-        var databasePath = String();
-        let filemgr = FileManager.default
-        let dirPaths = filemgr.urls(for: .documentDirectory,
-                       in: .userDomainMask)
-        databasePath = dirPaths[0].appendingPathComponent("whatnext.db").path
-        whatnextDB = FMDatabase(path: databasePath as String)
-        if whatnextDB == nil {
-            print("Error PupilLoginViewController: whatnextDB is nil, \(whatnextDB.lastErrorMessage())")
-        } else {
-            print ("PupilLoginViewControl: database not nil")
-            if (whatnextDB.open()) {
-                print ("PupilLoginViewControl: database is open")
-            } else {
-                print("Error PupilLoginViewController: whatnextDB not open, \(whatnextDB.lastErrorMessage())")
-            }
-        }
-        // END OF HACK CODE !!!!!!!
-        /////////////////////////////////////////////////
-        
-    } // openDatabase
     
     // extract comments from the database and display in the textField
     func displayComments () {
         
         // sql query to extract all the comments
         let querySQL = "SELECT loginname, comment, date, moodlevel FROM COMMENTS;"
-        var results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        var results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         while results?.next()==true {
             print ("comment found");""
             let loginname : String = results?.string(forColumn:"loginname") ?? "";
@@ -115,7 +89,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
 
             // check if the comment is from teacher or pupil
             let querySQL2 = "SELECT suffix, lastname FROM TEACHER WHERE loginname = '\(loginname)';"
-            let results2:FMResultSet? = whatnextDB.executeQuery(querySQL2, withArgumentsIn:[]);
+            let results2:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL2, withArgumentsIn:[]);
             if results2?.next()==true {
                 // teacher comment
                 print ("Teacher comment!!")
@@ -136,7 +110,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
                 print ("Pupil comment!!")
                 let querySQL3 = "SELECT firstname, lastname FROM PUPIL WHERE loginname = '\(loginname)';"
 
-                let results3:FMResultSet? = whatnextDB.executeQuery(querySQL3, withArgumentsIn:[]);
+                let results3:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL3, withArgumentsIn:[]);
                 if results3?.next()==true {
                     let firstname : String = results3?.string(forColumn:"firstname") ?? "";
                     let lastname : String = results3?.string(forColumn:"lastname") ?? "";
@@ -175,7 +149,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
             GlobalVar.unreadNotificationsPopupDisplayed = true;
             // check if any unread notifications
             let querySQL = "SELECT dateread FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)';"
-            var results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+            var results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
 
             while results?.next()==true {
                 if results?.string(forColumn:"dateread") ?? "" == "" {
