@@ -1,5 +1,5 @@
 //
-//  ABCActivityViewController.swift
+//  BackwordsWordsActivityViewController.swift
 //  What Next
 //
 //  Created by Christopher Thompson on 29/07/2021.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class ABCActivityViewController: UIViewController {
-    
+class BackwordsWordsActivityViewController: UIViewController {
+
     @IBOutlet weak var timerLabel: UILabel!
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -19,7 +19,7 @@ class ABCActivityViewController: UIViewController {
     
     // Formatting for timer.
     var countdownTimer: Timer!
-    var totalTime = 300
+    var totalTime = 600
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,14 +83,13 @@ class ABCActivityViewController: UIViewController {
         return String(format: "%02d:%02d", minutes, seconds)
     }
     
-    
     @IBAction func onClickStartCountdown(_ sender: UIButton) {
         startTimer()
     }
-    
+
 }
 
-extension ABCActivityViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension BackwordsWordsActivityViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }

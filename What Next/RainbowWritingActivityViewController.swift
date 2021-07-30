@@ -19,7 +19,7 @@ class RainbowWritingActivityViewController: UIViewController {
     
     // Formatting for timer.
     var countdownTimer: Timer!
-    var totalTime = 60
+    var totalTime = 600
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  ABCActivityViewController.swift
+//  ColouredVowelsActivityViewController.swift
 //  What Next
 //
 //  Created by Christopher Thompson on 29/07/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ABCActivityViewController: UIViewController {
+class ColouredVowelsActivityViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
     
@@ -19,7 +19,7 @@ class ABCActivityViewController: UIViewController {
     
     // Formatting for timer.
     var countdownTimer: Timer!
-    var totalTime = 300
+    var totalTime = 600
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,10 +87,10 @@ class ABCActivityViewController: UIViewController {
     @IBAction func onClickStartCountdown(_ sender: UIButton) {
         startTimer()
     }
-    
+
 }
 
-extension ABCActivityViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ColouredVowelsActivityViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }

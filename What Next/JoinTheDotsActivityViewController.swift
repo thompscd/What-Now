@@ -19,7 +19,7 @@ class JoinTheDotsActivityViewController: UIViewController {
     
     // Formatting for timer.
     var countdownTimer: Timer!
-    var totalTime = 60
+    var totalTime = 300
     
     override func viewDidLoad() {
         super.viewDidLoad()

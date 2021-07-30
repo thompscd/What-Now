@@ -33,6 +33,9 @@
 		E4876AC326B2E1B700009BB2 /* RainbowWritingActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876AC226B2E1B700009BB2 /* RainbowWritingActivityViewController.swift */; };
 		E4876AC526B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876AC426B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift */; };
 		E4876AC726B3352A00009BB2 /* ABCActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876AC626B3352A00009BB2 /* ABCActivityViewController.swift */; };
+		E4876AC926B35EC100009BB2 /* BackwordsWordsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876AC826B35EC100009BB2 /* BackwordsWordsActivityViewController.swift */; };
+		E4876ACB26B3654400009BB2 /* ColouredVowelsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */; };
+		E4876ACD26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876ACC26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift */; };
 		E4AD3C3A26A9D9B2000A5C0F /* TuesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3926A9D9B2000A5C0F /* TuesdayLessonViewController.swift */; };
 		E4AD3C3C26AACC06000A5C0F /* WednesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */; };
 		E4AD3C3E26AB15DD000A5C0F /* ThursdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */; };
@@ -98,6 +101,9 @@
 		E4876AC226B2E1B700009BB2 /* RainbowWritingActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowWritingActivityViewController.swift; sourceTree = "<group>"; };
 		E4876AC426B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTheDotsActivityViewController.swift; sourceTree = "<group>"; };
 		E4876AC626B3352A00009BB2 /* ABCActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCActivityViewController.swift; sourceTree = "<group>"; };
+		E4876AC826B35EC100009BB2 /* BackwordsWordsActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackwordsWordsActivityViewController.swift; sourceTree = "<group>"; };
+		E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColouredVowelsActivityViewController.swift; sourceTree = "<group>"; };
+		E4876ACC26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceCreatorActivityViewController.swift; sourceTree = "<group>"; };
 		E4AD3C3926A9D9B2000A5C0F /* TuesdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesdayLessonViewController.swift; sourceTree = "<group>"; };
 		E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayLessonViewController.swift; sourceTree = "<group>"; };
 		E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursdayLessonViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 		87A9771C2690C4A200FDA013 = {
 			isa = PBXGroup;
 			children = (
+				E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */,
 				87A977272690C4A300FDA013 /* What Next */,
 				87A9773E2690C4AF00FDA013 /* What NextTests */,
 				87A977492690C4AF00FDA013 /* What NextUITests */,
@@ -171,6 +178,8 @@
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
 				87A9772C2690C4A300FDA013 /* ViewController.swift */,
 				87A9772E2690C4A300FDA013 /* Main.storyboard */,
+				E4876ACC26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift */,
+				E4876AC826B35EC100009BB2 /* BackwordsWordsActivityViewController.swift */,
 				E4876AC426B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift */,
 				E4876AC226B2E1B700009BB2 /* RainbowWritingActivityViewController.swift */,
 				E44DD5CF26B0B57900EBDF89 /* SpellingWordsViewController.swift */,
@@ -380,6 +389,7 @@
 				87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */,
 				E4AD3C3E26AB15DD000A5C0F /* ThursdayLessonViewController.swift in Sources */,
 				E44B055D26A6E2330055C3F2 /* MondayLessonViewController.swift in Sources */,
+				E4876AC926B35EC100009BB2 /* BackwordsWordsActivityViewController.swift in Sources */,
 				E45CC68226B1E77800E04D72 /* CanvasView.swift in Sources */,
 				874D2C14269597180087E87C /* LiteracyViewController.swift in Sources */,
 				87A9772D2690C4A300FDA013 /* ViewController.swift in Sources */,
@@ -388,9 +398,11 @@
 				E44B055926A5D42A0055C3F2 /* FMDatabasePool.m in Sources */,
 				E44DD58626AC4F6900EBDF89 /* ActivitySelectionViewController.swift in Sources */,
 				E44DD5CE26B0AA3000EBDF89 /* SpeedWritingActivityViewController.swift in Sources */,
+				E4876ACD26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift in Sources */,
 				87A9772B2690C4A300FDA013 /* SceneDelegate.swift in Sources */,
 				E44B055A26A5D42A0055C3F2 /* FMDatabase.m in Sources */,
 				E44B055826A5D42A0055C3F2 /* FMDatabaseQueue.m in Sources */,
+				E4876ACB26B3654400009BB2 /* ColouredVowelsActivityViewController.swift in Sources */,
 				E4AD3C3A26A9D9B2000A5C0F /* TuesdayLessonViewController.swift in Sources */,
 				E4876AC726B3352A00009BB2 /* ABCActivityViewController.swift in Sources */,
 				E4876AC526B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift in Sources */,
