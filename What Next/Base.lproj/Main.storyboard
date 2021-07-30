@@ -404,7 +404,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osY-bn-KAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2689.2307692307691" y="94.549763033175353"/>
+            <point key="canvasLocation" x="506" y="-649"/>
         </scene>
         <!--Wednesday Lesson View Controller-->
         <scene sceneID="5Aq-kj-X5D">
@@ -1461,7 +1461,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROa-iP-Amh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5825.9765625" y="-633.3821376281112"/>
+            <point key="canvasLocation" x="5702" y="-649"/>
         </scene>
         <!--Tuesday Lesson View Controller-->
         <scene sceneID="T7K-Hq-6dv">
@@ -2038,7 +2038,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7P-Lz-TJW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3049.8046875" y="-2189.1654465592969"/>
+            <point key="canvasLocation" x="2689" y="-2180"/>
         </scene>
         <!--Rainbow Writing Activity View Contoller-->
         <scene sceneID="R1N-L7-jB5">
@@ -2279,7 +2279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7o-vw-z4F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3966" y="-2190"/>
+            <point key="canvasLocation" x="3456" y="-2180"/>
         </scene>
         <!--Join The Dots Activity View Controller-->
         <scene sceneID="aZ9-0B-Vq3">
@@ -2522,7 +2522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l4j-xv-7QV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4732" y="-2185"/>
+            <point key="canvasLocation" x="4212" y="-2180"/>
         </scene>
         <!--ABC Order View Controller-->
         <scene sceneID="jzk-D6-TsY">
@@ -2762,7 +2762,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxC-ia-dwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5537" y="-2180"/>
+            <point key="canvasLocation" x="4927" y="-2180"/>
         </scene>
         <!--Backwords Words Activity View Controller-->
         <scene sceneID="wSv-qd-bNE">
@@ -3008,7 +3008,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIZ-oF-yC7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6378" y="-2175"/>
+            <point key="canvasLocation" x="5702" y="-2180"/>
         </scene>
         <!--Coloured Vowels Activity View Controller-->
         <scene sceneID="uQC-8g-Po2">
@@ -3259,7 +3259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ANb-Op-4ck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7272" y="-2165"/>
+            <point key="canvasLocation" x="6538" y="-2180"/>
         </scene>
         <!--Sentence Creator Activity View Controller-->
         <scene sceneID="29L-uM-zyn">
@@ -3456,7 +3456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsp-JX-5IR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8157.4218749999991" y="-2161.0541727672035"/>
+            <point key="canvasLocation" x="7385" y="-2180"/>
         </scene>
         <!--Spelling Words View Controller-->
         <scene sceneID="qy3-5d-Vic">
@@ -3805,7 +3805,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRs-ir-Dcg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4234.5703125" y="-3000.4392386530012"/>
+            <point key="canvasLocation" x="4927" y="-2977"/>
         </scene>
         <!--Activity Selection View Controller-->
         <scene sceneID="qKi-32-Hme">
@@ -3971,7 +3971,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOG-eR-JZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6356" y="-1456"/>
+            <point key="canvasLocation" x="4212" y="-1373"/>
         </scene>
         <!--Monday Lesson View Controller-->
         <scene sceneID="97q-p0-bjc">
@@ -4724,8 +4724,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ite-Ym-jJW"/>
-        <segue reference="unM-Uo-0B7"/>
+        <segue reference="AvM-vr-uaJ"/>
+        <segue reference="7MP-h3-juy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Back Arrow" width="102" height="76"/>
