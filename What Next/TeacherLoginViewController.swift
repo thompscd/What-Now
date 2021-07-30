@@ -47,31 +47,13 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
         print ("Sign In button pressed!")
         print ("UserNameTextField is ",username )
         print ("PasswordTextField is ",password )
+        
         // check if this username exists in database
-        //////////////////////////////////////////
-        // THIS IS A HACK. THIS IS CODE COPIED FROM ViewController.swift. NEED TO CHANGE SO THAT THE whatnextDB variable is passed between controllers !!!!!
-        var databasePath = String();
-        let filemgr = FileManager.default
-        let dirPaths = filemgr.urls(for: .documentDirectory,
-                       in: .userDomainMask)
-        databasePath = dirPaths[0].appendingPathComponent("whatnext.db").path
-        let whatnextDB = FMDatabase(path: databasePath as String)
-        if whatnextDB == nil {
-            print("Error TeacherLoginViewController: whatnextDB is nil, \(whatnextDB.lastErrorMessage())")
-        } else {
-            print ("TeacherLoginViewControl: database not nil")
-            if (whatnextDB.open()) {
-                print ("TeacherLoginViewControl: database is open")
-            } else {
-                print("Error TeacherLoginViewController: whatnextDB not open, \(whatnextDB.lastErrorMessage())")
-            }
-        }
-        // END OF HACK CODE !!!!!!!
-        /////////////////////////////////////////////////
+
         // return password for that teacher (if it exists)
         let querySQL = "SELECT loginname, suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(username.lowercased())';"
 
-        let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
             print ("going through results!!!!!!!!")
             let dbpassword = results?.string(forColumn:"password");
