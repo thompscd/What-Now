@@ -9,16 +9,12 @@ import UIKit
 
 class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
     
-    //@IBOutlet weak var firstnameTextField: UITextField!
-    //@IBOutlet weak var lastnameTextField: UITextField!
-    //@IBOutlet weak var passwordTextField: UITextField!
-    //@IBOutlet weak var confirmPasswordTextField: UITextField!
+
     @IBOutlet weak var firstnameTextField: UITextField!
     @IBOutlet weak var lastnameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    //@IBOutlet weak var suffixTextField: UITextField!
     
     // suffix pulldown outlets
     @IBOutlet weak var suffixSelectBtn: UIButton!
@@ -26,9 +22,7 @@ class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var errorLabel: UILabel!
-    
-    //@IBOutlet weak var errorLabel: UILabel!
-    
+        
     let loginname = GlobalVar.loginname;
     var currentPasswordInDatabase : String = "";
     var suffixSelected : String = "";
@@ -43,15 +37,14 @@ class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
         self.confirmPasswordTextField.delegate = self;
         
         // Do any additional setup after loading the view.
-        openDatabase();
-        
+                
         hideSuffixPulldown();
         
         // extract username details from database and add to the fields
         
         // check the teacher is in the database
         let querySQL = "SELECT suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(loginname)';"
-        let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
             print("TeacherSettingsViewController - user is in database !!!!")
             let suffix :String = results?.string(forColumn:"suffix") ?? "" ;
@@ -138,7 +131,7 @@ class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
                 password = currentPasswordInDatabase;
             }
             let querySQL = "UPDATE TEACHER SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)', email='\(email)', suffix='\(suffixSelected)' WHERE loginname = '\(loginname)';"
-            let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
+            let results = GlobalVar.whatNextDB.executeUpdate(querySQL, withArgumentsIn:[]);
             GlobalVar.suffix = suffixSelected;
             //dismiss(animated:true,completion:nil)  // update successful so close the screen
             performSegue(withIdentifier:"teacherSegue",sender:AnyObject.self);
@@ -154,29 +147,7 @@ class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
 
     }
     
-    var whatnextDB = FMDatabase(path: databasePath as String)
-    
-    func openDatabase () {
-        // THIS IS A HACK. THIS IS CODE COPIED FROM ViewController.swift. NEED TO CHANGE SO THAT THE whatnextDB variable is passed between controllers !!!!!
-        var databasePath = String();
-        let filemgr = FileManager.default
-        let dirPaths = filemgr.urls(for: .documentDirectory,
-                       in: .userDomainMask)
-        databasePath = dirPaths[0].appendingPathComponent("whatnext.db").path
-        whatnextDB = FMDatabase(path: databasePath as String)
-        if whatnextDB == nil {
-            print("Error TeacherSettingsViewController: whatnextDB is nil, \(whatnextDB.lastErrorMessage())")
-        } else {
-            print ("TeacherSettingsViewController: database not nil")
-            if (whatnextDB.open()) {
-                print ("TeacherSettingsViewController: database is open")
-            } else {
-                print("Error TeacherSettingsViewController: whatnextDB not open, \(whatnextDB.lastErrorMessage())")
-            }
-        }
-        // END OF HACK CODE !!!!!!!
-        /////////////////////////////////////////////////
-    }
+
     
     // suffix pulldown functions
 
