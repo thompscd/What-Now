@@ -23,13 +23,13 @@ class PupilSettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        openDatabase();
+        //openDatabase();
         
         // extract username details from database and add to the fields
         
         // check the user is in the database
         let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(loginname)';"
-        let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
             print("UserProfileViewController - user is in database !!!!")
             let firstname = results?.string(forColumn:"firstname") ;
@@ -97,7 +97,7 @@ class PupilSettingsViewController: UIViewController {
         if !error_found {
             // update database with new values
             let querySQL = "UPDATE PUPIL SET firstname='\(firstname ?? "")', lastname='\(lastname)', password='\(password)' WHERE loginname = '\(loginname)';"
-            let results = whatnextDB.executeUpdate(querySQL, withArgumentsIn:[]);
+            let results = GlobalVar.whatNextDB.executeUpdate(querySQL, withArgumentsIn:[]);
             dismiss(animated:true,completion:nil)  // update successful so close the screen
 
         }
@@ -107,7 +107,7 @@ class PupilSettingsViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated:true,completion:nil)
     }
-    
+    /*
     var whatnextDB = FMDatabase(path: databasePath as String)
     
     func openDatabase () {
@@ -131,6 +131,7 @@ class PupilSettingsViewController: UIViewController {
         // END OF HACK CODE !!!!!!!
         /////////////////////////////////////////////////
     }
+    */
     
     /*
     // MARK: - Navigation
