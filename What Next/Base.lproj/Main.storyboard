@@ -610,11 +610,11 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6IM-y5-I2p">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6IM-y5-I2p">
                                         <rect key="frame" x="0.0" y="464.5" width="920" height="139.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltn-PN-hPH">
-                                                <rect key="frame" x="0.0" y="0.0" width="751" height="139.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltn-PN-hPH">
+                                                <rect key="frame" x="0.0" y="0.0" width="238.5" height="139.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Ready to try some activities?">
                                                         <attributes>
@@ -626,7 +626,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53X-XP-rHZ">
-                                                <rect key="frame" x="771" y="0.0" width="149" height="139.5"/>
+                                                <rect key="frame" x="258.5" y="0.0" width="149" height="139.5"/>
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="149" id="7Aw-iN-YgW"/>
@@ -638,6 +638,29 @@
                                                 <connections>
                                                     <segue destination="fIG-cp-2Nk" kind="show" identifier="wednesdayToActivitySegue" id="CGF-jU-db7"/>
                                                 </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fe-9R-RWy">
+                                                <rect key="frame" x="427.5" y="0.0" width="323.5" height="139.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Ready to test your knowledge?">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="30"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eS4-lg-LvS">
+                                                <rect key="frame" x="771" y="0.0" width="149" height="139.5"/>
+                                                <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="149" id="2gc-Ka-RmL"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Lets try our best!">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -972,11 +995,11 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UAs-37-cbW">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UAs-37-cbW">
                                         <rect key="frame" x="0.0" y="465" width="920" height="140"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgX-3L-0OX">
-                                                <rect key="frame" x="0.0" y="0.0" width="751" height="140"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgX-3L-0OX">
+                                                <rect key="frame" x="0.0" y="0.0" width="238.5" height="140"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Ready to try some activities?">
                                                         <attributes>
@@ -988,7 +1011,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCq-RG-HSU">
-                                                <rect key="frame" x="771" y="0.0" width="149" height="140"/>
+                                                <rect key="frame" x="258.5" y="0.0" width="149" height="140"/>
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="149" id="yT6-eT-haN"/>
@@ -1000,6 +1023,29 @@
                                                 <connections>
                                                     <segue destination="fIG-cp-2Nk" kind="show" identifier="thursdayToActivitySegue" id="r2c-mv-Jlv"/>
                                                 </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-Up-bbj">
+                                                <rect key="frame" x="427.5" y="0.0" width="323.5" height="140"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Ready to test your knowledge?">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="30"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="on8-Db-2vk">
+                                                <rect key="frame" x="771" y="0.0" width="149" height="140"/>
+                                                <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="149" id="2qw-tf-gy2"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Lets try our best!">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1254,11 +1300,11 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pv8-dt-qsR">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pv8-dt-qsR">
                                         <rect key="frame" x="0.0" y="465" width="920" height="140"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odn-Yg-Q75">
-                                                <rect key="frame" x="0.0" y="0.0" width="751" height="140"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odn-Yg-Q75">
+                                                <rect key="frame" x="0.0" y="0.0" width="238.5" height="140"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Ready to try some activities?">
                                                         <attributes>
@@ -1270,7 +1316,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQF-7g-R2C">
-                                                <rect key="frame" x="771" y="0.0" width="149" height="140"/>
+                                                <rect key="frame" x="258.5" y="0.0" width="149" height="140"/>
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="149" id="Uyh-iu-sMQ"/>
@@ -1282,6 +1328,29 @@
                                                 <connections>
                                                     <segue destination="fIG-cp-2Nk" kind="show" identifier="fridayToActivitySegue" id="Ite-Ym-jJW"/>
                                                 </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUB-hX-Kww">
+                                                <rect key="frame" x="427.5" y="0.0" width="323.5" height="140"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Ready to test your knowledge?">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="30"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xJ-Jj-dM8">
+                                                <rect key="frame" x="771" y="0.0" width="149" height="140"/>
+                                                <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="149" id="Wwb-Tj-D4g"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Lets try our best!">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1616,11 +1685,11 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hFb-K6-9Es">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hFb-K6-9Es">
                                         <rect key="frame" x="0.0" y="463" width="922" height="139"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7k-PN-J1t">
-                                                <rect key="frame" x="0.0" y="0.0" width="753" height="139"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7k-PN-J1t">
+                                                <rect key="frame" x="0.0" y="0.0" width="238.5" height="139"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Ready to try some activities?">
                                                         <attributes>
@@ -1632,7 +1701,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUF-O9-p41">
-                                                <rect key="frame" x="773" y="0.0" width="149" height="139"/>
+                                                <rect key="frame" x="258.5" y="0.0" width="149" height="139"/>
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="149" id="ntg-rG-Y3q"/>
@@ -1644,6 +1713,29 @@
                                                 <connections>
                                                     <segue destination="fIG-cp-2Nk" kind="show" identifier="tuesdayToActivitySegue" id="jHI-ss-ztC"/>
                                                 </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg0-eC-4hs">
+                                                <rect key="frame" x="427.5" y="0.0" width="325.5" height="139"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Ready to test your knowledge?">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="30"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2g-hF-mhd">
+                                                <rect key="frame" x="773" y="0.0" width="149" height="139"/>
+                                                <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="149" id="CLx-nm-dG2"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Lets try our best!">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -3765,10 +3857,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i3d-HI-Xlj">
-                                <rect key="frame" x="52" y="309" width="920" height="884"/>
+                                <rect key="frame" x="52" y="309" width="920" height="1005"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erg-Re-xNi">
-                                        <rect key="frame" x="0.0" y="0.0" width="920" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="920" height="135"/>
                                         <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -3786,7 +3878,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0N-Br-mXF">
-                                        <rect key="frame" x="0.0" y="127.5" width="920" height="118"/>
+                                        <rect key="frame" x="0.0" y="145" width="920" height="135"/>
                                         <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="Rainbow Writing">
@@ -3797,7 +3889,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jle-Nu-8Qt">
-                                        <rect key="frame" x="0.0" y="255.5" width="920" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="290" width="920" height="135"/>
                                         <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="Join the Dots">
@@ -3808,7 +3900,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5E-bx-4BN">
-                                        <rect key="frame" x="0.0" y="383" width="920" height="118"/>
+                                        <rect key="frame" x="0.0" y="435" width="920" height="135"/>
                                         <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="ABC Order">
@@ -3819,7 +3911,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlU-Bq-HtL">
-                                        <rect key="frame" x="0.0" y="511" width="920" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="580" width="920" height="135"/>
                                         <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="Backwards Words">
@@ -3830,7 +3922,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33r-5P-v6C">
-                                        <rect key="frame" x="0.0" y="638.5" width="920" height="118"/>
+                                        <rect key="frame" x="0.0" y="725" width="920" height="135"/>
                                         <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <state key="normal" title="Coloured Vowels">
@@ -3841,7 +3933,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJN-BS-ovk">
-                                        <rect key="frame" x="0.0" y="766.5" width="920" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="870" width="920" height="135"/>
                                         <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <state key="normal" title="Sentence Creator">
@@ -3853,46 +3945,23 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7mB-BR-V8c">
-                                <rect key="frame" x="52" y="1243" width="920" height="51"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confortable with your sound?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2b-88-E7W">
-                                        <rect key="frame" x="0.0" y="0.0" width="686" height="51"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYg-a2-LzH">
-                                        <rect key="frame" x="691" y="0.0" width="229" height="51"/>
-                                        <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
-                                        <state key="normal" title="Lets Test!">
-                                            <color key="titleColor" systemColor="labelColor"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jym-5i-JBP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WKE-YY-eax" firstAttribute="leading" secondItem="jym-5i-JBP" secondAttribute="leading" constant="52" id="2C9-GT-JIW"/>
-                            <constraint firstItem="jym-5i-JBP" firstAttribute="trailing" secondItem="7mB-BR-V8c" secondAttribute="trailing" constant="52" id="4h1-bT-Ocn"/>
                             <constraint firstItem="0zB-eN-eKa" firstAttribute="top" secondItem="jym-5i-JBP" secondAttribute="top" constant="52" id="5iX-mB-hSA"/>
                             <constraint firstItem="WKE-YY-eax" firstAttribute="centerX" secondItem="qM9-t0-krs" secondAttribute="centerX" id="9ol-qy-kWI"/>
                             <constraint firstItem="i3d-HI-Xlj" firstAttribute="leading" secondItem="jym-5i-JBP" secondAttribute="leading" constant="52" id="BqF-Yd-rdY"/>
-                            <constraint firstItem="7mB-BR-V8c" firstAttribute="centerX" secondItem="qM9-t0-krs" secondAttribute="centerX" id="CD6-et-46P"/>
+                            <constraint firstItem="jym-5i-JBP" firstAttribute="bottom" secondItem="i3d-HI-Xlj" secondAttribute="bottom" constant="32" id="FNb-T5-jw1"/>
                             <constraint firstItem="LyL-Hg-nTt" firstAttribute="top" secondItem="jym-5i-JBP" secondAttribute="top" constant="52" id="Gnu-g8-mBy"/>
                             <constraint firstItem="0zB-eN-eKa" firstAttribute="leading" secondItem="jym-5i-JBP" secondAttribute="leading" constant="48" id="Pdq-iu-Wfy"/>
                             <constraint firstItem="i3d-HI-Xlj" firstAttribute="centerX" secondItem="qM9-t0-krs" secondAttribute="centerX" id="SYy-Gq-oVR"/>
                             <constraint firstItem="jym-5i-JBP" firstAttribute="trailing" secondItem="i3d-HI-Xlj" secondAttribute="trailing" constant="52" id="XUY-CW-WAA"/>
                             <constraint firstAttribute="trailing" secondItem="WKE-YY-eax" secondAttribute="trailing" constant="52" id="bpP-lL-e4t"/>
-                            <constraint firstItem="7mB-BR-V8c" firstAttribute="top" secondItem="i3d-HI-Xlj" secondAttribute="bottom" constant="50" id="dfA-0m-X9A"/>
                             <constraint firstItem="i3d-HI-Xlj" firstAttribute="top" secondItem="WKE-YY-eax" secondAttribute="bottom" constant="50" id="eZh-AO-O3O"/>
-                            <constraint firstItem="7mB-BR-V8c" firstAttribute="leading" secondItem="jym-5i-JBP" secondAttribute="leading" constant="52" id="gGc-Bk-Lol"/>
                             <constraint firstItem="LyL-Hg-nTt" firstAttribute="centerX" secondItem="qM9-t0-krs" secondAttribute="centerX" id="i0U-Kn-6wK"/>
                             <constraint firstItem="WKE-YY-eax" firstAttribute="top" secondItem="LyL-Hg-nTt" secondAttribute="bottom" constant="50" id="ruw-jV-QXH"/>
-                            <constraint firstItem="jym-5i-JBP" firstAttribute="bottom" secondItem="7mB-BR-V8c" secondAttribute="bottom" constant="52" id="xKK-B2-RCC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PWC-kg-ewF"/>
@@ -4062,11 +4131,11 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hJ1-bA-U3v">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hJ1-bA-U3v">
                                         <rect key="frame" x="0.0" y="463" width="922" height="139"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkf-GQ-z7h">
-                                                <rect key="frame" x="0.0" y="0.0" width="753" height="139"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkf-GQ-z7h">
+                                                <rect key="frame" x="0.0" y="0.0" width="238.5" height="139"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Ready to try some activities?">
                                                         <attributes>
@@ -4078,7 +4147,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15O-Ph-ucR">
-                                                <rect key="frame" x="773" y="0.0" width="149" height="139"/>
+                                                <rect key="frame" x="258.5" y="0.0" width="149" height="139"/>
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="149" id="N7Y-5c-oti"/>
@@ -4090,6 +4159,29 @@
                                                 <connections>
                                                     <segue destination="fIG-cp-2Nk" kind="show" identifier="mondayToActivitySegue" id="AvM-vr-uaJ"/>
                                                 </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rY-Se-KsN">
+                                                <rect key="frame" x="427.5" y="0.0" width="325.5" height="139"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Ready to test your knowledge?">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="30"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wO8-fb-Mjp">
+                                                <rect key="frame" x="773" y="0.0" width="149" height="139"/>
+                                                <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="149" id="8qV-1S-hYj"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Lets try our best!">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                     </stackView>
