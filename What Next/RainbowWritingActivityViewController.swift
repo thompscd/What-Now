@@ -87,6 +87,12 @@ class RainbowWritingActivityViewController: UIViewController {
     @IBAction func startPressed(_ sender: UIButton) {
         startTimer()
     }
+    
+    //Using previous segue to return to previous screen when return pressed.
+    @IBAction func returnToPreviousScreen(_ sender: UIButton) {
+        performSegueToReturnBack()
+    }
+    
 
 }
 

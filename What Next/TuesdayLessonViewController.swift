@@ -102,4 +102,9 @@ class TuesdayLessonViewController: UIViewController {
         }
     }
     
+    @IBAction func returnToPreviousScreen(_ sender: UIButton) {
+        performSegueToReturnBack()
+    }
+    
+    
 }

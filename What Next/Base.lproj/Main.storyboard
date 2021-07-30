@@ -679,8 +679,7 @@
                                 <rect key="frame" x="52" y="70" width="88" height="76"/>
                                 <state key="normal" image="Back Arrow"/>
                                 <connections>
-                                    <action selector="close" destination="feH-vf-0yV" eventType="touchUpInside" id="22Z-ga-Dd2"/>
-                                    <segue destination="feH-vf-0yV" kind="presentation" id="T8r-NW-6IA"/>
+                                    <action selector="returnToPreviousScreen:" destination="QcI-UZ-UgV" eventType="touchUpInside" id="Ew7-de-Poc"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9tX-DQ-exK">
@@ -824,8 +823,7 @@
                                 <rect key="frame" x="52" y="67.5" width="172.5" height="76"/>
                                 <state key="normal" image="Back Arrow"/>
                                 <connections>
-                                    <action selector="close" destination="feH-vf-0yV" eventType="touchUpInside" id="BMI-7Q-qAL"/>
-                                    <segue destination="feH-vf-0yV" kind="show" id="VCT-P1-8RU"/>
+                                    <action selector="returnToPreviousScreen:" destination="4GG-Ze-vID" eventType="touchUpInside" id="OzO-s1-ZXo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adding the prefix ex- (meaning 'out' )" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK7-mY-d04">
@@ -1110,7 +1108,7 @@
                                 </constraints>
                                 <state key="normal" image="Back Arrow"/>
                                 <connections>
-                                    <action selector="close" destination="feH-vf-0yV" eventType="touchUpInside" id="n91-kr-0NU"/>
+                                    <action selector="returnToPreviousScreen:" destination="f7F-O8-kj6" eventType="touchUpInside" id="gqg-iw-rlP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Revision" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU2-MP-2cv">
@@ -1478,8 +1476,7 @@
                                 <rect key="frame" x="51" y="61" width="101.5" height="76"/>
                                 <state key="normal" image="Back Arrow"/>
                                 <connections>
-                                    <action selector="close" destination="feH-vf-0yV" eventType="touchUpInside" id="s2a-i3-Rj4"/>
-                                    <segue destination="feH-vf-0yV" kind="show" id="uRb-Cm-KkV"/>
+                                    <action selector="returnToPreviousScreen:" destination="t3J-5g-QiS" eventType="touchUpInside" id="Bsc-jW-ABG"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6HF-he-DDw">
@@ -1919,6 +1916,9 @@
                                                 <state key="normal" title="Return">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="returnToPreviousScreen:" destination="f4y-Mc-bI3" eventType="touchUpInside" id="HnT-S6-Swg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -2158,6 +2158,9 @@
                                                 <state key="normal" title="Return">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="returnToPreviousScreen:" destination="aIu-3D-fIc" eventType="touchUpInside" id="8EF-X8-NpI"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -2398,6 +2401,9 @@
                                                 <state key="normal" title="Return">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="returnToPreviousScreen:" destination="gVs-p6-07s" eventType="touchUpInside" id="vhF-XH-pyS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -2635,6 +2641,9 @@
                                                 <state key="normal" title="Return">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="returnToPreviousScreen:" destination="cc8-5S-LIv" eventType="touchUpInside" id="med-DE-Hl9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -2878,6 +2887,9 @@
                                                 <state key="normal" title="Return">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="returnToPreviousScreen:" destination="z7n-vT-JcH" eventType="touchUpInside" id="G0w-aA-cKP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -3126,6 +3138,9 @@
                                                 <state key="normal" title="Return">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="returnToPreviousScreen:" destination="Mka-yu-Ug6" eventType="touchUpInside" id="pR9-Fk-O8A"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -3322,6 +3337,9 @@
                                                 <state key="normal" title="Return">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="returnToPreviousScreen:" destination="kbo-eI-qNE" eventType="touchUpInside" id="LJX-Yj-dGB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -3742,6 +3760,9 @@
                                     <constraint firstAttribute="width" constant="88" id="Hxe-of-zWg"/>
                                 </constraints>
                                 <state key="normal" image="Back Arrow"/>
+                                <connections>
+                                    <action selector="returnToPreviousScreen:" destination="fIG-cp-2Nk" eventType="touchUpInside" id="FiU-vJ-GiQ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="i3d-HI-Xlj">
                                 <rect key="frame" x="52" y="309" width="920" height="884"/>
@@ -4092,8 +4113,7 @@
                                 <rect key="frame" x="51" y="63" width="101.5" height="77"/>
                                 <state key="normal" image="Back Arrow"/>
                                 <connections>
-                                    <action selector="close" destination="feH-vf-0yV" eventType="touchUpInside" id="xcN-hY-YzA"/>
-                                    <segue destination="feH-vf-0yV" kind="presentation" id="cBX-l0-Gvs"/>
+                                    <action selector="returnToPreviousScreen:" destination="krO-hd-Tmn" eventType="touchUpInside" id="2Qa-xg-Og9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets remind ourselves of the spelling rules! Play the video to learn about today's spelling rule!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx6-Y1-R9f">
@@ -4612,9 +4632,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CGF-jU-db7"/>
-        <segue reference="6Ad-1c-g0V"/>
-        <segue reference="T8r-NW-6IA"/>
+        <segue reference="Ite-Ym-jJW"/>
+        <segue reference="unM-Uo-0B7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Back Arrow" width="102" height="76"/>

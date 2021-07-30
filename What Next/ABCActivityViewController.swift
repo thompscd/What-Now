@@ -88,6 +88,12 @@ class ABCActivityViewController: UIViewController {
         startTimer()
     }
     
+    //Using previous segue to return to previous screen when return pressed.
+    @IBAction func returnToPreviousScreen(_ sender: UIButton) {
+        performSegueToReturnBack()
+    }
+    
+    
 }
 
 extension ABCActivityViewController: UICollectionViewDelegate, UICollectionViewDataSource {

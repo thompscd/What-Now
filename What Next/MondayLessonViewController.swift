@@ -103,4 +103,9 @@ class MondayLessonViewController: UIViewController {
             vc?.activityPageTitle = "augh and au Activities!"
         }
     }
+    
+    @IBAction func returnToPreviousScreen(_ sender: UIButton) {
+        performSegueToReturnBack()
+    }
+    
 }

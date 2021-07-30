@@ -87,6 +87,12 @@ class JoinTheDotsActivityViewController: UIViewController {
         startTimer()
     }
     
+    //Using previous segue to return to previous screen when return pressed.
+    @IBAction func returnToPreviousScreen(_ sender: UIButton) {
+        performSegueToReturnBack()
+    }
+    
+    
 }
 
 extension JoinTheDotsActivityViewController: UICollectionViewDelegate, UICollectionViewDataSource {

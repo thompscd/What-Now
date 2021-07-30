@@ -141,7 +141,6 @@
 		87A9771C2690C4A200FDA013 = {
 			isa = PBXGroup;
 			children = (
-				E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */,
 				87A977272690C4A300FDA013 /* What Next */,
 				87A9773E2690C4AF00FDA013 /* What NextTests */,
 				87A977492690C4AF00FDA013 /* What NextUITests */,
@@ -178,6 +177,7 @@
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
 				87A9772C2690C4A300FDA013 /* ViewController.swift */,
 				87A9772E2690C4A300FDA013 /* Main.storyboard */,
+				E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */,
 				E4876ACC26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift */,
 				E4876AC826B35EC100009BB2 /* BackwordsWordsActivityViewController.swift */,
 				E4876AC426B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift */,
