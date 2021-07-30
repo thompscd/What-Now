@@ -23,7 +23,7 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
         self.UserNameTextField.delegate = self;
 
         //DEBUG
-        if (GlobalVar.whatnextDB.open()) {
+        if (GlobalVar.whatNextDB.open()) {
             print ("!!!!!!!!! Database is open")
         } else {
             print ("!!!!!!! Database is NOT open")

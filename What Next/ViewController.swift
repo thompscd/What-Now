@@ -25,6 +25,7 @@ var databasePath = String()
 struct GlobalVar {
     //loginname shared between View Controllers
     static var loginname : String  = "";
+    
     // moodlevels
     static let moodlevel_none : Int = 0 ; //mood level not selected
     static let moodlevel_happy : Int = 1 ;
@@ -37,11 +38,13 @@ struct GlobalVar {
     static let notificationPriorityNormal : Int = 1 ;
     static let notificationPriorityLow : Int = 2 ;
 
-    // database variables
-    static var whatnextDB = FMDatabase ()
+    // database holding teacher, pupil, comments, notifications
+    static var whatNextDB = FMDatabase ()
+    
     // teacher suffix and surname
     static var suffix : String = "";
     static var lastname : String = "";
+    
     // flag indicating if unreadNotifictionsPopup has been displayed
     static var unreadNotificationsPopupDisplayed : Bool = false;
 }
@@ -61,13 +64,13 @@ class ViewController: UIViewController {
         
         if !filemgr.fileExists(atPath: databasePath as String) {
             
-            GlobalVar.whatnextDB = FMDatabase(path: databasePath as String)
+            GlobalVar.whatNextDB = FMDatabase(path: databasePath as String)
 
-            if GlobalVar.whatnextDB == nil {
-                print("Error: \(GlobalVar.whatnextDB.lastErrorMessage())")
+            if GlobalVar.whatNextDB == nil {
+                print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
             }
             
-            if (GlobalVar.whatnextDB.open()) {
+            if (GlobalVar.whatNextDB.open()) {
                 // create pupil table
                 let sql_stmt = "CREATE TABLE IF NOT EXISTS PUPIL (LOGINNAME TEXT PRIMARY KEY, FIRSTNAME TEXT, LASTNAME TEXT, LASTLOGIN TEXT, PASSWORD TEXT);"
                 // create teacher table
@@ -78,17 +81,17 @@ class ViewController: UIViewController {
                 let sql_stmt4 = "CREATE TABLE IF NOT EXISTS NOTIFICATIONS (ID INTEGER PRIMARY KEY AUTOINCREMENT,PUPILLOGINNAME TEXT, TEACHERLOGINNAME TEXT, NOTIFICATION TEXT, DATESUBMITTED TEXT, DATEREAD TEXT, PRIORITY INTEGER);"
 
                 
-                if !(GlobalVar.whatnextDB.executeStatements(sql_stmt)) {
-                    print("Error: \(GlobalVar.whatnextDB.lastErrorMessage())")
+                if !(GlobalVar.whatNextDB.executeStatements(sql_stmt)) {
+                    print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
                 }
-                if !(GlobalVar.whatnextDB.executeStatements(sql_stmt2)) {
-                    print("Error: \(GlobalVar.whatnextDB.lastErrorMessage())")
+                if !(GlobalVar.whatNextDB.executeStatements(sql_stmt2)) {
+                    print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
                 }
-                if !(GlobalVar.whatnextDB.executeStatements(sql_stmt3)) {
-                    print("Error: \(GlobalVar.whatnextDB.lastErrorMessage())")
+                if !(GlobalVar.whatNextDB.executeStatements(sql_stmt3)) {
+                    print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
                 }
-                if !(GlobalVar.whatnextDB.executeStatements(sql_stmt4)) {
-                    print("Error: \(GlobalVar.whatnextDB.lastErrorMessage())")
+                if !(GlobalVar.whatNextDB.executeStatements(sql_stmt4)) {
+                    print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
                 }
                 populatePupilTable();           //DEBUG - add pupils to table
                 populateTeacherTable();         //DEBUG - add teachers to table
@@ -98,7 +101,7 @@ class ViewController: UIViewController {
 
                 // DEBuG GlobalVar.whatnextDB.close();
             } else {
-                print("Error: \(GlobalVar.whatnextDB.lastErrorMessage())")
+                print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
             }
         }
 
@@ -106,40 +109,40 @@ class ViewController: UIViewController {
 
     // function to populate PUPIL table until feature added to app
     func populatePupilTable () {
-        if (GlobalVar.whatnextDB.open()) {
+        if (GlobalVar.whatNextDB.open()) {
             print("ViewController - populating PUPIL table with entries")
-            let result1 = GlobalVar.whatnextDB.executeUpdate(insertPupilSQL1,withArgumentsIn: [] );
-            let result2 = GlobalVar.whatnextDB.executeUpdate(insertPupilSQL2,withArgumentsIn: [] )
-            let result3 = GlobalVar.whatnextDB.executeUpdate(insertPupilSQL3,withArgumentsIn: [] )
+            let result1 = GlobalVar.whatNextDB.executeUpdate(insertPupilSQL1,withArgumentsIn: [] );
+            let result2 = GlobalVar.whatNextDB.executeUpdate(insertPupilSQL2,withArgumentsIn: [] )
+            let result3 = GlobalVar.whatNextDB.executeUpdate(insertPupilSQL3,withArgumentsIn: [] )
         }
     } // populatePupilTable
 
     // function to populate PUPIL table until feature added to app
     func populateTeacherTable () {
-        if (GlobalVar.whatnextDB.open()) {
+        if (GlobalVar.whatNextDB.open()) {
             print("ViewController - populating TEACHER table with entries")
-            let result1 = GlobalVar.whatnextDB.executeUpdate(insertTeacherSQL1,withArgumentsIn: [] );
-            let result2 = GlobalVar.whatnextDB.executeUpdate(insertTeacherSQL2,withArgumentsIn: [] )
+            let result1 = GlobalVar.whatNextDB.executeUpdate(insertTeacherSQL1,withArgumentsIn: [] );
+            let result2 = GlobalVar.whatNextDB.executeUpdate(insertTeacherSQL2,withArgumentsIn: [] )
         }
     } // populatePupilTable
     
     // function to populate COMMENTS table until feature added to app
     func populateCommentsTable () {
-        if (GlobalVar.whatnextDB.open()) {
+        if (GlobalVar.whatNextDB.open()) {
             print("ViewController - populating COMMENTS table with entries")
-            let result1 = GlobalVar.whatnextDB.executeUpdate(insertCommentSQL1,withArgumentsIn: [] );
-            let result2 = GlobalVar.whatnextDB.executeUpdate(insertCommentSQL2,withArgumentsIn: [] )
+            let result1 = GlobalVar.whatNextDB.executeUpdate(insertCommentSQL1,withArgumentsIn: [] );
+            let result2 = GlobalVar.whatNextDB.executeUpdate(insertCommentSQL2,withArgumentsIn: [] )
 
         }
     } // populateCommentsTable
     
     // function to populate NOTIFICATIONS table until feature added to app
     func populateNotificationsTable () {
-        if (GlobalVar.whatnextDB.open()) {
+        if (GlobalVar.whatNextDB.open()) {
             print("ViewController - populating NOTIFICATIONS table with entries")
-            let result1 = GlobalVar.whatnextDB.executeUpdate(insertNotificationSQL1,withArgumentsIn: [] );
-            let result2 = GlobalVar.whatnextDB.executeUpdate(insertNotificationSQL2,withArgumentsIn: [] );
-            let result3 = GlobalVar.whatnextDB.executeUpdate(insertNotificationSQL3,withArgumentsIn: [] );
+            let result1 = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL1,withArgumentsIn: [] );
+            let result2 = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL2,withArgumentsIn: [] );
+            let result3 = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL3,withArgumentsIn: [] );
         }
     } // populateNotificationsTable
 }
