@@ -36,6 +36,16 @@
 		E4876AC926B35EC100009BB2 /* BackwordsWordsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876AC826B35EC100009BB2 /* BackwordsWordsActivityViewController.swift */; };
 		E4876ACB26B3654400009BB2 /* ColouredVowelsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */; };
 		E4876ACD26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876ACC26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift */; };
+		E4876AD826B4AF9B00009BB2 /* caught.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876ACE26B4AF9900009BB2 /* caught.mp3 */; };
+		E4876AD926B4AF9B00009BB2 /* radiation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876ACF26B4AF9900009BB2 /* radiation.mp3 */; };
+		E4876ADA26B4AF9B00009BB2 /* girls.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD026B4AF9A00009BB2 /* girls.mp3 */; };
+		E4876ADB26B4AF9B00009BB2 /* author.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD126B4AF9A00009BB2 /* author.mp3 */; };
+		E4876ADC26B4AF9B00009BB2 /* naughty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD226B4AF9A00009BB2 /* naughty.mp3 */; };
+		E4876ADD26B4AF9B00009BB2 /* creation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD326B4AF9A00009BB2 /* creation.mp3 */; };
+		E4876ADE26B4AF9B00009BB2 /* exit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD426B4AF9A00009BB2 /* exit.mp3 */; };
+		E4876ADF26B4AF9B00009BB2 /* explode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD526B4AF9B00009BB2 /* explode.mp3 */; };
+		E4876AE026B4AF9B00009BB2 /* extend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD626B4AF9B00009BB2 /* extend.mp3 */; };
+		E4876AE126B4AF9B00009BB2 /* mens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD726B4AF9B00009BB2 /* mens.mp3 */; };
 		E4AD3C3A26A9D9B2000A5C0F /* TuesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3926A9D9B2000A5C0F /* TuesdayLessonViewController.swift */; };
 		E4AD3C3C26AACC06000A5C0F /* WednesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */; };
 		E4AD3C3E26AB15DD000A5C0F /* ThursdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */; };
@@ -104,6 +114,16 @@
 		E4876AC826B35EC100009BB2 /* BackwordsWordsActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackwordsWordsActivityViewController.swift; sourceTree = "<group>"; };
 		E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColouredVowelsActivityViewController.swift; sourceTree = "<group>"; };
 		E4876ACC26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceCreatorActivityViewController.swift; sourceTree = "<group>"; };
+		E4876ACE26B4AF9900009BB2 /* caught.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = caught.mp3; sourceTree = "<group>"; };
+		E4876ACF26B4AF9900009BB2 /* radiation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = radiation.mp3; sourceTree = "<group>"; };
+		E4876AD026B4AF9A00009BB2 /* girls.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = girls.mp3; sourceTree = "<group>"; };
+		E4876AD126B4AF9A00009BB2 /* author.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = author.mp3; sourceTree = "<group>"; };
+		E4876AD226B4AF9A00009BB2 /* naughty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = naughty.mp3; sourceTree = "<group>"; };
+		E4876AD326B4AF9A00009BB2 /* creation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = creation.mp3; sourceTree = "<group>"; };
+		E4876AD426B4AF9A00009BB2 /* exit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exit.mp3; sourceTree = "<group>"; };
+		E4876AD526B4AF9B00009BB2 /* explode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explode.mp3; sourceTree = "<group>"; };
+		E4876AD626B4AF9B00009BB2 /* extend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = extend.mp3; sourceTree = "<group>"; };
+		E4876AD726B4AF9B00009BB2 /* mens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mens.mp3; sourceTree = "<group>"; };
 		E4AD3C3926A9D9B2000A5C0F /* TuesdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesdayLessonViewController.swift; sourceTree = "<group>"; };
 		E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayLessonViewController.swift; sourceTree = "<group>"; };
 		E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursdayLessonViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +255,16 @@
 		E4F9D60526A731C2005E87BE /* Sound Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4876AD126B4AF9A00009BB2 /* author.mp3 */,
+				E4876ACE26B4AF9900009BB2 /* caught.mp3 */,
+				E4876AD326B4AF9A00009BB2 /* creation.mp3 */,
+				E4876AD426B4AF9A00009BB2 /* exit.mp3 */,
+				E4876AD526B4AF9B00009BB2 /* explode.mp3 */,
+				E4876AD626B4AF9B00009BB2 /* extend.mp3 */,
+				E4876AD026B4AF9A00009BB2 /* girls.mp3 */,
+				E4876AD726B4AF9B00009BB2 /* mens.mp3 */,
+				E4876AD226B4AF9A00009BB2 /* naughty.mp3 */,
+				E4876ACF26B4AF9900009BB2 /* radiation.mp3 */,
 				E4F9D60626A73296005E87BE /* TestAudioFile.wav */,
 			);
 			path = "Sound Files";
@@ -352,11 +382,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4876AE026B4AF9B00009BB2 /* extend.mp3 in Resources */,
+				E4876ADA26B4AF9B00009BB2 /* girls.mp3 in Resources */,
+				E4876ADF26B4AF9B00009BB2 /* explode.mp3 in Resources */,
 				87A977352690C4AF00FDA013 /* LaunchScreen.storyboard in Resources */,
 				87A977322690C4AF00FDA013 /* Assets.xcassets in Resources */,
 				87A977302690C4A300FDA013 /* Main.storyboard in Resources */,
 				E4F9D60E26A76ACE005E87BE /* testVideo.mp4 in Resources */,
+				E4876ADB26B4AF9B00009BB2 /* author.mp3 in Resources */,
+				E4876AD826B4AF9B00009BB2 /* caught.mp3 in Resources */,
+				E4876ADD26B4AF9B00009BB2 /* creation.mp3 in Resources */,
+				E4876ADE26B4AF9B00009BB2 /* exit.mp3 in Resources */,
+				E4876AE126B4AF9B00009BB2 /* mens.mp3 in Resources */,
+				E4876AD926B4AF9B00009BB2 /* radiation.mp3 in Resources */,
 				E4F9D60726A73296005E87BE /* TestAudioFile.wav in Resources */,
+				E4876ADC26B4AF9B00009BB2 /* naughty.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

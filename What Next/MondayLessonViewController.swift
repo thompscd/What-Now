@@ -60,7 +60,7 @@ class MondayLessonViewController: UIViewController {
     
     //Add and Update audio file in function.
     func playCaught() {
-        guard let url = Bundle.main.url(forResource: "TestAudioFile", withExtension: "wav") else { return }
+        guard let url = Bundle.main.url(forResource: "caught", withExtension: "mp3") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -79,7 +79,7 @@ class MondayLessonViewController: UIViewController {
     
     //Add and Update audio file in function.
     func playNaughty() {
-        guard let url = Bundle.main.url(forResource: "TestAudioFile", withExtension: "wav") else { return }
+        guard let url = Bundle.main.url(forResource: "naughty", withExtension: "mp3") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
