@@ -23,7 +23,6 @@ class TeacherNotificationViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
         self.pupilTextField.delegate = self;
 
-        openDatabase();
         hidePriorityPulldown();
 
     }
@@ -98,7 +97,7 @@ class TeacherNotificationViewController: UIViewController, UITextFieldDelegate {
             let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(pupilUserName.lowercased())';"
             print("TeacherNotificationViewController - pupilUserName = ", pupilUserName)
 
-            let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+            let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
             if results?.next()==true {
                 print("TeacherNotificationViewController - pupil is in database !!!!")
             } else {
@@ -133,7 +132,7 @@ class TeacherNotificationViewController: UIViewController, UITextFieldDelegate {
             df.dateFormat = "dd-MM-yyyy hh:mm"
             let dateTime = df.string(from: Date())
             let insertNotificationSQL = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'\(pupilUserName.lowercased() )','\(GlobalVar.loginname)','\(notification)','\(dateTime)', '',\(prioritySelected));"
-            let results = whatnextDB.executeUpdate(insertNotificationSQL, withArgumentsIn:[]);
+            let results = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL, withArgumentsIn:[]);
             
             // return to teacher home screen
             //dismiss(animated:true,completion:nil)  // update successful so close the screen
@@ -141,38 +140,9 @@ class TeacherNotificationViewController: UIViewController, UITextFieldDelegate {
 
         }
         
-        
-        /*
-         let insertNotificationSQL1 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'mikey','mrburn','Please attend the support meeting on Friday, 1PM in my office. Thanks.','10 July 2021 16:20', '',1);"
-
-         */
     } // submitButtonPressed
     
-    
-    var whatnextDB = FMDatabase(path: databasePath as String)
-    
-    func openDatabase () {
-        // THIS IS A HACK. THIS IS CODE COPIED FROM ViewController.swift. NEED TO CHANGE SO THAT THE whatnextDB variable is passed between controllers !!!!!
-        var databasePath = String();
-        let filemgr = FileManager.default
-        let dirPaths = filemgr.urls(for: .documentDirectory,
-                       in: .userDomainMask)
-        databasePath = dirPaths[0].appendingPathComponent("whatnext.db").path
-        whatnextDB = FMDatabase(path: databasePath as String)
-        if whatnextDB == nil {
-            print("Error UserProfileViewController: whatnextDB is nil, \(whatnextDB.lastErrorMessage())")
-        } else {
-            print ("UserProfileViewControl: database not nil")
-            if (whatnextDB.open()) {
-                print ("UserProfileViewControl: database is open")
-            } else {
-                print("Error UserProfileViewController: whatnextDB not open, \(whatnextDB.lastErrorMessage())")
-            }
-        }
-        // END OF HACK CODE !!!!!!!
-        /////////////////////////////////////////////////
-    }
-
+ 
     /*
     // MARK: - Navigation
 
