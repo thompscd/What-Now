@@ -19,7 +19,7 @@ class UserProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        openDatabase();
+        //openDatabase();
         
     }
     
@@ -27,7 +27,7 @@ class UserProfileViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated:true,completion:nil)
     }
-    
+   /*
     var whatnextDB = FMDatabase(path: databasePath as String)
     
     func openDatabase () {
@@ -51,7 +51,7 @@ class UserProfileViewController: UIViewController {
         // END OF HACK CODE !!!!!!!
         /////////////////////////////////////////////////
     }
-    
+    */
     /*
     // MARK: - Navigation
 

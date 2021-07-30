@@ -2,14 +2,12 @@
 //  NotificatonPopupViewController.swift
 //  What Next
 //
-//  Created by Andy Thompson on 26/07/2021.
+//  Created by Chris Thompson on 26/07/2021.
 //
 
 import UIKit
 
 class NotificatonPopupViewController: UIViewController {
-
-    var whatnextDB = FMDatabase()
     
     @IBOutlet weak var fromLabel: UILabel!
     @IBOutlet weak var dateSubmitted: UILabel!
@@ -26,7 +24,6 @@ class NotificatonPopupViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 
-        openDatabase()
         extractNotifications()
         displayNextUnreadNotifications()
         
@@ -43,7 +40,7 @@ class NotificatonPopupViewController: UIViewController {
         print ("In extractNotifications")
         
         let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)' AND dateread = '';"
-        results = whatnextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
+        results = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
         
     } // extractNotifications
     
@@ -64,7 +61,7 @@ class NotificatonPopupViewController: UIViewController {
                 
                 // format the teacher name
                 let querySQL = "SELECT loginname, suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(teacherloginname.lowercased())';"
-                let results:FMResultSet? = whatnextDB.executeQuery(querySQL, withArgumentsIn:[]);
+                let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
                 var fullTeacherName : String = "";
                 if results?.next()==true {
                     let suffix : String = results?.string(forColumn:"suffix") ?? "";
@@ -105,7 +102,7 @@ class NotificatonPopupViewController: UIViewController {
                 let dateTime = df.string(from: Date())
                 let updateNotificationSQL = "UPDATE NOTIFICATIONS SET dateread = '\(dateTime)' WHERE id = \(id);"
                 print (updateNotificationSQL)
-                let results2 = whatnextDB.executeUpdate(updateNotificationSQL, withArgumentsIn:[]);
+                let results2 = GlobalVar.whatNextDB.executeUpdate(updateNotificationSQL, withArgumentsIn:[]);
             }
 
         } else {
@@ -117,30 +114,7 @@ class NotificatonPopupViewController: UIViewController {
         
     } // displayNextUnreadNotifications
     
-    func openDatabase () {
-        //////////////////////////////////////////
-        // THIS IS A HACK. THIS IS CODE COPIED FROM ViewController.swift. NEED TO CHANGE SO THAT THE whatnextDB variable is passed between controllers !!!!!
-        var databasePath = String();
-        let filemgr = FileManager.default
-        let dirPaths = filemgr.urls(for: .documentDirectory,
-                       in: .userDomainMask)
-        databasePath = dirPaths[0].appendingPathComponent("whatnext.db").path
-        whatnextDB = FMDatabase(path: databasePath as String)
-        if whatnextDB == nil {
-            print("Error PupilLoginViewController: whatnextDB is nil, \(whatnextDB.lastErrorMessage())")
-        } else {
-            print ("PupilLoginViewControl: database not nil")
-            if (whatnextDB.open()) {
-                print ("PupilLoginViewControl: database is open")
-            } else {
-                print("Error PupilLoginViewController: whatnextDB not open, \(whatnextDB.lastErrorMessage())")
-            }
-        }
-        // END OF HACK CODE !!!!!!!
-        /////////////////////////////////////////////////
-        
-    } // openDatabase
-    
+
  
     /*
     // MARK: - Navigation
