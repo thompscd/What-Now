@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8719BC2E2694CCFF00F9829C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC232694CCFF00F9829C /* FMDatabaseAdditions.m */; };
-		8719BC2F2694CCFF00F9829C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC242694CCFF00F9829C /* FMResultSet.m */; };
-		8719BC302694CCFF00F9829C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC262694CCFF00F9829C /* FMDatabasePool.m */; };
-		8719BC312694CCFF00F9829C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC282694CCFF00F9829C /* FMDatabaseQueue.m */; };
-		8719BC322694CCFF00F9829C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC2B2694CCFF00F9829C /* FMDatabase.m */; };
 		874D2C14269597180087E87C /* LiteracyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874D2C13269597180087E87C /* LiteracyViewController.swift */; };
 		87663D8126A57CE300DF111B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87663D8026A57CE300DF111B /* UserProfileViewController.swift */; };
 		878D0F8726A1F3E200EC4EA3 /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878D0F8626A1F3E200EC4EA3 /* MoodViewController.swift */; };
@@ -28,6 +23,44 @@
 		87A9775D2691C35D00FDA013 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A9775C2691C35D00FDA013 /* libsqlite3.tbd */; };
 		87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B42B2926A055530021C852 /* MoodPopupViewController.swift */; };
 		87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE14AA26971557006FC0C2 /* MainPageViewController.swift */; };
+		E44B055726A5D42A0055C3F2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B054D26A5D42A0055C3F2 /* FMResultSet.m */; };
+		E44B055826A5D42A0055C3F2 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B054E26A5D42A0055C3F2 /* FMDatabaseQueue.m */; };
+		E44B055926A5D42A0055C3F2 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B055126A5D42A0055C3F2 /* FMDatabasePool.m */; };
+		E44B055A26A5D42A0055C3F2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B055326A5D42A0055C3F2 /* FMDatabase.m */; };
+		E44B055B26A5D42A0055C3F2 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B055426A5D42A0055C3F2 /* FMDatabaseAdditions.m */; };
+		E44B055D26A6E2330055C3F2 /* MondayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44B055C26A6E2320055C3F2 /* MondayLessonViewController.swift */; };
+		E44DD58626AC4F6900EBDF89 /* ActivitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DD58526AC4F6900EBDF89 /* ActivitySelectionViewController.swift */; };
+		E44DD5CE26B0AA3000EBDF89 /* SpeedWritingActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DD5CD26B0AA3000EBDF89 /* SpeedWritingActivityViewController.swift */; };
+		E44DD5D026B0B57A00EBDF89 /* SpellingWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44DD5CF26B0B57900EBDF89 /* SpellingWordsViewController.swift */; };
+		E45574B426B55AEA0028E53F /* MondayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574B326B55AEA0028E53F /* MondayExplainationViewController.swift */; };
+		E45574B626B568E60028E53F /* MondayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574B526B568E50028E53F /* MondayTestViewController.swift */; };
+		E45574B826B56C3E0028E53F /* TuesdayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574B726B56C3E0028E53F /* TuesdayExplainationViewController.swift */; };
+		E45574BA26B56C860028E53F /* WednesdayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574B926B56C860028E53F /* WednesdayExplainationViewController.swift */; };
+		E45574BC26B56CBA0028E53F /* ThursdayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574BB26B56CBA0028E53F /* ThursdayExplainationViewController.swift */; };
+		E45574BE26B56CEB0028E53F /* FridayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574BD26B56CEB0028E53F /* FridayExplainationViewController.swift */; };
+		E45CC68226B1E77800E04D72 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45CC68126B1E77800E04D72 /* CanvasView.swift */; };
+		E4876AC326B2E1B700009BB2 /* RainbowWritingActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876AC226B2E1B700009BB2 /* RainbowWritingActivityViewController.swift */; };
+		E4876AC526B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876AC426B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift */; };
+		E4876AC726B3352A00009BB2 /* ABCActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876AC626B3352A00009BB2 /* ABCActivityViewController.swift */; };
+		E4876AC926B35EC100009BB2 /* BackwordsWordsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876AC826B35EC100009BB2 /* BackwordsWordsActivityViewController.swift */; };
+		E4876ACB26B3654400009BB2 /* ColouredVowelsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */; };
+		E4876ACD26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4876ACC26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift */; };
+		E4876AD826B4AF9B00009BB2 /* caught.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876ACE26B4AF9900009BB2 /* caught.mp3 */; };
+		E4876AD926B4AF9B00009BB2 /* radiation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876ACF26B4AF9900009BB2 /* radiation.mp3 */; };
+		E4876ADA26B4AF9B00009BB2 /* girls.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD026B4AF9A00009BB2 /* girls.mp3 */; };
+		E4876ADB26B4AF9B00009BB2 /* author.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD126B4AF9A00009BB2 /* author.mp3 */; };
+		E4876ADC26B4AF9B00009BB2 /* naughty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD226B4AF9A00009BB2 /* naughty.mp3 */; };
+		E4876ADD26B4AF9B00009BB2 /* creation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD326B4AF9A00009BB2 /* creation.mp3 */; };
+		E4876ADE26B4AF9B00009BB2 /* exit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD426B4AF9A00009BB2 /* exit.mp3 */; };
+		E4876ADF26B4AF9B00009BB2 /* explode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD526B4AF9B00009BB2 /* explode.mp3 */; };
+		E4876AE026B4AF9B00009BB2 /* extend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD626B4AF9B00009BB2 /* extend.mp3 */; };
+		E4876AE126B4AF9B00009BB2 /* mens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4876AD726B4AF9B00009BB2 /* mens.mp3 */; };
+		E4AD3C3A26A9D9B2000A5C0F /* TuesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3926A9D9B2000A5C0F /* TuesdayLessonViewController.swift */; };
+		E4AD3C3C26AACC06000A5C0F /* WednesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */; };
+		E4AD3C3E26AB15DD000A5C0F /* ThursdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */; };
+		E4AD3C4026AB4A28000A5C0F /* FridayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AD3C3F26AB4A27000A5C0F /* FridayLessonViewController.swift */; };
+		E4F9D60726A73296005E87BE /* TestAudioFile.wav in Resources */ = {isa = PBXBuildFile; fileRef = E4F9D60626A73296005E87BE /* TestAudioFile.wav */; };
+		E4F9D60E26A76ACE005E87BE /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E4F9D60D26A76ACE005E87BE /* testVideo.mp4 */; };
 		8E14511B26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */; };
 		8E17E6BE26B1785F00A9CBEE /* TeacherSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */; };
 		8E8EF8F026AC774000B46EB3 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */; };
@@ -54,17 +87,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8719BC232694CCFF00F9829C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../../Final Project : Dissertation /fmdb/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
-		8719BC242694CCFF00F9829C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../../Final Project : Dissertation /fmdb/FMResultSet.m"; sourceTree = "<group>"; };
-		8719BC252694CCFF00F9829C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../Final Project : Dissertation /fmdb/FMResultSet.h"; sourceTree = "<group>"; };
-		8719BC262694CCFF00F9829C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../../Final Project : Dissertation /fmdb/FMDatabasePool.m"; sourceTree = "<group>"; };
-		8719BC272694CCFF00F9829C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabaseQueue.h"; sourceTree = "<group>"; };
-		8719BC282694CCFF00F9829C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../../Final Project : Dissertation /fmdb/FMDatabaseQueue.m"; sourceTree = "<group>"; };
-		8719BC292694CCFF00F9829C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = "../../../Final Project : Dissertation /fmdb/FMDB.h"; sourceTree = "<group>"; };
-		8719BC2A2694CCFF00F9829C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabase.h"; sourceTree = "<group>"; };
-		8719BC2B2694CCFF00F9829C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../../Final Project : Dissertation /fmdb/FMDatabase.m"; sourceTree = "<group>"; };
-		8719BC2C2694CCFF00F9829C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabasePool.h"; sourceTree = "<group>"; };
-		8719BC2D2694CCFF00F9829C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
 		874D2C13269597180087E87C /* LiteracyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteracyViewController.swift; sourceTree = "<group>"; };
 		87663D8026A57CE300DF111B /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		878D0F8626A1F3E200EC4EA3 /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +110,50 @@
 		87A977612691C81100FDA013 /* What Next-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "What Next-Bridging-Header.h"; sourceTree = "<group>"; };
 		87B42B2926A055530021C852 /* MoodPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPopupViewController.swift; sourceTree = "<group>"; };
 		87BE14AA26971557006FC0C2 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		E44B054C26A5D42A0055C3F2 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = ../../FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E44B054D26A5D42A0055C3F2 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = ../../FMResultSet.m; sourceTree = "<group>"; };
+		E44B054E26A5D42A0055C3F2 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = ../../FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E44B054F26A5D42A0055C3F2 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = ../../FMDatabasePool.h; sourceTree = "<group>"; };
+		E44B055026A5D42A0055C3F2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = ../../FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E44B055126A5D42A0055C3F2 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = ../../FMDatabasePool.m; sourceTree = "<group>"; };
+		E44B055226A5D42A0055C3F2 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = ../../FMDB.h; sourceTree = "<group>"; };
+		E44B055326A5D42A0055C3F2 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = ../../FMDatabase.m; sourceTree = "<group>"; };
+		E44B055426A5D42A0055C3F2 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = ../../FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E44B055526A5D42A0055C3F2 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = ../../FMDatabase.h; sourceTree = "<group>"; };
+		E44B055626A5D42A0055C3F2 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = ../../FMResultSet.h; sourceTree = "<group>"; };
+		E44B055C26A6E2320055C3F2 /* MondayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayLessonViewController.swift; sourceTree = "<group>"; };
+		E44DD58526AC4F6900EBDF89 /* ActivitySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySelectionViewController.swift; sourceTree = "<group>"; };
+		E44DD5CD26B0AA3000EBDF89 /* SpeedWritingActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedWritingActivityViewController.swift; sourceTree = "<group>"; };
+		E44DD5CF26B0B57900EBDF89 /* SpellingWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingWordsViewController.swift; sourceTree = "<group>"; };
+		E45574B326B55AEA0028E53F /* MondayExplainationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayExplainationViewController.swift; sourceTree = "<group>"; };
+		E45574B526B568E50028E53F /* MondayTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayTestViewController.swift; sourceTree = "<group>"; };
+		E45574B726B56C3E0028E53F /* TuesdayExplainationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesdayExplainationViewController.swift; sourceTree = "<group>"; };
+		E45574B926B56C860028E53F /* WednesdayExplainationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayExplainationViewController.swift; sourceTree = "<group>"; };
+		E45574BB26B56CBA0028E53F /* ThursdayExplainationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursdayExplainationViewController.swift; sourceTree = "<group>"; };
+		E45574BD26B56CEB0028E53F /* FridayExplainationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridayExplainationViewController.swift; sourceTree = "<group>"; };
+		E45CC68126B1E77800E04D72 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		E4876AC226B2E1B700009BB2 /* RainbowWritingActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowWritingActivityViewController.swift; sourceTree = "<group>"; };
+		E4876AC426B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTheDotsActivityViewController.swift; sourceTree = "<group>"; };
+		E4876AC626B3352A00009BB2 /* ABCActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCActivityViewController.swift; sourceTree = "<group>"; };
+		E4876AC826B35EC100009BB2 /* BackwordsWordsActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackwordsWordsActivityViewController.swift; sourceTree = "<group>"; };
+		E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColouredVowelsActivityViewController.swift; sourceTree = "<group>"; };
+		E4876ACC26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceCreatorActivityViewController.swift; sourceTree = "<group>"; };
+		E4876ACE26B4AF9900009BB2 /* caught.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = caught.mp3; sourceTree = "<group>"; };
+		E4876ACF26B4AF9900009BB2 /* radiation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = radiation.mp3; sourceTree = "<group>"; };
+		E4876AD026B4AF9A00009BB2 /* girls.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = girls.mp3; sourceTree = "<group>"; };
+		E4876AD126B4AF9A00009BB2 /* author.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = author.mp3; sourceTree = "<group>"; };
+		E4876AD226B4AF9A00009BB2 /* naughty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = naughty.mp3; sourceTree = "<group>"; };
+		E4876AD326B4AF9A00009BB2 /* creation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = creation.mp3; sourceTree = "<group>"; };
+		E4876AD426B4AF9A00009BB2 /* exit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exit.mp3; sourceTree = "<group>"; };
+		E4876AD526B4AF9B00009BB2 /* explode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explode.mp3; sourceTree = "<group>"; };
+		E4876AD626B4AF9B00009BB2 /* extend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = extend.mp3; sourceTree = "<group>"; };
+		E4876AD726B4AF9B00009BB2 /* mens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mens.mp3; sourceTree = "<group>"; };
+		E4AD3C3926A9D9B2000A5C0F /* TuesdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesdayLessonViewController.swift; sourceTree = "<group>"; };
+		E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayLessonViewController.swift; sourceTree = "<group>"; };
+		E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursdayLessonViewController.swift; sourceTree = "<group>"; };
+		E4AD3C3F26AB4A27000A5C0F /* FridayLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridayLessonViewController.swift; sourceTree = "<group>"; };
+		E4F9D60626A73296005E87BE /* TestAudioFile.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TestAudioFile.wav; sourceTree = "<group>"; };
+		E4F9D60D26A76ACE005E87BE /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
 		8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhatNextLaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSettingsViewController.swift; sourceTree = "<group>"; };
 		8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
@@ -146,22 +212,42 @@
 		87A977272690C4A300FDA013 /* What Next */ = {
 			isa = PBXGroup;
 			children = (
-				8719BC2A2694CCFF00F9829C /* FMDatabase.h */,
-				8719BC2B2694CCFF00F9829C /* FMDatabase.m */,
-				8719BC2D2694CCFF00F9829C /* FMDatabaseAdditions.h */,
-				8719BC2C2694CCFF00F9829C /* FMDatabasePool.h */,
-				8719BC262694CCFF00F9829C /* FMDatabasePool.m */,
-				8719BC272694CCFF00F9829C /* FMDatabaseQueue.h */,
-				8719BC282694CCFF00F9829C /* FMDatabaseQueue.m */,
-				8719BC292694CCFF00F9829C /* FMDB.h */,
-				8719BC252694CCFF00F9829C /* FMResultSet.h */,
-				8719BC232694CCFF00F9829C /* FMDatabaseAdditions.m */,
-				8719BC242694CCFF00F9829C /* FMResultSet.m */,
+				E44B055526A5D42A0055C3F2 /* FMDatabase.h */,
+				E44B055326A5D42A0055C3F2 /* FMDatabase.m */,
+				E44B054C26A5D42A0055C3F2 /* FMDatabaseAdditions.h */,
+				E44B055426A5D42A0055C3F2 /* FMDatabaseAdditions.m */,
+				E44B054F26A5D42A0055C3F2 /* FMDatabasePool.h */,
+				E44B055126A5D42A0055C3F2 /* FMDatabasePool.m */,
+				E44B055026A5D42A0055C3F2 /* FMDatabaseQueue.h */,
+				E44B054E26A5D42A0055C3F2 /* FMDatabaseQueue.m */,
+				E44B055226A5D42A0055C3F2 /* FMDB.h */,
+				E44B055626A5D42A0055C3F2 /* FMResultSet.h */,
+				E44B054D26A5D42A0055C3F2 /* FMResultSet.m */,
 				87A977282690C4A300FDA013 /* AppDelegate.swift */,
 				8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */,
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
 				87A9772C2690C4A300FDA013 /* ViewController.swift */,
 				87A9772E2690C4A300FDA013 /* Main.storyboard */,
+				E45574BB26B56CBA0028E53F /* ThursdayExplainationViewController.swift */,
+				E45574BD26B56CEB0028E53F /* FridayExplainationViewController.swift */,
+				E45574B926B56C860028E53F /* WednesdayExplainationViewController.swift */,
+				E45574B726B56C3E0028E53F /* TuesdayExplainationViewController.swift */,
+				E45574B526B568E50028E53F /* MondayTestViewController.swift */,
+				E45574B326B55AEA0028E53F /* MondayExplainationViewController.swift */,
+				E4876ACA26B3654300009BB2 /* ColouredVowelsActivityViewController.swift */,
+				E4876ACC26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift */,
+				E4876AC826B35EC100009BB2 /* BackwordsWordsActivityViewController.swift */,
+				E4876AC426B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift */,
+				E4876AC226B2E1B700009BB2 /* RainbowWritingActivityViewController.swift */,
+				E44DD5CF26B0B57900EBDF89 /* SpellingWordsViewController.swift */,
+				E44DD5CD26B0AA3000EBDF89 /* SpeedWritingActivityViewController.swift */,
+				E45CC68126B1E77800E04D72 /* CanvasView.swift */,
+				E44DD58526AC4F6900EBDF89 /* ActivitySelectionViewController.swift */,
+				E4AD3C3F26AB4A27000A5C0F /* FridayLessonViewController.swift */,
+				E4AD3C3D26AB15DC000A5C0F /* ThursdayLessonViewController.swift */,
+				E4AD3C3B26AACC05000A5C0F /* WednesdayLessonViewController.swift */,
+				E4AD3C3926A9D9B2000A5C0F /* TuesdayLessonViewController.swift */,
+				E44B055C26A6E2320055C3F2 /* MondayLessonViewController.swift */,
 				8ECA651426AF165600D10F89 /* NotificatonPopupViewController.swift */,
 				8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */,
 				8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */,
@@ -173,11 +259,14 @@
 				87B42B2926A055530021C852 /* MoodPopupViewController.swift */,
 				874D2C13269597180087E87C /* LiteracyViewController.swift */,
 				879330AD269247220029992F /* PupilLoginViewController.swift */,
+				E4876AC626B3352A00009BB2 /* ABCActivityViewController.swift */,
 				87BE14AA26971557006FC0C2 /* MainPageViewController.swift */,
 				87A977312690C4AF00FDA013 /* Assets.xcassets */,
 				87A977332690C4AF00FDA013 /* LaunchScreen.storyboard */,
 				87A977362690C4AF00FDA013 /* Info.plist */,
 				87A977612691C81100FDA013 /* What Next-Bridging-Header.h */,
+				E4F9D60C26A768D9005E87BE /* Video Files  */,
+				E4F9D60526A731C2005E87BE /* Sound Files */,
 			);
 			path = "What Next";
 			sourceTree = "<group>";
@@ -206,6 +295,32 @@
 				87A9775C2691C35D00FDA013 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4F9D60526A731C2005E87BE /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4876AD126B4AF9A00009BB2 /* author.mp3 */,
+				E4876ACE26B4AF9900009BB2 /* caught.mp3 */,
+				E4876AD326B4AF9A00009BB2 /* creation.mp3 */,
+				E4876AD426B4AF9A00009BB2 /* exit.mp3 */,
+				E4876AD526B4AF9B00009BB2 /* explode.mp3 */,
+				E4876AD626B4AF9B00009BB2 /* extend.mp3 */,
+				E4876AD026B4AF9A00009BB2 /* girls.mp3 */,
+				E4876AD726B4AF9B00009BB2 /* mens.mp3 */,
+				E4876AD226B4AF9A00009BB2 /* naughty.mp3 */,
+				E4876ACF26B4AF9900009BB2 /* radiation.mp3 */,
+				E4F9D60626A73296005E87BE /* TestAudioFile.wav */,
+			);
+			path = "Sound Files";
+			sourceTree = "<group>";
+		};
+		E4F9D60C26A768D9005E87BE /* Video Files  */ = {
+			isa = PBXGroup;
+			children = (
+				E4F9D60D26A76ACE005E87BE /* testVideo.mp4 */,
+			);
+			path = "Video Files ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,10 +427,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4876AE026B4AF9B00009BB2 /* extend.mp3 in Resources */,
+				E4876ADA26B4AF9B00009BB2 /* girls.mp3 in Resources */,
+				E4876ADF26B4AF9B00009BB2 /* explode.mp3 in Resources */,
 				8E14511B26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard in Resources */,
 				87A977352690C4AF00FDA013 /* LaunchScreen.storyboard in Resources */,
 				87A977322690C4AF00FDA013 /* Assets.xcassets in Resources */,
 				87A977302690C4A300FDA013 /* Main.storyboard in Resources */,
+				E4F9D60E26A76ACE005E87BE /* testVideo.mp4 in Resources */,
+				E4876ADB26B4AF9B00009BB2 /* author.mp3 in Resources */,
+				E4876AD826B4AF9B00009BB2 /* caught.mp3 in Resources */,
+				E4876ADD26B4AF9B00009BB2 /* creation.mp3 in Resources */,
+				E4876ADE26B4AF9B00009BB2 /* exit.mp3 in Resources */,
+				E4876AE126B4AF9B00009BB2 /* mens.mp3 in Resources */,
+				E4876AD926B4AF9B00009BB2 /* radiation.mp3 in Resources */,
+				E4F9D60726A73296005E87BE /* TestAudioFile.wav in Resources */,
+				E4876ADC26B4AF9B00009BB2 /* naughty.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +469,10 @@
 			files = (
 				8719BC302694CCFF00F9829C /* FMDatabasePool.m in Sources */,
 				87663D8126A57CE300DF111B /* UserProfileViewController.swift in Sources */,
+				E44DD5D026B0B57A00EBDF89 /* SpellingWordsViewController.swift in Sources */,
+				E4AD3C3C26AACC06000A5C0F /* WednesdayLessonViewController.swift in Sources */,
+				E45574BC26B56CBA0028E53F /* ThursdayExplainationViewController.swift in Sources */,
+				E4AD3C4026AB4A28000A5C0F /* FridayLessonViewController.swift in Sources */,
 				878D30722695B29A00DADD4B /* TeacherLoginViewController.swift in Sources */,
 				8719BC322694CCFF00F9829C /* FMDatabase.m in Sources */,
 				878D0F8726A1F3E200EC4EA3 /* MoodViewController.swift in Sources */,
@@ -349,17 +480,36 @@
 				8E17E6BE26B1785F00A9CBEE /* TeacherSettingsViewController.swift in Sources */,
 				879330AE269247220029992F /* PupilLoginViewController.swift in Sources */,
 				87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */,
+				E4AD3C3E26AB15DD000A5C0F /* ThursdayLessonViewController.swift in Sources */,
+				E45574B626B568E60028E53F /* MondayTestViewController.swift in Sources */,
+				E44B055D26A6E2330055C3F2 /* MondayLessonViewController.swift in Sources */,
+				E4876AC926B35EC100009BB2 /* BackwordsWordsActivityViewController.swift in Sources */,
+				E45CC68226B1E77800E04D72 /* CanvasView.swift in Sources */,
 				874D2C14269597180087E87C /* LiteracyViewController.swift in Sources */,
-				8719BC312694CCFF00F9829C /* FMDatabaseQueue.m in Sources */,
 				87A9772D2690C4A300FDA013 /* ViewController.swift in Sources */,
 				87A977292690C4A300FDA013 /* AppDelegate.swift in Sources */,
+				E44B055726A5D42A0055C3F2 /* FMResultSet.m in Sources */,
+				E44B055926A5D42A0055C3F2 /* FMDatabasePool.m in Sources */,
+				E45574B826B56C3E0028E53F /* TuesdayExplainationViewController.swift in Sources */,
+				E44DD58626AC4F6900EBDF89 /* ActivitySelectionViewController.swift in Sources */,
+				E44DD5CE26B0AA3000EBDF89 /* SpeedWritingActivityViewController.swift in Sources */,
+				E4876ACD26B420DB00009BB2 /* SentenceCreatorActivityViewController.swift in Sources */,
 				8ED4126C26AB60E6007EF869 /* PupilSettingsViewController.swift in Sources */,
 				87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */,
 				8E8EF8F426ACB3F600B46EB3 /* TeacherNotificationViewController.swift in Sources */,
 				8ECA651526AF165600D10F89 /* NotificatonPopupViewController.swift in Sources */,
 				87A9772B2690C4A300FDA013 /* SceneDelegate.swift in Sources */,
-				8719BC2F2694CCFF00F9829C /* FMResultSet.m in Sources */,
-				8719BC2E2694CCFF00F9829C /* FMDatabaseAdditions.m in Sources */,
+				E44B055A26A5D42A0055C3F2 /* FMDatabase.m in Sources */,
+				E45574B426B55AEA0028E53F /* MondayExplainationViewController.swift in Sources */,
+				E44B055826A5D42A0055C3F2 /* FMDatabaseQueue.m in Sources */,
+				E4876ACB26B3654400009BB2 /* ColouredVowelsActivityViewController.swift in Sources */,
+				E45574BE26B56CEB0028E53F /* FridayExplainationViewController.swift in Sources */,
+				E45574BA26B56C860028E53F /* WednesdayExplainationViewController.swift in Sources */,
+				E4AD3C3A26A9D9B2000A5C0F /* TuesdayLessonViewController.swift in Sources */,
+				E4876AC726B3352A00009BB2 /* ABCActivityViewController.swift in Sources */,
+				E4876AC526B2FA6400009BB2 /* JoinTheDotsActivityViewController.swift in Sources */,
+				E44B055B26A5D42A0055C3F2 /* FMDatabaseAdditions.m in Sources */,
+				E4876AC326B2E1B700009BB2 /* RainbowWritingActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,13 +687,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WFR348U75T;
+				DEVELOPMENT_TEAM = 66C56HR82M;
 				INFOPLIST_FILE = "What Next/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Chris.What-Next";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.What-Now";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "What Next/What Next-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -559,13 +709,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WFR348U75T;
+				DEVELOPMENT_TEAM = 66C56HR82M;
 				INFOPLIST_FILE = "What Next/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Chris.What-Next";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.What-Now";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "What Next/What Next-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
