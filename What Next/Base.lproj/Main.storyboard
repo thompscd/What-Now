@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="6eC-fT-n4H" customClass="PupilLoginViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tyc-be-Y4y">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="PRk-I2-6gu">
@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5C-2L-zFY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168" y="95"/>
+            <point key="canvasLocation" x="296" y="95"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -252,7 +252,129 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1878.4615384615383" y="76.777251184834114"/>
+            <point key="canvasLocation" x="1037" y="95"/>
+        </scene>
+        <!--Monday Explaination View Controller-->
+        <scene sceneID="cHS-5S-b5J">
+            <objects>
+                <viewController title="Monday Explaination View Controller" modalPresentationStyle="fullScreen" id="0Wp-gx-eSR" customClass="MondayExplainationViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yoc-I5-RVa">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="kCi-zR-6hT">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n53-6a-l9X">
+                                <rect key="frame" x="52" y="52" width="102" height="76"/>
+                                <state key="normal" image="Back Arrow"/>
+                                <connections>
+                                    <action selector="returnToPreviousScreen:" destination="0Wp-gx-eSR" eventType="touchUpInside" id="FGp-yV-LK2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Words with /aw/, spelt with 'augh' and 'au'" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="on5-cV-N8f">
+                                <rect key="frame" x="199.5" y="52" width="625.5" height="37"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-XV-55X">
+                                <rect key="frame" x="52" y="381.5" width="920" height="603.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YI-ao-tAC">
+                                        <rect key="frame" x="0.0" y="0.0" width="920" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will be given 10 different words to spell, beginning with the 2 practice words that you saw during your lesson." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noe-hs-zNp">
+                                        <rect key="frame" x="0.0" y="46.5" width="920" height="72.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will have the opportunity to hear your word by itself and it's use in a sentence. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSL-RO-ZyW">
+                                        <rect key="frame" x="0.0" y="129" width="920" height="72.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybP-0N-ZYc">
+                                        <rect key="frame" x="0.0" y="211.5" width="920" height="108.5"/>
+                                        <string key="text">When you are ready, write your word into the text field as accurately as possible. Think about your sound to help you with your spelling. </string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mc-sW-go8">
+                                        <rect key="frame" x="0.0" y="330" width="920" height="108.5"/>
+                                        <string key="text">A ten minute timer will begin when you start your first word. You should aim to complete your words in this time frame but can use more time if required!</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDK-fn-ZHE">
+                                        <rect key="frame" x="0.0" y="448.5" width="920" height="108.5"/>
+                                        <string key="text">When you think you are ready and have fully checked over your answers, click the submit button and you'll recieve a score and feedback!</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Luck!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwO-5j-w6z">
+                                        <rect key="frame" x="0.0" y="567" width="920" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tJ-Da-eqo">
+                                <rect key="frame" x="419" y="1265" width="186" height="49"/>
+                                <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Lets move on!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qCp-C2-bix" kind="showDetail" id="T2w-of-xt7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BOH-8y-Huk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="on5-cV-N8f" firstAttribute="top" secondItem="BOH-8y-Huk" secondAttribute="top" constant="52" id="H7a-LQ-SF1"/>
+                            <constraint firstItem="gBT-XV-55X" firstAttribute="centerY" secondItem="yoc-I5-RVa" secondAttribute="centerY" id="ZNI-qY-u5V"/>
+                            <constraint firstItem="BOH-8y-Huk" firstAttribute="bottom" secondItem="9tJ-Da-eqo" secondAttribute="bottom" constant="32" id="cef-DN-mCY"/>
+                            <constraint firstItem="on5-cV-N8f" firstAttribute="centerX" secondItem="yoc-I5-RVa" secondAttribute="centerX" id="gas-od-IIe"/>
+                            <constraint firstAttribute="trailing" secondItem="gBT-XV-55X" secondAttribute="trailing" constant="52" id="hEc-2C-9ry"/>
+                            <constraint firstItem="n53-6a-l9X" firstAttribute="top" secondItem="BOH-8y-Huk" secondAttribute="top" constant="52" id="lu9-Ei-t5S"/>
+                            <constraint firstItem="n53-6a-l9X" firstAttribute="leading" secondItem="BOH-8y-Huk" secondAttribute="leading" constant="52" id="mrL-Vi-UJw"/>
+                            <constraint firstItem="gBT-XV-55X" firstAttribute="centerX" secondItem="n53-6a-l9X" secondAttribute="centerX" constant="409" id="pSq-RU-Q9a"/>
+                            <constraint firstItem="gBT-XV-55X" firstAttribute="leading" secondItem="yoc-I5-RVa" secondAttribute="leading" constant="52" id="qp8-0x-RZD"/>
+                            <constraint firstItem="9tJ-Da-eqo" firstAttribute="centerX" secondItem="yoc-I5-RVa" secondAttribute="centerX" id="wKg-Fs-d6A"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDo-hR-pdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2689" y="180"/>
+        </scene>
+        <!--Monday Test View Controller-->
+        <scene sceneID="QTC-3N-UBT">
+            <objects>
+                <viewController title="Monday Test View Controller" modalPresentationStyle="fullScreen" id="qCp-C2-bix" customClass="MondayTestViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gcL-M2-SN4">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Bz-sp-NVW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTr-0a-tQ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2689" y="1041"/>
         </scene>
         <!--Literacy View Controller-->
         <scene sceneID="qYE-2Q-FJo">
@@ -4182,6 +4304,9 @@
                                                 <state key="normal" title="Lets try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="0Wp-gx-eSR" kind="showDetail" id="VjE-kr-GJF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -4339,7 +4464,7 @@
             <objects>
                 <viewController id="rzz-6U-qpz" customClass="TeacherLoginViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeL-0f-y1p">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="FTq-BW-Lo0">
@@ -4497,7 +4622,7 @@
             <objects>
                 <viewController id="3MC-yj-I4h" userLabel="Home Page View Controller" customClass="MainPageViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Do2-bE-yRY">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background blank" translatesAutoresizingMaskIntoConstraints="NO" id="sRN-UF-bpt">
@@ -4649,7 +4774,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5n-Jb-VP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-127.69230769230769" y="94.549763033175353"/>
+            <point key="canvasLocation" x="-1131" y="95"/>
         </scene>
         <!--Mood popup View Controller-->
         <scene sceneID="Uvg-cx-HTz">
@@ -4702,7 +4827,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9y7-lh-OFn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="506.15384615384613" y="94.549763033175353"/>
+            <point key="canvasLocation" x="-411" y="95"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6oa-Zy-iJU">
@@ -4720,11 +4845,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnK-Y1-2Ps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-831" y="95"/>
+            <point key="canvasLocation" x="-1825" y="95"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ite-Ym-jJW"/>
+        <segue reference="AvM-vr-uaJ"/>
         <segue reference="7MP-h3-juy"/>
     </inferredMetricsTieBreakers>
     <resources>
