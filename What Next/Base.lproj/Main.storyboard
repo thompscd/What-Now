@@ -383,41 +383,6 @@
             </objects>
             <point key="canvasLocation" x="1878.4615384615383" y="76.777251184834114"/>
         </scene>
-        <!--Literacy View Controller-->
-        <scene sceneID="qYE-2Q-FJo">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="feH-vf-0yV" customClass="LiteracyViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jig-2k-1pY">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="Ino-ew-7Ec">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAY-5n-fyJ">
-                                <rect key="frame" x="0.0" y="41" width="91" height="58"/>
-                                <state key="normal" title="Button" image="Back Arrow"/>
-                                <connections>
-                                    <action selector="close" destination="feH-vf-0yV" eventType="touchUpInside" id="UWJ-PH-HiS"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="eNz-AS-gaq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Ino-ew-7Ec" firstAttribute="leading" secondItem="Jig-2k-1pY" secondAttribute="leading" id="52C-zu-yKH"/>
-                            <constraint firstItem="yAY-5n-fyJ" firstAttribute="leading" secondItem="eNz-AS-gaq" secondAttribute="leading" id="GFz-Hp-kjh"/>
-                            <constraint firstAttribute="trailing" secondItem="Ino-ew-7Ec" secondAttribute="trailing" id="Z1U-G4-tKG"/>
-                            <constraint firstItem="Ino-ew-7Ec" firstAttribute="top" secondItem="Jig-2k-1pY" secondAttribute="top" id="fzp-cb-62k"/>
-                            <constraint firstAttribute="bottom" secondItem="Ino-ew-7Ec" secondAttribute="bottom" id="hS9-wZ-uEB"/>
-                            <constraint firstItem="yAY-5n-fyJ" firstAttribute="top" secondItem="eNz-AS-gaq" secondAttribute="top" constant="47" id="uqZ-9W-1Rk"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="osY-bn-KAg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2552.3076923076924" y="94.549763033175353"/>
-        </scene>
         <!--Teacher Login View Controller-->
         <scene sceneID="oaQ-V6-8EU">
             <objects>
@@ -2056,7 +2021,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="feH-vf-0yV" kind="presentation" id="Ld1-id-9fD"/>
+                                    <segue destination="aKF-nu-i7F" kind="presentation" id="xre-tf-638"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8If-HP-PL9">
@@ -7090,11 +7055,148 @@
             </objects>
             <point key="canvasLocation" x="2689" y="-649"/>
         </scene>
+        <!--Literacy View Controller-->
+        <scene sceneID="dbI-LG-RtN">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="aKF-nu-i7F" customClass="LiteracyViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YWu-YH-PjL">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="zDo-wi-i7b">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVs-0b-LpH">
+                                <rect key="frame" x="0.0" y="47" width="102" height="76"/>
+                                <state key="normal" image="Back Arrow"/>
+                                <connections>
+                                    <action selector="close" destination="aKF-nu-i7F" eventType="touchUpInside" id="v8n-E4-b2X"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="What Now logo small" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-6C-Cyc">
+                                <rect key="frame" x="413" y="50" width="198" height="792"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your lessons this week: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohO-GD-Lrg">
+                                <rect key="frame" x="90.5" y="867" width="843" height="24"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HRB-vn-sgZ">
+                                <rect key="frame" x="20" y="926" width="984" height="415"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NC3-qd-9RH">
+                                        <rect key="frame" x="0.0" y="0.0" width="984" height="79"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Monday: Words with /aw/ spelt with 'augh' and 'au'">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="Dbt-TV-ExF">
+                                        <rect key="frame" x="0.0" y="84" width="984" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Tuesday: Plural Possessive Apostrophes with plural words.">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HBU-qd-CZS" userLabel="Wednesday: Nouns ending in the suffix -ation.">
+                                        <rect key="frame" x="0.0" y="168" width="984" height="79"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Wednesday: Nouns ending in the suffix -ation. ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="smX-G9-GlX">
+                                        <rect key="frame" x="0.0" y="252" width="984" height="79"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Thursday: Adding the prefix ex-. ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwI-7m-XDv" userLabel="Wednesday: Nouns ending in the suffix -ation.">
+                                        <rect key="frame" x="0.0" y="336" width="984" height="79"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Friday: Revision.">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Lj-Ub-rwi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zDo-wi-i7b" secondAttribute="bottom" id="0zr-rb-MJW"/>
+                            <constraint firstItem="8Lj-Ub-rwi" firstAttribute="trailing" secondItem="ohO-GD-Lrg" secondAttribute="trailing" constant="90.329999999999998" id="1EO-di-Xay"/>
+                            <constraint firstItem="HRB-vn-sgZ" firstAttribute="leading" secondItem="YWu-YH-PjL" secondAttribute="leadingMargin" id="4h2-B3-D1M"/>
+                            <constraint firstItem="r5H-6C-Cyc" firstAttribute="centerX" secondItem="YWu-YH-PjL" secondAttribute="centerX" id="54Y-9S-gGb"/>
+                            <constraint firstItem="ohO-GD-Lrg" firstAttribute="top" secondItem="r5H-6C-Cyc" secondAttribute="bottom" constant="25" id="6aV-eZ-DxK"/>
+                            <constraint firstItem="DVs-0b-LpH" firstAttribute="leading" secondItem="8Lj-Ub-rwi" secondAttribute="leading" id="Ivz-s8-pF6"/>
+                            <constraint firstItem="zDo-wi-i7b" firstAttribute="top" secondItem="YWu-YH-PjL" secondAttribute="top" id="L4H-Iv-ZKQ"/>
+                            <constraint firstItem="ohO-GD-Lrg" firstAttribute="centerX" secondItem="YWu-YH-PjL" secondAttribute="centerX" id="NBn-ZN-WMy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HRB-vn-sgZ" secondAttribute="trailing" id="PSv-IB-ULj"/>
+                            <constraint firstItem="8Lj-Ub-rwi" firstAttribute="bottom" secondItem="HRB-vn-sgZ" secondAttribute="bottom" constant="5" id="Qz4-cD-pXW"/>
+                            <constraint firstItem="ohO-GD-Lrg" firstAttribute="leading" secondItem="8Lj-Ub-rwi" secondAttribute="leading" constant="90.329999999999998" id="VW5-J6-e4O"/>
+                            <constraint firstItem="HRB-vn-sgZ" firstAttribute="top" secondItem="ohO-GD-Lrg" secondAttribute="bottom" constant="35" id="Wvg-Dd-dkl"/>
+                            <constraint firstItem="zDo-wi-i7b" firstAttribute="leading" secondItem="YWu-YH-PjL" secondAttribute="leading" id="epf-A3-j1v"/>
+                            <constraint firstAttribute="trailing" secondItem="zDo-wi-i7b" secondAttribute="trailing" id="mzc-kz-eBf"/>
+                            <constraint firstItem="r5H-6C-Cyc" firstAttribute="top" secondItem="8Lj-Ub-rwi" secondAttribute="top" constant="50" id="nw6-Jp-RL7"/>
+                            <constraint firstItem="DVs-0b-LpH" firstAttribute="top" secondItem="8Lj-Ub-rwi" secondAttribute="top" constant="47" id="sd6-Gy-G8w"/>
+                            <constraint firstItem="HRB-vn-sgZ" firstAttribute="centerX" secondItem="YWu-YH-PjL" secondAttribute="centerX" id="shz-b9-Fyh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I5x-Kt-Cvc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1P-BE-SEB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="-649"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="zlm-LJ-bHk"/>
-        <segue reference="eqg-Z6-bdn"/>
-        <segue reference="51w-uF-QVN"/>
+        <segue reference="Afm-WC-YkD"/>
+        <segue reference="tU5-oA-RNn"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Back Arrow" width="102" height="76"/>
