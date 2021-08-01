@@ -2796,6 +2796,9 @@
                             <constraint firstItem="ABC-Bj-aGk" firstAttribute="top" secondItem="gB1-TX-iCk" secondAttribute="top" constant="52" id="vfh-qU-Pof"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="rNd-5x-P5t" kind="show" identifier="mondayToActivitySegue" id="A4S-Xp-uzv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xk-5z-fYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5106,6 +5109,7 @@
                             <constraint firstItem="0hy-Zq-eSW" firstAttribute="top" secondItem="pCi-jf-D4s" secondAttribute="top" constant="52" id="myo-lS-6fY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JLo-nK-cN5"/>
                     <connections>
                         <outlet property="canvasView" destination="YfM-Og-wqr" id="qR3-Dv-MSM"/>
                         <outlet property="collectionView" destination="6vd-et-mqQ" id="Ngx-He-JrR"/>
@@ -6633,6 +6637,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="ENb-Fn-TLS" kind="showDetail" id="yWz-th-s68"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7L-Mr-nVJ">
                                         <rect key="frame" x="0.0" y="145" width="920" height="135"/>
@@ -6641,6 +6648,9 @@
                                         <state key="normal" title="Rainbow Writing">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="sSS-g4-r2l" kind="showDetail" id="Nva-Vy-oWo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ur2-VE-deN">
                                         <rect key="frame" x="0.0" y="290" width="920" height="135"/>
@@ -6649,6 +6659,9 @@
                                         <state key="normal" title="Join the Dots">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="u4g-yn-BnE" kind="showDetail" id="zfE-Xr-zah"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNF-8y-kxK">
                                         <rect key="frame" x="0.0" y="435" width="920" height="135"/>
@@ -6657,6 +6670,9 @@
                                         <state key="normal" title="ABC Order">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="b0L-9h-tPX" kind="showDetail" id="55Y-ix-IIR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP6-5w-YHT">
                                         <rect key="frame" x="0.0" y="580" width="920" height="135"/>
@@ -6665,6 +6681,9 @@
                                         <state key="normal" title="Backwards Words">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="2s1-nd-Efn" kind="showDetail" id="KZC-F8-7OK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAf-J0-EQm">
                                         <rect key="frame" x="0.0" y="725" width="920" height="135"/>
@@ -6673,6 +6692,9 @@
                                         <state key="normal" title="Coloured Vowels">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Wes-fE-PGN" kind="showDetail" id="Qgj-P2-IBZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1B-ZM-RaC">
                                         <rect key="frame" x="0.0" y="870" width="920" height="135"/>
@@ -6681,6 +6703,9 @@
                                         <state key="normal" title="Sentence Creator">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="jqo-mr-ORl" kind="showDetail" id="PeS-Zc-VsI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
