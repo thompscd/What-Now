@@ -2776,6 +2776,9 @@
                                 <state key="normal" title="Let's move on!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Gjg-q8-13I" kind="showDetail" id="7Fa-PF-bk4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gB1-TX-iCk"/>
