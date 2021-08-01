@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8719BC2E2694CCFF00F9829C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC232694CCFF00F9829C /* FMDatabaseAdditions.m */; };
-		8719BC2F2694CCFF00F9829C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC242694CCFF00F9829C /* FMResultSet.m */; };
-		8719BC302694CCFF00F9829C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC262694CCFF00F9829C /* FMDatabasePool.m */; };
-		8719BC312694CCFF00F9829C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC282694CCFF00F9829C /* FMDatabaseQueue.m */; };
-		8719BC322694CCFF00F9829C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719BC2B2694CCFF00F9829C /* FMDatabase.m */; };
 		874D2C14269597180087E87C /* LiteracyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874D2C13269597180087E87C /* LiteracyViewController.swift */; };
 		87663D8126A57CE300DF111B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87663D8026A57CE300DF111B /* UserProfileViewController.swift */; };
 		878D0F8726A1F3E200EC4EA3 /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878D0F8626A1F3E200EC4EA3 /* MoodViewController.swift */; };
@@ -55,6 +50,11 @@
 		8EF3EBBC26B68FB5007FD14A /* MondayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA726B68FB5007FD14A /* MondayTestViewController.swift */; };
 		8EF3EBBD26B68FB5007FD14A /* SpeedWritingActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA826B68FB5007FD14A /* SpeedWritingActivityViewController.swift */; };
 		8EF3EBBE26B68FB5007FD14A /* ThursdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA926B68FB5007FD14A /* ThursdayLessonViewController.swift */; };
+		E45574EE26B6CFF60028E53F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E45574E426B6CFF30028E53F /* FMDatabaseAdditions.m */; };
+		E45574EF26B6CFF60028E53F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E45574E526B6CFF30028E53F /* FMDatabasePool.m */; };
+		E45574F026B6CFF60028E53F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E45574E826B6CFF40028E53F /* FMResultSet.m */; };
+		E45574F126B6CFF60028E53F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E45574EA26B6CFF50028E53F /* FMDatabaseQueue.m */; };
+		E45574F226B6CFF60028E53F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E45574EC26B6CFF50028E53F /* FMDatabase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,17 +75,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8719BC232694CCFF00F9829C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../../Final Project : Dissertation /fmdb/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
-		8719BC242694CCFF00F9829C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../../Final Project : Dissertation /fmdb/FMResultSet.m"; sourceTree = "<group>"; };
-		8719BC252694CCFF00F9829C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../Final Project : Dissertation /fmdb/FMResultSet.h"; sourceTree = "<group>"; };
-		8719BC262694CCFF00F9829C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../../Final Project : Dissertation /fmdb/FMDatabasePool.m"; sourceTree = "<group>"; };
-		8719BC272694CCFF00F9829C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabaseQueue.h"; sourceTree = "<group>"; };
-		8719BC282694CCFF00F9829C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../../Final Project : Dissertation /fmdb/FMDatabaseQueue.m"; sourceTree = "<group>"; };
-		8719BC292694CCFF00F9829C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = "../../../Final Project : Dissertation /fmdb/FMDB.h"; sourceTree = "<group>"; };
-		8719BC2A2694CCFF00F9829C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabase.h"; sourceTree = "<group>"; };
-		8719BC2B2694CCFF00F9829C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../../Final Project : Dissertation /fmdb/FMDatabase.m"; sourceTree = "<group>"; };
-		8719BC2C2694CCFF00F9829C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabasePool.h"; sourceTree = "<group>"; };
-		8719BC2D2694CCFF00F9829C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../../Final Project : Dissertation /fmdb/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
 		874D2C13269597180087E87C /* LiteracyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteracyViewController.swift; sourceTree = "<group>"; };
 		87663D8026A57CE300DF111B /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		878D0F8626A1F3E200EC4EA3 /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +125,17 @@
 		8EF3EBA726B68FB5007FD14A /* MondayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondayTestViewController.swift; sourceTree = "<group>"; };
 		8EF3EBA826B68FB5007FD14A /* SpeedWritingActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedWritingActivityViewController.swift; sourceTree = "<group>"; };
 		8EF3EBA926B68FB5007FD14A /* ThursdayLessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThursdayLessonViewController.swift; sourceTree = "<group>"; };
+		E45574E326B6CFF20028E53F /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E45574E426B6CFF30028E53F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E45574E526B6CFF30028E53F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		E45574E626B6CFF30028E53F /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E45574E726B6CFF30028E53F /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		E45574E826B6CFF40028E53F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		E45574E926B6CFF50028E53F /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		E45574EA26B6CFF50028E53F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E45574EB26B6CFF50028E53F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E45574EC26B6CFF50028E53F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		E45574ED26B6CFF60028E53F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,17 +188,17 @@
 		87A977272690C4A300FDA013 /* What Next */ = {
 			isa = PBXGroup;
 			children = (
-				8719BC2A2694CCFF00F9829C /* FMDatabase.h */,
-				8719BC2B2694CCFF00F9829C /* FMDatabase.m */,
-				8719BC2D2694CCFF00F9829C /* FMDatabaseAdditions.h */,
-				8719BC2C2694CCFF00F9829C /* FMDatabasePool.h */,
-				8719BC262694CCFF00F9829C /* FMDatabasePool.m */,
-				8719BC272694CCFF00F9829C /* FMDatabaseQueue.h */,
-				8719BC282694CCFF00F9829C /* FMDatabaseQueue.m */,
-				8719BC292694CCFF00F9829C /* FMDB.h */,
-				8719BC252694CCFF00F9829C /* FMResultSet.h */,
-				8719BC232694CCFF00F9829C /* FMDatabaseAdditions.m */,
-				8719BC242694CCFF00F9829C /* FMResultSet.m */,
+				E45574ED26B6CFF60028E53F /* FMDatabase.h */,
+				E45574EC26B6CFF50028E53F /* FMDatabase.m */,
+				E45574E726B6CFF30028E53F /* FMDatabasePool.h */,
+				E45574EA26B6CFF50028E53F /* FMDatabaseQueue.m */,
+				E45574EB26B6CFF50028E53F /* FMDatabaseAdditions.h */,
+				E45574E426B6CFF30028E53F /* FMDatabaseAdditions.m */,
+				E45574E526B6CFF30028E53F /* FMDatabasePool.m */,
+				E45574E626B6CFF30028E53F /* FMDatabaseQueue.h */,
+				E45574E926B6CFF50028E53F /* FMDB.h */,
+				E45574E326B6CFF20028E53F /* FMResultSet.h */,
+				E45574E826B6CFF40028E53F /* FMResultSet.m */,
 				87A977282690C4A300FDA013 /* AppDelegate.swift */,
 				8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */,
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
@@ -403,13 +403,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8719BC302694CCFF00F9829C /* FMDatabasePool.m in Sources */,
 				87663D8126A57CE300DF111B /* UserProfileViewController.swift in Sources */,
 				878D30722695B29A00DADD4B /* TeacherLoginViewController.swift in Sources */,
-				8719BC322694CCFF00F9829C /* FMDatabase.m in Sources */,
 				8EF3EBB226B68FB5007FD14A /* SpellingWordsViewController.swift in Sources */,
+				E45574EE26B6CFF60028E53F /* FMDatabaseAdditions.m in Sources */,
 				8EF3EBB826B68FB5007FD14A /* TuesdayLessonViewController.swift in Sources */,
 				8EF3EBAE26B68FB5007FD14A /* FridayLessonViewController.swift in Sources */,
+				E45574EF26B6CFF60028E53F /* FMDatabasePool.m in Sources */,
 				8EF3EBAB26B68FB5007FD14A /* BackwordsWordsActivityViewController.swift in Sources */,
 				8EF3EBBA26B68FB5007FD14A /* CanvasView.swift in Sources */,
 				878D0F8726A1F3E200EC4EA3 /* MoodViewController.swift in Sources */,
@@ -425,24 +425,24 @@
 				874D2C14269597180087E87C /* LiteracyViewController.swift in Sources */,
 				8EF3EBBB26B68FB5007FD14A /* ABCActivityViewController.swift in Sources */,
 				8EF3EBB026B68FB5007FD14A /* ThursdayExplainationViewController.swift in Sources */,
-				8719BC312694CCFF00F9829C /* FMDatabaseQueue.m in Sources */,
 				87A9772D2690C4A300FDA013 /* ViewController.swift in Sources */,
 				8EF3EBAF26B68FB5007FD14A /* RainbowWritingActivityViewController.swift in Sources */,
 				8EF3EBAA26B68FB5007FD14A /* ActivitySelectionViewController.swift in Sources */,
 				87A977292690C4A300FDA013 /* AppDelegate.swift in Sources */,
 				8ED4126C26AB60E6007EF869 /* PupilSettingsViewController.swift in Sources */,
+				E45574F026B6CFF60028E53F /* FMResultSet.m in Sources */,
+				E45574F226B6CFF60028E53F /* FMDatabase.m in Sources */,
 				87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */,
 				8E8EF8F426ACB3F600B46EB3 /* TeacherNotificationViewController.swift in Sources */,
 				8ECA651526AF165600D10F89 /* NotificatonPopupViewController.swift in Sources */,
 				8EF3EBAD26B68FB5007FD14A /* MondayLessonViewController.swift in Sources */,
+				E45574F126B6CFF60028E53F /* FMDatabaseQueue.m in Sources */,
 				8EF3EBBE26B68FB5007FD14A /* ThursdayLessonViewController.swift in Sources */,
 				8EF3EBBC26B68FB5007FD14A /* MondayTestViewController.swift in Sources */,
 				87A9772B2690C4A300FDA013 /* SceneDelegate.swift in Sources */,
 				8EF3EBB126B68FB5007FD14A /* WednesdayLessonViewController.swift in Sources */,
 				8EF3EBB726B68FB5007FD14A /* JoinTheDotsActivityViewController.swift in Sources */,
 				8EF3EBBD26B68FB5007FD14A /* SpeedWritingActivityViewController.swift in Sources */,
-				8719BC2F2694CCFF00F9829C /* FMResultSet.m in Sources */,
-				8719BC2E2694CCFF00F9829C /* FMDatabaseAdditions.m in Sources */,
 				8EF3EBB926B68FB5007FD14A /* SentenceCreatorActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,7 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WFR348U75T;
+				DEVELOPMENT_TEAM = 66C56HR82M;
 				INFOPLIST_FILE = "What Next/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,7 +643,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WFR348U75T;
+				DEVELOPMENT_TEAM = 66C56HR82M;
 				INFOPLIST_FILE = "What Next/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
