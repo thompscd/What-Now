@@ -107,31 +107,6 @@ class PupilSettingsViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated:true,completion:nil)
     }
-    /*
-    var whatnextDB = FMDatabase(path: databasePath as String)
-    
-    func openDatabase () {
-        // THIS IS A HACK. THIS IS CODE COPIED FROM ViewController.swift. NEED TO CHANGE SO THAT THE whatnextDB variable is passed between controllers !!!!!
-        var databasePath = String();
-        let filemgr = FileManager.default
-        let dirPaths = filemgr.urls(for: .documentDirectory,
-                       in: .userDomainMask)
-        databasePath = dirPaths[0].appendingPathComponent("whatnext.db").path
-        whatnextDB = FMDatabase(path: databasePath as String)
-        if whatnextDB == nil {
-            print("Error UserProfileViewController: whatnextDB is nil, \(whatnextDB.lastErrorMessage())")
-        } else {
-            print ("UserProfileViewControl: database not nil")
-            if (whatnextDB.open()) {
-                print ("UserProfileViewControl: database is open")
-            } else {
-                print("Error UserProfileViewController: whatnextDB not open, \(whatnextDB.lastErrorMessage())")
-            }
-        }
-        // END OF HACK CODE !!!!!!!
-        /////////////////////////////////////////////////
-    }
-    */
     
     /*
     // MARK: - Navigation
