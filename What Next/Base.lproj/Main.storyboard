@@ -3476,7 +3476,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="901-jI-UCl"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets move on!">
+                                                <state key="normal" title="Let's move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                             </button>
@@ -3499,7 +3499,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="fwA-bF-Ay2"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets try our best!">
+                                                <state key="normal" title="Let's try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -3861,7 +3861,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="y4f-3s-XU7"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets move on!">
+                                                <state key="normal" title="Let's move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                             </button>
@@ -3884,7 +3884,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="yFd-T4-3CL"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets try our best!">
+                                                <state key="normal" title="Let's try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -4166,7 +4166,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="Lir-NS-yCV"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets move on!">
+                                                <state key="normal" title="Let's move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                             </button>
@@ -4189,7 +4189,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="BPj-WW-hmR"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets try our best!">
+                                                <state key="normal" title="Let's try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -4550,7 +4550,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="fwy-8D-0ld"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets move on!">
+                                                <state key="normal" title="Let's move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                             </button>
@@ -4573,7 +4573,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="YeF-fd-XDh"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets try our best!">
+                                                <state key="normal" title="Let's try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -6889,7 +6889,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="qJD-at-wer"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets move on!">
+                                                <state key="normal" title="Let's move on!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                             </button>
@@ -6912,7 +6912,7 @@
                                                     <constraint firstAttribute="width" constant="149" id="dLw-gn-ll3"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Lets try our best!">
+                                                <state key="normal" title="Let's try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
