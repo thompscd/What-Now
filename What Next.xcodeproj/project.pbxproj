@@ -34,6 +34,27 @@
 		8E8EF8F426ACB3F600B46EB3 /* TeacherNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */; };
 		8ECA651526AF165600D10F89 /* NotificatonPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA651426AF165600D10F89 /* NotificatonPopupViewController.swift */; };
 		8ED4126C26AB60E6007EF869 /* PupilSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */; };
+		8EF3EBAA26B68FB5007FD14A /* ActivitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9526B68FB4007FD14A /* ActivitySelectionViewController.swift */; };
+		8EF3EBAB26B68FB5007FD14A /* BackwordsWordsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9626B68FB4007FD14A /* BackwordsWordsActivityViewController.swift */; };
+		8EF3EBAC26B68FB5007FD14A /* ColouredVowelsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9726B68FB4007FD14A /* ColouredVowelsActivityViewController.swift */; };
+		8EF3EBAD26B68FB5007FD14A /* MondayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9826B68FB4007FD14A /* MondayLessonViewController.swift */; };
+		8EF3EBAE26B68FB5007FD14A /* FridayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9926B68FB4007FD14A /* FridayLessonViewController.swift */; };
+		8EF3EBAF26B68FB5007FD14A /* RainbowWritingActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9A26B68FB4007FD14A /* RainbowWritingActivityViewController.swift */; };
+		8EF3EBB026B68FB5007FD14A /* ThursdayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9B26B68FB4007FD14A /* ThursdayExplainationViewController.swift */; };
+		8EF3EBB126B68FB5007FD14A /* WednesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9C26B68FB4007FD14A /* WednesdayLessonViewController.swift */; };
+		8EF3EBB226B68FB5007FD14A /* SpellingWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9D26B68FB4007FD14A /* SpellingWordsViewController.swift */; };
+		8EF3EBB326B68FB5007FD14A /* FridayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9E26B68FB4007FD14A /* FridayExplainationViewController.swift */; };
+		8EF3EBB426B68FB5007FD14A /* MondayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9F26B68FB5007FD14A /* MondayExplainationViewController.swift */; };
+		8EF3EBB526B68FB5007FD14A /* TuesdayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA026B68FB5007FD14A /* TuesdayExplainationViewController.swift */; };
+		8EF3EBB626B68FB5007FD14A /* WednesdayExplainationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA126B68FB5007FD14A /* WednesdayExplainationViewController.swift */; };
+		8EF3EBB726B68FB5007FD14A /* JoinTheDotsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA226B68FB5007FD14A /* JoinTheDotsActivityViewController.swift */; };
+		8EF3EBB826B68FB5007FD14A /* TuesdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA326B68FB5007FD14A /* TuesdayLessonViewController.swift */; };
+		8EF3EBB926B68FB5007FD14A /* SentenceCreatorActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA426B68FB5007FD14A /* SentenceCreatorActivityViewController.swift */; };
+		8EF3EBBA26B68FB5007FD14A /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA526B68FB5007FD14A /* CanvasView.swift */; };
+		8EF3EBBB26B68FB5007FD14A /* ABCActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA626B68FB5007FD14A /* ABCActivityViewController.swift */; };
+		8EF3EBBC26B68FB5007FD14A /* MondayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA726B68FB5007FD14A /* MondayTestViewController.swift */; };
+		8EF3EBBD26B68FB5007FD14A /* SpeedWritingActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA826B68FB5007FD14A /* SpeedWritingActivityViewController.swift */; };
+		8EF3EBBE26B68FB5007FD14A /* ThursdayLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EBA926B68FB5007FD14A /* ThursdayLessonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +115,27 @@
 		8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNotificationViewController.swift; sourceTree = "<group>"; };
 		8ECA651426AF165600D10F89 /* NotificatonPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificatonPopupViewController.swift; sourceTree = "<group>"; };
 		8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilSettingsViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9526B68FB4007FD14A /* ActivitySelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitySelectionViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9626B68FB4007FD14A /* BackwordsWordsActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackwordsWordsActivityViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9726B68FB4007FD14A /* ColouredVowelsActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColouredVowelsActivityViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9826B68FB4007FD14A /* MondayLessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondayLessonViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9926B68FB4007FD14A /* FridayLessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridayLessonViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9A26B68FB4007FD14A /* RainbowWritingActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowWritingActivityViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9B26B68FB4007FD14A /* ThursdayExplainationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThursdayExplainationViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9C26B68FB4007FD14A /* WednesdayLessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WednesdayLessonViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9D26B68FB4007FD14A /* SpellingWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingWordsViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9E26B68FB4007FD14A /* FridayExplainationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridayExplainationViewController.swift; sourceTree = "<group>"; };
+		8EF3EB9F26B68FB5007FD14A /* MondayExplainationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondayExplainationViewController.swift; sourceTree = "<group>"; };
+		8EF3EBA026B68FB5007FD14A /* TuesdayExplainationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuesdayExplainationViewController.swift; sourceTree = "<group>"; };
+		8EF3EBA126B68FB5007FD14A /* WednesdayExplainationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WednesdayExplainationViewController.swift; sourceTree = "<group>"; };
+		8EF3EBA226B68FB5007FD14A /* JoinTheDotsActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTheDotsActivityViewController.swift; sourceTree = "<group>"; };
+		8EF3EBA326B68FB5007FD14A /* TuesdayLessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuesdayLessonViewController.swift; sourceTree = "<group>"; };
+		8EF3EBA426B68FB5007FD14A /* SentenceCreatorActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentenceCreatorActivityViewController.swift; sourceTree = "<group>"; };
+		8EF3EBA526B68FB5007FD14A /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		8EF3EBA626B68FB5007FD14A /* ABCActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCActivityViewController.swift; sourceTree = "<group>"; };
+		8EF3EBA726B68FB5007FD14A /* MondayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondayTestViewController.swift; sourceTree = "<group>"; };
+		8EF3EBA826B68FB5007FD14A /* SpeedWritingActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedWritingActivityViewController.swift; sourceTree = "<group>"; };
+		8EF3EBA926B68FB5007FD14A /* ThursdayLessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThursdayLessonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +216,27 @@
 				874D2C13269597180087E87C /* LiteracyViewController.swift */,
 				879330AD269247220029992F /* PupilLoginViewController.swift */,
 				87BE14AA26971557006FC0C2 /* MainPageViewController.swift */,
+				8EF3EBA626B68FB5007FD14A /* ABCActivityViewController.swift */,
+				8EF3EB9526B68FB4007FD14A /* ActivitySelectionViewController.swift */,
+				8EF3EB9626B68FB4007FD14A /* BackwordsWordsActivityViewController.swift */,
+				8EF3EBA526B68FB5007FD14A /* CanvasView.swift */,
+				8EF3EB9726B68FB4007FD14A /* ColouredVowelsActivityViewController.swift */,
+				8EF3EB9E26B68FB4007FD14A /* FridayExplainationViewController.swift */,
+				8EF3EB9926B68FB4007FD14A /* FridayLessonViewController.swift */,
+				8EF3EBA226B68FB5007FD14A /* JoinTheDotsActivityViewController.swift */,
+				8EF3EB9F26B68FB5007FD14A /* MondayExplainationViewController.swift */,
+				8EF3EB9826B68FB4007FD14A /* MondayLessonViewController.swift */,
+				8EF3EBA726B68FB5007FD14A /* MondayTestViewController.swift */,
+				8EF3EB9A26B68FB4007FD14A /* RainbowWritingActivityViewController.swift */,
+				8EF3EBA426B68FB5007FD14A /* SentenceCreatorActivityViewController.swift */,
+				8EF3EBA826B68FB5007FD14A /* SpeedWritingActivityViewController.swift */,
+				8EF3EB9D26B68FB4007FD14A /* SpellingWordsViewController.swift */,
+				8EF3EB9B26B68FB4007FD14A /* ThursdayExplainationViewController.swift */,
+				8EF3EBA926B68FB5007FD14A /* ThursdayLessonViewController.swift */,
+				8EF3EBA026B68FB5007FD14A /* TuesdayExplainationViewController.swift */,
+				8EF3EBA326B68FB5007FD14A /* TuesdayLessonViewController.swift */,
+				8EF3EBA126B68FB5007FD14A /* WednesdayExplainationViewController.swift */,
+				8EF3EB9C26B68FB4007FD14A /* WednesdayLessonViewController.swift */,
 				87A977312690C4AF00FDA013 /* Assets.xcassets */,
 				87A977332690C4AF00FDA013 /* LaunchScreen.storyboard */,
 				87A977362690C4AF00FDA013 /* Info.plist */,
@@ -344,22 +407,43 @@
 				87663D8126A57CE300DF111B /* UserProfileViewController.swift in Sources */,
 				878D30722695B29A00DADD4B /* TeacherLoginViewController.swift in Sources */,
 				8719BC322694CCFF00F9829C /* FMDatabase.m in Sources */,
+				8EF3EBB226B68FB5007FD14A /* SpellingWordsViewController.swift in Sources */,
+				8EF3EBB826B68FB5007FD14A /* TuesdayLessonViewController.swift in Sources */,
+				8EF3EBAE26B68FB5007FD14A /* FridayLessonViewController.swift in Sources */,
+				8EF3EBAB26B68FB5007FD14A /* BackwordsWordsActivityViewController.swift in Sources */,
+				8EF3EBBA26B68FB5007FD14A /* CanvasView.swift in Sources */,
 				878D0F8726A1F3E200EC4EA3 /* MoodViewController.swift in Sources */,
 				8E8EF8F026AC774000B46EB3 /* TeacherViewController.swift in Sources */,
 				8E17E6BE26B1785F00A9CBEE /* TeacherSettingsViewController.swift in Sources */,
+				8EF3EBAC26B68FB5007FD14A /* ColouredVowelsActivityViewController.swift in Sources */,
+				8EF3EBB426B68FB5007FD14A /* MondayExplainationViewController.swift in Sources */,
+				8EF3EBB526B68FB5007FD14A /* TuesdayExplainationViewController.swift in Sources */,
+				8EF3EBB626B68FB5007FD14A /* WednesdayExplainationViewController.swift in Sources */,
+				8EF3EBB326B68FB5007FD14A /* FridayExplainationViewController.swift in Sources */,
 				879330AE269247220029992F /* PupilLoginViewController.swift in Sources */,
 				87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */,
 				874D2C14269597180087E87C /* LiteracyViewController.swift in Sources */,
+				8EF3EBBB26B68FB5007FD14A /* ABCActivityViewController.swift in Sources */,
+				8EF3EBB026B68FB5007FD14A /* ThursdayExplainationViewController.swift in Sources */,
 				8719BC312694CCFF00F9829C /* FMDatabaseQueue.m in Sources */,
 				87A9772D2690C4A300FDA013 /* ViewController.swift in Sources */,
+				8EF3EBAF26B68FB5007FD14A /* RainbowWritingActivityViewController.swift in Sources */,
+				8EF3EBAA26B68FB5007FD14A /* ActivitySelectionViewController.swift in Sources */,
 				87A977292690C4A300FDA013 /* AppDelegate.swift in Sources */,
 				8ED4126C26AB60E6007EF869 /* PupilSettingsViewController.swift in Sources */,
 				87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */,
 				8E8EF8F426ACB3F600B46EB3 /* TeacherNotificationViewController.swift in Sources */,
 				8ECA651526AF165600D10F89 /* NotificatonPopupViewController.swift in Sources */,
+				8EF3EBAD26B68FB5007FD14A /* MondayLessonViewController.swift in Sources */,
+				8EF3EBBE26B68FB5007FD14A /* ThursdayLessonViewController.swift in Sources */,
+				8EF3EBBC26B68FB5007FD14A /* MondayTestViewController.swift in Sources */,
 				87A9772B2690C4A300FDA013 /* SceneDelegate.swift in Sources */,
+				8EF3EBB126B68FB5007FD14A /* WednesdayLessonViewController.swift in Sources */,
+				8EF3EBB726B68FB5007FD14A /* JoinTheDotsActivityViewController.swift in Sources */,
+				8EF3EBBD26B68FB5007FD14A /* SpeedWritingActivityViewController.swift in Sources */,
 				8719BC2F2694CCFF00F9829C /* FMResultSet.m in Sources */,
 				8719BC2E2694CCFF00F9829C /* FMDatabaseAdditions.m in Sources */,
+				8EF3EBB926B68FB5007FD14A /* SentenceCreatorActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
