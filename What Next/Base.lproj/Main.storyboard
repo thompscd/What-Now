@@ -3502,6 +3502,9 @@
                                                 <state key="normal" title="Lets try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="719-Ek-iYv" kind="showDetail" id="kDw-FC-B4X"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -3884,6 +3887,9 @@
                                                 <state key="normal" title="Lets try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="iRj-6e-sza" kind="showDetail" id="7zo-7S-rU0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -4186,6 +4192,9 @@
                                                 <state key="normal" title="Lets try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="fmf-yE-tCa" kind="showDetail" id="WBj-ck-UsJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -4567,6 +4576,9 @@
                                                 <state key="normal" title="Lets try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="UKw-On-sqF" kind="showDetail" id="HPD-Ju-UFo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -6903,6 +6915,9 @@
                                                 <state key="normal" title="Lets try our best!">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="aXj-cv-17e" kind="showDetail" id="L9w-NL-3W5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -7209,7 +7224,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SB6-V2-R3u"/>
         <segue reference="zlm-LJ-bHk"/>
         <segue reference="Afm-WC-YkD"/>
         <segue reference="tU5-oA-RNn"/>
