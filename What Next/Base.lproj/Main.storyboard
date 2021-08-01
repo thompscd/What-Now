@@ -7099,6 +7099,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="e1T-C8-X4G" kind="showDetail" id="PJb-AX-0ny"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" id="Dbt-TV-ExF">
                                         <rect key="frame" x="0.0" y="84" width="984" height="79"/>
@@ -7115,6 +7118,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="2qr-F1-j4f" kind="showDetail" id="dPU-Zh-bZ6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HBU-qd-CZS" userLabel="Wednesday: Nouns ending in the suffix -ation.">
                                         <rect key="frame" x="0.0" y="168" width="984" height="79"/>
@@ -7130,6 +7136,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="YHh-Ed-hWg" kind="showDetail" id="1tN-fp-jKi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="smX-G9-GlX">
                                         <rect key="frame" x="0.0" y="252" width="984" height="79"/>
@@ -7145,6 +7154,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="mzu-cc-tL6" kind="showDetail" id="3i5-jq-Reh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwI-7m-XDv" userLabel="Wednesday: Nouns ending in the suffix -ation.">
                                         <rect key="frame" x="0.0" y="336" width="984" height="79"/>
@@ -7160,6 +7172,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="3cs-cF-1S3" kind="showDetail" id="LGd-DW-Kn3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -7194,6 +7209,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="SB6-V2-R3u"/>
         <segue reference="zlm-LJ-bHk"/>
         <segue reference="Afm-WC-YkD"/>
         <segue reference="tU5-oA-RNn"/>
