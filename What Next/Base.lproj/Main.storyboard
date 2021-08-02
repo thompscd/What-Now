@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="What Now logo small" translatesAutoresizingMaskIntoConstraints="NO" id="nvV-Sq-XVi" userLabel="What Next Logo">
-                                <rect key="frame" x="413" y="233.5" width="198" height="198"/>
+                                <rect key="frame" x="413" y="238" width="198" height="198"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEZ-29-EUv" userLabel="Back Button">
                                 <rect key="frame" x="10" y="10" width="102" height="76"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0B-WT-hqA">
-                                <rect key="frame" x="305.5" y="591.5" width="413" height="42"/>
+                                <rect key="frame" x="305.5" y="601" width="413" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="229" id="tsG-Rp-tEJ"/>
                                 </constraints>
@@ -60,56 +60,26 @@
                                 <color key="textColor" red="1" green="0.28286585530000002" blue="0.25842793559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qq-0J-obG" userLabel="Pupil Login Label">
-                                <rect key="frame" x="426.5" y="140" width="171" height="43.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pupil Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qq-0J-obG" userLabel="Pupil Login Label">
+                                <rect key="frame" x="410" y="140" width="204" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="9WG-XA-usB"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Pupil Login">
-                                        <attributes>
-                                            <font key="NSFont" size="24" name="MarkerFelt-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <attributedString key="attributedText">
-                                        <fragment content="Pupil Login">
-                                            <attributes>
-                                                <font key="NSFont" size="40" name="MarkerFelt-Thin"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-vX-xLm" userLabel="Welcome Back Label">
-                                <rect key="frame" x="372" y="491.5" width="280.5" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-vX-xLm" userLabel="Welcome Back Label">
+                                <rect key="frame" x="343.5" y="496" width="337.5" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="9A9-pf-XwE"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Welcome Back !">
-                                        <attributes>
-                                            <font key="NSFont" size="36" name="MarkerFelt-Thin"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <attributedString key="attributedText">
-                                        <fragment content="Welcome Back !">
-                                            <attributes>
-                                                <font key="NSFont" size="46" name="MarkerFelt-Thin"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MGl-89-kQD" userLabel="Username Stack View">
-                                <rect key="frame" x="287" y="686" width="450" height="95.5"/>
+                                <rect key="frame" x="287" y="695.5" width="450" height="95.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1md-BF-1SX" userLabel="Username label">
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="37.5"/>
@@ -171,7 +141,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0nT-Nj-usi" userLabel="Password Stack View">
-                                <rect key="frame" x="287" y="811.5" width="450" height="94.5"/>
+                                <rect key="frame" x="287" y="821" width="450" height="94.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB3-1X-VmH" userLabel="Password label">
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="37.5"/>
@@ -521,32 +491,16 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="What Now logo small" translatesAutoresizingMaskIntoConstraints="NO" id="hrI-gj-RV2">
-                                <rect key="frame" x="413" y="233.5" width="198" height="198"/>
+                                <rect key="frame" x="413" y="238" width="198" height="198"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3b-fQ-G9i" userLabel="Teacher Login Label">
-                                <rect key="frame" x="401.5" y="140" width="221" height="43.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Teacher Login">
-                                        <attributes>
-                                            <font key="NSFont" size="24" name="MarkerFelt-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3b-fQ-G9i" userLabel="Teacher Login Label">
+                                <rect key="frame" x="382.5" y="140" width="259" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <attributedString key="attributedText">
-                                        <fragment content="Teacher Login">
-                                            <attributes>
-                                                <font key="NSFont" size="40" name="MarkerFelt-Thin"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etv-gJ-J5M">
-                                <rect key="frame" x="305.5" y="591.5" width="413" height="42"/>
+                                <rect key="frame" x="305.5" y="601" width="413" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="229.5" id="BPY-Rg-Ibu"/>
                                 </constraints>
@@ -569,7 +523,7 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eHV-he-8KW" userLabel="Username Stack View">
-                                <rect key="frame" x="287" y="685.5" width="450" height="95.5"/>
+                                <rect key="frame" x="287" y="695" width="450" height="95.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ow2-wh-WSv" userLabel="Username label">
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="37.5"/>
@@ -607,7 +561,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vcj-68-uwU" userLabel="Password Stack View">
-                                <rect key="frame" x="287" y="811" width="450" height="94.5"/>
+                                <rect key="frame" x="287" y="820.5" width="450" height="94.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHI-Mx-Udl" userLabel="Password label">
                                         <rect key="frame" x="0.0" y="0.0" width="450" height="37.5"/>
@@ -677,28 +631,14 @@
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8u-Fm-bX6" userLabel="Welcome Back Label">
-                                <rect key="frame" x="372" y="491.5" width="280.5" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8u-Fm-bX6" userLabel="Welcome Back Label">
+                                <rect key="frame" x="343.5" y="496" width="337.5" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="X5l-mi-b2q"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Welcome Back !">
-                                        <attributes>
-                                            <font key="NSFont" size="36" name="MarkerFelt-Thin"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <attributedString key="attributedText">
-                                        <fragment content="Welcome Back !">
-                                            <attributes>
-                                                <font key="NSFont" size="46" name="MarkerFelt-Thin"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </variation>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rft-aV-vWH"/>
@@ -1022,55 +962,23 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-2i-epT">
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoQ-Ds-UNf">
-                                        <rect key="frame" x="376.5" y="150" width="271" height="39.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Home Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoQ-Ds-UNf">
+                                        <rect key="frame" x="346.5" y="150" width="331.5" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="lme-yG-gkQ"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Teacher Home Page">
-                                                <attributes>
-                                                    <font key="NSFont" size="30" name="MarkerFelt-Thin"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <attributedString key="attributedText">
-                                                <fragment content="Teacher Home Page">
-                                                    <attributes>
-                                                        <font key="NSFont" size="36" name="MarkerFelt-Thin"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouA-wd-HrQ" userLabel="Teacher Name">
-                                        <rect key="frame" x="71" y="239.5" width="882" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr Burn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouA-wd-HrQ" userLabel="Teacher Name">
+                                        <rect key="frame" x="71" y="243" width="882" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="1B8-oW-ZBT"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Mr Burn">
-                                                <attributes>
-                                                    <font key="NSFont" size="36" name="MarkerFelt-Thin"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <attributedString key="attributedText">
-                                                <fragment content="Mr Burn">
-                                                    <attributes>
-                                                        <font key="NSFont" size="46" name="MarkerFelt-Thin"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1146,35 +1054,17 @@
                                     <segue destination="lWM-dc-IaG" kind="presentation" id="yX8-lu-syU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiQ-Ut-9eF" userLabel="Pupil Notification label">
-                                <rect key="frame" x="325.5" y="100" width="373.5" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification to Pupil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiQ-Ut-9eF" userLabel="Pupil Notification label">
+                                <rect key="frame" x="303.5" y="100" width="417.5" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="h9l-qF-0VW"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Notification to Pupil">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="30" name="MarkerFelt-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <attributedString key="attributedText">
-                                        <fragment content="Notification to Pupil">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="46" name="MarkerFelt-Thin"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pFJ-sa-els" userLabel="username Stack View">
-                                <rect key="frame" x="237" y="250" width="550" height="43"/>
+                                <rect key="frame" x="237" y="255" width="550" height="43"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pupil username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMa-B5-mF5" userLabel="username label">
                                         <rect key="frame" x="0.0" y="0.0" width="265" height="43"/>
@@ -1201,7 +1091,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Usy-yA-nIU" userLabel="notification Stack View">
-                                <rect key="frame" x="237" y="333" width="550" height="633.5"/>
+                                <rect key="frame" x="237" y="338" width="550" height="633.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVe-nJ-rsa" userLabel="Notification label">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="43"/>
@@ -1231,10 +1121,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-Wp-lXy" userLabel="priority Stack View">
-                                <rect key="frame" x="237" y="1016.5" width="550" height="60.5"/>
+                                <rect key="frame" x="237" y="1021.5" width="550" height="55.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Priority" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-Vo-5k3" userLabel="priority label">
-                                        <rect key="frame" x="0.0" y="0.0" width="153" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="55.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1243,7 +1133,7 @@
                                         </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sDl-uC-hVR" userLabel="Priority Pulldown Stack View">
-                                        <rect key="frame" x="183" y="0.0" width="367" height="60.5"/>
+                                        <rect key="frame" x="183" y="0.0" width="367" height="55.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pE-jl-tUx">
                                                 <rect key="frame" x="0.0" y="0.0" width="367" height="0.0"/>
@@ -1270,7 +1160,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xty-dE-uTB">
-                                                <rect key="frame" x="0.0" y="2" width="367" height="2.5"/>
+                                                <rect key="frame" x="0.0" y="2" width="367" height="0.0"/>
                                                 <color key="backgroundColor" red="1" green="0.83745720400000001" blue="0.72190270649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                 <state key="normal" title="Normal">
@@ -1281,7 +1171,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-Em-n7N">
-                                                <rect key="frame" x="0.0" y="5.5" width="367" height="55"/>
+                                                <rect key="frame" x="0.0" y="3" width="367" height="52.5"/>
                                                 <color key="backgroundColor" red="1" green="0.83745720400000001" blue="0.72190270649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                 <state key="normal" title="Urgent">
@@ -1486,32 +1376,14 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background blank" translatesAutoresizingMaskIntoConstraints="NO" id="TdB-zy-ny3">
                                         <rect key="frame" x="0.0" y="0.0" width="500" height="700"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8H-3M-dLH" userLabel="Notification label">
-                                        <rect key="frame" x="128" y="30" width="244" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8H-3M-dLH" userLabel="Notification label">
+                                        <rect key="frame" x="113.5" y="30" width="273" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="HXx-St-0Fm"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Notifications">
-                                                <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="30" name="MarkerFelt-Thin"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <attributedString key="attributedText">
-                                                <fragment content="Notifications">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="46" name="MarkerFelt-Thin"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="P7F-r7-yP2" userLabel="Buttons Stack View">
                                         <rect key="frame" x="85" y="625" width="330" height="55"/>
@@ -1575,7 +1447,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="X4E-Pr-OVa" userLabel="From Stack View">
-                                        <rect key="frame" x="30" y="90" width="440" height="38.5"/>
+                                        <rect key="frame" x="30" y="95" width="440" height="38.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bn-62-GYw">
                                                 <rect key="frame" x="0.0" y="0.0" width="284" height="38.5"/>
@@ -1598,7 +1470,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TP2-Tw-0fQ" userLabel="Date Stack View">
-                                        <rect key="frame" x="30" y="128.5" width="440" height="38.5"/>
+                                        <rect key="frame" x="30" y="133.5" width="440" height="38.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbv-0O-mL5" userLabel="Date label">
                                                 <rect key="frame" x="0.0" y="0.0" width="214" height="38.5"/>
@@ -1621,7 +1493,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJS-Kw-dQL" userLabel="Priority Stack View">
-                                        <rect key="frame" x="30" y="167" width="440" height="38.5"/>
+                                        <rect key="frame" x="30" y="172" width="440" height="38.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Priority:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgN-Cx-x6V" userLabel="Priority Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="340" height="38.5"/>
@@ -1638,7 +1510,7 @@
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K63-ce-rBF">
-                                        <rect key="frame" x="50" y="245.5" width="400" height="300"/>
+                                        <rect key="frame" x="50" y="250.5" width="400" height="300"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="cT4-MA-Fdr"/>
@@ -1768,27 +1640,11 @@
                                     <segue destination="DXz-8l-y7F" kind="presentation" id="NZc-uQ-f2W"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ig-Of-oDS" userLabel="User Profile Label">
-                                <rect key="frame" x="380" y="120" width="264" height="43.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Pupil User Profile">
-                                        <attributes>
-                                            <font key="NSFont" size="32" name="MarkerFelt-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pupil User Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ig-Of-oDS" userLabel="User Profile Label">
+                                <rect key="frame" x="354" y="120" width="316" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <attributedString key="attributedText">
-                                        <fragment content="Pupil User Profile">
-                                            <attributes>
-                                                <font key="NSFont" size="40" name="MarkerFelt-Thin"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAE-VR-6nB" userLabel="Update button">
                                 <rect key="frame" x="435" y="736" width="154" height="53"/>
@@ -1874,30 +1730,16 @@
                                     <segue destination="DXz-8l-y7F" kind="presentation" id="eqg-Z6-bdn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XM-7A-w0c" userLabel="Pupil Settings Label">
-                                <rect key="frame" x="398.5" y="120" width="227.5" height="43.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pupil Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XM-7A-w0c" userLabel="Pupil Settings Label">
+                                <rect key="frame" x="383.5" y="120" width="257" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="182" id="WX6-hq-BgK"/>
                                     <constraint firstAttribute="height" constant="35" id="hsj-gd-urw"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Pupil Settings">
-                                        <attributes>
-                                            <font key="NSFont" size="32" name="MarkerFelt-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <attributedString key="attributedText">
-                                        <fragment content="Pupil Settings">
-                                            <attributes>
-                                                <font key="NSFont" size="40" name="MarkerFelt-Thin"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
                                     <mask key="constraints">
                                         <exclude reference="hsj-gd-urw"/>
                                     </mask>
@@ -2463,43 +2305,16 @@
                                     <segue destination="lWM-dc-IaG" kind="presentation" id="MN9-1f-mtc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpL-Dg-wwZ" userLabel="Teacher Settings Label">
-                                <rect key="frame" x="373.5" y="120" width="277.5" height="43.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpL-Dg-wwZ" userLabel="Teacher Settings Label">
+                                <rect key="frame" x="356" y="120" width="312.5" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="182" id="3O4-6c-xbO"/>
                                     <constraint firstAttribute="height" constant="35" id="Ev8-9Y-DAl"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="T">
-                                        <attributes>
-                                            <font key="NSFont" size="32" name="MarkerFelt-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="eacher">
-                                        <attributes>
-                                            <font key="NSFont" size="32" name="MarkerFelt-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" Settings">
-                                        <attributes>
-                                            <font key="NSFont" size="32" name="MarkerFelt-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <attributedString key="attributedText">
-                                        <fragment content="Teacher Settings">
-                                            <attributes>
-                                                <font key="NSFont" size="40" name="MarkerFelt-Thin"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
                                     <mask key="constraints">
                                         <exclude reference="Ev8-9Y-DAl"/>
                                     </mask>
@@ -9561,10 +9376,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="8f0-qW-YL3"/>
         <segue reference="zIn-6j-hKB"/>
         <segue reference="Sez-B0-ZdH"/>
         <segue reference="zlm-LJ-bHk"/>
-        <segue reference="rcG-jE-u35"/>
+        <segue reference="eqg-Z6-bdn"/>
         <segue reference="tU5-oA-RNn"/>
         <segue reference="VDh-qY-oiv"/>
     </inferredMetricsTieBreakers>
