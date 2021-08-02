@@ -16,6 +16,9 @@ class SentenceCreatorActivityViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // update the activity reflection
+        GlobalVar.activityRefelection = "Sentence Creator Activity Reflection"
     }
     
     @IBAction func onClickSave(_ sender: UIButton) {

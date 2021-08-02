@@ -7325,6 +7325,9 @@
                                                 <state key="normal" title="Write reflection!">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="alL-g1-ehu" kind="showDetail" id="Ls0-f6-aTp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -7559,6 +7562,9 @@
                                                 <state key="normal" title="Write reflection!">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="alL-g1-ehu" kind="showDetail" id="G32-AG-Ud1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -7789,6 +7795,9 @@
                                                 <state key="normal" title="Write reflection!">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="alL-g1-ehu" kind="showDetail" id="rbh-H6-Hxu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -8020,6 +8029,9 @@
                                                 <state key="normal" title="Write reflection!">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="alL-g1-ehu" kind="showDetail" id="Ltu-GN-23I"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -8251,6 +8263,9 @@
                                                 <state key="normal" title="Write reflection!">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="alL-g1-ehu" kind="showDetail" id="RqU-3J-Wen"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -8445,6 +8460,9 @@
                                                 <state key="normal" title="Write reflection!">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="alL-g1-ehu" kind="showDetail" id="5zd-Pq-j95"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -9548,6 +9566,7 @@
         <segue reference="zlm-LJ-bHk"/>
         <segue reference="Afm-WC-YkD"/>
         <segue reference="tU5-oA-RNn"/>
+        <segue reference="VDh-qY-oiv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Back Arrow" width="102" height="76"/>

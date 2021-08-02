@@ -27,6 +27,9 @@ class BackwordsWordsActivityViewController: UIViewController {
         collectionView.dataSource = self
 
         // Do any additional setup after loading the view.
+        
+        // update the activity reflection
+        GlobalVar.activityRefelection = "Backwards Words Activity Reflection"
     }
     
     @IBAction func onClickSave(_ sender: UIButton) {

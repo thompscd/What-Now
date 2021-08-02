@@ -22,6 +22,9 @@ class ActivityReflectionPopupViewController: UIViewController {
         
         //add title to the reflection popup
         activityTitleLabel.text = GlobalVar.activityRefelection;
+        
+        // move cursor to input field
+        reflectionTextField.becomeFirstResponder()
     }
     
     @IBAction func submitButtonPressed(_ sender: Any) {

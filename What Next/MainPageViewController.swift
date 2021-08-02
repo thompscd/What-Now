@@ -136,7 +136,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
                         // sad
                         CommentsTextView.insertText ("\n\nMood level : sad");
                     }
-                    CommentsTextView.insertText ("\n\ne"+"Date: "+date);
+                    CommentsTextView.insertText ("\n\n"+"Date: "+date);
                     CommentsTextView.insertText ("\n\n===========================");
                 } else {
                     // username is not in TEACHER or PUPIL table - report an error

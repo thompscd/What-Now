@@ -27,6 +27,9 @@ class RainbowWritingActivityViewController: UIViewController {
         collectionView.dataSource = self
 
         // Do any additional setup after loading the view.
+        
+        // update the activity reflection
+        GlobalVar.activityRefelection = "Rainbow Writing Activity Reflection"
     }
     
     @IBAction func onClickSave(_ sender: UIButton) {

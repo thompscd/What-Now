@@ -27,6 +27,9 @@ class ColouredVowelsActivityViewController: UIViewController {
         collectionView.dataSource = self
 
         // Do any additional setup after loading the view.
+        
+        // update the activity reflection
+        GlobalVar.activityRefelection = "Coloured Vowels Activity Reflection"
     }
     
     @IBAction func onClickSave(_ sender: UIButton) {
