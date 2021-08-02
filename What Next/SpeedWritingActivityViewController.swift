@@ -26,6 +26,9 @@ class SpeedWritingActivityViewController: UIViewController {
         collectionView.dataSource = self
 
         // Do any additional setup after loading the view.
+        
+        // update the activity reflection
+        GlobalVar.activityRefelection = "Speed Writing Activity Reflection"
     }
     //Whiteboard Functions
     @IBAction func onClickSave(_ sender: UIButton) {

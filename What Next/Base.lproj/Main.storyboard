@@ -260,6 +260,125 @@
             </objects>
             <point key="canvasLocation" x="1218.1640625" y="87.84773060029282"/>
         </scene>
+        <!--Activity Reflection Popup View Controller-->
+        <scene sceneID="mgS-3i-k9H">
+            <objects>
+                <viewController id="alL-g1-ehu" userLabel="Activity Reflection Popup View Controller" customClass="ActivityReflectionPopupViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y21-25-NIf">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yzc-rE-h5M" userLabel="popup View">
+                                <rect key="frame" x="30" y="50" width="644" height="545.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background blank" translatesAutoresizingMaskIntoConstraints="NO" id="WSJ-nn-JGH">
+                                        <rect key="frame" x="0.0" y="0.0" width="644" height="545.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed Writing Activity Reflection" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-CE-VnO">
+                                        <rect key="frame" x="122" y="80" width="400" height="95.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="OB2-kk-mVU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf8-F5-mcP" userLabel="Dismiss Button">
+                                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                        <state key="normal" image="Dismiss button small mood screen"/>
+                                        <connections>
+                                            <action selector="dismissButtonPressed2:" destination="alL-g1-ehu" eventType="touchUpInside" id="8im-jR-flc"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much did you enjoy this activity?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEY-7P-nRE" userLabel="How much did you like this activity?">
+                                        <rect key="frame" x="34" y="247.5" width="576" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        </variation>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ueM-qX-go4" userLabel="Text field">
+                                        <rect key="frame" x="20" y="340.5" width="604" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="PCJ-S8-Zae"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        </variation>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wa-py-3G5" userLabel="Submit button">
+                                        <rect key="frame" x="252" y="460.5" width="140" height="55"/>
+                                        <color key="backgroundColor" red="1" green="0.90147639970000004" blue="0.91012360950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="BXn-Lk-liq">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="140"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" systemColor="systemOrangeColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="submitButtonPressed:" destination="alL-g1-ehu" eventType="touchUpInside" id="VCd-5H-AHD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WSJ-nn-JGH" secondAttribute="bottom" id="0mo-ja-Twp"/>
+                                    <constraint firstItem="3wa-py-3G5" firstAttribute="centerX" secondItem="Yzc-rE-h5M" secondAttribute="centerX" id="0uw-wQ-o6Q"/>
+                                    <constraint firstItem="WSJ-nn-JGH" firstAttribute="top" secondItem="Yzc-rE-h5M" secondAttribute="top" id="4Mc-4x-iOW"/>
+                                    <constraint firstItem="HEY-7P-nRE" firstAttribute="centerX" secondItem="Yzc-rE-h5M" secondAttribute="centerX" id="86D-VA-gft"/>
+                                    <constraint firstItem="WSJ-nn-JGH" firstAttribute="leading" secondItem="Yzc-rE-h5M" secondAttribute="leading" id="A6y-5X-3pe"/>
+                                    <constraint firstItem="Lf8-F5-mcP" firstAttribute="top" secondItem="Yzc-rE-h5M" secondAttribute="top" constant="5" id="IsQ-Ih-vX6"/>
+                                    <constraint firstAttribute="trailing" secondItem="WSJ-nn-JGH" secondAttribute="trailing" id="KkN-RU-7kz"/>
+                                    <constraint firstAttribute="trailing" secondItem="ueM-qX-go4" secondAttribute="trailing" constant="20" id="NQf-W8-Q0C"/>
+                                    <constraint firstItem="ueM-qX-go4" firstAttribute="top" secondItem="HEY-7P-nRE" secondAttribute="bottom" constant="15" id="Pq8-Wg-O11">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                    <constraint firstItem="ueM-qX-go4" firstAttribute="leading" secondItem="Yzc-rE-h5M" secondAttribute="leading" constant="20" id="Qbe-XM-IZB"/>
+                                    <constraint firstAttribute="bottom" secondItem="3wa-py-3G5" secondAttribute="bottom" constant="30" id="Rc4-4C-A9d"/>
+                                    <constraint firstItem="3wa-py-3G5" firstAttribute="top" secondItem="ueM-qX-go4" secondAttribute="bottom" constant="20" id="g4k-dF-0w3">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                    <constraint firstItem="Lf8-F5-mcP" firstAttribute="leading" secondItem="Yzc-rE-h5M" secondAttribute="leading" constant="5" id="gBL-H9-cvn"/>
+                                    <constraint firstItem="6iq-CE-VnO" firstAttribute="centerX" secondItem="Yzc-rE-h5M" secondAttribute="centerX" id="vVb-Y7-kEQ"/>
+                                    <constraint firstItem="6iq-CE-VnO" firstAttribute="top" secondItem="Yzc-rE-h5M" secondAttribute="top" constant="80" id="wVx-VJ-GHT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xit-xD-Ycz"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yzc-rE-h5M" firstAttribute="top" secondItem="Xit-xD-Ycz" secondAttribute="top" constant="50" id="5X5-iO-kZM"/>
+                            <constraint firstItem="Xit-xD-Ycz" firstAttribute="bottom" secondItem="Yzc-rE-h5M" secondAttribute="bottom" constant="400" id="5il-rW-aae"/>
+                            <constraint firstItem="Xit-xD-Ycz" firstAttribute="trailing" secondItem="Yzc-rE-h5M" secondAttribute="trailing" constant="30" id="9Qm-Fy-NGy"/>
+                            <constraint firstItem="Yzc-rE-h5M" firstAttribute="leading" secondItem="Xit-xD-Ycz" secondAttribute="leading" constant="30" id="EvG-dT-Nn1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="moodPopupNavigation" id="52T-Mz-FxP"/>
+                    <connections>
+                        <outlet property="activityTitleLabel" destination="6iq-CE-VnO" id="ayR-YT-dw8"/>
+                        <outlet property="reflectionTextField" destination="ueM-qX-go4" id="gqQ-Rx-irM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLL-cc-xFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67.692307692307693" y="758.53080568720372"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -6966,6 +7085,9 @@
                                                 <state key="normal" title="Write reflection!">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="alL-g1-ehu" kind="showDetail" id="VDh-qY-oiv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -9421,7 +9543,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZGc-uR-m57"/>
+        <segue reference="zIn-6j-hKB"/>
         <segue reference="Sez-B0-ZdH"/>
         <segue reference="zlm-LJ-bHk"/>
         <segue reference="Afm-WC-YkD"/>

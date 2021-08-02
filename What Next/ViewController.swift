@@ -47,6 +47,9 @@ struct GlobalVar {
     
     // flag indicating if unreadNotifictionsPopup has been displayed
     static var unreadNotificationsPopupDisplayed : Bool = false;
+    
+    // holds the name of the activity being reflected on (shown on pop-up)
+    static var activityRefelection : String = "";
 }
 
 class ViewController: UIViewController {
