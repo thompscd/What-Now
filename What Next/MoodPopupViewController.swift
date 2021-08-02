@@ -55,12 +55,12 @@ class MoodPopupViewController: UIViewController {
         
         // format the date & time
         let df = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        df.dateFormat = "dd-MM-yyyy hh:mm"
         let dateTime = df.string(from: Date())
         print ("date time is ", dateTime)
         
         let comment : String = commentTextField.text ?? "";
-        let querySQL = "INSERT INTO COMMENTS (id, loginname, comment, date, liked, moodlevel) VALUES (null,'mikey','\(comment)','\(dateTime)', 1, \(moodLevel));"
+        let querySQL = "INSERT INTO COMMENTS (id, loginname, activity, comment, date, liked, moodlevel) VALUES (null,'mikey','','\(comment)','\(dateTime)', 1, \(moodLevel));"
 
         let results = GlobalVar.whatNextDB.executeUpdate(querySQL, withArgumentsIn:[]);
         

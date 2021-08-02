@@ -13,8 +13,8 @@ let insertPupilSQL2 = "INSERT INTO PUPIL (loginname, firstname, lastname, lastlo
 let insertPupilSQL3 = "INSERT INTO PUPIL (loginname, firstname, lastname, lastlogin, password) VALUES ('sasha','Sasha','Tomlinson','10 June 2021 16:20','brodie');"
 let insertTeacherSQL1 = "INSERT INTO TEACHER (loginname, suffix, firstname, lastname, password, email) VALUES ('mrburn','Mr','James','Burn','bestteacher','jburn@fraseracademy.edu');"
 let insertTeacherSQL2 = "INSERT INTO TEACHER (loginname, suffix, firstname, lastname, password, email) VALUES ('msdocherty','Ms','Elaine','Docherty','sashathedog','edocherty@fraseracademy.edu');"
-let insertCommentSQL1 = "INSERT INTO COMMENTS (id,loginname, comment, date, liked, moodlevel) VALUES (null,'mrburn','Well done. Keep up the great work!','10 July 2021 16:20', 0, 1);"
-let insertCommentSQL2 = "INSERT INTO COMMENTS (id,loginname, comment, date, liked, moodlevel) VALUES (null,'mikey','I really enjoyed today!','14 July 2021 16:20', 1, 2);"
+let insertCommentSQL1 = "INSERT INTO COMMENTS (id,loginname, activity, comment, date, liked, moodlevel) VALUES (null,'mrburn','','Well done. Keep up the great work!','10 July 2021 16:20', 0, 1);"
+let insertCommentSQL2 = "INSERT INTO COMMENTS (id,loginname, activity, comment, date, liked, moodlevel) VALUES (null,'mikey','','I really enjoyed today!','14 July 2021 16:20', 1, 2);"
 let insertNotificationSQL1 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'mikey','mrburn','Please attend the support meeting on Friday, 1PM in my office. Thanks.','10 July 2021 16:20', '',1);"
 let insertNotificationSQL2 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'mikey','mrburn','Lets get together to discuss homework objectives for this week. Any time Friday is good for me. Thanks.','21 July 2021 16:20', '',0);"
 let insertNotificationSQL3 = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'sasha','mrburn','Lets get together to discuss homework objectives for this week. Any time Friday is good for me. Thanks.','22 July 2021 16:20', '',2);"
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
                 // create teacher table
                 let sql_stmt2 = "CREATE TABLE IF NOT EXISTS TEACHER (LOGINNAME TEXT PRIMARY KEY, SUFFIX TEXT, FIRSTNAME TEXT, LASTNAME TEXT, PASSWORD TEXT, EMAIL TEXT);"
                 // create comments table
-                let sql_stmt3 = "CREATE TABLE IF NOT EXISTS COMMENTS (ID INTEGER PRIMARY KEY AUTOINCREMENT,LOGINNAME TEXT, COMMENT TEXT, DATE TEXT, LIKED INTEGER, MOODLEVEL INTEGER);"
+                let sql_stmt3 = "CREATE TABLE IF NOT EXISTS COMMENTS (ID INTEGER PRIMARY KEY AUTOINCREMENT,LOGINNAME TEXT, ACTIVITY TEXT, COMMENT TEXT, DATE TEXT, LIKED INTEGER, MOODLEVEL INTEGER);"
                 // create notifications table
                 let sql_stmt4 = "CREATE TABLE IF NOT EXISTS NOTIFICATIONS (ID INTEGER PRIMARY KEY AUTOINCREMENT,PUPILLOGINNAME TEXT, TEACHERLOGINNAME TEXT, NOTIFICATION TEXT, DATESUBMITTED TEXT, DATEREAD TEXT, PRIORITY INTEGER);"
 
