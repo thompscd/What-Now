@@ -78,11 +78,12 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
     func displayComments () {
         
         // sql query to extract all the comments
-        let querySQL = "SELECT loginname, comment, date, moodlevel FROM COMMENTS;"
+        let querySQL = "SELECT loginname, activity, comment, date, moodlevel FROM COMMENTS;"
         var results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         while results?.next()==true {
             print ("comment found");""
             let loginname : String = results?.string(forColumn:"loginname") ?? "";
+            let activity : String = results?.string(forColumn:"activity") ?? "";
             let comment : String = results?.string(forColumn:"comment") ?? "";
             let date : String = results?.string(forColumn:"date") ?? "";
             let moodlevel : Int = results?.long(forColumn:"moodlevel") ?? 0;
@@ -100,7 +101,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
                 CommentsTextView.insertText (suffix+" "+lastname);
                 CommentsTextView.insertText ("\nClassroom Teacher");
                 CommentsTextView.insertText ("\n\n"+"\""+comment+"\"");
-                CommentsTextView.insertText ("\n"+"Date: "+date);
+                CommentsTextView.insertText ("\n\n"+"Date: "+date);
                 CommentsTextView.insertText ("\n\n===========================");
             }
             else {
@@ -118,6 +119,9 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
                     CommentsTextView.insertText ("\n\n");
                     CommentsTextView.insertText (firstname+" "+lastname);
                     CommentsTextView.insertText ("\nPupil");
+                    if activity != "" {
+                        CommentsTextView.insertText ("\n"+activity);
+                    }
                     CommentsTextView.insertText ("\n\n"+"\""+comment+"\"");
 
                     if (moodlevel == GlobalVar.moodlevel_none) {

@@ -60,7 +60,7 @@ class MoodPopupViewController: UIViewController {
         print ("date time is ", dateTime)
         
         let comment : String = commentTextField.text ?? "";
-        let querySQL = "INSERT INTO COMMENTS (id, loginname, activity, comment, date, liked, moodlevel) VALUES (null,'mikey','','\(comment)','\(dateTime)', 1, \(moodLevel));"
+        let querySQL = "INSERT INTO COMMENTS (id, loginname, activity, comment, date, liked, moodlevel) VALUES (null,'mikey','', '\(comment)','\(dateTime)', 1, \(moodLevel));"
 
         let results = GlobalVar.whatNextDB.executeUpdate(querySQL, withArgumentsIn:[]);
         
