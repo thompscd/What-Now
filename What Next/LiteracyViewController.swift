@@ -15,9 +15,9 @@ class LiteracyViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func close () {
-        dismiss (animated: true, completion: nil)
-    }
+    //@IBAction func close () {
+    //    dismiss (animated: true, completion: nil)
+    //}
 
     /*
     // MARK: - Navigation

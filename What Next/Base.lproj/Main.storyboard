@@ -9422,7 +9422,7 @@
                                 <rect key="frame" x="0.0" y="47" width="102" height="76"/>
                                 <state key="normal" image="Back Arrow"/>
                                 <connections>
-                                    <action selector="close" destination="aKF-nu-i7F" eventType="touchUpInside" id="v8n-E4-b2X"/>
+                                    <segue destination="DXz-8l-y7F" kind="presentation" id="rcG-jE-u35"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="What Now logo small" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-6C-Cyc">
@@ -9564,7 +9564,7 @@
         <segue reference="zIn-6j-hKB"/>
         <segue reference="Sez-B0-ZdH"/>
         <segue reference="zlm-LJ-bHk"/>
-        <segue reference="Afm-WC-YkD"/>
+        <segue reference="rcG-jE-u35"/>
         <segue reference="tU5-oA-RNn"/>
         <segue reference="VDh-qY-oiv"/>
     </inferredMetricsTieBreakers>
