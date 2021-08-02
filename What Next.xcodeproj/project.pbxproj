@@ -55,6 +55,10 @@
 		E45574F026B6CFF60028E53F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E45574E826B6CFF40028E53F /* FMResultSet.m */; };
 		E45574F126B6CFF60028E53F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E45574EA26B6CFF50028E53F /* FMDatabaseQueue.m */; };
 		E45574F226B6CFF60028E53F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E45574EC26B6CFF50028E53F /* FMDatabase.m */; };
+		E45574F426B74AB50028E53F /* TuesdayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574F326B74AB40028E53F /* TuesdayTestViewController.swift */; };
+		E45574F626B74B0C0028E53F /* WednesdayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574F526B74B0C0028E53F /* WednesdayTestViewController.swift */; };
+		E45574F826B74B280028E53F /* ThursdayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574F726B74B280028E53F /* ThursdayTestViewController.swift */; };
+		E45574FA26B74B420028E53F /* FridayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45574F926B74B420028E53F /* FridayTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +140,10 @@
 		E45574EB26B6CFF50028E53F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		E45574EC26B6CFF50028E53F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		E45574ED26B6CFF60028E53F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E45574F326B74AB40028E53F /* TuesdayTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesdayTestViewController.swift; sourceTree = "<group>"; };
+		E45574F526B74B0C0028E53F /* WednesdayTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayTestViewController.swift; sourceTree = "<group>"; };
+		E45574F726B74B280028E53F /* ThursdayTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursdayTestViewController.swift; sourceTree = "<group>"; };
+		E45574F926B74B420028E53F /* FridayTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridayTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +212,10 @@
 				87A9772A2690C4A300FDA013 /* SceneDelegate.swift */,
 				87A9772C2690C4A300FDA013 /* ViewController.swift */,
 				87A9772E2690C4A300FDA013 /* Main.storyboard */,
+				E45574F326B74AB40028E53F /* TuesdayTestViewController.swift */,
+				E45574F526B74B0C0028E53F /* WednesdayTestViewController.swift */,
+				E45574F726B74B280028E53F /* ThursdayTestViewController.swift */,
+				E45574F926B74B420028E53F /* FridayTestViewController.swift */,
 				8ECA651426AF165600D10F89 /* NotificatonPopupViewController.swift */,
 				8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */,
 				8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */,
@@ -409,6 +421,7 @@
 				E45574EE26B6CFF60028E53F /* FMDatabaseAdditions.m in Sources */,
 				8EF3EBB826B68FB5007FD14A /* TuesdayLessonViewController.swift in Sources */,
 				8EF3EBAE26B68FB5007FD14A /* FridayLessonViewController.swift in Sources */,
+				E45574F626B74B0C0028E53F /* WednesdayTestViewController.swift in Sources */,
 				E45574EF26B6CFF60028E53F /* FMDatabasePool.m in Sources */,
 				8EF3EBAB26B68FB5007FD14A /* BackwordsWordsActivityViewController.swift in Sources */,
 				8EF3EBBA26B68FB5007FD14A /* CanvasView.swift in Sources */,
@@ -420,6 +433,7 @@
 				8EF3EBB526B68FB5007FD14A /* TuesdayExplainationViewController.swift in Sources */,
 				8EF3EBB626B68FB5007FD14A /* WednesdayExplainationViewController.swift in Sources */,
 				8EF3EBB326B68FB5007FD14A /* FridayExplainationViewController.swift in Sources */,
+				E45574FA26B74B420028E53F /* FridayTestViewController.swift in Sources */,
 				879330AE269247220029992F /* PupilLoginViewController.swift in Sources */,
 				87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */,
 				874D2C14269597180087E87C /* LiteracyViewController.swift in Sources */,
@@ -435,12 +449,14 @@
 				87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */,
 				8E8EF8F426ACB3F600B46EB3 /* TeacherNotificationViewController.swift in Sources */,
 				8ECA651526AF165600D10F89 /* NotificatonPopupViewController.swift in Sources */,
+				E45574F426B74AB50028E53F /* TuesdayTestViewController.swift in Sources */,
 				8EF3EBAD26B68FB5007FD14A /* MondayLessonViewController.swift in Sources */,
 				E45574F126B6CFF60028E53F /* FMDatabaseQueue.m in Sources */,
 				8EF3EBBE26B68FB5007FD14A /* ThursdayLessonViewController.swift in Sources */,
 				8EF3EBBC26B68FB5007FD14A /* MondayTestViewController.swift in Sources */,
 				87A9772B2690C4A300FDA013 /* SceneDelegate.swift in Sources */,
 				8EF3EBB126B68FB5007FD14A /* WednesdayLessonViewController.swift in Sources */,
+				E45574F826B74B280028E53F /* ThursdayTestViewController.swift in Sources */,
 				8EF3EBB726B68FB5007FD14A /* JoinTheDotsActivityViewController.swift in Sources */,
 				8EF3EBBD26B68FB5007FD14A /* SpeedWritingActivityViewController.swift in Sources */,
 				8EF3EBB926B68FB5007FD14A /* SentenceCreatorActivityViewController.swift in Sources */,
