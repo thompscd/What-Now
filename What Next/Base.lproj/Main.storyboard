@@ -9241,11 +9241,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="What Now logo small" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-6C-Cyc">
-                                <rect key="frame" x="413" y="50" width="198" height="792"/>
+                                <rect key="frame" x="413" y="50" width="198" height="773"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your lessons this week: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohO-GD-Lrg">
-                                <rect key="frame" x="90.5" y="867" width="843" height="24"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <rect key="frame" x="90.5" y="848" width="843" height="43"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -9260,7 +9260,7 @@
                                                 <fragment content="Monday: Words with /aw/ spelt with 'augh' and 'au'">
                                                     <attributes>
                                                         <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <font key="NSFont" metaFont="system" size="36"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -9279,7 +9279,7 @@
                                                 <fragment content="Tuesday: Plural Possessive Apostrophes with plural words.">
                                                     <attributes>
                                                         <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <font key="NSFont" metaFont="system" size="36"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -9297,7 +9297,7 @@
                                                 <fragment content="Wednesday: Nouns ending in the suffix -ation. ">
                                                     <attributes>
                                                         <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <font key="NSFont" metaFont="system" size="36"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -9315,7 +9315,7 @@
                                                 <fragment content="Thursday: Adding the prefix ex-. ">
                                                     <attributes>
                                                         <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <font key="NSFont" metaFont="system" size="36"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -9333,7 +9333,7 @@
                                                 <fragment content="Friday: Revision.">
                                                     <attributes>
                                                         <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <font key="NSFont" size="36" name=".SFNS-Regular"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -9376,11 +9376,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8f0-qW-YL3"/>
         <segue reference="zIn-6j-hKB"/>
         <segue reference="Sez-B0-ZdH"/>
         <segue reference="zlm-LJ-bHk"/>
-        <segue reference="eqg-Z6-bdn"/>
+        <segue reference="rcG-jE-u35"/>
         <segue reference="tU5-oA-RNn"/>
         <segue reference="VDh-qY-oiv"/>
     </inferredMetricsTieBreakers>
