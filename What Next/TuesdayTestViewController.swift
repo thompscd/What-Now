@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class TuesdayTestViewController: UIViewController {
     
@@ -48,6 +49,8 @@ class TuesdayTestViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var feedbackLabel: UILabel!
+    
+    var player: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
