@@ -225,6 +225,227 @@ class TuesdayTestViewController: UIViewController {
             feedbackLabel.text = "100% Excellent! You've nailed your words and have shown a full understanding of the sound! You should be proud of your work!"
         }
     }
+    
+    // Functions & Actions for playing spelling sounds
+    
+    @IBAction func firstWordPressed(_ sender: UIButton) {
+        playGirls()
+    }
+    
+    func playGirls() {
+        guard let url = Bundle.main.url(forResource: "girls", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func secondWordPressed(_ sender: UIButton) {
+        playMens()
+    }
+    
+    func playMens() {
+        guard let url = Bundle.main.url(forResource: "mens", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func thirdWordPressed(_ sender: UIButton) {
+        playBabies()
+    }
+    
+    func playBabies() {
+        guard let url = Bundle.main.url(forResource: "babies", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func fourthWordPressed(_ sender: UIButton) {
+        playParents()
+    }
+    
+    func playParents() {
+        guard let url = Bundle.main.url(forResource: "parents", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func fifthWordPressed(_ sender: UIButton) {
+        playTeachers()
+    }
+    
+    func playTeachers() {
+        guard let url = Bundle.main.url(forResource: "teachers", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func sixthWordPressed(_ sender: UIButton) {
+        playWomens()
+    }
+    
+    func playWomens() {
+        guard let url = Bundle.main.url(forResource: "womens", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func seventhWordPressed(_ sender: UIButton) {
+        playBoys()
+    }
+    func playBoys() {
+        guard let url = Bundle.main.url(forResource: "boys", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func eigthWordPressed(_ sender: UIButton) {
+        playChildrens()
+    }
+    
+    func playChildrens() {
+        guard let url = Bundle.main.url(forResource: "childrens", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func ninthWordPressed(_ sender: UIButton) {
+        playPeoples()
+    }
+    
+    func playPeoples() {
+        guard let url = Bundle.main.url(forResource: "peoples", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    @IBAction func tenthWordPressed(_ sender: UIButton) {
+        playMices()
+    }
+    
+    func playMices() {
+        guard let url = Bundle.main.url(forResource: "mices", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
 
 }
     

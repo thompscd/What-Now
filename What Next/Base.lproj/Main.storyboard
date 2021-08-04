@@ -3690,6 +3690,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="firstWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="wif-HA-1oV"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUC-U8-GnS">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
@@ -3718,6 +3721,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="secondWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="gSJ-V8-tiL"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTS-8v-BMR">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
@@ -3746,6 +3752,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="thirdWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="DbN-TR-Bls"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ztp-q4-5gg">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
@@ -3774,6 +3783,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="fourthWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="71H-ho-igK"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="odt-NS-X1p">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
@@ -3802,6 +3814,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="fifthWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="JbX-Sp-PRv"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IPz-j3-NLd">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
@@ -3830,6 +3845,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="sixthWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="eKd-BF-7Hn"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eqs-Ng-XbG">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
@@ -3858,6 +3876,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="seventhWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="XFD-Qo-dpv"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5X5-Dz-W5u">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
@@ -3886,6 +3907,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="eigthWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="KDl-ll-bT9"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Sc-UeC">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
@@ -3914,6 +3938,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="ninthWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="lDy-F9-7uu"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-NH-XKe">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
@@ -3942,6 +3969,9 @@
                                                 <color key="backgroundColor" red="0.88881820440000003" green="0.81329327819999997" blue="0.81524974110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="tenthWordPressed:" destination="1gc-7Z-9DV" eventType="touchUpInside" id="4DV-MD-0Z5"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your answer in this box!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jwR-3Z-Ce3">
                                                 <rect key="frame" x="463" y="0.0" width="341.5" height="39.5"/>
