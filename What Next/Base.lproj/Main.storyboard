@@ -9333,7 +9333,7 @@
                                                 <fragment content="Friday: Revision.">
                                                     <attributes>
                                                         <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" size="36" name=".SFNS-Regular"/>
+                                                        <font key="NSFont" metaFont="system" size="36"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
