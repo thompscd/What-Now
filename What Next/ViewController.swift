@@ -45,6 +45,9 @@ struct GlobalVar {
     static var suffix : String = "";
     static var lastname : String = "";
     
+    // pupil postings username
+    static var pupilPostingsUsername : String = "";
+    
     // flag indicating if unreadNotifictionsPopup has been displayed
     static var unreadNotificationsPopupDisplayed : Bool = false;
     

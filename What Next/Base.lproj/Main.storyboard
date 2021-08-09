@@ -1615,13 +1615,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iT-AL-pVg" userLabel="popup View">
-                                <rect key="frame" x="102" y="148" width="500" height="700"/>
+                                <rect key="frame" x="52" y="148" width="600" height="700"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Background blank" translatesAutoresizingMaskIntoConstraints="NO" id="kLj-k1-RRJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="500" height="700"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pupil Postings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKI-Iv-Rla" userLabel="Notification label">
-                                        <rect key="frame" x="99.5" y="30" width="301.5" height="55"/>
+                                        <rect key="frame" x="149.5" y="30" width="301.5" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="gaE-UZ-f33"/>
                                         </constraints>
@@ -1630,7 +1630,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter pupil username :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7Z-9G-b9A">
-                                        <rect key="frame" x="50" y="185" width="400.5" height="38.5"/>
+                                        <rect key="frame" x="100" y="185" width="400.5" height="38.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="278.5" id="wkF-bA-4Td"/>
                                         </constraints>
@@ -1639,7 +1639,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tyX-Pq-3Yf" userLabel="Username Text Field">
-                                        <rect key="frame" x="125" y="283.5" width="250" height="48"/>
+                                        <rect key="frame" x="175" y="283.5" width="250" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="WGg-Ss-Zjz"/>
                                         </constraints>
@@ -1647,7 +1647,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="r2L-fH-lZA" userLabel="Buttons Stack View">
-                                        <rect key="frame" x="85" y="585" width="330" height="55"/>
+                                        <rect key="frame" x="135" y="585" width="330" height="55"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgt-Vb-0AC" userLabel="Cancel button">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="55"/>
@@ -1675,7 +1675,7 @@
                                                     <action selector="nextButtonPressed:" destination="aJa-Ew-7ZR" eventType="touchUpInside" id="nSm-Mc-9gm"/>
                                                     <action selector="submitButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="SuD-ya-Ogt"/>
                                                     <action selector="submitButtonPressed:" destination="fq9-gA-Jer" eventType="touchUpInside" id="nY1-Lo-IID"/>
-                                                    <segue destination="lWM-dc-IaG" kind="presentation" id="Obg-QX-jTt"/>
+                                                    <segue destination="lWM-dc-IaG" kind="presentation" identifier="PupilPostingsSegue" id="Obg-QX-jTt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-E1-BX5" userLabel="Submit button">
@@ -1702,13 +1702,14 @@
                                                 </variation>
                                                 <connections>
                                                     <action selector="submitButtonPressed:" destination="79z-bX-iM7" eventType="touchUpInside" id="M2w-b4-hij"/>
+                                                    <action selector="submitButtonPressed:" destination="r2c-3F-tG2" eventType="touchUpInside" id="ZaM-jB-NTb"/>
                                                     <action selector="submitButtonPressed:" destination="fq9-gA-Jer" eventType="touchUpInside" id="hmW-0H-zYH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Uo-G6Y" userLabel="Error Label">
-                                        <rect key="frame" x="100" y="431.5" width="300" height="30"/>
+                                        <rect key="frame" x="150" y="431.5" width="300" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Nzn-UU-Pjo"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="pi7-Uf-paM"/>
@@ -1717,7 +1718,7 @@
                                         <color key="textColor" red="1" green="0.1189635387" blue="0.16882578379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -1736,7 +1737,7 @@
                                     <constraint firstItem="X7Z-9G-b9A" firstAttribute="top" secondItem="XKI-Iv-Rla" secondAttribute="bottom" constant="100" id="LF5-Zc-gJR"/>
                                     <constraint firstItem="X7Z-9G-b9A" firstAttribute="centerX" secondItem="8iT-AL-pVg" secondAttribute="centerX" id="X31-oB-HlQ"/>
                                     <constraint firstAttribute="width" constant="300" id="b9X-QE-kPU">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
                                     </constraint>
                                     <constraint firstItem="tyX-Pq-3Yf" firstAttribute="top" secondItem="X7Z-9G-b9A" secondAttribute="bottom" constant="60" id="bxP-tf-s3f"/>
                                     <constraint firstAttribute="height" constant="400" id="dfQ-6x-EsE">
@@ -1763,6 +1764,8 @@
                     </view>
                     <connections>
                         <outlet property="UsernameTextField" destination="tyX-Pq-3Yf" id="9N5-kI-91i"/>
+                        <outlet property="errorLabel" destination="hle-Uo-G6Y" id="vSx-4e-tf0"/>
+                        <segue destination="lWM-dc-IaG" kind="presentation" id="uW6-41-ZI3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBp-wm-hNs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
