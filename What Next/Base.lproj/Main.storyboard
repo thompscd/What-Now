@@ -1075,6 +1075,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="leading" destination="gfY-GU-JbH" id="FSs-ty-A1y"/>
+                        <outlet property="pupilPostingsLabel" destination="gKm-e1-jhR" id="ifg-EG-vhl"/>
+                        <outlet property="pupilPostingsTextView" destination="HVJ-g5-8ke" id="O2f-vy-u3g"/>
                         <outlet property="teacherNameLabel" destination="ouA-wd-HrQ" id="Ta7-uf-8e7"/>
                         <outlet property="trailing" destination="QmK-SD-ttp" id="he1-sm-66s"/>
                     </connections>
