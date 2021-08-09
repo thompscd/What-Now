@@ -1002,17 +1002,41 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pupil Postings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKm-e1-jhR" userLabel="Pupil Postings label">
+                                        <rect key="frame" x="100" y="398" width="193.5" height="38.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="de0-lU-OKe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HVJ-g5-8ke" userLabel="Pupil Postings Text View">
+                                        <rect key="frame" x="100" y="486.5" width="824" height="500"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="500" id="X7h-T8-96f"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="ouA-wd-HrQ" firstAttribute="leading" secondItem="j04-KZ-ZNV" secondAttribute="leading" constant="71" id="AGY-uz-Ffk"/>
+                                    <constraint firstItem="gKm-e1-jhR" firstAttribute="leading" secondItem="j04-KZ-ZNV" secondAttribute="leading" constant="100" id="Ahg-59-In6"/>
                                     <constraint firstItem="Shf-2i-epT" firstAttribute="leading" secondItem="j04-KZ-ZNV" secondAttribute="leading" id="FRE-bH-h9g"/>
                                     <constraint firstAttribute="bottom" secondItem="Shf-2i-epT" secondAttribute="bottom" id="KLJ-Mi-D9i"/>
                                     <constraint firstAttribute="trailing" secondItem="Shf-2i-epT" secondAttribute="trailing" id="LqZ-jJ-Nrf"/>
+                                    <constraint firstAttribute="trailing" secondItem="HVJ-g5-8ke" secondAttribute="trailing" constant="100" id="PNX-Cr-piz"/>
                                     <constraint firstItem="ouA-wd-HrQ" firstAttribute="top" secondItem="SoQ-Ds-UNf" secondAttribute="bottom" constant="50" id="Yhm-oh-guI"/>
+                                    <constraint firstItem="gKm-e1-jhR" firstAttribute="top" secondItem="ouA-wd-HrQ" secondAttribute="bottom" constant="100" id="jWe-D8-81h"/>
                                     <constraint firstItem="Shf-2i-epT" firstAttribute="top" secondItem="j04-KZ-ZNV" secondAttribute="top" id="kgD-gB-Swo"/>
+                                    <constraint firstItem="HVJ-g5-8ke" firstAttribute="top" secondItem="gKm-e1-jhR" secondAttribute="bottom" constant="50" id="o6n-9x-Q7P"/>
                                     <constraint firstItem="SoQ-Ds-UNf" firstAttribute="top" secondItem="j04-KZ-ZNV" secondAttribute="top" constant="150" id="qJO-gv-WPd"/>
                                     <constraint firstItem="ouA-wd-HrQ" firstAttribute="centerX" secondItem="SoQ-Ds-UNf" secondAttribute="centerX" id="wOG-Mk-qaR"/>
+                                    <constraint firstItem="HVJ-g5-8ke" firstAttribute="leading" secondItem="j04-KZ-ZNV" secondAttribute="leading" constant="100" id="yWg-BH-ODS"/>
                                     <constraint firstItem="SoQ-Ds-UNf" firstAttribute="centerX" secondItem="j04-KZ-ZNV" secondAttribute="centerX" id="zkr-UH-kvD"/>
                                 </constraints>
                             </view>
@@ -9716,6 +9740,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="U8C-rF-5P5"/>
         <segue reference="jyR-oe-RrS"/>
         <segue reference="Sez-B0-ZdH"/>
         <segue reference="Obg-QX-jTt"/>
