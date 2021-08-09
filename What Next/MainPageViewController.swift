@@ -126,6 +126,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
 
                     if (moodlevel == GlobalVar.moodlevel_none) {
                         // ignore - no mood level selected by the pupil
+                        CommentsTextView.insertText ("\n");
                     } else if (moodlevel == GlobalVar.moodlevel_happy) {
                         // Happy
                         CommentsTextView.insertText ("\n\nMood level : Happy");
@@ -136,7 +137,7 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
                         // sad
                         CommentsTextView.insertText ("\n\nMood level : sad");
                     }
-                    CommentsTextView.insertText ("\n\n"+"Date: "+date);
+                    CommentsTextView.insertText ("\n"+"Date: "+date);
                     CommentsTextView.insertText ("\n\n===========================");
                 } else {
                     // username is not in TEACHER or PUPIL table - report an error
