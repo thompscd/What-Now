@@ -1609,7 +1609,7 @@
         <!--Pupil Postings Popup View Controller-->
         <scene sceneID="tCz-7y-Ajm">
             <objects>
-                <viewController id="r2c-3F-tG2" userLabel="Pupil Postings Popup View Controller" sceneMemberID="viewController">
+                <viewController id="r2c-3F-tG2" userLabel="Pupil Postings Popup View Controller" customClass="PupilPostingsPopupViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9HZ-Uh-y01">
                         <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1707,8 +1707,8 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: unknown username " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Uo-G6Y" userLabel="Error Label">
-                                        <rect key="frame" x="67.5" y="431.5" width="365.5" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Uo-G6Y" userLabel="Error Label">
+                                        <rect key="frame" x="100" y="431.5" width="300" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Nzn-UU-Pjo"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="pi7-Uf-paM"/>
@@ -1761,6 +1761,9 @@
                             <constraint firstItem="8iT-AL-pVg" firstAttribute="centerX" secondItem="9HZ-Uh-y01" secondAttribute="centerX" id="mwf-pT-gE3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UsernameTextField" destination="tyX-Pq-3Yf" id="9N5-kI-91i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBp-wm-hNs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
