@@ -890,8 +890,27 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-tO-YV5" userLabel="Send Notification">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="T4t-qO-JKO" userLabel="Pupil Postings">
                                 <rect key="frame" x="30" y="446" width="270" height="46"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="hsH-Fd-rm4">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="270"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Pupil Postings"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-tO-YV5" userLabel="Send Notification">
+                                <rect key="frame" x="30" y="542" width="270" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="03x-av-dXu">
@@ -1003,6 +1022,8 @@
                             <constraint firstItem="eja-Xe-dOP" firstAttribute="top" secondItem="Mkt-DW-irP" secondAttribute="bottom" constant="40" id="AVX-uE-UbZ"/>
                             <constraint firstItem="eja-Xe-dOP" firstAttribute="leading" secondItem="qIv-5J-v4X" secondAttribute="leading" constant="30" id="CjZ-xS-LjR"/>
                             <constraint firstItem="DBF-pO-QWf" firstAttribute="leading" secondItem="qIv-5J-v4X" secondAttribute="leading" constant="30" id="FOs-dO-7YJ"/>
+                            <constraint firstItem="hDf-tO-YV5" firstAttribute="top" secondItem="T4t-qO-JKO" secondAttribute="bottom" constant="50" id="HHt-gP-QsD"/>
+                            <constraint firstItem="T4t-qO-JKO" firstAttribute="leading" secondItem="qIv-5J-v4X" secondAttribute="leading" constant="30" id="NFl-sF-dPk"/>
                             <constraint firstItem="hDf-tO-YV5" firstAttribute="leading" secondItem="qIv-5J-v4X" secondAttribute="leading" constant="30" id="Q8d-cI-xep"/>
                             <constraint firstAttribute="trailing" secondItem="j04-KZ-ZNV" secondAttribute="trailing" id="QmK-SD-ttp"/>
                             <constraint firstItem="Osn-yV-NzF" firstAttribute="top" secondItem="Crg-ex-17h" secondAttribute="top" id="cqA-PY-OFe"/>
@@ -1014,8 +1035,8 @@
                             <constraint firstItem="j04-KZ-ZNV" firstAttribute="top" secondItem="Crg-ex-17h" secondAttribute="top" id="hLv-8f-D7d"/>
                             <constraint firstItem="qIv-5J-v4X" firstAttribute="bottom" secondItem="eja-Xe-dOP" secondAttribute="bottom" constant="100" id="mBb-1k-REk"/>
                             <constraint firstAttribute="trailing" secondItem="Osn-yV-NzF" secondAttribute="trailing" id="noi-eF-fKa"/>
+                            <constraint firstItem="T4t-qO-JKO" firstAttribute="top" secondItem="DBF-pO-QWf" secondAttribute="bottom" constant="50" id="qZi-bk-jgf"/>
                             <constraint firstAttribute="bottom" secondItem="Osn-yV-NzF" secondAttribute="bottom" id="utk-76-Kzc"/>
-                            <constraint firstItem="hDf-tO-YV5" firstAttribute="top" secondItem="DBF-pO-QWf" secondAttribute="bottom" constant="50" id="zhO-Nk-IY2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RYz-vv-Cmg">
@@ -1367,7 +1388,7 @@
             <objects>
                 <viewController id="aJa-Ew-7ZR" userLabel="Notification Popup View Controller" customClass="NotificatonPopupViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ExB-rI-GVF">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hpy-Tm-tef" userLabel="popup View">
@@ -9526,11 +9547,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zIn-6j-hKB"/>
+        <segue reference="YhH-v8-jC6"/>
+        <segue reference="jyR-oe-RrS"/>
         <segue reference="Sez-B0-ZdH"/>
         <segue reference="zlm-LJ-bHk"/>
         <segue reference="rcG-jE-u35"/>
-        <segue reference="tU5-oA-RNn"/>
+        <segue reference="51w-uF-QVN"/>
         <segue reference="VDh-qY-oiv"/>
     </inferredMetricsTieBreakers>
     <resources>
