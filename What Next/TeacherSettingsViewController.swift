@@ -46,9 +46,7 @@ class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
         let querySQL = "SELECT suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(loginname)';"
         let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
-            print("TeacherSettingsViewController - user is in database !!!!")
             let suffix :String = results?.string(forColumn:"suffix") ?? "" ;
-            print ("suffix currently in database is ....", suffix)
             suffixSelected = suffix;
             let firstname = results?.string(forColumn:"firstname") ;
             let lastname = results?.string(forColumn:"lastname");
@@ -66,7 +64,6 @@ class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
 
         } else {
             // teacher not in database - display error
-            print("TeacherSettingsViewController - teacher not in database !!!!")
         }
         
     }
@@ -83,9 +80,7 @@ class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
         errorLabel.text = ""
 
         var error_found = false ;
-        
-        print ("In updateButtonPressed, suffixSelected = ", suffixSelected)
-        
+                
         // check that First Name is not empty
         let firstname = firstnameTextField.text;
         if firstname == "" {
@@ -167,7 +162,6 @@ class TeacherSettingsViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func suffixButtonPressed(_ sender: UIButton) {
         if let suffixLabel = sender.titleLabel?.text {
-            print (suffixLabel)
             // bring dropdown back up
             suffixPulldownOptions.forEach { (suffixBtn) in
                 UIView.animate(withDuration: 0.2, animations: {

@@ -42,7 +42,6 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
     // displays the hamburger menu
     @IBAction func menuButtonClick(_ sender: Any) {
         
-        print ("In menuButtonClick")
         if menuOut == false {
             leading.constant = 280;
             trailing.constant = -280;
@@ -56,7 +55,6 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {
             self.view.layoutIfNeeded()
         }) { (animationComplete) in
-            print("The animation is complete!")
         }
         
     }
@@ -81,7 +79,6 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
         let querySQL = "SELECT loginname, activity, comment, date, moodlevel FROM COMMENTS;"
         var results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         while results?.next()==true {
-            print ("comment found");""
             let loginname : String = results?.string(forColumn:"loginname") ?? "";
             let activity : String = results?.string(forColumn:"activity") ?? "";
             let comment : String = results?.string(forColumn:"comment") ?? "";
@@ -93,7 +90,6 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
             let results2:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL2, withArgumentsIn:[]);
             if results2?.next()==true {
                 // teacher comment
-                print ("Teacher comment!!")
                 let suffix : String = results2?.string(forColumn:"suffix") ?? "";
                 let lastname : String = results2?.string(forColumn:"lastname") ?? "";
                 // Display on Comments TextView
@@ -108,7 +104,6 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
                 // check if the usernane is in pupil table
                 
                 // pupil comment
-                print ("Pupil comment!!")
                 let querySQL3 = "SELECT firstname, lastname FROM PUPIL WHERE loginname = '\(loginname)';"
 
                 let results3:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL3, withArgumentsIn:[]);
@@ -161,7 +156,6 @@ class MainPageViewController: UIViewController, UITextFieldDelegate, UISearchBar
                     unreadNotificationCount += 1;
                 }
             }
-            print ("unreadNotificationCount = ",unreadNotificationCount)
             if unreadNotificationCount > 0 {
                 performSegue(withIdentifier:"unreadNotificationPopup",sender:AnyObject.self);
             }

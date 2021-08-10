@@ -36,9 +36,7 @@ class NotificatonPopupViewController: UIViewController {
     
     // extract notifications from database for this pupil
     func extractNotifications () {
-        
-        print ("In extractNotifications")
-        
+                
         let querySQL = "SELECT id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority FROM NOTIFICATIONS WHERE pupilloginname = '\(GlobalVar.loginname)' AND dateread = '';"
         results = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[])! ;
         
@@ -70,7 +68,6 @@ class NotificatonPopupViewController: UIViewController {
                 }
                 
                 // format priority
-                print ("about to update priority to ",priority)
                 switch priority {
                     case GlobalVar.notificationPriorityLow : do {
                         notificationLabel.text = "Low"
@@ -96,12 +93,10 @@ class NotificatonPopupViewController: UIViewController {
                 notificationTextView.text = notification;
                 
                 // mark notification as read by setting the dateRead field
-                print ("about to clear notification")
                 let df = DateFormatter()
                 df.dateFormat = "dd-MM-yyyy hh:mm"
                 let dateTime = df.string(from: Date())
                 let updateNotificationSQL = "UPDATE NOTIFICATIONS SET dateread = '\(dateTime)' WHERE id = \(id);"
-                print (updateNotificationSQL)
                 let results2 = GlobalVar.whatNextDB.executeUpdate(updateNotificationSQL, withArgumentsIn:[]);
             }
 

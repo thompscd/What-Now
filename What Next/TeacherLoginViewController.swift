@@ -44,9 +44,6 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
 
         LoginErrorLabel.text = ""; // clear any old error messages
 
-        print ("Sign In button pressed!")
-        print ("UserNameTextField is ",username )
-        print ("PasswordTextField is ",password )
         
         // check if this username exists in database
 
@@ -55,9 +52,7 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
 
         let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
-            print ("going through results!!!!!!!!")
             let dbpassword = results?.string(forColumn:"password");
-            print ("Password for ",username," is ",dbpassword!);
             // check password is correct
             if dbpassword != PasswordTextField.text {
                 LoginErrorLabel.text = password_error_message;
@@ -70,7 +65,6 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
             }
             
         } else {
-            print ("Teacher not in database!");
             LoginErrorLabel.text = login_error_message;
             PasswordTextField.text = "";  // clear the password
             UserNameTextField.text = "";  // clear the user name
@@ -89,7 +83,6 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
             let lastname = results?.string(forColumn:"lastname");
             GlobalVar.lastname = lastname ?? "";
             
-            print ("about to segue to Teacher View Controller ");
             performSegue(withIdentifier:"teacherViewSegue",sender:AnyObject.self);
         }
         

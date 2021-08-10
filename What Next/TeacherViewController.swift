@@ -19,7 +19,6 @@ class TeacherViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // add teacher name to the screen
-        print ("In TeacherViewController !!") //DEBUG
         let teacherName = GlobalVar.suffix+" "+GlobalVar.lastname;
         teacherNameLabel.text = teacherName;
         
@@ -31,7 +30,6 @@ class TeacherViewController: UIViewController {
     
     @IBAction func TeacherMenuButton(_ sender: Any) {
         
-        print ("In menuButtonClick")
         if menuOut == false {
             leading.constant = 280;
             trailing.constant = -280;
@@ -45,7 +43,6 @@ class TeacherViewController: UIViewController {
         UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseIn, animations: {
             self.view.layoutIfNeeded()
         }) { (animationComplete) in
-            print("The animation is complete!")
         }
     } // TeacherMenuButton
     
@@ -59,13 +56,11 @@ class TeacherViewController: UIViewController {
             updateTitle = pupilPostingsLabel.text ?? ""
             updateTitle = updateTitle + " - " + GlobalVar.pupilPostingsUsername
             pupilPostingsLabel.text = updateTitle;
-            print ("updatedTitle = ", updateTitle)
             
             // sql query to extract all the comments for chosen pupil
             let querySQL = "SELECT loginname, recipient, activity, comment, date, moodlevel FROM COMMENTS WHERE recipient = '\(GlobalVar.pupilPostingsUsername)';"
             var results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
             while results?.next()==true {
-                print ("comment found");
                 let loginname : String = results?.string(forColumn:"loginname") ?? "";
                 let activity : String = results?.string(forColumn:"activity") ?? "";
                 let comment : String = results?.string(forColumn:"comment") ?? "";
@@ -77,7 +72,6 @@ class TeacherViewController: UIViewController {
                 let results2:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL2, withArgumentsIn:[]);
                 if results2?.next()==true {
                     // teacher comment
-                    print ("Teacher comment!!")
                     let suffix : String = results2?.string(forColumn:"suffix") ?? "";
                     let lastname : String = results2?.string(forColumn:"lastname") ?? "";
                     // Display on Comments TextView
@@ -91,7 +85,6 @@ class TeacherViewController: UIViewController {
                     // check if the username is in pupil table
                 
                     // pupil comment
-                    print ("Pupil comment!!")
                     let querySQL3 = "SELECT firstname, lastname FROM PUPIL WHERE loginname = '\(loginname)';"
 
                     let results3:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL3, withArgumentsIn:[]);

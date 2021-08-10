@@ -30,13 +30,11 @@ class ActivityReflectionPopupViewController: UIViewController {
     @IBAction func submitButtonPressed(_ sender: Any) {
 
         // add the comment to the database
-        print (GlobalVar.activityRefelection, ": adding new comment to db")
         
         // format the date & time
         let df = DateFormatter()
         df.dateFormat = "dd-MM-yyyy hh:mm"
         let dateTime = df.string(from: Date())
-        print ("date time is ", dateTime)
         
         let comment : String = reflectionTextField.text ?? "";
 

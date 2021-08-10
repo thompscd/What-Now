@@ -31,13 +31,10 @@ class PupilSettingsViewController: UIViewController {
         let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(loginname)';"
         let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
-            print("UserProfileViewController - user is in database !!!!")
             let firstname = results?.string(forColumn:"firstname") ;
             let lastname = results?.string(forColumn:"lastname");
             let password = results?.string(forColumn:"password");
-            print ("firstname = ", firstname ?? "");
-            print ("lastname = ", lastname ?? "");
-            print ("password = ", password ?? "");
+
 
             // Display current values
             firstnameTextField.text = firstname ?? "";
@@ -46,7 +43,6 @@ class PupilSettingsViewController: UIViewController {
             
         } else {
             // pupil not in database - display error
-            print("UserProfileViewController - user not in database !!!!")
         }
         
     }

@@ -116,7 +116,6 @@ class ViewController: UIViewController {
     // function to populate PUPIL table until feature added to app
     func populatePupilTable () {
         if (GlobalVar.whatNextDB.open()) {
-            print("ViewController - populating PUPIL table with entries")
             let result1 = GlobalVar.whatNextDB.executeUpdate(insertPupilSQL1,withArgumentsIn: [] );
             let result2 = GlobalVar.whatNextDB.executeUpdate(insertPupilSQL2,withArgumentsIn: [] )
             let result3 = GlobalVar.whatNextDB.executeUpdate(insertPupilSQL3,withArgumentsIn: [] )
@@ -126,7 +125,6 @@ class ViewController: UIViewController {
     // function to populate PUPIL table until feature added to app
     func populateTeacherTable () {
         if (GlobalVar.whatNextDB.open()) {
-            print("ViewController - populating TEACHER table with entries")
             let result1 = GlobalVar.whatNextDB.executeUpdate(insertTeacherSQL1,withArgumentsIn: [] );
             let result2 = GlobalVar.whatNextDB.executeUpdate(insertTeacherSQL2,withArgumentsIn: [] )
         }
@@ -135,7 +133,6 @@ class ViewController: UIViewController {
     // function to populate COMMENTS table until feature added to app
     func populateCommentsTable () {
         if (GlobalVar.whatNextDB.open()) {
-            print("ViewController - populating COMMENTS table with entries")
             let result1 = GlobalVar.whatNextDB.executeUpdate(insertCommentSQL1,withArgumentsIn: [] );
             let result2 = GlobalVar.whatNextDB.executeUpdate(insertCommentSQL2,withArgumentsIn: [] )
 
@@ -145,7 +142,6 @@ class ViewController: UIViewController {
     // function to populate NOTIFICATIONS table until feature added to app
     func populateNotificationsTable () {
         if (GlobalVar.whatNextDB.open()) {
-            print("ViewController - populating NOTIFICATIONS table with entries")
             let result1 = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL1,withArgumentsIn: [] );
             let result2 = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL2,withArgumentsIn: [] );
             let result3 = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL3,withArgumentsIn: [] );

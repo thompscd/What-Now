@@ -37,7 +37,6 @@ class PupilPostingsPopupViewController: UIViewController {
         // check that the pupil is in the database
         if !error_found {
             let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(pupilUserName.lowercased())';"
-            print("TeacherNotificationViewController - pupilUserName = ", pupilUserName)
 
             let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
             if results?.next()==true {

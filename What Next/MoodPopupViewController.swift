@@ -51,13 +51,11 @@ class MoodPopupViewController: UIViewController {
     @IBAction func submitButtonPressed(_ sender: Any) {
 
         // add the comment to the database
-        print ("MoodPopupViewControl: adding new comment to db")
         
         // format the date & time
         let df = DateFormatter()
         df.dateFormat = "dd-MM-yyyy hh:mm"
         let dateTime = df.string(from: Date())
-        print ("date time is ", dateTime)
         
         let comment : String = commentTextField.text ?? "";
         let querySQL = "INSERT INTO COMMENTS (id, loginname, recipient, activity, comment, date, liked, moodlevel) VALUES (null,'\(GlobalVar.loginname)','\(GlobalVar.loginname)','', '\(comment)','\(dateTime)', 1, \(moodLevel));"

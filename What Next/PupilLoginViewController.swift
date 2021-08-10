@@ -24,9 +24,9 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
 
         //DEBUG
         if (GlobalVar.whatNextDB.open()) {
-            print ("!!!!!!!!! Database is open")
+            //print ("!!!!!!!!! Database is open")
         } else {
-            print ("!!!!!!! Database is NOT open")
+           // print ("!!!!!!! Database is NOT open")
         }
     }
 
@@ -51,9 +51,7 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
         
         LoginErrorLabel.text = ""; // clear any old error messages
 
-        print ("Sign In button pressed!")
-        print ("UserNameTextField is ",username )
-        print ("PasswordTextField is ",password )
+
         // check if this username exists in database
 
         // return password for that pupil (if it exists)
@@ -61,9 +59,7 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
 
         let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
         if results?.next()==true {
-            print ("going through results!!!!!!!!")
             let dbpassword = results?.string(forColumn:"password");
-            print ("Password for ",username," is ",dbpassword!);
             // check password is correct
             if dbpassword != PasswordTextField.text {
                 LoginErrorLabel.text = password_error_message;
@@ -76,7 +72,7 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
             }
             
         } else {
-            print ("Pupil not in database!");
+            //Pupil not in database
             LoginErrorLabel.text = login_error_message;
             PasswordTextField.text = "";  // clear the password
             UserNameTextField.text = "";  // clear the user name
@@ -89,7 +85,6 @@ class PupilLoginViewController: UIViewController, UITextFieldDelegate {
         // if login ok then open MoodViewController
         if validLoginDetails {
             GlobalVar.loginname = username;  //save the loginname for other View Controllers to use
-            print ("about to jump to Mood View Controller ");
             performSegue(withIdentifier:"moodPopupSeque",sender:AnyObject.self);
         }
     }

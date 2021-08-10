@@ -50,7 +50,6 @@ class TeacherNotificationViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func prorityBtnLevelPressed(_ sender: UIButton) {
         if let priortyLabel = sender.titleLabel?.text {
-            print (priortyLabel)
             // bring dropdown back up
             priortyLevelBtns.forEach { (levelBtn) in
                 UIView.animate(withDuration: 0.2, animations: {
@@ -95,11 +94,9 @@ class TeacherNotificationViewController: UIViewController, UITextFieldDelegate {
         // check that the pupil is in the database
         if !error_found {
             let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(pupilUserName.lowercased())';"
-            print("TeacherNotificationViewController - pupilUserName = ", pupilUserName)
 
             let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
             if results?.next()==true {
-                print("TeacherNotificationViewController - pupil is in database !!!!")
             } else {
                 errorLabel.text = "Error: pupil does not exist"
                 error_found = true;
