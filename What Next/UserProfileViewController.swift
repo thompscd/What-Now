@@ -2,7 +2,7 @@
 //  UserProfileViewController.swift
 //  What Next
 //
-//  Created by Lorraine Thompson on 19/07/2021.
+//  Created by Chris Thompson on 19/07/2021.
 //
 
 import UIKit

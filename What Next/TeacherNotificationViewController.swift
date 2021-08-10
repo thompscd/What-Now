@@ -2,7 +2,7 @@
 //  TeacherNotificationViewController.swift
 //  What Next
 //
-//  Created by Andy Thompson on 24/07/2021.
+//  Created by Chris Thompson on 24/07/2021.
 //
 
 import UIKit
