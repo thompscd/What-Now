@@ -28,18 +28,12 @@ class PupilSettingsViewController: UIViewController {
         // extract username details from database and add to the fields
         
         // check the user is in the database
-        let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(loginname)';"
-        let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
-        if results?.next()==true {
-            let firstname = results?.string(forColumn:"firstname") ;
-            let lastname = results?.string(forColumn:"lastname");
-            let password = results?.string(forColumn:"password");
-
+        let pupil = extractPupilDetailsfromDB(loginname: loginname);
+        if pupil.found {
 
             // Display current values
-            firstnameTextField.text = firstname ?? "";
-            lastnameTextField.text = lastname;
-
+            firstnameTextField.text = pupil.firstname
+            lastnameTextField.text = pupil.lastname
             
         } else {
             // pupil not in database - display error
@@ -47,6 +41,21 @@ class PupilSettingsViewController: UIViewController {
         
     }
     
+    func extractPupilDetailsfromDB (loginname : String) -> (found : Bool, firstname : String, lastname : String, password : String) {
+        
+        // check the user is in the database
+        let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(loginname)';"
+        //let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        let results = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        if results?.next()==true {
+            let firstname : String = results?.string(forColumn:"firstname") ?? ""
+            let surname : String = results?.string(forColumn:"lastname") ?? ""
+            let password : String = results?.string(forColumn: "password") ?? ""
+            return (true, firstname, surname, password)
+        } else {
+            return (false,"","","")
+        }
+    } //extractPupilDetailsfromDB
     
     @IBAction func updateButtonPressed(_ sender: Any) {
         
