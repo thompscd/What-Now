@@ -30,6 +30,7 @@
 		8E8EF8F426ACB3F600B46EB3 /* TeacherNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */; };
 		8EC47A2126C14A4600F3C232 /* PupilPostingsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC47A2026C14A4600F3C232 /* PupilPostingsPopupViewController.swift */; };
 		8EC47A6526C4166D00F3C232 /* test_TeacherSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC47A6426C4166D00F3C232 /* test_TeacherSettingsViewController.swift */; };
+		8EC47A6726C426D300F3C232 /* test_PupilSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC47A6626C426D300F3C232 /* test_PupilSettingsViewController.swift */; };
 		8ECA651526AF165600D10F89 /* NotificatonPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA651426AF165600D10F89 /* NotificatonPopupViewController.swift */; };
 		8ED4126C26AB60E6007EF869 /* PupilSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */; };
 		8EF3EBAA26B68FB5007FD14A /* ActivitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3EB9526B68FB4007FD14A /* ActivitySelectionViewController.swift */; };
@@ -112,6 +113,7 @@
 		8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNotificationViewController.swift; sourceTree = "<group>"; };
 		8EC47A2026C14A4600F3C232 /* PupilPostingsPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilPostingsPopupViewController.swift; sourceTree = "<group>"; };
 		8EC47A6426C4166D00F3C232 /* test_TeacherSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_TeacherSettingsViewController.swift; sourceTree = "<group>"; };
+		8EC47A6626C426D300F3C232 /* test_PupilSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_PupilSettingsViewController.swift; sourceTree = "<group>"; };
 		8ECA651426AF165600D10F89 /* NotificatonPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificatonPopupViewController.swift; sourceTree = "<group>"; };
 		8ED4126B26AB60E6007EF869 /* PupilSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilSettingsViewController.swift; sourceTree = "<group>"; };
 		8EF3EB9526B68FB4007FD14A /* ActivitySelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitySelectionViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			children = (
 				87A9773F2690C4AF00FDA013 /* What_NextTests.swift */,
 				8EC47A6426C4166D00F3C232 /* test_TeacherSettingsViewController.swift */,
+				8EC47A6626C426D300F3C232 /* test_PupilSettingsViewController.swift */,
 				87A977412690C4AF00FDA013 /* Info.plist */,
 			);
 			path = "What NextTests";
@@ -479,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC47A6526C4166D00F3C232 /* test_TeacherSettingsViewController.swift in Sources */,
+				8EC47A6726C426D300F3C232 /* test_PupilSettingsViewController.swift in Sources */,
 				87A977402690C4AF00FDA013 /* What_NextTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
