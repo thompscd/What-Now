@@ -46,13 +46,11 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
 
         
         // check if this username exists in database
+        
+        let teacher = extractTeacherDetailsfromDB (loginname: username)
 
-        // return password for that teacher (if it exists)
-        let querySQL = "SELECT loginname, suffix, firstname, lastname, password, email FROM TEACHER WHERE loginname = '\(username.lowercased())';"
-
-        let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
-        if results?.next()==true {
-            let dbpassword = results?.string(forColumn:"password");
+        if teacher.found {
+            let dbpassword = teacher.password
             // check password is correct
             if dbpassword != PasswordTextField.text {
                 LoginErrorLabel.text = password_error_message;
@@ -77,16 +75,30 @@ class TeacherLoginViewController: UIViewController, UITextFieldDelegate {
         // if login ok then open TeacherViewController
         if validLoginDetails {
             //save the teacher details for other View Controllers to use
-            GlobalVar.loginname = username;
-            let suffix = results?.string(forColumn:"suffix");
-            GlobalVar.suffix = suffix ?? "";
-            let lastname = results?.string(forColumn:"lastname");
-            GlobalVar.lastname = lastname ?? "";
+            GlobalVar.loginname = username
+            GlobalVar.suffix = teacher.suffix
+            GlobalVar.lastname = teacher.lastname
             
             performSegue(withIdentifier:"teacherViewSegue",sender:AnyObject.self);
         }
         
     }
+    
+    // returns teacher details from the database
+    func extractTeacherDetailsfromDB (loginname : String) -> (found : Bool, suffix : String, lastname : String, password : String) {
+        
+        // check the teacher is in the database
+        let querySQL = "SELECT suffix, lastname, password FROM TEACHER WHERE loginname = '\(loginname.lowercased())';"
+        let results = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        if results?.next()==true {
+            let suffix : String = results?.string(forColumn: "suffix") ?? ""
+            let lastname : String = results?.string(forColumn: "lastname") ?? ""
+            let password : String = results?.string(forColumn: "password") ?? ""
+            return (true, suffix, lastname, password)
+        } else {
+            return (false,"","","")
+        }
+    } //extractTeacherDetailsfromDB
     
     
     /*
