@@ -62,6 +62,21 @@ class ViewController: UIViewController {
         
         GlobalVar.unreadNotificationsPopupDisplayed = false; // ensure popup displayed since new login
 
+        createDatabase();
+        
+        // populate the tables for development/test purposes
+        populatePupilTable();           //DEBUG - add pupils to table
+        populateTeacherTable();         //DEBUG - add teachers to table
+        populateCommentsTable();        //DEBUG - add comments to table
+        populateNotificationsTable();   //DEBUG - add comments to table
+
+
+    } // ViewDidLoad
+
+    
+    // function to create the tables in the database
+    func createDatabase () {
+        
         // Create new or open existing SQLite database
         let filemgr = FileManager.default
         let dirPaths = filemgr.urls(for: .documentDirectory,
@@ -99,20 +114,15 @@ class ViewController: UIViewController {
                 if !(GlobalVar.whatNextDB.executeStatements(sql_stmt4)) {
                     print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
                 }
-                populatePupilTable();           //DEBUG - add pupils to table
-                populateTeacherTable();         //DEBUG - add teachers to table
-                populateCommentsTable();        //DEBUG - add comments to table
-                populateNotificationsTable();   //DEBUG - add comments to table
-
-
+                
                 // DEBuG GlobalVar.whatnextDB.close();
             } else {
                 print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
             }
         }
-
-    } // ViewDidLoad
-
+        
+    } //createDatabase
+    
     // function to populate PUPIL table until feature added to app
     func populatePupilTable () {
         if (GlobalVar.whatNextDB.open()) {
