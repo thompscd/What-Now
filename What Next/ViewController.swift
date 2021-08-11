@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         populatePupilTable();           //DEBUG - add pupils to table
         populateTeacherTable();         //DEBUG - add teachers to table
         populateCommentsTable();        //DEBUG - add comments to table
-        populateNotificationsTable();   //DEBUG - add comments to table
+        populateNotificationsTable();   //DEBUG - add Notifications to table
 
 
     } // ViewDidLoad
@@ -151,6 +151,7 @@ class ViewController: UIViewController {
     
     // function to populate NOTIFICATIONS table until feature added to app
     func populateNotificationsTable () {
+        print ("======================\nIn populateNotificationTable\n")
         if (GlobalVar.whatNextDB.open()) {
             let result1 = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL1,withArgumentsIn: [] );
             let result2 = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL2,withArgumentsIn: [] );
