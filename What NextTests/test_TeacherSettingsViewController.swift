@@ -21,7 +21,7 @@ class test_TeacherSettingsViewController: XCTestCase {
         
         // invalid formats
         emailStr="bob"
-        XCTAssertFalse(emailStr.isValidEmail) ;
+        XCTAssertFalse(emailStr.isValidEmail) ; 
         emailStr=""
         XCTAssertFalse(emailStr.isValidEmail) ;
         emailStr="bob@"
