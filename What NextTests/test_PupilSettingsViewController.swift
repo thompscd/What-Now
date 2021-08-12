@@ -32,8 +32,10 @@ class test_PupilSettingsViewController: XCTestCase {
         XCTAssertTrue(pupil1.lastname==surname) ;
         XCTAssertTrue(pupil1.password==password) ;
 
+        // invalid extraction attempt
+        let pupil2 = vc_PupilSettingsViewController.extractPupilDetailsfromDB (loginname: "test");
+        XCTAssertFalse(pupil2.found) ;
 
-        
     } //test_extractPupilDetailsfromDB
     
 }
