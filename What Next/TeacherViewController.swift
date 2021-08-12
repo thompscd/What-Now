@@ -68,12 +68,13 @@ class TeacherViewController: UIViewController {
                 let moodlevel : Int = results?.long(forColumn:"moodlevel") ?? 0;
 
                 // check if the comment is from teacher or pupil
-                let querySQL2 = "SELECT suffix, lastname FROM TEACHER WHERE loginname = '\(loginname)';"
-                let results2:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL2, withArgumentsIn:[]);
-                if results2?.next()==true {
+                let teacher = extractTeacherDetailsfromDB(loginname: loginname)
+                // let querySQL2 = "SELECT suffix, lastname FROM TEACHER WHERE loginname = '\(loginname)';"
+                //let results2:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL2, withArgumentsIn:[]);
+                if teacher.found {
                     // teacher comment
-                    let suffix : String = results2?.string(forColumn:"suffix") ?? "";
-                    let lastname : String = results2?.string(forColumn:"lastname") ?? "";
+                    let suffix : String = teacher.suffix
+                    let lastname : String = teacher.lastname
                     // Display on Comments TextView
                     pupilPostingsTextView.insertText ("\n"+suffix+" "+lastname);
                     pupilPostingsTextView.insertText ("\nClassroom Teacher");
@@ -83,12 +84,7 @@ class TeacherViewController: UIViewController {
                 }
                 else {
                     // check if the username is in pupil table
-                
                     let pupil = extractPupilDetailsfromDB(loginname: loginname)
-                    // pupil comment
-                    //let querySQL3 = "SELECT firstname, lastname FROM PUPIL WHERE loginname = '\(loginname)';"
-
-                    //let results3:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL3, withArgumentsIn:[]);
                     if pupil.found {
                         let firstname : String = pupil.firstname
                         let lastname : String = pupil.lastname
@@ -139,6 +135,21 @@ class TeacherViewController: UIViewController {
         }
     } //extractPupilDetailsfromDB
     
+    // returns teacher details from the database
+    func extractTeacherDetailsfromDB (loginname : String) -> (found : Bool, suffix : String, lastname : String, password : String) {
+        
+        // check the teacher is in the database
+        let querySQL = "SELECT suffix, lastname, password FROM TEACHER WHERE loginname = '\(loginname.lowercased())';"
+        let results = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        if results?.next()==true {
+            let suffix : String = results?.string(forColumn: "suffix") ?? ""
+            let lastname : String = results?.string(forColumn: "lastname") ?? ""
+            let password : String = results?.string(forColumn: "password") ?? ""
+            return (true, suffix, lastname, password)
+        } else {
+            return (false,"","","")
+        }
+    } //extractTeacherDetailsfromDB
     
     /*
     // MARK: - Navigation
