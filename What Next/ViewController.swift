@@ -64,11 +64,11 @@ class ViewController: UIViewController {
 
         createDatabase();
         
-        // populate the tables for development/test purposes
-        populatePupilTable();           //DEBUG - add pupils to table
-        populateTeacherTable();         //DEBUG - add teachers to table
-        populateCommentsTable();        //DEBUG - add comments to table
-        populateNotificationsTable();   //DEBUG - add Notifications to table
+        //populate the tables for development/test purposes
+        //populatePupilTable();           //DEBUG - add pupils to table
+        //populateTeacherTable();         //DEBUG - add teachers to table
+        //populateCommentsTable();        //DEBUG - add comments to table
+        //populateNotificationsTable();   //DEBUG - add Notifications to table
 
 
     } // ViewDidLoad
@@ -114,6 +114,12 @@ class ViewController: UIViewController {
                 if !(GlobalVar.whatNextDB.executeStatements(sql_stmt4)) {
                     print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
                 }
+                
+                // populate the tables for development/test purposes
+                populatePupilTable();           //DEBUG - add pupils to table
+                populateTeacherTable();         //DEBUG - add teachers to table
+                populateCommentsTable();        //DEBUG - add comments to table
+                populateNotificationsTable();   //DEBUG - add Notifications to table
                 
                 // DEBuG GlobalVar.whatnextDB.close();
             } else {
