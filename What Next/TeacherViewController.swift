@@ -84,13 +84,14 @@ class TeacherViewController: UIViewController {
                 else {
                     // check if the username is in pupil table
                 
+                    let pupil = extractPupilDetailsfromDB(loginname: loginname)
                     // pupil comment
-                    let querySQL3 = "SELECT firstname, lastname FROM PUPIL WHERE loginname = '\(loginname)';"
+                    //let querySQL3 = "SELECT firstname, lastname FROM PUPIL WHERE loginname = '\(loginname)';"
 
-                    let results3:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL3, withArgumentsIn:[]);
-                    if results3?.next()==true {
-                        let firstname : String = results3?.string(forColumn:"firstname") ?? "";
-                        let lastname : String = results3?.string(forColumn:"lastname") ?? "";
+                    //let results3:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL3, withArgumentsIn:[]);
+                    if pupil.found {
+                        let firstname : String = pupil.firstname
+                        let lastname : String = pupil.lastname
                         // Display on Comments TextView
                         pupilPostingsTextView.insertText ("\n"+firstname+" "+lastname);
                         pupilPostingsTextView.insertText ("\nPupil");
@@ -121,6 +122,22 @@ class TeacherViewController: UIViewController {
         } // pupil name had been specified by teacher
 
     }  // displayPupilPostings
+    
+    func extractPupilDetailsfromDB (loginname : String) -> (found : Bool, firstname : String, lastname : String, password : String) {
+        
+        // check the user is in the database
+        let querySQL = "SELECT firstname, lastname, password FROM PUPIL WHERE loginname = '\(loginname)';"
+        //let results:FMResultSet? = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        let results = GlobalVar.whatNextDB.executeQuery(querySQL, withArgumentsIn:[]);
+        if results?.next()==true {
+            let firstname : String = results?.string(forColumn:"firstname") ?? ""
+            let surname : String = results?.string(forColumn:"lastname") ?? ""
+            let password : String = results?.string(forColumn: "password") ?? ""
+            return (true, firstname, surname, password)
+        } else {
+            return (false,"","","")
+        }
+    } //extractPupilDetailsfromDB
     
     
     /*
