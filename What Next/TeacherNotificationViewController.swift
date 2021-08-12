@@ -124,13 +124,13 @@ class TeacherNotificationViewController: UIViewController, UITextFieldDelegate {
         if !error_found {
             // update database with new values
             // format the date & time
-            let df = DateFormatter()
+            //DEBUG let df = DateFormatter()
             //df.dateFormat = "yyyy-MM-dd hh:mm:ss"
-            df.dateFormat = "dd-MM-yyyy hh:mm"
-            let dateTime = df.string(from: Date())
-            let insertNotificationSQL = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'\(pupilUserName.lowercased() )','\(GlobalVar.loginname)','\(notification)','\(dateTime)', '',\(prioritySelected));"
-            let results = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL, withArgumentsIn:[]);
-            
+            // DEBUG df.dateFormat = "dd-MM-yyyy hh:mm"
+            // DEBUG let dateTime = df.string(from: Date())
+            // DEBUG let insertNotificationSQL = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'\(pupilUserName.lowercased() )','\(GlobalVar.loginname)','\(notification)','\(dateTime)', '',\(prioritySelected));"
+            // DEBUG let results = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL, withArgumentsIn:[]);
+            insertNotificationIntoDB(pupil: pupilUserName, notification: notification, priority: prioritySelected)
             // return to teacher home screen
             //dismiss(animated:true,completion:nil)  // update successful so close the screen
             performSegue(withIdentifier:"teacherSegue",sender:AnyObject.self);
@@ -139,6 +139,14 @@ class TeacherNotificationViewController: UIViewController, UITextFieldDelegate {
         
     } // submitButtonPressed
     
+    // insert notification into the database
+    func insertNotificationIntoDB (pupil : String, notification : String, priority : Int ) {
+        let df = DateFormatter()
+        df.dateFormat = "dd-MM-yyyy hh:mm"
+        let dateTime = df.string(from: Date())
+        let insertNotificationSQL = "INSERT INTO NOTIFICATIONS (id, pupilloginname, teacherloginname, notification, datesubmitted, dateread, priority) VALUES (null,'\(pupil.lowercased() )', '\(GlobalVar.loginname)', '\(notification)', '\(dateTime)', '',\(priority));"
+        let results = GlobalVar.whatNextDB.executeUpdate(insertNotificationSQL, withArgumentsIn:[]);
+    } //insertNotificationIntoDB
  
     /*
     // MARK: - Navigation

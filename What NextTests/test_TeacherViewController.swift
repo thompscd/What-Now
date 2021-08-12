@@ -37,5 +37,30 @@ class test_TeacherViewController: XCTestCase {
         XCTAssertFalse(pupil2.found) ;
 
     } //test_extractPupilDetailsfromDB
+ 
+    // test function to read teacher details from database
+    func test_extractTeacherDetailsfromDB () throws {
+          
+        //add a test teacher to the database
+        let loginname : String = "mrthompson"
+        let suffix : String = "Dr"
+        let firstname : String = "chris"
+        let surname : String = "thompson"
+        let password : String = "hello"
+        let insertTeacherSQL1 = "INSERT INTO TEACHER (loginname, suffix, firstname, lastname, password) VALUES ('\(loginname)','\(suffix)','\(firstname)','\(surname)','\(password)');"
+        let result1 = GlobalVar.whatNextDB.executeUpdate(insertTeacherSQL1,withArgumentsIn: [] );
+
+        // valid extraction attempt
+        let teacher1 = vc_TeacherViewController.extractTeacherDetailsfromDB (loginname: loginname);
+        XCTAssertTrue(teacher1.found) ;
+        XCTAssertTrue(teacher1.suffix==suffix) ;
+        XCTAssertTrue(teacher1.lastname==surname) ;
+        XCTAssertTrue(teacher1.password==password) ;
+
+        // invalid extraction attempt
+        let teacher2 = vc_TeacherViewController.extractTeacherDetailsfromDB (loginname: "test");
+        XCTAssertFalse(teacher2.found) ;
+
+    } //test_extractTeacherDetailsfromDB
     
 }
