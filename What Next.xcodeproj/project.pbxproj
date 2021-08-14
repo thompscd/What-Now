@@ -23,6 +23,7 @@
 		87A9775D2691C35D00FDA013 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A9775C2691C35D00FDA013 /* libsqlite3.tbd */; };
 		87B42B2A26A055530021C852 /* MoodPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B42B2926A055530021C852 /* MoodPopupViewController.swift */; };
 		87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE14AA26971557006FC0C2 /* MainPageViewController.swift */; };
+		8E064D2626C7C3820083BD46 /* test_NotificationPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E064D2526C7C3820083BD46 /* test_NotificationPopupViewController.swift */; };
 		8E14511B26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */; };
 		8E17E6BE26B1785F00A9CBEE /* TeacherSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */; };
 		8E46591426B80A9000EAA2AA /* ActivityReflectionPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E46591326B80A9000EAA2AA /* ActivityReflectionPopupViewController.swift */; };
@@ -109,6 +110,7 @@
 		87A977612691C81100FDA013 /* What Next-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "What Next-Bridging-Header.h"; sourceTree = "<group>"; };
 		87B42B2926A055530021C852 /* MoodPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPopupViewController.swift; sourceTree = "<group>"; };
 		87BE14AA26971557006FC0C2 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		8E064D2526C7C3820083BD46 /* test_NotificationPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_NotificationPopupViewController.swift; sourceTree = "<group>"; };
 		8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhatNextLaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSettingsViewController.swift; sourceTree = "<group>"; };
 		8E46591326B80A9000EAA2AA /* ActivityReflectionPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityReflectionPopupViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				8EC47A6626C426D300F3C232 /* test_PupilSettingsViewController.swift */,
 				8EC47A6A26C532F700F3C232 /* test_TeacherViewController.swift */,
 				8EC47A7026C5723D00F3C232 /* test_TeacherNotificationViewController.swift */,
+				8E064D2526C7C3820083BD46 /* test_NotificationPopupViewController.swift */,
 				8EC47A6826C43B0300F3C232 /* test_TeacherLoginViewController.swift */,
 				87A977412690C4AF00FDA013 /* Info.plist */,
 			);
@@ -490,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E064D2626C7C3820083BD46 /* test_NotificationPopupViewController.swift in Sources */,
 				8EC47A6526C4166D00F3C232 /* test_TeacherSettingsViewController.swift in Sources */,
 				8EC47A6B26C532F700F3C232 /* test_TeacherViewController.swift in Sources */,
 				8EC47A7126C5723D00F3C232 /* test_TeacherNotificationViewController.swift in Sources */,
