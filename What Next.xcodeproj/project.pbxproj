@@ -24,6 +24,7 @@
 		87BE14AB26971557006FC0C2 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE14AA26971557006FC0C2 /* MainPageViewController.swift */; };
 		8E064D2626C7C3820083BD46 /* test_NotificationPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E064D2526C7C3820083BD46 /* test_NotificationPopupViewController.swift */; };
 		8E064D6626C8448C0083BD46 /* What_NextUITests_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E064D6526C8448C0083BD46 /* What_NextUITests_ViewController.swift */; };
+		8E064D6826C856540083BD46 /* What_NextUITests_PupilLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E064D6726C856540083BD46 /* What_NextUITests_PupilLoginViewController.swift */; };
 		8E14511B26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */; };
 		8E17E6BE26B1785F00A9CBEE /* TeacherSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */; };
 		8E46591426B80A9000EAA2AA /* ActivityReflectionPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E46591326B80A9000EAA2AA /* ActivityReflectionPopupViewController.swift */; };
@@ -111,6 +112,7 @@
 		87BE14AA26971557006FC0C2 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		8E064D2526C7C3820083BD46 /* test_NotificationPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_NotificationPopupViewController.swift; sourceTree = "<group>"; };
 		8E064D6526C8448C0083BD46 /* What_NextUITests_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_ViewController.swift; sourceTree = "<group>"; };
+		8E064D6726C856540083BD46 /* What_NextUITests_PupilLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_PupilLoginViewController.swift; sourceTree = "<group>"; };
 		8E14511A26A9A12300F3F249 /* WhatNextLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhatNextLaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSettingsViewController.swift; sourceTree = "<group>"; };
 		8E46591326B80A9000EAA2AA /* ActivityReflectionPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityReflectionPopupViewController.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				8E064D6526C8448C0083BD46 /* What_NextUITests_ViewController.swift */,
+				8E064D6726C856540083BD46 /* What_NextUITests_PupilLoginViewController.swift */,
 				87A9774C2690C4AF00FDA013 /* Info.plist */,
 			);
 			path = "What NextUITests";
@@ -507,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E064D6826C856540083BD46 /* What_NextUITests_PupilLoginViewController.swift in Sources */,
 				8E064D6626C8448C0083BD46 /* What_NextUITests_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
