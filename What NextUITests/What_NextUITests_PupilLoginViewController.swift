@@ -37,6 +37,19 @@ class What_NextUITests_PupilLoginViewController: XCTestCase {
         pupilLogin.tap()  //press the pupil login button
         
         
+        app/*@START_MENU_TOKEN@*/.staticTexts["Pupil Login"]/*[[".buttons[\"Pupil Login\"].staticTexts[\"Pupil Login\"]",".staticTexts[\"Pupil Login\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.windows.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .textField).element.tap()
+        
+        let element = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element
+        let textField = element.children(matching: .other).element(boundBy: 0).children(matching: .textField).element
+        textField.tap()
+        textField.tap()
+        
+        let secureTextField = element.children(matching: .other).element(boundBy: 1).children(matching: .secureTextField).element
+        secureTextField.tap()
+        secureTextField.tap()
+        secureTextField.tap()
+                
         
         /*
         // add pupil login name
