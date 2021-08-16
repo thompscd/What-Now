@@ -73,6 +73,8 @@ class RainbowWritingActivityViewController: UIViewController {
             totalTime -= 1
         } else {
             endTimer()
+            totalTime = 600
+            canvasView.isUserInteractionEnabled = false
         }
     }
     
@@ -89,6 +91,7 @@ class RainbowWritingActivityViewController: UIViewController {
     
     @IBAction func startPressed(_ sender: UIButton) {
         startTimer()
+        canvasView.isUserInteractionEnabled = true
     }
     
     //Using previous segue to return to previous screen when return pressed.

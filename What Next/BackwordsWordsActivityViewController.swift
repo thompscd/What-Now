@@ -73,6 +73,8 @@ class BackwordsWordsActivityViewController: UIViewController {
             totalTime -= 1
         } else {
             endTimer()
+            totalTime = 600
+            canvasView.isUserInteractionEnabled = false
         }
     }
     
@@ -88,6 +90,7 @@ class BackwordsWordsActivityViewController: UIViewController {
     
     @IBAction func onClickStartCountdown(_ sender: UIButton) {
         startTimer()
+        canvasView.isUserInteractionEnabled = true
     }
     
     //Using previous segue to return to previous screen when return pressed.

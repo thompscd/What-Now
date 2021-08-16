@@ -73,6 +73,8 @@ class ABCActivityViewController: UIViewController {
             totalTime -= 1
         } else {
             endTimer()
+            totalTime = 300
+            canvasView.isUserInteractionEnabled = false
         }
     }
     
@@ -89,6 +91,7 @@ class ABCActivityViewController: UIViewController {
     
     @IBAction func onClickStartCountdown(_ sender: UIButton) {
         startTimer()
+        canvasView.isUserInteractionEnabled = true
     }
     
     //Using previous segue to return to previous screen when return pressed.
