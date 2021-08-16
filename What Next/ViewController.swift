@@ -125,6 +125,10 @@ class ViewController: UIViewController {
             } else {
                 print("Error: \(GlobalVar.whatNextDB.lastErrorMessage())")
             }
+        } else {
+            // database exists - open it
+            GlobalVar.whatNextDB = FMDatabase(path: databasePath as String)
+            GlobalVar.whatNextDB.open()
         }
         
     } //createDatabase

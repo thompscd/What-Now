@@ -36,6 +36,9 @@ class What_NextUITests_PupilLoginViewController: XCTestCase {
         let pupilLogin = app/*@START_MENU_TOKEN@*/.staticTexts["Pupil Login"]/*[[".buttons[\"Pupil Login\"].staticTexts[\"Pupil Login\"]",".staticTexts[\"Pupil Login\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         pupilLogin.tap()  //press the pupil login button
         
+        
+        
+        /*
         // add pupil login name
         //=======
         
@@ -49,6 +52,7 @@ class What_NextUITests_PupilLoginViewController: XCTestCase {
         
         //=======
         
+        */
         
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
