@@ -698,7 +698,7 @@
             <objects>
                 <viewController id="79z-bX-iM7" userLabel="Mood popup View Controller" customClass="MoodPopupViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EN0-Ay-6w2">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAQ-3d-GDX" userLabel="popup View">
@@ -1329,7 +1329,7 @@
             <objects>
                 <viewController id="tXX-dq-X1g" userLabel="unread Notification Popup View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uud-kL-mxA">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6d-x0-FjI" userLabel="popup View">
@@ -5131,6 +5131,9 @@
                                         <state key="normal" title="Submit Responses!">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onClickSubmitResponses:" destination="BGg-oZ-Bc8" eventType="touchUpInside" id="8N0-ly-4Ae"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e88-ds-MrK">
                                         <rect key="frame" x="269" y="0.0" width="84.5" height="49"/>
@@ -9693,12 +9696,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jyR-oe-RrS"/>
-        <segue reference="5Sv-BV-1Ju"/>
+        <segue reference="ZGc-uR-m57"/>
+        <segue reference="HOF-xu-9He"/>
         <segue reference="Obg-QX-jTt"/>
         <segue reference="7vb-Rl-Rau"/>
         <segue reference="51w-uF-QVN"/>
-        <segue reference="Ls0-f6-aTp"/>
+        <segue reference="Ltu-GN-23I"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Back Arrow" width="102" height="76"/>

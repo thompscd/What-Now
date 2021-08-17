@@ -179,6 +179,7 @@ class MondayTestViewController: UIViewController {
         checkMondayAnswers()
         calculateScore()
         giveFeedback()
+        endTimer()
     }
     
     //Calculate the total score and update score label with every correct answer.

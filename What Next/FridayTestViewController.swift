@@ -175,6 +175,7 @@ class FridayTestViewController: UIViewController {
         checkFridayAnswers()
         calculateScore()
         giveFeedback()
+        endTimer()
     }
     
     //Calculate the total score and update score label with every correct answer.
@@ -215,11 +216,11 @@ class FridayTestViewController: UIViewController {
     
     func giveFeedback() {
         if totalScore >= 0 && totalScore <= 3 {
-            feedbackLabel.text = "You didn't manage to get many correct answers on this occasion. It looks like you need to gain a better understanding of the sound. Please go back to the lesson page and review further the materials there. It would also be benefitical to engage with some more activities. When you know you have a better understanding of the sound, reattempt this test. I know you can do it!"
+            feedbackLabel.text = "Two Stars and a Wish! \n \n * You tried your hardest to complete the test, Well Done! * \n \n * You have begun to understand the weekly sounds * \n \n Wish: You didn't score as well as you can. \n Please revisit the sound activities and try again"
         } else if totalScore >= 4 && totalScore <= 7 {
-            feedbackLabel.text = "This was a fair attempt but I know you can do better! It would be a good idea to have another short review of the materials to ensure you have a full understanding! When you are ready return and have another go at the test! Good Luck!"
+            feedbackLabel.text = "Two Stars and a Wish! \n \n * This was a good attempt at the test with a good score, well done! * \n \n * You have shown a solid understanding of the weekly sounds * \n \n Wish: You've missed a few answers! \n Try an activity or two again and have another go!"
         } else if totalScore >= 8 && totalScore <= 9 {
-            feedbackLabel.text = "This was a very strong attempt, well done! You obviously have a good understanding of this sound. You should have a short review of the words to ensure you understand the spellings and have another go to get 100%"
+            feedbackLabel.text = "Two Stars and a Wish! \n \n * You scored very well, Great Job! * \n \n * You have a strong understanding of the weekly sounds! * \n \n Wish: Lets try for 100%. \n Look at the words you got incorrect and have another go!"
         } else {
             feedbackLabel.text = "100% Excellent! You've nailed your words and have shown a full understanding of the sound! You should be proud of your work!"
         }
