@@ -29,6 +29,7 @@
 		8E17E6BE26B1785F00A9CBEE /* TeacherSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */; };
 		8E46591426B80A9000EAA2AA /* ActivityReflectionPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E46591326B80A9000EAA2AA /* ActivityReflectionPopupViewController.swift */; };
 		8E634D1626CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E634D1526CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift */; };
+		8E634D1826CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E634D1726CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift */; };
 		8E8EF8F026AC774000B46EB3 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */; };
 		8E8EF8F426ACB3F600B46EB3 /* TeacherNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */; };
 		8EC47A2126C14A4600F3C232 /* PupilPostingsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC47A2026C14A4600F3C232 /* PupilPostingsPopupViewController.swift */; };
@@ -118,6 +119,7 @@
 		8E17E6BD26B1785F00A9CBEE /* TeacherSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSettingsViewController.swift; sourceTree = "<group>"; };
 		8E46591326B80A9000EAA2AA /* ActivityReflectionPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityReflectionPopupViewController.swift; sourceTree = "<group>"; };
 		8E634D1526CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_MoodPopupViewController.swift; sourceTree = "<group>"; };
+		8E634D1726CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_UnreadNotificationsPopupViewController.swift; sourceTree = "<group>"; };
 		8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
 		8E8EF8F326ACB3F600B46EB3 /* TeacherNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNotificationViewController.swift; sourceTree = "<group>"; };
 		8EC47A2026C14A4600F3C232 /* PupilPostingsPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilPostingsPopupViewController.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				8E064D6526C8448C0083BD46 /* What_NextUITests_ViewController.swift */,
 				8E064D6726C856540083BD46 /* What_NextUITests_PupilLoginViewController.swift */,
 				8E634D1526CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift */,
+				8E634D1726CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift */,
 				87A9774C2690C4AF00FDA013 /* Info.plist */,
 			);
 			path = "What NextUITests";
@@ -515,6 +518,7 @@
 			files = (
 				8E064D6826C856540083BD46 /* What_NextUITests_PupilLoginViewController.swift in Sources */,
 				8E064D6626C8448C0083BD46 /* What_NextUITests_ViewController.swift in Sources */,
+				8E634D1826CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift in Sources */,
 				8E634D1626CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
