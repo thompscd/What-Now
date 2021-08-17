@@ -20,9 +20,9 @@ class What_NextUITests_PupilLoginViewController: XCTestCase {
     }
      */
     
-    override func tearDownWithError() throws {
+   // override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+   // }
 
     func testValidPupilLogin() throws {
         
@@ -37,37 +37,92 @@ class What_NextUITests_PupilLoginViewController: XCTestCase {
         pupilLogin.tap()  //press the pupil login button
         
         
-        app/*@START_MENU_TOKEN@*/.staticTexts["Pupil Login"]/*[[".buttons[\"Pupil Login\"].staticTexts[\"Pupil Login\"]",".staticTexts[\"Pupil Login\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.windows.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .textField).element.tap()
+        // verify title is of the pupil login screen
+        let pupilLoginTitle = app.staticTexts["Pupil Login"]
+        XCTAssertTrue(pupilLoginTitle.exists)
         
-        let element = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element
-        let textField = element.children(matching: .other).element(boundBy: 0).children(matching: .textField).element
-        textField.tap()
-        textField.tap()
+        // enter a valid pupil username
+        let validUsername = "sasha"
+        let pupilusernametextfieldTextField = app.textFields["pupilUserNameTextField"]
+        XCTAssertTrue(pupilusernametextfieldTextField.exists)       // check the field exists
+        pupilusernametextfieldTextField.tap()                       // double tap
+        pupilusernametextfieldTextField.tap()
+        pupilusernametextfieldTextField.typeText (validUsername)    // enter the username
         
-        let secureTextField = element.children(matching: .other).element(boundBy: 1).children(matching: .secureTextField).element
-        secureTextField.tap()
-        secureTextField.tap()
-        secureTextField.tap()
-                
+        // enter a valid password
+        let validPassword = "brodie\n"
+        let passwordtextfieldSecureTextField = app.secureTextFields["passwordTextField"]
+        XCTAssertTrue(passwordtextfieldSecureTextField.exists)      // check the field exists
+        passwordtextfieldSecureTextField.tap()                      // double tap
+        passwordtextfieldSecureTextField.tap()
+        passwordtextfieldSecureTextField.typeText(validPassword)    // enter a valid password
+
+        // press the Sign-In key
+        pupilusernametextfieldTextField.tap()  // workaround to get rid of keyboard
+        app.buttons["SignInButton"].forceTapElement()
+             
+        //let moodPopup = app.staticTexts["How are you feeling today?"]
+        //XCTAssertTrue(moodPopup.exists)       // check the field exists which means successfuly logged-in
         
-        /*
-        // add pupil login name
-        //=======
+
+    } //testValidPupilLogin
+    
+    func testInvalidPupilLogin() throws {
         
-        //let element = app.windows.children(matching: .other).element.children(matching: .other).element
-        //element.children(matching: .other).element.children(matching: .other).element.tap()
-        let pupilLoginTextField = app/*@START_MENU_TOKEN@*/.staticTexts["Pupil Login"]/*[[".buttons[\"Pupil Login\"].staticTexts[\"Pupil Login\"]",".staticTexts[\"Pupil Login\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        pupilLoginTextField.tap() //move cursor to login
-        pupilLoginTextField.typeText("ggg")
-        //element.children(matching: .other).element(boundBy: 0).children(matching: .textField).element.tap()
-        //app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .secureTextField).element.tap()
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+
+        // check that the pupil login is valid
         
-        //=======
+        // move to pupil login screen
+        let pupilLogin = app/*@START_MENU_TOKEN@*/.staticTexts["Pupil Login"]/*[[".buttons[\"Pupil Login\"].staticTexts[\"Pupil Login\"]",".staticTexts[\"Pupil Login\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        pupilLogin.tap()  //press the pupil login button
         
-        */
+        
+        // verify title is of the pupil login screen
+        let pupilLoginTitle = app.staticTexts["Pupil Login"]
+        XCTAssertTrue(pupilLoginTitle.exists)
+        
+        // enter a invalid pupil username
+        let invalidUsername = "fred"
+        let pupilusernametextfieldTextField = app.textFields["pupilUserNameTextField"]
+        XCTAssertTrue(pupilusernametextfieldTextField.exists)       // check the field exists
+        pupilusernametextfieldTextField.tap()                       // double tap
+        pupilusernametextfieldTextField.tap()
+        pupilusernametextfieldTextField.typeText (invalidUsername)    // enter the username
+        
+        // enter a invalid password
+        let invalidPassword = "bob\n"
+        let passwordtextfieldSecureTextField = app.secureTextFields["passwordTextField"]
+        XCTAssertTrue(passwordtextfieldSecureTextField.exists)      // check the field exists
+        passwordtextfieldSecureTextField.tap()                      // double tap
+        passwordtextfieldSecureTextField.tap()
+        passwordtextfieldSecureTextField.typeText(invalidPassword)    // enter a invalid password
+
+        // press the Sign-In key
+        pupilusernametextfieldTextField.tap()  // workaround to get rid of keyboard
+        app.buttons["SignInButton"].forceTapElement()
+                     
+        // confirm that an error message is dislayed
+        let errorMessage = app.staticTexts["Unknown User - please try again!"]
+        XCTAssertTrue(errorMessage.exists)      // check the field exists
+ 
         
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    } //testInvalidPupilLogin
+
+}
+
+extension XCUIElement {
+    func forceTapElement() {
+        if self.isHittable {
+            self.tap()
+        }
+        else {
+            let coordinate: XCUICoordinate = self.coordinate(withNormalizedOffset: CGVector(dx:0.0, dy:0.0))
+            coordinate.tap()
+        }
     }
 }
