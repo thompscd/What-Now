@@ -1666,7 +1666,7 @@
             <objects>
                 <viewController id="r2c-3F-tG2" userLabel="Pupil Postings Popup View Controller" customClass="PupilPostingsPopupViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9HZ-Uh-y01">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iT-AL-pVg" userLabel="popup View">
@@ -9058,6 +9058,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you've learnt about your sound, time to practice. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iva-0w-jbI">
                                         <rect key="frame" x="0.0" y="0.0" width="920" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="NowLearnt"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
