@@ -9,7 +9,7 @@ import XCTest
 
 class What_NextUITests_MondayExplanantionViewController: XCTestCase {
 
-    // test Monday Lesson View controller
+    // test Monday Explanation View controller
     func testMondayExplanation() throws {
         
         // UI tests must launch the application that they test.

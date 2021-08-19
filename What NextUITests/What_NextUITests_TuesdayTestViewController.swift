@@ -1,5 +1,5 @@
 //
-//  What_NextUITests_TuesdayExplanantionViewController.swift
+//  What_NextUITests_TuesdayTestViewController.swift
 //  What NextUITests
 //
 //  Created by Chris Thompson on 03/07/2021.
@@ -7,10 +7,10 @@
 
 import XCTest
 
-class What_NextUITests_TuesdayExplanationViewController: XCTestCase {
+class What_NextUITests_TuesdayTestViewController: XCTestCase {
 
-    // test Tuesday Explanation View controller
-    func testTuesdayExplanation() throws {
+    // test Tuesday Test View controller
+    func testTuesdayTest() throws {
         
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
@@ -26,7 +26,10 @@ class What_NextUITests_TuesdayExplanationViewController: XCTestCase {
         
         // open the Tuesday Explanation screen
         app.buttons["Let's try our best!"].tap()
+        
+        //open the Tuesday Test screen
+        app.buttons["Let's move on!"].tap()
                 
-    } //testTuesdayExplanation
+    } //testTuesdayTest
 }
 

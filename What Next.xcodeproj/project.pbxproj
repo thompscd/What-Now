@@ -40,6 +40,11 @@
 		8E47EF0D26CE606400AAA87F /* What_NextUITests_WednesdayExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF0C26CE606400AAA87F /* What_NextUITests_WednesdayExplanationViewController.swift */; };
 		8E47EF0F26CE614E00AAA87F /* What_NextUITests_ThursdayExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF0E26CE614E00AAA87F /* What_NextUITests_ThursdayExplanationViewController.swift */; };
 		8E47EF1126CE621A00AAA87F /* What_NextUITests_FridayExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1026CE621A00AAA87F /* What_NextUITests_FridayExplanationViewController.swift */; };
+		8E47EF1326CE67CD00AAA87F /* What_NextUITests_MondayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1226CE67CD00AAA87F /* What_NextUITests_MondayTestViewController.swift */; };
+		8E47EF1526CE6A7000AAA87F /* What_NextUITests_TuesdayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1426CE6A7000AAA87F /* What_NextUITests_TuesdayTestViewController.swift */; };
+		8E47EF1726CE6B0B00AAA87F /* What_NextUITests_WednesdayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1626CE6B0B00AAA87F /* What_NextUITests_WednesdayTestViewController.swift */; };
+		8E47EF1926CE6BDF00AAA87F /* What_NextUITests_ThursdayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1826CE6BDF00AAA87F /* What_NextUITests_ThursdayTestViewController.swift */; };
+		8E47EF1B26CE6CDD00AAA87F /* What_NextUITests_FridayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1A26CE6CDD00AAA87F /* What_NextUITests_FridayTestViewController.swift */; };
 		8E634D1626CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E634D1526CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift */; };
 		8E634D1826CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E634D1726CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift */; };
 		8E8EF8F026AC774000B46EB3 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */; };
@@ -142,6 +147,11 @@
 		8E47EF0C26CE606400AAA87F /* What_NextUITests_WednesdayExplanationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_WednesdayExplanationViewController.swift; sourceTree = "<group>"; };
 		8E47EF0E26CE614E00AAA87F /* What_NextUITests_ThursdayExplanationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_ThursdayExplanationViewController.swift; sourceTree = "<group>"; };
 		8E47EF1026CE621A00AAA87F /* What_NextUITests_FridayExplanationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_FridayExplanationViewController.swift; sourceTree = "<group>"; };
+		8E47EF1226CE67CD00AAA87F /* What_NextUITests_MondayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_MondayTestViewController.swift; sourceTree = "<group>"; };
+		8E47EF1426CE6A7000AAA87F /* What_NextUITests_TuesdayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_TuesdayTestViewController.swift; sourceTree = "<group>"; };
+		8E47EF1626CE6B0B00AAA87F /* What_NextUITests_WednesdayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_WednesdayTestViewController.swift; sourceTree = "<group>"; };
+		8E47EF1826CE6BDF00AAA87F /* What_NextUITests_ThursdayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_ThursdayTestViewController.swift; sourceTree = "<group>"; };
+		8E47EF1A26CE6CDD00AAA87F /* What_NextUITests_FridayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_FridayTestViewController.swift; sourceTree = "<group>"; };
 		8E634D1526CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_MoodPopupViewController.swift; sourceTree = "<group>"; };
 		8E634D1726CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_UnreadNotificationsPopupViewController.swift; sourceTree = "<group>"; };
 		8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
@@ -330,15 +340,20 @@
 				8E47EEFA26CD3E6E00AAA87F /* What_NextUITests_LiteracyViewController.swift */,
 				8E47EEFC26CD610400AAA87F /* What_NextUITests_MondayLessonViewController.swift */,
 				8E47EF0826CE5B0C00AAA87F /* What_NextUITests_MondayExplanationViewController.swift */,
+				8E47EF1226CE67CD00AAA87F /* What_NextUITests_MondayTestViewController.swift */,
 				8E47EF0626CDA44900AAA87F /* What_NextUITests_AcitivitySelectionViewController.swift */,
 				8E47EEFE26CD636B00AAA87F /* What_NextUITests_TuesdayLessonViewController.swift */,
 				8E47EF0A26CE5D0E00AAA87F /* What_NextUITests_TuesdayExplanationViewController.swift */,
+				8E47EF1426CE6A7000AAA87F /* What_NextUITests_TuesdayTestViewController.swift */,
 				8E47EF0026CD638E00AAA87F /* What_NextUITests_WednesdayLessonViewController.swift */,
 				8E47EF0C26CE606400AAA87F /* What_NextUITests_WednesdayExplanationViewController.swift */,
+				8E47EF1626CE6B0B00AAA87F /* What_NextUITests_WednesdayTestViewController.swift */,
 				8E47EF0226CD63A800AAA87F /* What_NextUITests_ThursdayLessonViewController.swift */,
 				8E47EF0E26CE614E00AAA87F /* What_NextUITests_ThursdayExplanationViewController.swift */,
+				8E47EF1826CE6BDF00AAA87F /* What_NextUITests_ThursdayTestViewController.swift */,
 				8E47EF0426CD63C000AAA87F /* What_NextUITests_FridayLessonViewController.swift */,
 				8E47EF1026CE621A00AAA87F /* What_NextUITests_FridayExplanationViewController.swift */,
+				8E47EF1A26CE6CDD00AAA87F /* What_NextUITests_FridayTestViewController.swift */,
 				87A9774C2690C4AF00FDA013 /* Info.plist */,
 			);
 			path = "What NextUITests";
@@ -552,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E47EF1726CE6B0B00AAA87F /* What_NextUITests_WednesdayTestViewController.swift in Sources */,
 				8E47EF0B26CE5D0E00AAA87F /* What_NextUITests_TuesdayExplanationViewController.swift in Sources */,
 				8E47EF0126CD638E00AAA87F /* What_NextUITests_WednesdayLessonViewController.swift in Sources */,
 				8E47EEFB26CD3E6E00AAA87F /* What_NextUITests_LiteracyViewController.swift in Sources */,
@@ -559,14 +575,18 @@
 				8E47EF1126CE621A00AAA87F /* What_NextUITests_FridayExplanationViewController.swift in Sources */,
 				8E47EF0326CD63A800AAA87F /* What_NextUITests_ThursdayLessonViewController.swift in Sources */,
 				8E47EEFF26CD636B00AAA87F /* What_NextUITests_TuesdayLessonViewController.swift in Sources */,
+				8E47EF1326CE67CD00AAA87F /* What_NextUITests_MondayTestViewController.swift in Sources */,
 				8E064D6826C856540083BD46 /* What_NextUITests_PupilLoginViewController.swift in Sources */,
 				8E064D6626C8448C0083BD46 /* What_NextUITests_ViewController.swift in Sources */,
 				8E47EF0526CD63C000AAA87F /* What_NextUITests_FridayLessonViewController.swift in Sources */,
 				8E47EF0D26CE606400AAA87F /* What_NextUITests_WednesdayExplanationViewController.swift in Sources */,
 				8E47EF0726CDA44900AAA87F /* What_NextUITests_AcitivitySelectionViewController.swift in Sources */,
+				8E47EF1526CE6A7000AAA87F /* What_NextUITests_TuesdayTestViewController.swift in Sources */,
 				8E47EEFD26CD610500AAA87F /* What_NextUITests_MondayLessonViewController.swift in Sources */,
 				8E47EF0926CE5B0C00AAA87F /* What_NextUITests_MondayExplanationViewController.swift in Sources */,
+				8E47EF1926CE6BDF00AAA87F /* What_NextUITests_ThursdayTestViewController.swift in Sources */,
 				8E634D1826CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift in Sources */,
+				8E47EF1B26CE6CDD00AAA87F /* What_NextUITests_FridayTestViewController.swift in Sources */,
 				8E634D1626CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
