@@ -45,6 +45,13 @@
 		8E47EF1726CE6B0B00AAA87F /* What_NextUITests_WednesdayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1626CE6B0B00AAA87F /* What_NextUITests_WednesdayTestViewController.swift */; };
 		8E47EF1926CE6BDF00AAA87F /* What_NextUITests_ThursdayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1826CE6BDF00AAA87F /* What_NextUITests_ThursdayTestViewController.swift */; };
 		8E47EF1B26CE6CDD00AAA87F /* What_NextUITests_FridayTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1A26CE6CDD00AAA87F /* What_NextUITests_FridayTestViewController.swift */; };
+		8E47EF1D26CE77A700AAA87F /* What_NextUITests_SpeedWritingActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1C26CE77A700AAA87F /* What_NextUITests_SpeedWritingActivityViewController.swift */; };
+		8E47EF1F26CE86C300AAA87F /* What_NextUITests_RainbowWritingActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF1E26CE86C300AAA87F /* What_NextUITests_RainbowWritingActivityViewController.swift */; };
+		8E47EF2126CE8D5D00AAA87F /* What_NextUITests_JoinTheDotsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF2026CE8D5D00AAA87F /* What_NextUITests_JoinTheDotsActivityViewController.swift */; };
+		8E47EF2326CE960600AAA87F /* What_NextUITests_ABCOrderActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF2226CE960600AAA87F /* What_NextUITests_ABCOrderActivityViewController.swift */; };
+		8E47EF2526CE96F900AAA87F /* What_NextUITests_BackwardsWordsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF2426CE96F900AAA87F /* What_NextUITests_BackwardsWordsActivityViewController.swift */; };
+		8E47EF2726CE97B300AAA87F /* What_NextUITests_ColouredVowelsActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF2626CE97B300AAA87F /* What_NextUITests_ColouredVowelsActivityViewController.swift */; };
+		8E47EF2926CE987D00AAA87F /* What_NextUITests_SentenceCreatorActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E47EF2826CE987D00AAA87F /* What_NextUITests_SentenceCreatorActivityViewController.swift */; };
 		8E634D1626CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E634D1526CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift */; };
 		8E634D1826CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E634D1726CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift */; };
 		8E8EF8F026AC774000B46EB3 /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */; };
@@ -152,6 +159,13 @@
 		8E47EF1626CE6B0B00AAA87F /* What_NextUITests_WednesdayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_WednesdayTestViewController.swift; sourceTree = "<group>"; };
 		8E47EF1826CE6BDF00AAA87F /* What_NextUITests_ThursdayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_ThursdayTestViewController.swift; sourceTree = "<group>"; };
 		8E47EF1A26CE6CDD00AAA87F /* What_NextUITests_FridayTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_FridayTestViewController.swift; sourceTree = "<group>"; };
+		8E47EF1C26CE77A700AAA87F /* What_NextUITests_SpeedWritingActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_SpeedWritingActivityViewController.swift; sourceTree = "<group>"; };
+		8E47EF1E26CE86C300AAA87F /* What_NextUITests_RainbowWritingActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_RainbowWritingActivityViewController.swift; sourceTree = "<group>"; };
+		8E47EF2026CE8D5D00AAA87F /* What_NextUITests_JoinTheDotsActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_JoinTheDotsActivityViewController.swift; sourceTree = "<group>"; };
+		8E47EF2226CE960600AAA87F /* What_NextUITests_ABCOrderActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_ABCOrderActivityViewController.swift; sourceTree = "<group>"; };
+		8E47EF2426CE96F900AAA87F /* What_NextUITests_BackwardsWordsActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_BackwardsWordsActivityViewController.swift; sourceTree = "<group>"; };
+		8E47EF2626CE97B300AAA87F /* What_NextUITests_ColouredVowelsActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_ColouredVowelsActivityViewController.swift; sourceTree = "<group>"; };
+		8E47EF2826CE987D00AAA87F /* What_NextUITests_SentenceCreatorActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_SentenceCreatorActivityViewController.swift; sourceTree = "<group>"; };
 		8E634D1526CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_MoodPopupViewController.swift; sourceTree = "<group>"; };
 		8E634D1726CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = What_NextUITests_UnreadNotificationsPopupViewController.swift; sourceTree = "<group>"; };
 		8E8EF8EF26AC774000B46EB3 /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
@@ -342,6 +356,13 @@
 				8E47EF0826CE5B0C00AAA87F /* What_NextUITests_MondayExplanationViewController.swift */,
 				8E47EF1226CE67CD00AAA87F /* What_NextUITests_MondayTestViewController.swift */,
 				8E47EF0626CDA44900AAA87F /* What_NextUITests_AcitivitySelectionViewController.swift */,
+				8E47EF1C26CE77A700AAA87F /* What_NextUITests_SpeedWritingActivityViewController.swift */,
+				8E47EF2226CE960600AAA87F /* What_NextUITests_ABCOrderActivityViewController.swift */,
+				8E47EF2426CE96F900AAA87F /* What_NextUITests_BackwardsWordsActivityViewController.swift */,
+				8E47EF2626CE97B300AAA87F /* What_NextUITests_ColouredVowelsActivityViewController.swift */,
+				8E47EF2826CE987D00AAA87F /* What_NextUITests_SentenceCreatorActivityViewController.swift */,
+				8E47EF1E26CE86C300AAA87F /* What_NextUITests_RainbowWritingActivityViewController.swift */,
+				8E47EF2026CE8D5D00AAA87F /* What_NextUITests_JoinTheDotsActivityViewController.swift */,
 				8E47EEFE26CD636B00AAA87F /* What_NextUITests_TuesdayLessonViewController.swift */,
 				8E47EF0A26CE5D0E00AAA87F /* What_NextUITests_TuesdayExplanationViewController.swift */,
 				8E47EF1426CE6A7000AAA87F /* What_NextUITests_TuesdayTestViewController.swift */,
@@ -570,24 +591,31 @@
 				8E47EF1726CE6B0B00AAA87F /* What_NextUITests_WednesdayTestViewController.swift in Sources */,
 				8E47EF0B26CE5D0E00AAA87F /* What_NextUITests_TuesdayExplanationViewController.swift in Sources */,
 				8E47EF0126CD638E00AAA87F /* What_NextUITests_WednesdayLessonViewController.swift in Sources */,
+				8E47EF1D26CE77A700AAA87F /* What_NextUITests_SpeedWritingActivityViewController.swift in Sources */,
+				8E47EF2126CE8D5D00AAA87F /* What_NextUITests_JoinTheDotsActivityViewController.swift in Sources */,
 				8E47EEFB26CD3E6E00AAA87F /* What_NextUITests_LiteracyViewController.swift in Sources */,
 				8E47EF0F26CE614E00AAA87F /* What_NextUITests_ThursdayExplanationViewController.swift in Sources */,
+				8E47EF2526CE96F900AAA87F /* What_NextUITests_BackwardsWordsActivityViewController.swift in Sources */,
 				8E47EF1126CE621A00AAA87F /* What_NextUITests_FridayExplanationViewController.swift in Sources */,
 				8E47EF0326CD63A800AAA87F /* What_NextUITests_ThursdayLessonViewController.swift in Sources */,
 				8E47EEFF26CD636B00AAA87F /* What_NextUITests_TuesdayLessonViewController.swift in Sources */,
 				8E47EF1326CE67CD00AAA87F /* What_NextUITests_MondayTestViewController.swift in Sources */,
 				8E064D6826C856540083BD46 /* What_NextUITests_PupilLoginViewController.swift in Sources */,
 				8E064D6626C8448C0083BD46 /* What_NextUITests_ViewController.swift in Sources */,
+				8E47EF1F26CE86C300AAA87F /* What_NextUITests_RainbowWritingActivityViewController.swift in Sources */,
 				8E47EF0526CD63C000AAA87F /* What_NextUITests_FridayLessonViewController.swift in Sources */,
 				8E47EF0D26CE606400AAA87F /* What_NextUITests_WednesdayExplanationViewController.swift in Sources */,
 				8E47EF0726CDA44900AAA87F /* What_NextUITests_AcitivitySelectionViewController.swift in Sources */,
 				8E47EF1526CE6A7000AAA87F /* What_NextUITests_TuesdayTestViewController.swift in Sources */,
 				8E47EEFD26CD610500AAA87F /* What_NextUITests_MondayLessonViewController.swift in Sources */,
+				8E47EF2726CE97B300AAA87F /* What_NextUITests_ColouredVowelsActivityViewController.swift in Sources */,
 				8E47EF0926CE5B0C00AAA87F /* What_NextUITests_MondayExplanationViewController.swift in Sources */,
+				8E47EF2926CE987D00AAA87F /* What_NextUITests_SentenceCreatorActivityViewController.swift in Sources */,
 				8E47EF1926CE6BDF00AAA87F /* What_NextUITests_ThursdayTestViewController.swift in Sources */,
 				8E634D1826CC47E2002E7569 /* What_NextUITests_UnreadNotificationsPopupViewController.swift in Sources */,
 				8E47EF1B26CE6CDD00AAA87F /* What_NextUITests_FridayTestViewController.swift in Sources */,
 				8E634D1626CC316C002E7569 /* What_NextUITests_MoodPopupViewController.swift in Sources */,
+				8E47EF2326CE960600AAA87F /* What_NextUITests_ABCOrderActivityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
