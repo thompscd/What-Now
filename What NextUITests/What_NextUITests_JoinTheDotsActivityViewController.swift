@@ -15,7 +15,8 @@ class What_NextUITests_JoinTheDotsActivityViewController: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        app/*@START_MENU_TOKEN@*/.staticTexts["Test Literacy"]/*[[".buttons[\"TestLiteracy\"].staticTexts[\"Test Literacy\"]",".staticTexts[\"Test Literacy\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["TestLiteracy"].tap()
+
         app.buttons["Monday"].tap()
         app.buttons["LetsMoveOn"].tap()
 

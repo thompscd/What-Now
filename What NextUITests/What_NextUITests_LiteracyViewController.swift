@@ -16,7 +16,8 @@ class What_NextUITests_LiteracyViewController: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        app/*@START_MENU_TOKEN@*/.staticTexts["Test Literacy"]/*[[".buttons[\"TestLiteracy\"].staticTexts[\"Test Literacy\"]",".staticTexts[\"Test Literacy\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.forceTapElement()
+        app.buttons["TestLiteracy"].tap()
+
         
         // check title exists
         let yourLessons = app.staticTexts["YourLessonsThisWeek"]

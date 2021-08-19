@@ -449,7 +449,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="fuz-tu-sUK"/>
                                 </constraints>
-                                <state key="normal" title="Test Literacy"/>
                                 <connections>
                                     <segue destination="aKF-nu-i7F" kind="presentation" id="i8U-bD-nlW"/>
                                 </connections>
