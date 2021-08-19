@@ -1666,7 +1666,7 @@
             <objects>
                 <viewController id="r2c-3F-tG2" userLabel="Pupil Postings Popup View Controller" customClass="PupilPostingsPopupViewController" customModule="What_Next" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9HZ-Uh-y01">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iT-AL-pVg" userLabel="popup View">
@@ -9734,7 +9734,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="i8U-bD-nlW"/>
-        <segue reference="ZGc-uR-m57"/>
+        <segue reference="MRc-FS-gqj"/>
         <segue reference="HOF-xu-9He"/>
         <segue reference="Obg-QX-jTt"/>
         <segue reference="rcG-jE-u35"/>
