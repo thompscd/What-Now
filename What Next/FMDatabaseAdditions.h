@@ -2,7 +2,7 @@
 //  FMDatabaseAdditions.h
 //  fmdb
 //
-//  Created by August Mueller on 10/30/05.
+//  Headers to access Pre-Installed database. Source: https://github.com/ccgus/fmdb.git
 //  Copyright 2005 Flying Meat Inc.. All rights reserved.
 //
 

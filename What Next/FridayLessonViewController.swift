@@ -83,8 +83,8 @@ class FridayLessonViewController: UIViewController {
     
     //Upload and Update video for function
     private func playFridayVideo() {
-        guard let path = Bundle.main.path(forResource: "testVideo", ofType:"mp4") else {
-            debugPrint("testVideo.mp4 not found")
+        guard let path = Bundle.main.path(forResource: "FridayVideo", ofType:"mp4") else {
+            debugPrint("FridayVideo.mp4 not found")
             return
         }
         let player = AVPlayer(url: URL(fileURLWithPath: path))

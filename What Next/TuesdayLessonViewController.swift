@@ -82,7 +82,7 @@ class TuesdayLessonViewController: UIViewController {
     
     //Upload and Update video for function
     private func playTuesdayVideo() {
-        guard let path = Bundle.main.path(forResource: "testVideo", ofType:"mp4") else {
+        guard let path = Bundle.main.path(forResource: "TuesdayVideo", ofType:"mp4") else {
             debugPrint("testVideo.mp4 not found")
             return
         }
